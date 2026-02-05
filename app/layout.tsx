@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
   description: "Scanna ingredienslistor och få riskbedömning av E-nummer. Skapa smarta inköpslistor med delning. Komplett guide till svenska livsmedel.",
   keywords: [
     "E-nummer",
-    "E-ämnen", 
+    "E-ämnen",
     "tillsatser",
     "inköpslista",
     "mat",
@@ -73,11 +75,11 @@ export default function RootLayout({
   return (
     <html lang="sv" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        {/* TODO: Add Header component */}
+        <Header />
         <main className="min-h-screen">
           {children}
         </main>
-        {/* TODO: Add Footer component */}
+        <Footer />
       </body>
     </html>
   );
