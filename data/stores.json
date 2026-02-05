@@ -1,21 +1,23 @@
 [
-  {
-    "id": "10eea951-1161-4d58-a1f3-2193b6119991",
-    "name": "Delitea",
-    "slug": "delitea",
-    "affiliate_network": "adtraction",
-    "affiliate_config": {
-      "programId": "1795091263",
-      "channelId": "2013245131",
-      "programAdId": "1795091266",
-      "trackingBase": "https://go.adt242.com/t/t?a=1795091266&as=2013245131&t=2&tk=1",
-      "cookieDays": 30
-    },
-    "feed_url": "https://adtraction.com/productfeed.htm?type=feed&format=CSV&encoding=UTF8&epi=0&zip=0&cdelim=tab&tdelim=singlequote&sd=0&sn=0&flat=0&apid=1795091263&asid=2013245131&gsh=0&pfid=1610&gt=0",
-    "feed_type": "csv",
-    "website_url": "https://www.delitea.se",
-    "logo_url": null,
-    "description": "Internationella delikatesser och specialiteter från hela världen. Över 10,000 produkter med snabb leverans.",
-    "is_active": true
-  }
+    {
+        "id": "717fdaa7-1767-4931-baf5-42d9e09830e0",
+        "slug": "delitea",
+        "name": "Delitea",
+        "description": "Internationella delikatesser och specialiteter fr\u00e5n hela v\u00e4rlden. \u00d6ver 10,000 produkter med snabb leverans.",
+        "logo_url": null,
+        "website_url": "https://www.delitea.se",
+        "affiliate_network": "adtraction",
+        "affiliate_config": {
+            "channelId": "2013245131",
+            "programId": "1795091263",
+            "cookieDays": 30,
+            "programAdId": "1795091266",
+            "trackingBase": "https://go.adt242.com/t/t?a=1795091266&as=2013245131&t=2&tk=1"
+        },
+        "feed_url": "https://adtraction.com/productfeed.htm?type=feed&format=CSV&encoding=UTF8&epi=0&zip=0&cdelim=tab&tdelim=singlequote&sd=0&sn=0&flat=0&apid=1795091263&asid=2013245131&gsh=0&pfid=1610&gt=0",
+        "feed_type": "csv",
+        "is_active": true,
+        "created_at": "2026-02-05T09:12:02.40366+00:00",
+        "updated_at": "2026-02-05T09:12:02.948852+00:00"
+    }
 ]

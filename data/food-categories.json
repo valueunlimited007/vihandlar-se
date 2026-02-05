@@ -1,62 +1,82 @@
 [
-  {
-    "id": "c19f9a3b-304d-490f-bddd-cc88706d172a",
-    "name": "Bakning & Torrvaror",
-    "slug": "bakning-torrvaror",
-    "description": "Mjöl, socker, bakpulver och andra bakningsingredienser"
-  },
-  {
-    "id": "40b95eb7-eac1-454b-9eba-f056bbeaa19e",
-    "name": "Fisk & Skaldjur",
-    "slug": "fisk-skaldjur",
-    "description": "Fisk, skaldjur och andra havsfrukter"
-  },
-  {
-    "id": "c21f7f17-651e-437b-9ca3-e0a91ba6abee",
-    "name": "Frukt & Bär",
-    "slug": "frukt-bar",
-    "description": "Färsk frukt, bär och torkad frukt"
-  },
-  {
-    "id": "06c892a1-d2f3-43df-b809-33c119811b9a",
-    "name": "Grönsaker",
-    "slug": "gronsaker",
-    "description": "Färska grönsaker, rötter och bladgrönsaker"
-  },
-  {
-    "id": "08da7aca-d2c2-4db0-b262-bcaf30815414",
-    "name": "Kött",
-    "slug": "kott",
-    "description": "Kött från olika djur inklusive nöt, fläsk, kyckling och lamm"
-  },
-  {
-    "id": "c0a347e3-0b78-4814-8e39-839ecf2b98e3",
-    "name": "Kryddor & Örter",
-    "slug": "kryddor-orter",
-    "description": "Kryddor, örter och smaksättare"
-  },
-  {
-    "id": "fbc19209-9814-4362-9ced-7855e255455e",
-    "name": "Mejeri",
-    "slug": "mejeri",
-    "description": "Mjölkprodukter som mjölk, ost, yoghurt och smör"
-  },
-  {
-    "id": "2c7c4064-f779-4b6d-8e83-20c5f6b7f6a6",
-    "name": "Nötter & Frön",
-    "slug": "notter-fron",
-    "description": "Nötter, frön och kärnor"
-  },
-  {
-    "id": "cb9fa5b8-1928-44df-8641-1576fb4886ef",
-    "name": "Oljor & Vinäger",
-    "slug": "oljor-vinager",
-    "description": "Matoljor, vinäger och andra dressingar"
-  },
-  {
-    "id": "bdadaa86-8121-4744-8133-105a23139836",
-    "name": "Spannmål & Baljväxter",
-    "slug": "spannmal-baljvaxter",
-    "description": "Gryn, pasta, ris, linser och bönor"
-  }
+    {
+        "id": "6b6c19f5-3fc5-4ab5-a6a6-92a9a3cfa939",
+        "name": "Bakning & Torrvaror",
+        "slug": "bakning-torrvaror",
+        "description": "Mj\u00f6l, socker, bakpulver och andra bakningsingredienser",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "name": "Fisk & Skaldjur",
+        "slug": "fisk-skaldjur",
+        "description": "Fisk, skaldjur och andra havsfrukter",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "name": "Frukt & B\u00e4r",
+        "slug": "frukt-bar",
+        "description": "F\u00e4rsk frukt, b\u00e4r och torkad frukt",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "name": "Gr\u00f6nsaker",
+        "slug": "gronsaker",
+        "description": "F\u00e4rska gr\u00f6nsaker, r\u00f6tter och bladgr\u00f6nsaker",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
+        "name": "Kryddor & \u00d6rter",
+        "slug": "kryddor-orter",
+        "description": "Kryddor, \u00f6rter och smaks\u00e4ttare",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
+        "name": "K\u00f6tt",
+        "slug": "kott",
+        "description": "K\u00f6tt fr\u00e5n olika djur inklusive n\u00f6t, fl\u00e4sk, kyckling och lamm",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "name": "Mejeri",
+        "slug": "mejeri",
+        "description": "Mj\u00f6lkprodukter som mj\u00f6lk, ost, yoghurt och sm\u00f6r",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "2b7562b7-e366-4be3-bffd-48b81962a5d3",
+        "name": "N\u00f6tter & Fr\u00f6n",
+        "slug": "notter-fron",
+        "description": "N\u00f6tter, fr\u00f6n och k\u00e4rnor",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "93166711-1461-45f5-89a0-f3b924ff35b9",
+        "name": "Oljor & Vin\u00e4ger",
+        "slug": "oljor-vinager",
+        "description": "Matoljor, vin\u00e4ger och andra dressingar",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    },
+    {
+        "id": "d1e3d3cb-6006-4aa5-8326-3d35a0723e29",
+        "name": "Spannm\u00e5l & Baljv\u00e4xter",
+        "slug": "spannmal-baljvaxter",
+        "description": "Gryn, pasta, ris, linser och b\u00f6nor",
+        "created_at": "2026-02-05T09:11:45.267108+00:00",
+        "updated_at": "2026-02-05T09:11:45.267108+00:00"
+    }
 ]
