@@ -1,7 +1,7 @@
 // lib/data/foods.ts
 import foodsData from '@/data/foods.json';
 import categoriesData from '@/data/food-categories.json';
-import type { Food, FoodCategory, SwedishLetter, SWEDISH_ALPHABET } from '@/types/food';
+import type { Food, FoodCategory } from '@/types/food';
 
 const foods: Food[] = foodsData as Food[];
 const categories: FoodCategory[] = categoriesData as FoodCategory[];
@@ -42,10 +42,10 @@ export function getFoodsByCategory(categoryId: string): Food[] {
 export function searchFoods(query: string): Food[] {
   const q = query.toLowerCase().trim();
   if (!q) return [];
-  
-  return foods.filter(f => 
+
+  return foods.filter(f =>
     f.name.toLowerCase().includes(q) ||
-    f.short_description.toLowerCase().includes(q) ||
+    f.short_description?.toLowerCase().includes(q) ||
     f.subcategory?.toLowerCase().includes(q)
   );
 }
@@ -54,7 +54,7 @@ export function searchFoods(query: string): Food[] {
  * Hämta alla kategorier
  */
 export function getAllFoodCategories(): FoodCategory[] {
-  return categories.sort((a, b) => a.sort_order - b.sort_order);
+  return categories.sort((a, b) => a.name.localeCompare(b.name, 'sv'));
 }
 
 /**
@@ -94,7 +94,9 @@ export function getFoodsCountByLetter(): Record<string, number> {
 export function getFoodsCountByCategory(): Record<string, number> {
   const counts: Record<string, number> = {};
   foods.forEach(f => {
-    counts[f.category_id] = (counts[f.category_id] || 0) + 1;
+    if (f.category_id) {
+      counts[f.category_id] = (counts[f.category_id] || 0) + 1;
+    }
   });
   return counts;
 }
@@ -103,8 +105,8 @@ export function getFoodsCountByCategory(): Record<string, number> {
  * Hämta livsmedel med specifik allergen
  */
 export function getFoodsWithAllergen(allergen: string): Food[] {
-  return foods.filter(f => 
-    f.allergens.some(a => a.toLowerCase() === allergen.toLowerCase())
+  return foods.filter(f =>
+    f.allergens?.some(a => a.toLowerCase() === allergen.toLowerCase())
   );
 }
 
@@ -113,8 +115,8 @@ export function getFoodsWithAllergen(allergen: string): Food[] {
  */
 export function getFoodsWithoutAllergens(allergens: string[]): Food[] {
   const lowerAllergens = allergens.map(a => a.toLowerCase());
-  return foods.filter(f => 
-    !f.allergens.some(a => lowerAllergens.includes(a.toLowerCase()))
+  return foods.filter(f =>
+    !f.allergens?.some(a => lowerAllergens.includes(a.toLowerCase()))
   );
 }
 

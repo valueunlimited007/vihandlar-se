@@ -20,20 +20,23 @@ export interface EAdditive {
   common_name: string | null;
   slug: string;
   category: string;
-  origin: 'Naturlig' | 'Syntetisk' | 'Naturlig/Syntetisk';
+  origin: string | null;
   risk_score: number; // 1-10
-  longevity_impact: 'Positiv' | 'Neutral' | 'Negativ';
+  longevity_impact: string | null;
   adi_value: number | null; // mg/kg kroppsvikt/dag
   adi_source: string | null;
   children_note: string | null;
-  short_description: string;
+  is_published: boolean;
+  short_description: string | null;
   long_description: string | null;
-  health_effects: HealthEffects;
-  common_products: CommonProduct[];
-  avoidance_tips: string[];
-  natural_alternatives: string[];
-  meta_title: string;
-  meta_description: string;
+  health_effects: HealthEffects | null;
+  common_products: CommonProduct[] | null;
+  avoidance_tips: string[] | null;
+  natural_alternatives: string[] | null;
+  scientific_studies: unknown | null;
+  livsmedelsverket_data: unknown | null;
+  meta_title: string | null;
+  meta_description: string | null;
   created_at?: string;
   updated_at?: string;
 }

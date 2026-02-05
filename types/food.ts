@@ -24,42 +24,44 @@ export interface Food {
   name: string;
   slug: string;
   letter: string; // A-Ö
-  category_id: string;
+  alternative_names: string[] | null;
+  category_id: string | null;
   subcategory: string | null;
-  
+
   // Förvaring
-  storage_method: string;
-  shelf_life_opened: string;
-  shelf_life_unopened: string;
-  can_freeze: boolean;
+  storage_method: string | null;
+  shelf_life_opened: string | null;
+  shelf_life_unopened: string | null;
+  can_freeze: boolean | null;
   freezing_tips: string | null;
-  
+
   // Säsong & allergener
   season: string[] | null;
-  allergens: string[];
-  
+  allergens: string[] | null;
+
   // Näringsvärden per 100g
-  calories: number;
-  protein: number;
-  fat: number;
-  carbohydrates: number;
-  fiber: number;
-  salt: number;
-  key_vitamins: Record<string, string>;
-  key_minerals: Record<string, string>;
-  
+  calories: number | null;
+  protein: number | null;
+  fat: number | null;
+  carbohydrates: number | null;
+  fiber: number | null;
+  salt: number | null;
+  key_vitamins: Record<string, string> | null;
+  key_minerals: Record<string, string> | null;
+
   // Beskrivningar
-  short_description: string;
+  short_description: string | null;
   long_description: string | null;
-  usage_tips: string[];
-  substitutes: Substitute[];
-  faq: FAQ[];
-  common_in_lists: string[];
-  
+  usage_tips: string[] | null;
+  substitutes: Substitute[] | null;
+  related_foods: string[] | null;
+  faq: FAQ[] | null;
+  common_in_lists: string[] | null;
+
   // SEO
-  meta_title: string;
-  meta_description: string;
-  
+  meta_title: string | null;
+  meta_description: string | null;
+
   created_at?: string;
   updated_at?: string;
 }
@@ -69,8 +71,8 @@ export interface FoodCategory {
   name: string;
   slug: string;
   description: string | null;
-  icon: string | null;
-  sort_order: number;
+  created_at?: string;
+  updated_at?: string;
 }
 
 // Svenska bokstäver för alfabetisk navigering
