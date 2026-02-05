@@ -414,75 +414,6 @@
     "is_published": true
   },
   {
-    "id": "06c11842-faf1-4168-a8b2-27fecf461655",
-    "e_number": "E1103",
-    "name": "Invertas",
-    "common_name": "Invertase enzyme",
-    "slug": "e1103-invertas",
-    "category": "Enzym",
-    "origin": "Naturlig",
-    "risk_score": 1,
-    "longevity_impact": "Neutral",
-    "adi_value": null,
-    "adi_source": "EFSA",
-    "children_note": "Mycket säkert för barn. Naturligt enzym som också finns i kroppen.",
-    "health_effects": {
-      "benefits": [
-        "Naturligt enzym",
-        "Förbättrar sockeromvandling",
-        "Traditionellt säkert"
-      ],
-      "suspected": [],
-      "documented": [],
-      "risk_groups": []
-    },
-    "common_products": [
-      {
-        "category": "Godis",
-        "products": [
-          "Chokladtryffel",
-          "Fondant",
-          "Kremfyllning"
-        ],
-        "average_amount": "Variable"
-      },
-      {
-        "category": "Bakverk",
-        "products": [
-          "Kakor",
-          "Tårtor",
-          "Konfektyr"
-        ],
-        "average_amount": "0.01-0.1%"
-      },
-      {
-        "category": "Honung-produkter",
-        "products": [
-          "Konstgjord honung",
-          "Sirap"
-        ],
-        "average_amount": "Variable"
-      }
-    ],
-    "avoidance_tips": [
-      "Inga försiktighetsåtgärder - naturligt enzym"
-    ],
-    "natural_alternatives": [
-      "Naturlig honung (innehåller invertas)",
-      "Jäst (producerar invertas)",
-      "Naturlig enzymatisk process"
-    ],
-    "short_description": "Invertas (E1103) är ett naturligt enzym som omvandlar sockerarter och är helt säkert.",
-    "long_description": "Invertas (E1103) är ett naturligt enzym som omvandlar sackaros till glukos och fruktos. Det förekommer naturligt i jäst, honung och även i människokroppen. Används i konfektindustrin för att skapa mjukare texturer och förhindra sockerkristallisering. Helt säkert eftersom det är ett naturligt enzym.",
-    "meta_title": "E1103 Invertas - Naturligt Enzym för Sockeromsättning i Konfektyr",
-    "meta_description": "E1103 (Invertas): Naturligt enzym för sockeromsättning, finns i honung och kroppen, säker för alla. ✓ Naturligt ✓ Enzym ✓ Säker",
-    "scientific_studies": null,
-    "livsmedelsverket_data": null,
-    "created_at": "2026-02-05T09:11:53.953193+00:00",
-    "updated_at": "2026-02-05T09:12:01.090153+00:00",
-    "is_published": true
-  },
-  {
     "id": "e30a60b4-0951-496d-a61b-96ac76460f05",
     "e_number": "E111",
     "name": "Orange GGN",
@@ -587,82 +518,6 @@
     "scientific_studies": null,
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:52.989052+00:00",
-    "updated_at": "2026-02-05T09:12:01.090153+00:00",
-    "is_published": true
-  },
-  {
-    "id": "80f407b5-94df-416c-a7ba-00cdeaa5aea5",
-    "e_number": "E1200",
-    "name": "Polydextros",
-    "common_name": "Polydextrose",
-    "slug": "e1200-polydextros",
-    "category": "Förtjockningsmedel",
-    "origin": "Syntetisk",
-    "risk_score": 2,
-    "longevity_impact": "Neutral",
-    "adi_value": null,
-    "adi_source": "EFSA",
-    "children_note": "Kan orsaka magbesvär vid höga doser men är prebiotiskt och fiberlikt.",
-    "health_effects": {
-      "benefits": [
-        "Låg kaloriinnehåll",
-        "Prebiotisk effekt",
-        "Fiberliknande"
-      ],
-      "suspected": [],
-      "documented": [
-        "Laxerande effekt vid höga doser",
-        "Gasbildning"
-      ],
-      "risk_groups": [
-        "Personer med IBS",
-        "Känsliga mag-tarmsystem"
-      ]
-    },
-    "common_products": [
-      {
-        "category": "Dietprodukter",
-        "products": [
-          "Light-produkter",
-          "Fiberbar"
-        ],
-        "average_amount": "1-10g/portion"
-      },
-      {
-        "category": "Godis",
-        "products": [
-          "Sockerfritt godis",
-          "Diabetikergodis"
-        ],
-        "average_amount": "2-15g/100g"
-      },
-      {
-        "category": "Bakverk",
-        "products": [
-          "Fiber-berikat bröd"
-        ],
-        "average_amount": "1-5%"
-      }
-    ],
-    "avoidance_tips": [
-      "Börja med små mängder för att undvika magbesvär",
-      "Begränsa till <15g per dag initialt",
-      "Drick mycket vatten",
-      "Bra som fiberersättning men gradvis introduktion"
-    ],
-    "natural_alternatives": [
-      "Naturliga fibrer",
-      "Pektin (E440)",
-      "Inulin",
-      "Psyllium"
-    ],
-    "short_description": "Polydextros (E1200) är en syntetisk fiber med låg kaloriinnehåll som kan orsaka magbesvär.",
-    "long_description": "Polydextros (E1200) är en syntetisk fiber med endast 1 kalori per gram jämfört med 4 för vanligt socker. Det har prebiotiska egenskaper och kan hjälpa tarmhälsan, men kan orsaka gasbildning och magbesvär vid höga doser. Används ofta i dietprodukter som fiber-ersättning.",
-    "meta_title": "E1200 Polydextros - Syntetisk Fiber med Prebiotiska Fördelar",
-    "meta_description": "E1200 (Polydextros): Syntetisk låg-kalorifiber, prebiotiska fördelar, magbesvär vid höga doser, dietprodukter. ✓ Fiber ✓ Låg-kalori ✓ Prebiotisk",
-    "scientific_studies": null,
-    "livsmedelsverket_data": null,
-    "created_at": "2026-02-05T09:11:54.192795+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
     "is_published": true
   },
@@ -1299,67 +1154,6 @@
     "is_published": true
   },
   {
-    "id": "4c2e96cf-76fe-47c5-bf05-a29bbd6a85fd",
-    "e_number": "E1414",
-    "name": "Acetylerat distärkelsefosfat",
-    "common_name": null,
-    "slug": "e1414-acetylerat-distarkelsefosfat",
-    "category": "Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel",
-    "origin": null,
-    "risk_score": 1,
-    "longevity_impact": "Neutral",
-    "adi_value": null,
-    "adi_source": "Inget ADI-värde krävs - GRAS status",
-    "children_note": null,
-    "health_effects": {
-      "benefits": [
-        "Förbättrar textur",
-        "Stabil vid olika pH-värden"
-      ],
-      "suspected": [],
-      "documented": [],
-      "risk_groups": []
-    },
-    "common_products": [
-      {
-        "category": "Mejeriprodukter",
-        "products": [
-          "Yoghurt",
-          "Grädde",
-          "Dressingar"
-        ],
-        "average_amount": "0.5-2%"
-      },
-      {
-        "category": "Bakverk",
-        "products": [
-          "Kakor",
-          "Tårtor",
-          "Bröd"
-        ],
-        "average_amount": "1-3%"
-      }
-    ],
-    "avoidance_tips": [
-      "Välj produkter märkta som \"utan tillsatser\"",
-      "Använd naturliga förtjockningsmedel som majsstärkelse"
-    ],
-    "natural_alternatives": [
-      "Majsstärkelse",
-      "Tapiokastärkelse",
-      "Potatismjöl"
-    ],
-    "short_description": "Modifierad stärkelse som används som förtjockningsmedel och stabiliseringsmedel i livsmedel.",
-    "long_description": "E1414 är en kemiskt modifierad stärkelse som får sina egenskaper genom acetylering och fosfatering. Den används som förtjockningsmedel, stabiliseringsmedel och emulgeringsmedel i många livsmedel. Stärkelsen blir mer stabil mot värme, syra och mekanisk behandling.",
-    "meta_title": "E1414 Acetylerad distärkelsfosfat - Modifierad stärkelse som förtjockningsmedel",
-    "meta_description": "E1414 är en modifierad stärkelse som används som förtjockningsmedel i livsmedel. Läs om användning, säkerhet och alternativ.",
-    "scientific_studies": null,
-    "livsmedelsverket_data": null,
-    "created_at": "2026-02-05T09:12:00.656872+00:00",
-    "updated_at": "2026-02-05T09:12:01.126991+00:00",
-    "is_published": true
-  },
-  {
     "id": "81b4b6e0-7f77-4965-9cfd-7d5fc7f92942",
     "e_number": "E142",
     "name": "Grön S",
@@ -1437,58 +1231,6 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:54.192795+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
-    "is_published": true
-  },
-  {
-    "id": "e799f94a-d2e9-498c-bfb4-0fa39e33da1b",
-    "e_number": "E1422",
-    "name": "Acetylerat distärkelseadipat",
-    "common_name": null,
-    "slug": "e1422-acetylerat-distarkelseadipat",
-    "category": "Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel",
-    "origin": null,
-    "risk_score": 1,
-    "longevity_impact": "Neutral",
-    "adi_value": null,
-    "adi_source": "Inget ADI-värde krävs - GRAS status",
-    "children_note": null,
-    "health_effects": {
-      "benefits": [
-        "Förbättrar textur i frysta produkter",
-        "Förhindrar vattenseparation"
-      ],
-      "suspected": [],
-      "documented": [],
-      "risk_groups": []
-    },
-    "common_products": [
-      {
-        "category": "Frysta produkter",
-        "products": [
-          "Fryst pizza",
-          "Frysta såser",
-          "Glass"
-        ],
-        "average_amount": "1-5%"
-      }
-    ],
-    "avoidance_tips": [
-      "Läs ingredienslistor på frysta produkter",
-      "Välj hem-tillagade alternativ"
-    ],
-    "natural_alternatives": [
-      "Majsstärkelse",
-      "Agar-agar",
-      "Xantangummi"
-    ],
-    "short_description": "Modifierad stärkelse som fungerar som förtjocknings- och stabiliseringsmedel, särskilt användbar i frysta produkter.",
-    "long_description": "E1422 är en kemiskt modifierad stärkelse som tål frysning och upptining bättre än vanlig stärkelse. Den används främst i frysta livsmedel där den bibehåller sin struktur och förhindrar vattenseparation.",
-    "meta_title": "E1422 Acetylerad distärkelsadipat - Modifierad stärkelse för frysta produkter",
-    "meta_description": "E1422 är en modifierad stärkelse som används i frysta livsmedel. Information om säkerhet, användning och naturliga alternativ.",
-    "scientific_studies": null,
-    "livsmedelsverket_data": null,
-    "created_at": "2026-02-05T09:12:00.656872+00:00",
-    "updated_at": "2026-02-05T09:12:01.129543+00:00",
     "is_published": true
   },
   {
@@ -2174,6 +1916,102 @@
     "is_published": true
   },
   {
+    "id": "0e888a97-7262-4b1f-9f22-035c8b6ba689",
+    "e_number": "E160f",
+    "name": "Etylester av beta-apo-8-karotenal",
+    "common_name": "Apokarotenal etylester",
+    "slug": "e160f-apokarotenal-etyl",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 4,
+    "longevity_impact": "Neutral",
+    "adi_value": 5,
+    "adi_source": "EFSA",
+    "children_note": "Säkert i normala mängder för barn",
+    "health_effects": {
+      "benefits": [
+        "Relaterat till vitamin A"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Margarin",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Ost",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Bakverk",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Håll dig inom rekommenderat ADI-värde"
+    ],
+    "natural_alternatives": [
+      "E160a (Naturlig betakaroten)",
+      "Morötter",
+      "Pumpapuré"
+    ],
+    "short_description": "Orange färgämne besläktat med betakaroten.",
+    "long_description": "En syntetisk variant av karotenoider som ger orange färg. Används sparsamt i livsmedel.",
+    "meta_title": "E160f Etylester av beta-apo-8-karotenal - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E160f (Etylester av beta-apo-8-karotenal): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "4e4dc6b7-73ab-427b-ac13-14ba82337c92",
+    "e_number": "E161a",
+    "name": "Flavoxantin",
+    "common_name": "Gul xantofyll",
+    "slug": "e161a-flavoxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt pigment",
+        "Antioxidantegenskaper"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [],
+    "avoidance_tips": [
+      "Generellt säkert"
+    ],
+    "natural_alternatives": [
+      "Naturlig kurkumin",
+      "Saffran"
+    ],
+    "short_description": "Gult naturligt pigment från gruppen xantofyller.",
+    "long_description": "Ett naturligt gult pigment som finns i många gula blommor och frukter. Används sällan kommersiellt.",
+    "meta_title": "E161a Flavoxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161a (Flavoxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "7eadff1d-af05-482c-b2d5-7a2baebddcb3",
     "e_number": "E161b",
     "name": "Lutein",
@@ -2226,6 +2064,173 @@
     "is_published": true
   },
   {
+    "id": "7696de6e-b763-46f5-89c9-969b9c45fa63",
+    "e_number": "E161c",
+    "name": "Kryptoxantin",
+    "common_name": "Beta-kryptoxantin",
+    "slug": "e161c-kryptoxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Mycket säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Provitamin A",
+        "Naturligt",
+        "Antioxidant"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Juicer",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Fruktprodukter",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Helt säkert"
+    ],
+    "natural_alternatives": [
+      "Färsk apelsin",
+      "Persika",
+      "Papaja"
+    ],
+    "short_description": "Orange-gult naturligt pigment med provitamin A-aktivitet.",
+    "long_description": "Ett naturligt karotenoidpigment som finns i citrusfrukter och kan omvandlas till vitamin A i kroppen.",
+    "meta_title": "E161c Kryptoxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161c (Kryptoxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "77bc0c79-2477-4b0a-87f4-8ff079b29092",
+    "e_number": "E161d",
+    "name": "Rubixantin",
+    "common_name": "Röd xantofyll",
+    "slug": "e161d-rubixantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt pigment"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [],
+    "avoidance_tips": [
+      "Inga särskilda försiktighetsåtgärder"
+    ],
+    "natural_alternatives": [
+      "Naturliga röda pigment från tomater"
+    ],
+    "short_description": "Rött naturligt pigment från xantofyllgruppen.",
+    "long_description": "Ett naturligt rött pigment som finns i vissa växter och alger. Används mycket sällan kommersiellt.",
+    "meta_title": "E161d Rubixantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161d (Rubixantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "ae5ba386-9d0e-45f6-a075-0a0cae48a66e",
+    "e_number": "E161e",
+    "name": "Violaxantin",
+    "common_name": "Violett xantofyll",
+    "slug": "e161e-violaxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt pigment"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [],
+    "avoidance_tips": [
+      "Inga kända risker"
+    ],
+    "natural_alternatives": [
+      "Naturliga violetta pigment från rödkål"
+    ],
+    "short_description": "Violett naturligt pigment från xantofyllgruppen.",
+    "long_description": "Ett naturligt pigment som bidrar till höstfärgerna i löv. Används inte kommersiellt som livsmedelsfärg.",
+    "meta_title": "E161e Violaxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161e (Violaxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c909f9c9-efbd-4e2e-a2fe-f1ac1ee3170a",
+    "e_number": "E161f",
+    "name": "Rodoxantin",
+    "common_name": "Röd xantofyll",
+    "slug": "e161f-rodoxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt pigment"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [],
+    "avoidance_tips": [
+      "Inga kända risker"
+    ],
+    "natural_alternatives": [
+      "Naturligt lykopen från tomater"
+    ],
+    "short_description": "Rött naturligt pigment från xantofyllgruppen.",
+    "long_description": "Ett naturligt rött pigment som finns i vissa alger och växter. Ej kommersiellt använt.",
+    "meta_title": "E161f Rodoxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161f (Rodoxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "d8f42be3-53d6-4fef-8d24-9a4b2f768cfa",
     "e_number": "E161g",
     "name": "Kantaxantin",
@@ -2250,6 +2255,158 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:55.9289+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "0b99c00d-a7bb-4c05-83bf-46d4ee758e43",
+    "e_number": "E161h",
+    "name": "Zeaxantin",
+    "common_name": "Gul-orange xantofyll",
+    "slug": "e161h-zeaxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Fördelaktigt för barn",
+    "health_effects": {
+      "benefits": [
+        "Ögonhälsa",
+        "Antioxidant",
+        "Naturligt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Funktionella livsmedel",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Helt säkert",
+      "Kan vara fördelaktigt"
+    ],
+    "natural_alternatives": [
+      "Färsk majs",
+      "Spenat",
+      "Äggula"
+    ],
+    "short_description": "Gul-orange naturligt pigment viktigt för ögonhälsa.",
+    "long_description": "Ett naturligt karotenoidpigment som är viktigt för ögonens gula fläck (makula). Finns naturligt i majs och gröna grönsaker.",
+    "meta_title": "E161h Zeaxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161h (Zeaxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "b2eca485-311e-457b-acf7-c23c8ddaa023",
+    "e_number": "E161i",
+    "name": "Citranaxantin",
+    "common_name": "Orange xantofyll",
+    "slug": "e161i-citranaxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt från citrus"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [],
+    "avoidance_tips": [
+      "Inga särskilda risker"
+    ],
+    "natural_alternatives": [
+      "Färska apelsinskal",
+      "Naturlig betakaroten"
+    ],
+    "short_description": "Orange naturligt pigment från citrusfrukter.",
+    "long_description": "Ett naturligt orange pigment som finns i citrusfrukternas skal. Används sällan kommersiellt.",
+    "meta_title": "E161i Citranaxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161i (Citranaxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "7c026910-e3ef-439a-9444-aaca411f6753",
+    "e_number": "E161j",
+    "name": "Astaxantin",
+    "common_name": "Röd ketokarotenoid",
+    "slug": "e161j-astaxantin",
+    "category": "Färgämne",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Fördelaktigt för barn",
+    "health_effects": {
+      "benefits": [
+        "Kraftfullt antioxidant",
+        "Naturligt",
+        "Anti-inflammatorisk"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Laxfoder",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Funktionella livsmedel",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Helt säkert",
+      "Fördelaktigt för hälsan"
+    ],
+    "natural_alternatives": [
+      "Vildlax",
+      "Räkor",
+      "Kräftor"
+    ],
+    "short_description": "Rött naturligt pigment med starka antioxidantegenskaper.",
+    "long_description": "Ett kraftfullt antioxidant som ger lax och räkor deras röda färg. Används i fiskfoder och kosttillskott.",
+    "meta_title": "E161j Astaxantin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E161j (Astaxantin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -3276,6 +3433,117 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:55.9289+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "c371c1ed-7f90-4f2c-9843-010e1b1f1153",
+    "e_number": "E216",
+    "name": "p-Hydroxibensoesyrapropylester",
+    "common_name": "Propylparaben",
+    "slug": "e216-propylparaben",
+    "category": "Konserveringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 5,
+    "longevity_impact": "Negativ",
+    "adi_value": 10,
+    "adi_source": "EFSA",
+    "children_note": "Försiktighet för känsliga barn",
+    "health_effects": {
+      "benefits": [
+        "Effektivt konserveringsmedel"
+      ],
+      "documented": [
+        "Hormonliknande effekter",
+        "Allergiframkallande"
+      ],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosmetika",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Vissa livsmedel",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Undvik vid känslig hud",
+      "Begränsa exponering"
+    ],
+    "natural_alternatives": [
+      "Naturliga antioxidanter",
+      "Kylförvaring"
+    ],
+    "short_description": "Propylester av p-hydroxibensoesyra, konserveringsmedel.",
+    "long_description": "Propylparaben är en paraben som används som konserveringsmedel. Finns naturligt i vissa växter men produceras huvudsakligen syntetiskt.",
+    "meta_title": "E216 p-Hydroxibensoesyrapropylester - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E216 (p-Hydroxibensoesyrapropylester): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "52c9da0b-af38-453c-aae5-eb2e0cb89d5e",
+    "e_number": "E217",
+    "name": "p-Hydroxibensoesyrapropylesters natriumsalt",
+    "common_name": "Natriumsalt av propylparaben",
+    "slug": "e217-natrium-propylparaben",
+    "category": "Konserveringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 5,
+    "longevity_impact": "Negativ",
+    "adi_value": 10,
+    "adi_source": "EFSA",
+    "children_note": "Försiktighet för barn",
+    "health_effects": {
+      "benefits": [
+        "Vattenlösligt"
+      ],
+      "documented": [
+        "Samma risker som E216",
+        "Hormonpåverkan"
+      ],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Livsmedel",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosmetika",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Samma försiktighet som E216"
+    ],
+    "natural_alternatives": [
+      "Naturlig konservering"
+    ],
+    "short_description": "Natriumsalt av propylparaben, konserveringsmedel.",
+    "long_description": "Natriumsaltet av propylparaben. Har samma egenskaper som E216 men är mer vattenlösligt.",
+    "meta_title": "E217 p-Hydroxibensoesyrapropylesters natriumsalt - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E217 (p-Hydroxibensoesyrapropylesters natriumsalt): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -8849,6 +9117,58 @@
     "is_published": true
   },
   {
+    "id": "0d74ab07-67fa-4836-a9f4-c13e7fbc876d",
+    "e_number": "E429",
+    "name": "Peptidasbehandlad kasein",
+    "common_name": "Enzymsbehandlat mjölkprotein",
+    "slug": "e429-peptidasbehandlad-kasein",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Säkert för barn (ej vid mjölkallergi)",
+    "health_effects": {
+      "benefits": [
+        "Naturligt mjölkprotein",
+        "Proteinrik"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Mejerivaror",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Proteinprodukter",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Säkert för de flesta",
+      "Undvik vid mjölkallergi"
+    ],
+    "natural_alternatives": [
+      "Naturligt kasein",
+      "Andra mjölkproteiner"
+    ],
+    "short_description": "Enzymatiskt behandlat mjölkprotein för emulgering.",
+    "long_description": "Peptidasbehandlad kasein är mjölkprotein som behandlats med enzymer för att förbättra emulgeringsegenskaperna.",
+    "meta_title": "E429 Peptidasbehandlad kasein - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E429 (Peptidasbehandlad kasein): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "2fe412d7-07c0-4313-91a9-ab53dd0eac8b",
     "e_number": "E430",
     "name": "Polyoxyetylen (8) stearate",
@@ -9301,6 +9621,105 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:59.163933+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "df6fdac4-19f7-437b-ba50-5880b39adbb3",
+    "e_number": "E445",
+    "name": "Glycerolestrar av trähartser",
+    "common_name": "Hartskådestrar",
+    "slug": "e445-glycerolestrar-av-trahartser",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": 12.5,
+    "adi_source": "EFSA",
+    "children_note": "Säkert för barn inom gränser",
+    "health_effects": {
+      "benefits": [
+        "Naturligt från träd"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Citrusdrycker",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Aromoljer",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Säkert inom ADI-gräns"
+    ],
+    "natural_alternatives": [
+      "Lecithin",
+      "Andra emulgeringsmedel"
+    ],
+    "short_description": "Estrar från naturliga trähartser för emulgering.",
+    "long_description": "Framställs från naturliga hartser från tallar och andra träd. Används som emulgeringsmedel i drycker.",
+    "meta_title": "E445 Glycerolestrar av trähartser - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E445 (Glycerolestrar av trähartser): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c38f9886-c2c6-46b5-8df0-ec4824171cfb",
+    "e_number": "E446",
+    "name": "Succistearin",
+    "common_name": "Bärnstenssyrastearin",
+    "slug": "e446-succistearin",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Ej fastställt",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Effektivt emulgeringsmedel"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Margarin",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Bakverk",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Säkert vid godkänd användning"
+    ],
+    "natural_alternatives": [
+      "Naturliga emulgeringsmedel"
+    ],
+    "short_description": "Ester av bärnstenssyra och stearin för emulgering.",
+    "long_description": "Succistearin är en ester som fungerar som emulgeringsmedel och stabilisator.",
+    "meta_title": "E446 Succistearin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E446 (Succistearin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -10624,6 +11043,53 @@
     "is_published": true
   },
   {
+    "id": "777f2052-bd83-4099-aa83-e0c2a220010a",
+    "e_number": "E479b",
+    "name": "Termiskt oxiderad sojabönsolja i reaktion med mono- och diglycerider av fettsyror",
+    "common_name": null,
+    "slug": "e479b-termiskt-oxiderad-sojabonsolja-i-reaktion-med-mono-och-diglycerider-av-fettsyror",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 4,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande funktion"
+      ],
+      "documented": [],
+      "suspected": [
+        "Kan innehålla transfetter"
+      ],
+      "risk_groups": [
+        "Sojaallergi"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [
+          "Bröd",
+          "Kakor"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Termiskt oxiderad sojabönsolja (E479b) är ett syntetiskt emulgeringsmedel som används i bakverk.",
+    "long_description": "E479b framställs genom termisk oxidation av sojabönsolja och reaktion med mono- och diglycerider. Det används som emulgeringsmedel och stabilisator i bakverk och fetter. Kan innehålla transfetter beroende på framställning.",
+    "meta_title": "E479b Termiskt oxiderad sojabönsolja i reaktion med mono- och diglycerider av fettsyror - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E479b (Termiskt oxiderad sojabönsolja i reaktion med mono- och diglycerider av fettsyror): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "bcbd1987-d390-496a-8d9f-c651863dd629",
     "e_number": "E481",
     "name": "Natriumstearoyl-2-laktylat",
@@ -10786,6 +11252,92 @@
     "is_published": true
   },
   {
+    "id": "90f80ada-301f-4c6c-9798-daa77b5bdc85",
+    "e_number": "E492",
+    "name": "Sorbitantristearat",
+    "common_name": null,
+    "slug": "e492-sorbitantristearat",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Choklad",
+        "products": [
+          "Chokladprodukter",
+          "Pralin"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Sorbitantristearat (E492) är ett syntetiskt emulgeringsmedel som används i choklad och bakverk.",
+    "long_description": "Sorbitantristearat framställs från sorbitol och stearinsyra. Det hjälper till att blanda fett och vatten i chokladprodukter och bakverk.",
+    "meta_title": "E492 Sorbitantristearat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E492 (Sorbitantristearat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "ef5a9598-8357-434b-be2a-fecd76279c44",
+    "e_number": "E493",
+    "name": "Sorbitanmonolaurat",
+    "common_name": null,
+    "slug": "e493-sorbitanmonolaurat",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [
+          "Kakor",
+          "Tårtor"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Sorbitanmonolaurat (E493) är ett syntetiskt emulgeringsmedel för livsmedel.",
+    "long_description": "Sorbitanmonolaurat framställs från sorbitol och laurinsyra. Används som emulgeringsmedel i bakverk och desserter.",
+    "meta_title": "E493 Sorbitanmonolaurat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E493 (Sorbitanmonolaurat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "8a592b23-4241-41cc-a567-8db65a246055",
     "e_number": "E494",
     "name": "Sorbitanmonooleat",
@@ -10837,6 +11389,93 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:12:00.656872+00:00",
     "updated_at": "2026-02-05T09:12:01.583954+00:00",
+    "is_published": true
+  },
+  {
+    "id": "b34b011e-3036-4d53-b441-d1a2b13e13ae",
+    "e_number": "E495",
+    "name": "Sorbitanmonopalmitat",
+    "common_name": null,
+    "slug": "e495-sorbitanmonopalmitat",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [
+          "Bröd",
+          "Bakverk"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Sorbitanmonopalmitat (E495) är ett syntetiskt emulgeringsmedel.",
+    "long_description": "Sorbitanmonopalmitat framställs från sorbitol och palmitinsyra. Används som emulgeringsmedel i livsmedelsindustrin.",
+    "meta_title": "E495 Sorbitanmonopalmitat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E495 (Sorbitanmonopalmitat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "ed3dde20-fb01-40a5-93c3-6096ec0e6096",
+    "e_number": "E499",
+    "name": "Stigmasterolrika växtsteroler",
+    "common_name": null,
+    "slug": "e499-stigmasterolrika-vaxtsteroler",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Kan vara fördelaktigt",
+    "health_effects": {
+      "benefits": [
+        "Kolesterolsänkande",
+        "Naturligt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Funktionella livsmedel",
+        "products": [
+          "Berikad margarin",
+          "Hälsodrycker"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Stigmasterolrika växtsteroler (E499) är naturliga växtämnen som kan sänka kolesterol.",
+    "long_description": "Stigmasterolrika växtsteroler utvinns från växter och kan bidra till att sänka kolesterolnivåer. Används i funktionella livsmedel.",
+    "meta_title": "E499 Stigmasterolrika växtsteroler - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E499 (Stigmasterolrika växtsteroler): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -11044,6 +11683,56 @@
     "is_published": true
   },
   {
+    "id": "4fd9065e-0daf-4096-90b9-77e4034575e1",
+    "e_number": "E505",
+    "name": "Järnkarbonat",
+    "common_name": "Ferrokarbonat",
+    "slug": "e505-jarnkarbonat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Fördelaktigt för barn (järn)",
+    "health_effects": {
+      "benefits": [
+        "Järnkälla",
+        "Näringsberikning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Berikat mjöl",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Fördelaktigt för järnintag"
+    ],
+    "natural_alternatives": [
+      "Naturliga järnrika livsmedel som kött"
+    ],
+    "short_description": "Järnsalt för mineralförstärkning och färgning.",
+    "long_description": "Järnkarbonat används för järnberikning och kan ge svag grå färgning.",
+    "meta_title": "E505 Järnkarbonat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E505 (Järnkarbonat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "fd01ec9e-1d7c-4c49-a4ff-b167bcda5381",
     "e_number": "E507",
     "name": "Saltsyra",
@@ -11101,6 +11790,55 @@
     "is_published": true
   },
   {
+    "id": "134653a7-6de6-42d8-87e1-45f3ae4ca928",
+    "e_number": "E508",
+    "name": "Kaliumklorid",
+    "common_name": "Kaliumsalt",
+    "slug": "e508-kaliumklorid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Fördelaktigt för barn med normal njurfunktion",
+    "health_effects": [
+      {
+        "effect": "Fördelaktigt",
+        "severity": "low",
+        "description": "Bidrar till kaliumintaget, minskar natriumintaget"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Saltsubstitut",
+        "products": [
+          "Dietsalt",
+          "Kryddmixer"
+        ],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Hälsoprodukter",
+        "products": [
+          "Lågsaltprodukter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kaliumsalt som saltsubstitut",
+    "long_description": "Kaliumklorid används som saltsubstitut och smakförstärkare. Det ger en saltliknande smak men med mindre natrium.",
+    "meta_title": "E508 Kaliumklorid - Hälsosamt saltsubstitut",
+    "meta_description": "Information om E508 Kaliumklorid som saltsubstitut och dess hälsofördelar.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "a468101b-ae66-481d-8fa3-8287cc1795a5",
     "e_number": "E509",
     "name": "Kalciumklorid",
@@ -11154,6 +11892,165 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:12:00.874635+00:00",
     "updated_at": "2026-02-05T09:12:01.59225+00:00",
+    "is_published": true
+  },
+  {
+    "id": "9bab9849-04bc-4858-9422-15096208720b",
+    "e_number": "E510",
+    "name": "Ammoniumklorid",
+    "common_name": "Salmiak",
+    "slug": "e510-ammoniumklorid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 4,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Begränsad användning",
+    "children_note": "Måttlig användning för barn",
+    "health_effects": {
+      "benefits": [
+        "Karakteristisk smak"
+      ],
+      "documented": [
+        "Kan vara skarp"
+      ],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Salmiakgodis",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Vissa läsk",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Måttlig konsumtion",
+      "Stark smak"
+    ],
+    "natural_alternatives": [
+      "Andra naturliga smaker"
+    ],
+    "short_description": "Ammoniumsalt med karakteristisk smak.",
+    "long_description": "Ammoniumklorid ger den typiska salmiaksmakmaken och används som smakämne.",
+    "meta_title": "E510 Ammoniumklorid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E510 (Ammoniumklorid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "0aa14232-f851-46a0-86b8-189add93191a",
+    "e_number": "E511",
+    "name": "Magnesiumklorid",
+    "common_name": "Magnesiumsalt",
+    "slug": "e511-magnesiumklorid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Fördelaktigt för barn, stödjer tillväxt",
+    "health_effects": [
+      {
+        "effect": "Fördelaktigt",
+        "severity": "low",
+        "description": "Bidrar till magnesiumintaget"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Tofuprodukter",
+        "products": [
+          "Tofu",
+          "Sojaprodukter"
+        ],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Asiatisk mat",
+        "products": [
+          "Koagulerade produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Magnesiumsalt för koagulering",
+    "long_description": "Magnesiumklorid används vid tofutillverkning som koaguleringsmedel och som magnesiumkälla i olika livsmedel.",
+    "meta_title": "E511 Magnesiumklorid - Magnesiumrikt koaguleringsmedel",
+    "meta_description": "Information om E511 Magnesiumklorid, dess användning i tofuproduktion och hälsofördelar.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "181b4c6f-1e10-4efc-bb16-1518032ec81e",
+    "e_number": "E512",
+    "name": "Tennklorid",
+    "common_name": "Stannoklorid",
+    "slug": "e512-tennklorid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 5,
+    "longevity_impact": "Negativ",
+    "adi_value": 2,
+    "adi_source": "EFSA",
+    "children_note": "Begränsad användning för barn",
+    "health_effects": {
+      "benefits": [
+        "Effektivt antioxidant"
+      ],
+      "documented": [
+        "Tungmetall",
+        "Begränsad användning"
+      ],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Vita konserver",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Sparris",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Glass",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Begränsa konserverintag",
+      "Variera kostval"
+    ],
+    "natural_alternatives": [
+      "Naturliga antioxidanter"
+    ],
+    "short_description": "Tennförebindelse som antioxidant i konserver.",
+    "long_description": "Tenn(II)klorid används som antioxidant i vitfärgade konserver för att behålla färgen.",
+    "meta_title": "E512 Tennklorid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E512 (Tennklorid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -11235,6 +12132,648 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:56.130558+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "335fcfdb-d369-4170-b5d2-c10fc8ca55f6",
+    "e_number": "E516",
+    "name": "Kalciumsulfat",
+    "common_name": "Gips",
+    "slug": "e516-kalciumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Fördelaktigt för barn (kalcium)",
+    "health_effects": {
+      "benefits": [
+        "Kalciumkälla",
+        "Proteinkoagulering"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Tofu",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Bröd",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Fördelaktigt för kalciumintag"
+    ],
+    "natural_alternatives": [
+      "Naturligt kalcium från mejerivaror"
+    ],
+    "short_description": "Kalciumsalt för koagulering och mineralförstärkning.",
+    "long_description": "Kalciumsulfat används för proteinkoagulering och som kalciumkälla.",
+    "meta_title": "E516 Kalciumsulfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E516 (Kalciumsulfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c44a9799-d00b-4d4c-9672-86ccd7bfe83f",
+    "e_number": "E517",
+    "name": "Ammoniumsulfat",
+    "common_name": "Ammoniumsalt av svavelsyra",
+    "slug": "e517-ammoniumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Jästnäring"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Bröd",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Jästprodukter",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Säkert vid brödbak"
+    ],
+    "natural_alternatives": [
+      "Naturliga jästnäringsämnen"
+    ],
+    "short_description": "Ammoniumsalt för jästnäring och bearbetning.",
+    "long_description": "Ammoniumsulfat fungerar som näring för jäst i brödtillverkning.",
+    "meta_title": "E517 Ammoniumsulfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E517 (Ammoniumsulfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "0245c6f7-5120-4d0d-89c1-d49d49329fe5",
+    "e_number": "E520",
+    "name": "Aluminiumsulfat",
+    "common_name": "Alun",
+    "slug": "e520-aluminiumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 3,
+    "longevity_impact": "Negativ",
+    "adi_value": 1,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Undvik för barn när möjligt",
+    "health_effects": [
+      {
+        "effect": "Potentiell risk",
+        "severity": "medium",
+        "description": "Aluminiumackumulering kan vara problematisk över tid"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Vissa bakprodukter",
+          "Industriella tillämpningar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Aluminiumföreningar som stabiliserare",
+    "long_description": "Aluminiumsulfat används som stabiliseringsmedel i vissa tillämpningar. Aluminiumföreningar kan ackumuleras i kroppen.",
+    "meta_title": "E520 Aluminiumsulfat - Aluminiumföreningar att undvika",
+    "meta_description": "Läs om E520 Aluminiumsulfat, potentiella hälsorisker och säkrare alternativ.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "6dc02125-35b0-4f6a-a283-faf6b4238dd2",
+    "e_number": "E521",
+    "name": "Aluminiumnatriumsulfat",
+    "common_name": "Natriumalun",
+    "slug": "e521-aluminiumnatriumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Negativ",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Undvik för barn",
+    "health_effects": [
+      {
+        "effect": "Potentiell risk",
+        "severity": "medium",
+        "description": "Aluminiumexponering bör begränsas"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Bakprodukter",
+        "products": [
+          "Vissa bakpulver",
+          "Processat bröd"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Aluminiumföreningar som stabiliserare",
+    "long_description": "Aluminiumnatriumsulfat används som stabiliserare men kan bidra till aluminiumexponering som bör minimeras.",
+    "meta_title": "E521 Aluminiumnatriumsulfat - Aluminiumföreningar att undvika",
+    "meta_description": "Information om E521 och varför aluminiumföreningar bör undvikas för bättre hälsa.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "56571bf4-291b-4b86-bba6-40068e4bb3fb",
+    "e_number": "E522",
+    "name": "Aluminiumkaliumsulfat",
+    "common_name": null,
+    "slug": "e522-aluminiumkaliumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 6,
+    "longevity_impact": "Negativ",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Undvik för barn",
+    "health_effects": {
+      "benefits": [],
+      "documented": [
+        "Aluminiumackumulering"
+      ],
+      "suspected": [
+        "Neurologiska effekter"
+      ],
+      "risk_groups": [
+        "Barn",
+        "Njursjuka"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Bakpulver",
+        "products": [
+          "Vissa bakpulver"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Begränsa aluminiumexponering",
+      "Välj aluminiumfria bakpulver"
+    ],
+    "natural_alternatives": [
+      "Aluminiumfritt bakpulver",
+      "Jäst"
+    ],
+    "short_description": "Aluminiumkaliumsulfat (E522) är en aluminiumförening som bör begränsas.",
+    "long_description": "Aluminiumkaliumsulfat (alun) innehåller aluminium som kan ackumuleras i kroppen. Används begränsat som stabilisator.",
+    "meta_title": "E522 Aluminiumkaliumsulfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E522 (Aluminiumkaliumsulfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "643151a2-88f1-49e5-a077-1dcc5e776603",
+    "e_number": "E523",
+    "name": "Aluminiumammoniumsulfat",
+    "common_name": null,
+    "slug": "e523-aluminiumammoniumsulfat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 6,
+    "longevity_impact": "Negativ",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Undvik för barn",
+    "health_effects": {
+      "benefits": [],
+      "documented": [
+        "Aluminiumexponering"
+      ],
+      "suspected": [
+        "Neurologiska effekter"
+      ],
+      "risk_groups": [
+        "Barn",
+        "Njursjuka"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Industriella tillämpningar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Begränsa aluminiumexponering"
+    ],
+    "natural_alternatives": [
+      "Aluminiumfria alternativ"
+    ],
+    "short_description": "Aluminiumammoniumsulfat (E523) är en aluminiumförening som bör begränsas.",
+    "long_description": "Aluminiumammoniumsulfat innehåller aluminium och ammonium. Används begränsat i livsmedelsindustrin.",
+    "meta_title": "E523 Aluminiumammoniumsulfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E523 (Aluminiumammoniumsulfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "09ced605-6635-4a57-8176-e83131edb2f1",
+    "e_number": "E524",
+    "name": "Natriumhydroxid",
+    "common_name": null,
+    "slug": "e524-natriumhydroxid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i färdig produkt",
+    "health_effects": {
+      "benefits": [
+        "pH-kontroll"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [
+          "Lut-produkter",
+          "Kringlor"
+        ],
+        "average_amount": "Neutraliseras"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Natriumhydroxid (E524) är en stark bas som används för pH-reglering i livsmedel.",
+    "long_description": "Natriumhydroxid (lut) används som pH-reglerare i livsmedelstillverkning. Det neutraliseras i slutprodukten och är säkert i färdiga livsmedel.",
+    "meta_title": "E524 Natriumhydroxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E524 (Natriumhydroxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "67b0f6fd-1ef4-44e7-9ec5-0479a09666fb",
+    "e_number": "E525",
+    "name": "Kaliumhydroxid",
+    "common_name": null,
+    "slug": "e525-kaliumhydroxid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i färdig produkt",
+    "health_effects": {
+      "benefits": [
+        "pH-kontroll"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Bearbetade livsmedel"
+        ],
+        "average_amount": "Neutraliseras"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kaliumhydroxid (E525) är en bas för pH-reglering i livsmedelstillverkning.",
+    "long_description": "Kaliumhydroxid används som pH-reglerare och neutraliseras i slutprodukten. Säkert i färdiga livsmedel.",
+    "meta_title": "E525 Kaliumhydroxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E525 (Kaliumhydroxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "aeab77c9-cdca-43be-a460-f6a36165c4f3",
+    "e_number": "E526",
+    "name": "Kalciumhydroxid",
+    "common_name": null,
+    "slug": "e526-kalciumhydroxid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn, kalciumkälla",
+    "health_effects": {
+      "benefits": [
+        "Kalciumkälla",
+        "Traditionellt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Traditionell mat",
+        "products": [
+          "Tortillas",
+          "Pickles"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalciumhydroxid (E526) är släckt kalk, en naturlig bas för pH-reglering och kalciumkälla.",
+    "long_description": "Kalciumhydroxid (släckt kalk) har använts i matlagning i tusentals år. Det bidrar med kalcium och används för pH-kontroll.",
+    "meta_title": "E526 Kalciumhydroxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E526 (Kalciumhydroxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "f804a237-ada0-48f6-b8e8-d1916faa5be4",
+    "e_number": "E527",
+    "name": "Ammoniumhydroxid",
+    "common_name": null,
+    "slug": "e527-ammoniumhydroxid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i färdig produkt",
+    "health_effects": {
+      "benefits": [
+        "pH-kontroll"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Choklad",
+          "Karamell"
+        ],
+        "average_amount": "Avdunstar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Ammoniumhydroxid (E527) är en svag bas för pH-reglering i livsmedel.",
+    "long_description": "Ammoniumhydroxid används som pH-reglerare i livsmedelstillverkning. Ammoniaken avdunstar under bearbetningen.",
+    "meta_title": "E527 Ammoniumhydroxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E527 (Ammoniumhydroxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "125afbd7-e503-462e-89a2-5f1a1dd0160b",
+    "e_number": "E528",
+    "name": "Magnesiumhydroxid",
+    "common_name": null,
+    "slug": "e528-magnesiumhydroxid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Fördelaktigt för barn, magnesiumkälla",
+    "health_effects": {
+      "benefits": [
+        "Magnesiumkälla",
+        "Magsyranedsättande"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Mineraltillskott",
+          "Magsyraneutralisering"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Magnesiumhydroxid (E528) är ett naturligt mineral med pH-reglerande och magnesiumberikande egenskaper.",
+    "long_description": "Magnesiumhydroxid är ett naturligt mineral som fungerar som pH-reglerare och bidrar med magnesium. Används även medicinskt som magsyranedsättande medel.",
+    "meta_title": "E528 Magnesiumhydroxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E528 (Magnesiumhydroxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a898466f-baa7-4e75-abec-4ab56e51454c",
+    "e_number": "E529",
+    "name": "Kalciumoxid",
+    "common_name": null,
+    "slug": "e529-kalciumoxid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i färdig produkt",
+    "health_effects": {
+      "benefits": [
+        "pH-kontroll",
+        "Kalciumkälla"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Industriell bearbetning"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalciumoxid (E529) är bränd kalk som används för pH-reglering och bearbetning.",
+    "long_description": "Kalciumoxid (bränd kalk) är ett naturligt mineral som används i livsmedelstillverkning för pH-kontroll. Reagerar med vatten och bildar kalciumhydroxid.",
+    "meta_title": "E529 Kalciumoxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E529 (Kalciumoxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "7b96d7c2-a75f-4da8-8cf2-bd3aa443a443",
+    "e_number": "E530",
+    "name": "Magnesiumoxid",
+    "common_name": "Magnesia",
+    "slug": "e530-magnesiumoxid",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Fördelaktigt för barn",
+    "health_effects": [
+      {
+        "effect": "Fördelaktigt",
+        "severity": "low",
+        "description": "Bidrar till magnesiumintaget"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Pulver",
+        "products": [
+          "Kryddor",
+          "Proteinpulver"
+        ],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Mineraltillskott"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Magnesiumföreningar som antiklumpmedel",
+    "long_description": "Magnesiumoxid används som antiklumpmedel och är en källa till magnesium, ett essentiellt mineral för kroppen.",
+    "meta_title": "E530 Magnesiumoxid - Magnesiumrikt antiklumpmedel",
+    "meta_description": "Läs om E530 Magnesiumoxid, dess användning som antiklumpmedel och magnesiumkälla.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "42015515-a7b1-4471-98c1-68b62f33d5a8",
+    "e_number": "E534",
+    "name": "Järntartrat",
+    "common_name": null,
+    "slug": "e534-jarntartrat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Kan bidra till järnintag",
+    "health_effects": {
+      "benefits": [
+        "Järnkälla"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Järntillskott"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Järntartrat (E534) är ett järnsalt av vinsyra som används som jernkälla.",
+    "long_description": "Järntartrat kombinerar järn med vinsyra och kan bidra till järnintaget. Används sällan kommersiellt.",
+    "meta_title": "E534 Järntartrat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E534 (Järntartrat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -11332,6 +12871,198 @@
     "is_published": true
   },
   {
+    "id": "e117c835-7a57-4ebd-a526-b5238e334402",
+    "e_number": "E538",
+    "name": "Kalciumferrocyanid",
+    "common_name": null,
+    "slug": "e538-kalciumferrocyanid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 5,
+    "longevity_impact": "Negativ",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Undvik om möjligt",
+    "health_effects": {
+      "benefits": [],
+      "documented": [
+        "Cyanidinnehåll"
+      ],
+      "suspected": [
+        "Toxiska effekter vid höga doser"
+      ],
+      "risk_groups": [
+        "Barn",
+        "Gravida"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Salt",
+        "products": [
+          "Bordssalt",
+          "Kryddsalt"
+        ],
+        "average_amount": "10mg per kg salt"
+      }
+    ],
+    "avoidance_tips": [
+      "Välj salt utan klumpförhindare"
+    ],
+    "natural_alternatives": [
+      "Rent salt",
+      "Havssalt"
+    ],
+    "short_description": "Kalciumferrocyanid (E538) är ett klumpförhindare i salt med bundet cyanid.",
+    "long_description": "Kalciumferrocyanid är kalciumvarianten av ferrocyanid som används som klumpförhindare i salt. Innehåller bundet cyanid som väcker hälsooro.",
+    "meta_title": "E538 Kalciumferrocyanid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E538 (Kalciumferrocyanid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "edba5a09-759d-45ef-8bdb-96326f1aa9c5",
+    "e_number": "E540",
+    "name": "Dikalciumdifosfit",
+    "common_name": "Kalciumfosfit",
+    "slug": "e540-dikalciumdifosfit",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Måttlig användning för barn",
+    "health_effects": [
+      {
+        "effect": "Måttlig säkerhet",
+        "severity": "low",
+        "description": "Generellt säker men överdrivet fosfatintag kan vara problematiskt"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Emulgerade produkter",
+          "Stabiliserade livsmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalcium- och fosfatföreningar",
+    "long_description": "Dikalciumdifosfit används som emulgeringsmedel och stabiliserare i vissa livsmedel. Bidrar till kalcium- och fosfatintaget.",
+    "meta_title": "E540 Dikalciumdifosfit - Kalcium- och fosfatföreningar",
+    "meta_description": "Information om E540 Dikalciumdifosfit som emulgeringsmedel och dess säkerhetsaspekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "e555289a-cd0a-4297-b577-da045598e84b",
+    "e_number": "E541",
+    "name": "Natriumaluminiumfosfat, surt",
+    "common_name": null,
+    "slug": "e541-natriumaluminiumfosfat-surt",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 5,
+    "longevity_impact": "Negativ",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Undvik för barn, välj aluminiumfritt bakpulver",
+    "health_effects": {
+      "benefits": [
+        "Jäseffekt"
+      ],
+      "documented": [
+        "Aluminiumexponering"
+      ],
+      "suspected": [
+        "Neurologiska effekter"
+      ],
+      "risk_groups": [
+        "Barn",
+        "Njursjuka"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Bakpulver",
+        "products": [
+          "Vissa bakpulver"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Välj aluminiumfritt bakpulver"
+    ],
+    "natural_alternatives": [
+      "Aluminiumfritt bakpulver",
+      "Jäst",
+      "Bakpulver utan aluminium"
+    ],
+    "short_description": "Natriumaluminiumfosfat (E541) är ett bakpulver med aluminiuminnehåll.",
+    "long_description": "Natriumaluminiumfosfat används som bakpulver men innehåller aluminium som kan vara problematiskt vid hög exponering.",
+    "meta_title": "E541 Natriumaluminiumfosfat, surt - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E541 (Natriumaluminiumfosfat, surt): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c1e9f1e1-1973-4711-b764-b4be946ca462",
+    "e_number": "E550",
+    "name": "Natriumsilikat",
+    "common_name": "Vattenglas",
+    "slug": "e550-natriumsilikat",
+    "category": "Antiklumpmedel",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Säker för barn i små mängder",
+    "health_effects": [
+      {
+        "effect": "Generellt säker",
+        "severity": "low",
+        "description": "Används i begränsade mängder"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Pulver",
+        "products": [
+          "Kryddpulver",
+          "Torrvaror"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Silikatföreningar som antiklumpmedel",
+    "long_description": "Natriumsilikat används som antiklumpmedel för att förhindra klumpbildning i pulverformiga livsmedel.",
+    "meta_title": "E550 Natriumsilikat - Mineraliskt antiklumpmedel",
+    "meta_description": "Läs om E550 Natriumsilikat, dess användning som antiklumpmedel och säkerhet.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "2103a539-4601-4ecd-b72b-99100cc19ff5",
     "e_number": "E551",
     "name": "Kiseldioxid",
@@ -11396,6 +13127,672 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:54.833098+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "e6b43701-f4e9-44ee-9a40-86a024f4bf8a",
+    "e_number": "E552",
+    "name": "Kalciumsilikat",
+    "common_name": "Kalkkisel",
+    "slug": "e552-kalciumsilikat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Säker och fördelaktig för barn",
+    "health_effects": [
+      {
+        "effect": "Säker och fördelaktig",
+        "severity": "low",
+        "description": "Bidrar till mineralintaget"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Kryddor",
+        "products": [
+          "Kryddmixer",
+          "Salt"
+        ],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Pulver",
+        "products": [
+          "Proteinpulver"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalcium- och kiselföreningar som antiklumpmedel",
+    "long_description": "Kalciumsilikat används som antiklumpmedel och bidrar både med kalcium och kisel, båda naturliga mineraler.",
+    "meta_title": "E552 Kalciumsilikat - Mineralrikt antiklumpmedel",
+    "meta_description": "Läs om E552 Kalciumsilikat som antiklumpmedel och dess bidrag till mineralintaget.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "97c2f6e7-ab6c-4bed-92bd-203f42b7d83e",
+    "e_number": "E553a",
+    "name": "Magnesiumsilikater",
+    "common_name": "Talk",
+    "slug": "e553a-magnesiumsilikater",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Säker för barn vid livsmedelskvalitet",
+    "health_effects": [
+      {
+        "effect": "Generellt säker",
+        "severity": "low",
+        "description": "Livsmedelstalk är asbesterifri"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Vissa pulver",
+          "Tabletter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Magnesium- och kiselföreningar",
+    "long_description": "Magnesiumsilikat (talk) används som antiklumpmedel. Livsmedelstalk ska vara asbesterifri och av livsmedelskvalitet.",
+    "meta_title": "E553a Magnesiumsilikat - Talk av livsmedelskvalitet",
+    "meta_description": "Information om E553a Magnesiumsilikat (talk) och vikten av livsmedelskvalitet.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "0c4e1585-ac65-47d7-81d8-01c29c645cf5",
+    "e_number": "E553b",
+    "name": "Talk",
+    "common_name": "Talk",
+    "slug": "e553b-talk",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Säker för barn vid livsmedelskvalitet",
+    "health_effects": [
+      {
+        "effect": "Generellt säker",
+        "severity": "low",
+        "description": "Måste vara asbesterifritt och av livsmedelskvalitet"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Tabletter",
+          "Vissa livsmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Talkumpulver som antiklumpmedel",
+    "long_description": "Talkumpulver av livsmedelskvalitet används som antiklumpmedel och släppmedel vid livsmedelstillverkning.",
+    "meta_title": "E553b Talkumpulver - Kvalitetskontrollerat antiklumpmedel",
+    "meta_description": "Läs om E553b Talkumpulver och vikten av livsmedelsgodkänd kvalitet.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "361ba5ac-3cbc-4e30-87de-81226ad82c86",
+    "e_number": "E554",
+    "name": "Natriumaluminiumsilikat",
+    "common_name": "Aluminiumsilikat",
+    "slug": "e554-natriumaluminiumsilikat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 3,
+    "longevity_impact": "Negativ",
+    "adi_value": 1,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Undvik för barn",
+    "health_effects": [
+      {
+        "effect": "Potentiell risk",
+        "severity": "medium",
+        "description": "Innehåller aluminium som kan ackumuleras"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Vissa kryddor",
+          "Antiklumpmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Aluminium- och silikatföreningar",
+    "long_description": "Natriumalumosilikat innehåller aluminium vilket kan ackumuleras i kroppen och bör därför begränsas.",
+    "meta_title": "E554 Natriumalumosilikat - Aluminiumhaltigt att undvika",
+    "meta_description": "Information om E554 och varför aluminiumhaltiga tillsatser bör undvikas.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "7443b93d-c6f5-4bd7-bf1e-032be10bddda",
+    "e_number": "E555",
+    "name": "Kaliumaluminiumsilikat",
+    "common_name": "Kaliumaluminium",
+    "slug": "e555-kaliumaluminiumsilikat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 3,
+    "longevity_impact": "Negativ",
+    "adi_value": 1,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Undvik för barn",
+    "health_effects": [
+      {
+        "effect": "Potentiell risk",
+        "severity": "medium",
+        "description": "Aluminiuminnehåll bör begränsas"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Antiklumpmedel",
+          "Vissa kryddor"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalium-aluminium-silikatföreningar",
+    "long_description": "Kaliumalumosilikat innehåller aluminium som kan vara problematiskt vid långvarig exponering.",
+    "meta_title": "E555 Kaliumalumosilikat - Aluminiumhaltigt att begränsa",
+    "meta_description": "Läs om E555 och vikten av att begränsa aluminiumexponering.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "0b0fc0d8-d0ad-4d1e-8565-4ad553d6923a",
+    "e_number": "E556",
+    "name": "Kalciumalumosilikat",
+    "common_name": "Kalciumaluminium",
+    "slug": "e556-kalciumalumosilikat",
+    "category": "Antiklumpmedel",
+    "origin": "Naturlig",
+    "risk_score": 3,
+    "longevity_impact": "Negativ",
+    "adi_value": 1,
+    "adi_source": "Livsmedelsverket",
+    "children_note": "Begränsad användning för barn",
+    "health_effects": [
+      {
+        "effect": "Blandad effekt",
+        "severity": "medium",
+        "description": "Kalcium är fördelaktigt men aluminium problematiskt"
+      }
+    ],
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Antiklumpmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kalcium-aluminium-silikatföreningar",
+    "long_description": "Kalciumalumosilikat bidrar med kalcium men innehåller också aluminium som bör begränsas.",
+    "meta_title": "E556 Kalciumalumosilikat - Blandade hälsoeffekter",
+    "meta_description": "Information om E556 och varför aluminiumfria kalciumkällor är att föredra.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "932fd16a-8762-41ef-ae1d-47f885bd3573",
+    "e_number": "E557",
+    "name": "Zinksilikat",
+    "common_name": "Zinksalt av kiselsyra",
+    "slug": "e557-zinksilikat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Positiv",
+    "adi_value": 15,
+    "adi_source": "rekommenderat intag",
+    "children_note": "Fördelaktigt för barn (zink)",
+    "health_effects": {
+      "benefits": [
+        "Zinkkälla",
+        "Antiklump"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Fördelaktigt för zinkintag"
+    ],
+    "natural_alternatives": [
+      "Naturligt zink från kött"
+    ],
+    "short_description": "Zinksilikat som antiklumpmedel och zinkkälla.",
+    "long_description": "Zinksilikat fungerar som antiklumpmedel och tillför zink.",
+    "meta_title": "E557 Zinksilikat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E557 (Zinksilikat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "422ba845-86f6-464e-a71a-069517f73897",
+    "e_number": "E570",
+    "name": "Fettsyror",
+    "common_name": null,
+    "slug": "e570-fettsyror",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert, naturliga fetter",
+    "health_effects": {
+      "benefits": [
+        "Naturlig fettkomponent"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Tabletter",
+          "Kapslar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Fettsyror (E570) är naturliga fettkomponenter som används som ytbehandling.",
+    "long_description": "Fettsyror som stearinsyra och palmitinsyra är naturliga komponenter i fetter. Används som ytbehandling och glidmedel i tabletter.",
+    "meta_title": "E570 Fettsyror - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E570 (Fettsyror): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "26f931d0-ea17-4f32-9459-b52f2ffcd423",
+    "e_number": "E574",
+    "name": "Glukonsyra",
+    "common_name": null,
+    "slug": "e574-glukonsyra",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturlig syra"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Bearbetade livsmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Glukonsyra (E574) är en naturlig syra som bildas vid glukosoxidation.",
+    "long_description": "Glukonsyra är en mild organisk syra som bildas naturligt vid oxidation av glukos. Används som surhetsreglerare.",
+    "meta_title": "E574 Glukonsyra - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E574 (Glukonsyra): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "8b30526c-aaea-4208-bef1-997af5985158",
+    "e_number": "E575",
+    "name": "Glukonsyrans deltalakton",
+    "common_name": null,
+    "slug": "e575-glukonsyrans-deltalakton",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Mild pH-sänkning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Tofu",
+        "products": [
+          "Silkestofu",
+          "Mjuk tofu"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Glukonsyrans deltalakton (E575) är en pH-sänkare som omvandlas till glukonsyra.",
+    "long_description": "Glukonsyrans deltalakton (GDL) omvandlas långsamt till glukonsyra i vatten och sänker pH gradvis. Används vid tofutillverkning.",
+    "meta_title": "E575 Glukonsyrans deltalakton - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E575 (Glukonsyrans deltalakton): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a2a08507-9084-4e1d-b072-bb309d40bb21",
+    "e_number": "E576",
+    "name": "Natriumglukonat",
+    "common_name": null,
+    "slug": "e576-natriumglukonat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Chelator"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Konserver",
+          "Bearbetade livsmedel"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Natriumglukonat (E576) är natriumsaltet av glukonsyra, en mild chelator.",
+    "long_description": "Natriumglukonat fungerar som chelator och sekvestreringsmedel. Det binder metallioner och förbättrar hållbarhet.",
+    "meta_title": "E576 Natriumglukonat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E576 (Natriumglukonat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "0ce270dd-4870-4d53-b5ab-194c1f7ad227",
+    "e_number": "E577",
+    "name": "Kaliumglukonat",
+    "common_name": null,
+    "slug": "e577-kaliumglukonat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert och fördelaktigt",
+    "health_effects": {
+      "benefits": [
+        "Kaliumkälla"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Kaliumtillskott"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kaliumglukonat (E577) är kaliumsaltet av glukonsyra och bidrar till kaliumintag.",
+    "long_description": "Kaliumglukonat fungerar som chelator och kaliumkälla. Används i kosttillskott och livsmedelstillverkning.",
+    "meta_title": "E577 Kaliumglukonat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E577 (Kaliumglukonat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "30ebe88a-ff2a-44b9-977a-380e44830d0b",
+    "e_number": "E578",
+    "name": "Kalciumglukonat",
+    "common_name": "Kalciumsalt av glukonsyra",
+    "slug": "e578-kalciumglukonat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Mycket fördelaktigt för barn",
+    "health_effects": {
+      "benefits": [
+        "Bigtillgängligt kalcium",
+        "Lätt att absorbera"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Funktionella livsmedel",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Mycket fördelaktigt för kalciumintag"
+    ],
+    "natural_alternatives": [
+      "Naturliga kalciumrika livsmedel"
+    ],
+    "short_description": "Kalciumsalt av glukonsyra för mineralförstärkning.",
+    "long_description": "Kalciumglukonat är en mycket bigtillgänglig form av kalcium som lätt absorberas av kroppen.",
+    "meta_title": "E578 Kalciumglukonat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E578 (Kalciumglukonat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "b2f5ad72-1347-4abb-9a5e-9b63a9315cf0",
+    "e_number": "E579",
+    "name": "Järnglukonat (Ferroglukonat)",
+    "common_name": "Ferroglukonat",
+    "slug": "e579-jarnglukonat-ferroglukonat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Fördelaktigt för barn (järn)",
+    "health_effects": {
+      "benefits": [
+        "Järnkälla",
+        "Mild form av järn"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Berikat mjöl",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Kosttillskott",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Fördelaktigt för järnintag"
+    ],
+    "natural_alternatives": [
+      "Naturligt järn från kött och grönsaker"
+    ],
+    "short_description": "Järnsalt av glukonsyra för järnberikning.",
+    "long_description": "Järnglukonat är en mild form av järn som används för järnberikning av livsmedel.",
+    "meta_title": "E579 Järnglukonat (Ferroglukonat) - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E579 (Järnglukonat (Ferroglukonat)): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "5e3a24b6-49af-498f-8550-6249f517b6b5",
+    "e_number": "E585",
+    "name": "Järnlaktat (Ferrolaktat)",
+    "common_name": "Ferrolaktat",
+    "slug": "e585-jarnlaktat-ferrolaktat",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": "Quantum satis",
+    "children_note": "Mycket fördelaktigt för barn",
+    "health_effects": {
+      "benefits": [
+        "Järnkälla",
+        "Vältolererat"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Berikat mjöl",
+        "products": [],
+        "average_amount": "Varierar"
+      },
+      {
+        "category": "Babynäring",
+        "products": [],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Mycket fördelaktigt för järnintag"
+    ],
+    "natural_alternatives": [
+      "Naturligt järn från kött"
+    ],
+    "short_description": "Järnsalt av mjölksyra för järnberikning.",
+    "long_description": "Järnlaktat är en vältolererad form av järn som används för näringsberikring.",
+    "meta_title": "E585 Järnlaktat (Ferrolaktat) - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E585 (Järnlaktat (Ferrolaktat)): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -12198,6 +14595,60 @@
     "is_published": true
   },
   {
+    "id": "3c4c3d30-00c6-403e-8001-087575f1905c",
+    "e_number": "E635",
+    "name": "Dinatrium-5'-ribonukleotider",
+    "common_name": null,
+    "slug": "e635-dinatrium-5-ribonukleotider",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn under 1 år",
+    "health_effects": {
+      "benefits": [
+        "Smakförstärkning"
+      ],
+      "documented": [],
+      "suspected": [
+        "Kan trigga giktanfall"
+      ],
+      "risk_groups": [
+        "Giktpatienter",
+        "Astmatiker"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Snacks",
+        "products": [
+          "Chips",
+          "Smaksatta nötter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Undvik vid gikt",
+      "Kontrollera smaksatta snacks"
+    ],
+    "natural_alternatives": [
+      "Jästextrakt",
+      "Svamppulver"
+    ],
+    "short_description": "Dinatrium-5'-ribonukleotider (E635) är en blandning av smakförstärkare.",
+    "long_description": "E635 är en blandning av dinatriuminosinat (E631) och dinatriumguanylat (E627). Det förstärker umamismak synergistiskt med MSG.",
+    "meta_title": "E635 Dinatrium-5'-ribonukleotider - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E635 (Dinatrium-5'-ribonukleotider): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "01cdd8fc-d421-4916-a502-88ab40b61b68",
     "e_number": "E640",
     "name": "Glycin",
@@ -12338,6 +14789,49 @@
     "is_published": true
   },
   {
+    "id": "1b839856-a411-406e-ad31-96cfce2896ad",
+    "e_number": "E900",
+    "name": "Dimetylpolysiloxan",
+    "common_name": null,
+    "slug": "e900-dimetylpolysiloxan",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert, absorberas inte",
+    "health_effects": {
+      "benefits": [
+        "Antiskumning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frityrolja",
+        "products": [
+          "Snabbmat",
+          "Friterade produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Dimetylpolysiloxan (E900) är en silikonbaserad antiskumningsmedel.",
+    "long_description": "Dimetylpolysiloxan (silikon) används som antiskumningsmedel vid fritering och i drycker. Det passerar genom kroppen utan att absorberas.",
+    "meta_title": "E900 Dimetylpolysiloxan - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E900 (Dimetylpolysiloxan): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "8c9c7521-1b08-4bd8-b391-c3f5b6ad9120",
     "e_number": "E901",
     "name": "Bivax",
@@ -12407,6 +14901,50 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:54.192795+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "ee6bbd8d-12e4-4a4d-b9f3-5775e8eb035c",
+    "e_number": "E902",
+    "name": "Kandelillavax",
+    "common_name": null,
+    "slug": "e902-kandelillavax",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt vax",
+        "Skyddar frukt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frukt",
+        "products": [
+          "Vaxade äpplen",
+          "Citrusfrukter"
+        ],
+        "average_amount": "Ytbehandling"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kandelillavax (E902) är ett naturligt vax från kandelillaväxten för ytbehandling.",
+    "long_description": "Kandelillavax utvinns från bladen av kandelillaväxten (Euphorbia antisyphilitica). Används som glansmedel på frukt och godis.",
+    "meta_title": "E902 Kandelillavax - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E902 (Kandelillavax): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -12531,6 +15069,91 @@
     "is_published": true
   },
   {
+    "id": "477442df-9abd-4a78-bd8d-211cd86141b8",
+    "e_number": "E907",
+    "name": "Hydrogenerat poly-1-deken",
+    "common_name": null,
+    "slug": "e907-hydrogenerat-poly-1-deken",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Skyddar frukt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frukt",
+        "products": [
+          "Vaxad frukt"
+        ],
+        "average_amount": "Ytbehandling"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Hydrogenerat poly-1-deken (E907) är ett syntetiskt vax för ytbehandling.",
+    "long_description": "Hydrogenerat poly-1-deken används som ytbehandlingsmedel och glansmedel på frukt och godis.",
+    "meta_title": "E907 Hydrogenerat poly-1-deken - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E907 (Hydrogenerat poly-1-deken): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "08207de2-592a-4ba8-90a8-7b03b1879b0a",
+    "e_number": "E914",
+    "name": "Oxiderat polyetylenvax",
+    "common_name": null,
+    "slug": "e914-oxiderat-polyetylenvax",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Skyddar frukt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frukt",
+        "products": [
+          "Vaxade citrusfrukter",
+          "Äpplen"
+        ],
+        "average_amount": "Ytbehandling"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Oxiderat polyetylenvax (E914) är ett syntetiskt vax för ytbehandling av frukt.",
+    "long_description": "Oxiderat polyetylenvax används som glansmedel på frukt för att skydda mot uttorkning och förbättra utseende.",
+    "meta_title": "E914 Oxiderat polyetylenvax - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E914 (Oxiderat polyetylenvax): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "4b5ba028-d686-4130-8ea1-b728c546a092",
     "e_number": "E920",
     "name": "L-cystein",
@@ -12555,6 +15178,428 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:56.130558+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "4ad3d227-aedd-4dac-a0fa-d9112d15b026",
+    "e_number": "E927b",
+    "name": "Karbamid",
+    "common_name": null,
+    "slug": "e927b-karbamid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Naturligt i kroppen"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Tuggummi",
+        "products": [
+          "Sockerfritt tuggummi"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Karbamid (E927b) är urea som används som jäsmedel i tuggummi.",
+    "long_description": "Karbamid (urea) förekommer naturligt i kroppen. I livsmedel används det begränsat, främst i sockerfritt tuggummi.",
+    "meta_title": "E927b Karbamid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E927b (Karbamid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c6f9ef0a-708d-4296-8f14-6d4aafe8b56a",
+    "e_number": "E938",
+    "name": "Argon",
+    "common_name": null,
+    "slug": "e938-argon",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert",
+    "health_effects": {
+      "benefits": [
+        "Skyddar mot oxidation"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Förpackat",
+        "products": [
+          "Modifierad atmosfär-förpackning"
+        ],
+        "average_amount": "Gas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Argon (E938) är en inert ädelgas som används som förpackningsgas.",
+    "long_description": "Argon är en ädelgas som är helt inert och icke-reaktiv. Används som förpackningsgas för att skydda livsmedel från oxidation.",
+    "meta_title": "E938 Argon - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E938 (Argon): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "d6ce95d3-bf32-4c3d-8728-fde4dfd76bb9",
+    "e_number": "E939",
+    "name": "Helium",
+    "common_name": null,
+    "slug": "e939-helium",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert",
+    "health_effects": {
+      "benefits": [],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Förpackat",
+        "products": [
+          "Specialförpackning"
+        ],
+        "average_amount": "Gas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Helium (E939) är en inert ädelgas som används i livsmedelsindustrin.",
+    "long_description": "Helium är en ädelgas som är helt inert. Används sällan i livsmedel men kan förekomma som förpackningsgas.",
+    "meta_title": "E939 Helium - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E939 (Helium): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "93b012d0-1163-4b52-8d16-90950b8d5286",
+    "e_number": "E941",
+    "name": "Kväve",
+    "common_name": null,
+    "slug": "e941-kvave",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert, naturlig gas",
+    "health_effects": {
+      "benefits": [
+        "Förlänger hållbarhet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Förpackat",
+        "products": [
+          "Chipspåsar",
+          "Köttförpackningar",
+          "Bröd"
+        ],
+        "average_amount": "Gas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kväve (E941) är en inert gas som utgör 78% av luften, används som förpackningsgas.",
+    "long_description": "Kväve är den vanligaste gasen i atmosfären. Används som förpackningsgas för att förlänga hållbarhet och förhindra oxidation.",
+    "meta_title": "E941 Kväve - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E941 (Kväve): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "89993bdb-1e35-4ca4-bb2d-7fef01d4e7ad",
+    "e_number": "E942",
+    "name": "Dikväveoxid",
+    "common_name": null,
+    "slug": "e942-dikvaveoxid",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i livsmedel",
+    "health_effects": {
+      "benefits": [
+        "Drivgas"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Mejeri",
+        "products": [
+          "Vispgrädde",
+          "Gräddsifon"
+        ],
+        "average_amount": "Gas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Dikväveoxid (E942) är lustgas som används som drivgas för grädde.",
+    "long_description": "Dikväveoxid (lustgas) används som drivgas i gräddsifoner och som förpackningsgas. Helt säkert i livsmedelsanvändning.",
+    "meta_title": "E942 Dikväveoxid - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E942 (Dikväveoxid): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "37e4606d-81a8-4285-aed6-50b6ca2340f3",
+    "e_number": "E943a",
+    "name": "Butan",
+    "common_name": null,
+    "slug": "e943a-butan",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i livsmedel",
+    "health_effects": {
+      "benefits": [
+        "Drivgas"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Spray",
+        "products": [
+          "Matlagningsspray",
+          "Smörspray"
+        ],
+        "average_amount": "Avdunstar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Butan (E943a) är en drivgas som används i sprayförpackningar.",
+    "long_description": "Butan används som drivgas i livsmedelssprayer. Det avdunstar snabbt och lämnar inga rester i produkten.",
+    "meta_title": "E943a Butan - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E943a (Butan): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "164bf3e5-4b56-45a3-8313-46a8249c57e1",
+    "e_number": "E943b",
+    "name": "Isobutan",
+    "common_name": null,
+    "slug": "e943b-isobutan",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i livsmedel",
+    "health_effects": {
+      "benefits": [
+        "Drivgas"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Spray",
+        "products": [
+          "Matlagningsspray"
+        ],
+        "average_amount": "Avdunstar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Isobutan (E943b) är en drivgas som används i sprayförpackningar.",
+    "long_description": "Isobutan är en isomer av butan som används som drivgas i livsmedelsspray. Avdunstar snabbt.",
+    "meta_title": "E943b Isobutan - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E943b (Isobutan): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "141f7fe0-6ba5-434f-ab27-c23ada961453",
+    "e_number": "E944",
+    "name": "Propan",
+    "common_name": null,
+    "slug": "e944-propan",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i livsmedel",
+    "health_effects": {
+      "benefits": [
+        "Drivgas"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Spray",
+        "products": [
+          "Matlagningsspray"
+        ],
+        "average_amount": "Avdunstar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Propan (E944) är en drivgas som används i livsmedelsspray.",
+    "long_description": "Propan används som drivgas i livsmedelssprayer och avdunstar helt vid användning.",
+    "meta_title": "E944 Propan - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E944 (Propan): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "04dafde8-ff60-4f26-9df3-d7ffbf7400e5",
+    "e_number": "E948",
+    "name": "Syre",
+    "common_name": null,
+    "slug": "e948-syre",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Helt säkert, naturlig gas",
+    "health_effects": {
+      "benefits": [
+        "Bevarar köttfärg"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Förpackat kött",
+        "products": [
+          "Färskt kött",
+          "Fisk"
+        ],
+        "average_amount": "Gas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Syre (E948) är naturligt syre som används för förpackning och oxidation.",
+    "long_description": "Syre (O2) används i modifierad atmosfär-förpackning för att bevara färg på kött och fisk.",
+    "meta_title": "E948 Syre - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E948 (Syre): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "11a42c9f-67c9-4edf-98ab-b18fad495910",
+    "e_number": "E949",
+    "name": "Väte",
+    "common_name": null,
+    "slug": "e949-vate",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert, inga rester",
+    "health_effects": {
+      "benefits": [],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Fetter",
+        "products": [
+          "Härdade fetter",
+          "Margarin"
+        ],
+        "average_amount": "Inga rester"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Väte (E949) är en naturlig gas som används i livsmedelstillverkning.",
+    "long_description": "Väte används vid hydrogenering av fetter och oljor. I slutprodukten finns inga rester av gasen.",
+    "meta_title": "E949 Väte - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E949 (Väte): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -13028,6 +16073,94 @@
     "is_published": true
   },
   {
+    "id": "3e5785b9-b732-483f-97b1-caa2e209c650",
+    "e_number": "E957",
+    "name": "Taumatin",
+    "common_name": null,
+    "slug": "e957-taumatin",
+    "category": "Sötningsmedel",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Positiv",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn, naturligt protein",
+    "health_effects": {
+      "benefits": [
+        "Naturligt sötningsmedel",
+        "Proteinbaserat"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Sötningsmedel",
+        "products": [
+          "Sockerfria produkter",
+          "Tuggummi"
+        ],
+        "average_amount": "Mycket små mängder"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Taumatin (E957) är ett naturligt proteinsötningsmedel från katemfefrukten.",
+    "long_description": "Taumatin utvinns från frukten av den västafrikanska växten Thaumatococcus daniellii. Det är 2000-3000 gånger sötare än socker.",
+    "meta_title": "E957 Taumatin - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E957 (Taumatin): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "1d697f21-1413-4285-bf1f-ea784f09441b",
+    "e_number": "E959",
+    "name": "Neohesperidin DC",
+    "common_name": null,
+    "slug": "e959-neohesperidin-dc",
+    "category": "Sötningsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Mycket sött",
+        "Från citrus"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Sötningsmedel",
+        "products": [
+          "Sockerfria drycker",
+          "Tuggummi"
+        ],
+        "average_amount": "Mycket små mängder"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Neohesperidin DC (E959) är ett sötningsmedel framställt från citrusfrukter.",
+    "long_description": "Neohesperidin DC framställs genom kemisk modifiering av neohesperidin som finns naturligt i citrusfrukter. 1500 gånger sötare än socker.",
+    "meta_title": "E959 Neohesperidin DC - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E959 (Neohesperidin DC): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
     "id": "bca3ecb4-7683-46c6-bd31-30a4d8361dcf",
     "e_number": "E960",
     "name": "Steviolglykosider",
@@ -13095,6 +16228,139 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:53.953193+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "c84d28bc-e5b0-4094-a634-18cb00966704",
+    "e_number": "E960a",
+    "name": "Steviolglykosider från Stevia",
+    "common_name": null,
+    "slug": "e960a-steviolglykosider-fran-stevia",
+    "category": "Sötningsmedel",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt sötningsmedel",
+        "Kalorisnålt",
+        "Tandvänligt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Sötningsmedel",
+        "products": [
+          "Stevia-tabletter",
+          "Sockerfria drycker",
+          "Light-produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Steviolglykosider från Stevia (E960a) är naturliga sötningsmedel från steviaplantan.",
+    "long_description": "Steviolglykosider utvinns från bladen av Stevia rebaudiana. De är 200-300 gånger sötare än socker och kalorisnåla.",
+    "meta_title": "E960a Steviolglykosider från Stevia - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E960a (Steviolglykosider från Stevia): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "b23826a2-c346-4422-83d7-bf4fe9b8f7e2",
+    "e_number": "E960c",
+    "name": "Enzymatiskt framställda steviolglykosider",
+    "common_name": null,
+    "slug": "e960c-enzymatiskt-framstallda-steviolglykosider",
+    "category": "Sötningsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Förbättrad smak vs stevia",
+        "Kalorisnålt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Sötningsmedel",
+        "products": [
+          "Sockerfria drycker",
+          "Light-produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Enzymatiskt framställda steviolglykosider (E960c) är modifierade stevia-sötningsmedel.",
+    "long_description": "E960c framställs genom enzymatisk modifiering av steviolglykosider för att förbättra smakprofilen och minska bitterhet.",
+    "meta_title": "E960c Enzymatiskt framställda steviolglykosider - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E960c (Enzymatiskt framställda steviolglykosider): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "d116af05-d030-4f2c-b87a-edce0f1b5b8f",
+    "e_number": "E960d",
+    "name": "Glukosylerade steviolglykosider",
+    "common_name": null,
+    "slug": "e960d-glukosylerade-steviolglykosider",
+    "category": "Sötningsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Sockerlikt smak",
+        "Kalorisnålt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Sötningsmedel",
+        "products": [
+          "Sockerfria produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Glukosylerade steviolglykosider (E960d) är sockermodifierade stevia-sötningsmedel.",
+    "long_description": "E960d skapas genom att binda glukos till steviolglykosider, vilket ger en smak närmre socker utan bitter eftersmak.",
+    "meta_title": "E960d Glukosylerade steviolglykosider - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E960d (Glukosylerade steviolglykosider): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   },
   {
@@ -13430,6 +16696,1488 @@
     "livsmedelsverket_data": null,
     "created_at": "2026-02-05T09:11:56.589925+00:00",
     "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "5d13be5c-0292-4e05-a5aa-e2506a3fe827",
+    "e_number": "E999",
+    "name": "Kvillajaextrakt",
+    "common_name": null,
+    "slug": "e999-kvillajaextrakt",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Naturligt skumbildande"
+      ],
+      "documented": [],
+      "suspected": [
+        "Mag-tarmirritation vid höga doser"
+      ],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Drycker",
+        "products": [
+          "Tonic water",
+          "Cider"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Kvillajaextrakt (E999) är ett naturligt skumbildningsmedel från quillajaträdet.",
+    "long_description": "Kvillajaextrakt utvinns från barken av quillajaträdet (Quillaja saponaria). Det innehåller saponiner som ger skummande egenskaper.",
+    "meta_title": "E999 Kvillajaextrakt - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E999 (Kvillajaextrakt): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "06c11842-faf1-4168-a8b2-27fecf461655",
+    "e_number": "E1103",
+    "name": "Invertas",
+    "common_name": "Invertase enzyme",
+    "slug": "e1103-invertas",
+    "category": "Enzym",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "EFSA",
+    "children_note": "Mycket säkert för barn. Naturligt enzym som också finns i kroppen.",
+    "health_effects": {
+      "benefits": [
+        "Naturligt enzym",
+        "Förbättrar sockeromvandling",
+        "Traditionellt säkert"
+      ],
+      "suspected": [],
+      "documented": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Godis",
+        "products": [
+          "Chokladtryffel",
+          "Fondant",
+          "Kremfyllning"
+        ],
+        "average_amount": "Variable"
+      },
+      {
+        "category": "Bakverk",
+        "products": [
+          "Kakor",
+          "Tårtor",
+          "Konfektyr"
+        ],
+        "average_amount": "0.01-0.1%"
+      },
+      {
+        "category": "Honung-produkter",
+        "products": [
+          "Konstgjord honung",
+          "Sirap"
+        ],
+        "average_amount": "Variable"
+      }
+    ],
+    "avoidance_tips": [
+      "Inga försiktighetsåtgärder - naturligt enzym"
+    ],
+    "natural_alternatives": [
+      "Naturlig honung (innehåller invertas)",
+      "Jäst (producerar invertas)",
+      "Naturlig enzymatisk process"
+    ],
+    "short_description": "Invertas (E1103) är ett naturligt enzym som omvandlar sockerarter och är helt säkert.",
+    "long_description": "Invertas (E1103) är ett naturligt enzym som omvandlar sackaros till glukos och fruktos. Det förekommer naturligt i jäst, honung och även i människokroppen. Används i konfektindustrin för att skapa mjukare texturer och förhindra sockerkristallisering. Helt säkert eftersom det är ett naturligt enzym.",
+    "meta_title": "E1103 Invertas - Naturligt Enzym för Sockeromsättning i Konfektyr",
+    "meta_description": "E1103 (Invertas): Naturligt enzym för sockeromsättning, finns i honung och kroppen, säker för alla. ✓ Naturligt ✓ Enzym ✓ Säker",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T09:11:53.953193+00:00",
+    "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "d3fb19c1-db2e-4dec-a457-9b7e963266ab",
+    "e_number": "E1105",
+    "name": "Lysozym",
+    "common_name": null,
+    "slug": "e1105-lysozym",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Undvik vid äggallergi",
+    "health_effects": {
+      "benefits": [
+        "Naturligt antimikrobiellt"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": [
+        "Äggallergiker"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Ost",
+        "products": [
+          "Hårdost",
+          "Vin"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [
+      "Undvik vid äggallergi"
+    ],
+    "natural_alternatives": [
+      "Andra naturliga konserveringsmedel"
+    ],
+    "short_description": "Lysozym (E1105) är ett naturligt enzym som finns i ägg och saliv.",
+    "long_description": "Lysozym är ett naturligt antimikrobiellt enzym som finns i ägg, tårar och saliv. Används som konserveringsmedel, särskilt i ost och vin.",
+    "meta_title": "E1105 Lysozym - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1105 (Lysozym): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "80f407b5-94df-416c-a7ba-00cdeaa5aea5",
+    "e_number": "E1200",
+    "name": "Polydextros",
+    "common_name": "Polydextrose",
+    "slug": "e1200-polydextros",
+    "category": "Förtjockningsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "EFSA",
+    "children_note": "Kan orsaka magbesvär vid höga doser men är prebiotiskt och fiberlikt.",
+    "health_effects": {
+      "benefits": [
+        "Låg kaloriinnehåll",
+        "Prebiotisk effekt",
+        "Fiberliknande"
+      ],
+      "suspected": [],
+      "documented": [
+        "Laxerande effekt vid höga doser",
+        "Gasbildning"
+      ],
+      "risk_groups": [
+        "Personer med IBS",
+        "Känsliga mag-tarmsystem"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Dietprodukter",
+        "products": [
+          "Light-produkter",
+          "Fiberbar"
+        ],
+        "average_amount": "1-10g/portion"
+      },
+      {
+        "category": "Godis",
+        "products": [
+          "Sockerfritt godis",
+          "Diabetikergodis"
+        ],
+        "average_amount": "2-15g/100g"
+      },
+      {
+        "category": "Bakverk",
+        "products": [
+          "Fiber-berikat bröd"
+        ],
+        "average_amount": "1-5%"
+      }
+    ],
+    "avoidance_tips": [
+      "Börja med små mängder för att undvika magbesvär",
+      "Begränsa till <15g per dag initialt",
+      "Drick mycket vatten",
+      "Bra som fiberersättning men gradvis introduktion"
+    ],
+    "natural_alternatives": [
+      "Naturliga fibrer",
+      "Pektin (E440)",
+      "Inulin",
+      "Psyllium"
+    ],
+    "short_description": "Polydextros (E1200) är en syntetisk fiber med låg kaloriinnehåll som kan orsaka magbesvär.",
+    "long_description": "Polydextros (E1200) är en syntetisk fiber med endast 1 kalori per gram jämfört med 4 för vanligt socker. Det har prebiotiska egenskaper och kan hjälpa tarmhälsan, men kan orsaka gasbildning och magbesvär vid höga doser. Används ofta i dietprodukter som fiber-ersättning.",
+    "meta_title": "E1200 Polydextros - Syntetisk Fiber med Prebiotiska Fördelar",
+    "meta_description": "E1200 (Polydextros): Syntetisk låg-kalorifiber, prebiotiska fördelar, magbesvär vid höga doser, dietprodukter. ✓ Fiber ✓ Låg-kalori ✓ Prebiotisk",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T09:11:54.192795+00:00",
+    "updated_at": "2026-02-05T09:12:01.090153+00:00",
+    "is_published": true
+  },
+  {
+    "id": "8c1355a7-5c2d-4230-93a5-355d8889d929",
+    "e_number": "E1201",
+    "name": "Polyvinylpyrrolidon",
+    "common_name": null,
+    "slug": "e1201-polyvinylpyrrolidon",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert, absorberas inte",
+    "health_effects": {
+      "benefits": [
+        "Klarning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Drycker",
+        "products": [
+          "Vin",
+          "Öl",
+          "Juice"
+        ],
+        "average_amount": "Avlägsnas"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyvinylpyrrolidon (E1201) är ett syntetiskt polymer för klaring och tabletter.",
+    "long_description": "Polyvinylpyrrolidon (PVP) används som klarningsmedel i drycker och som bindemedel i tabletter. Det absorberas inte av kroppen.",
+    "meta_title": "E1201 Polyvinylpyrrolidon - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1201 (Polyvinylpyrrolidon): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c9e32b23-08ff-474b-bbe1-b120b318b8af",
+    "e_number": "E1202",
+    "name": "Polyvinylpolypyrrolidon",
+    "common_name": null,
+    "slug": "e1202-polyvinylpolypyrrolidon",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert, avlägsnas från produkten",
+    "health_effects": {
+      "benefits": [
+        "Avlägsnar bitterhet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Drycker",
+        "products": [
+          "Öl",
+          "Vin",
+          "Juice"
+        ],
+        "average_amount": "Avlägsnas helt"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyvinylpolypyrrolidon (E1202) är ett olösligt polymer för dryckesklaring.",
+    "long_description": "PVPP är en olöslig form av PVP som används för att avlägsna tanniner ur drycker. Det filtreras bort helt.",
+    "meta_title": "E1202 Polyvinylpolypyrrolidon - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1202 (Polyvinylpolypyrrolidon): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a839de0c-087d-4596-96f8-55fb89082560",
+    "e_number": "E1203",
+    "name": "Polyvinylalkohol",
+    "common_name": null,
+    "slug": "e1203-polyvinylalkohol",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Filmbildare"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Tabletter",
+          "Vitaminer"
+        ],
+        "average_amount": "Ytbehandling"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyvinylalkohol (E1203) är ett syntetiskt polymer för ytbehandling av tabletter.",
+    "long_description": "Polyvinylalkohol används som filmbildare för dragering av tabletter och kosttillskott.",
+    "meta_title": "E1203 Polyvinylalkohol - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1203 (Polyvinylalkohol): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "1eeebc7a-d7d0-4371-ac3c-b88cfd1ae3c5",
+    "e_number": "E1204",
+    "name": "Pullulan",
+    "common_name": null,
+    "slug": "e1204-pullulan",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig",
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt",
+        "Biologiskt nedbrytbart"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Vegetariska kapslar"
+        ],
+        "average_amount": "Kapselmaterial"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Pullulan (E1204) är en naturlig polysackarid från svampen Aureobasidium pullulans.",
+    "long_description": "Pullulan är en naturlig polysackarid som produceras av en svamp. Används som filmbildare och kapselsmaterial.",
+    "meta_title": "E1204 Pullulan - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1204 (Pullulan): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a5b5f3a4-a7dc-44c3-965c-d7d0944af31c",
+    "e_number": "E1205",
+    "name": "Basisk metakrylatsampolymer",
+    "common_name": null,
+    "slug": "e1205-basisk-metakrylatsampolymer",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Skyddar verksamma ämnen"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Läkemedel",
+        "products": [
+          "Enterodragerade tabletter"
+        ],
+        "average_amount": "Dragering"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Basisk metakrylatsampolymer (E1205) är ett polymer för tablettdragering.",
+    "long_description": "E1205 används som enteriskt drageringsmedel som skyddar tabletter från magsyra.",
+    "meta_title": "E1205 Basisk metakrylatsampolymer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1205 (Basisk metakrylatsampolymer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "8b1ce6a8-4fb9-4c91-9cae-43ebeb55cbac",
+    "e_number": "E1206",
+    "name": "Neutral metakrylatsampolymer",
+    "common_name": null,
+    "slug": "e1206-neutral-metakrylatsampolymer",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Snabb upplösning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Läkemedel",
+        "products": [
+          "Dragerade tabletter"
+        ],
+        "average_amount": "Dragering"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Neutral metakrylatsampolymer (E1206) är ett polymer för snabb tablettdragering.",
+    "long_description": "E1206 är en neutral metakrylatsampolymer som ger snabb upplösning av tablettdragering.",
+    "meta_title": "E1206 Neutral metakrylatsampolymer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1206 (Neutral metakrylatsampolymer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "13318a90-f9ac-47cc-9981-f2c900f57405",
+    "e_number": "E1207",
+    "name": "Anjonisk metakrylatsampolymer",
+    "common_name": null,
+    "slug": "e1207-anjonisk-metakrylatsampolymer",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Tarmlöslig dragering"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Läkemedel",
+        "products": [
+          "Enterodragerade kapslar"
+        ],
+        "average_amount": "Dragering"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Anjonisk metakrylatsampolymer (E1207) är ett polymer för tarmlöslig dragering.",
+    "long_description": "E1207 används som drageringsmedel som löses upp i tarmens basiska miljö.",
+    "meta_title": "E1207 Anjonisk metakrylatsampolymer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1207 (Anjonisk metakrylatsampolymer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "22692afd-b6f2-44e5-97ff-f64ba2e2da94",
+    "e_number": "E1208",
+    "name": "Polyvinylpyrrolidon-vinylacetatsampolymer",
+    "common_name": null,
+    "slug": "e1208-polyvinylpyrrolidon-vinylacetatsampolymer",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Bindemedel"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Tabletter"
+        ],
+        "average_amount": "Hjälpämne"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyvinylpyrrolidon-vinylacetatsampolymer (E1208) är ett bindemedel för tabletter.",
+    "long_description": "E1208 är en sampolymer av PVP och vinylacetat som används som bindemedel och filmbildare i tabletter.",
+    "meta_title": "E1208 Polyvinylpyrrolidon-vinylacetatsampolymer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1208 (Polyvinylpyrrolidon-vinylacetatsampolymer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "eb319ccd-9541-401a-bc5c-279cdc9eeb65",
+    "e_number": "E1209",
+    "name": "Polyvinylalkohol-polyetylenglykol-ymp-sampolymer",
+    "common_name": null,
+    "slug": "e1209-polyvinylalkohol-polyetylenglykol-ymp-sampolymer",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Fuktskydd"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Dragerade tabletter"
+        ],
+        "average_amount": "Dragering"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyvinylalkohol-polyetylenglykol-sampolymer (E1209) är ett filmbildande polymer.",
+    "long_description": "E1209 är en sampolymer som används som filmbildare för tablettdragering med fuktbarriäregenskaper.",
+    "meta_title": "E1209 Polyvinylalkohol-polyetylenglykol-ymp-sampolymer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1209 (Polyvinylalkohol-polyetylenglykol-ymp-sampolymer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "c65e590e-3dfe-438d-b98f-edb54d5bb0a1",
+    "e_number": "E1210",
+    "name": "Karbomer",
+    "common_name": null,
+    "slug": "e1210-karbomer",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Förtjockning"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Geler",
+          "Tabletter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Karbomer (E1210) är ett syntetiskt polymer för förtjockning och gelering.",
+    "long_description": "Karbomer är en polyakrylsyra-polymer som används som förtjockningsmedel och gelbildare.",
+    "meta_title": "E1210 Karbomer - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1210 (Karbomer): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "17fd5801-b342-4aa1-808a-25ac01b690eb",
+    "e_number": "E1404",
+    "name": "Oxiderad stärkelse",
+    "common_name": null,
+    "slug": "e1404-oxiderad-starkelse",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Förtjockning",
+        "Klarhet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Såser",
+        "products": [
+          "Dressingar",
+          "Såser",
+          "Puddingar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Oxiderad stärkelse (E1404) är kemiskt modifierad stärkelse för förtjockning.",
+    "long_description": "Oxiderad stärkelse framställs genom oxidering av naturlig stärkelse. Ger bättre klarhet och stabilitet än vanlig stärkelse.",
+    "meta_title": "E1404 Oxiderad stärkelse - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1404 (Oxiderad stärkelse): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "12960b88-690d-4420-b6a4-6794edc0ccd4",
+    "e_number": "E1410",
+    "name": "Monostärkelsefosfat",
+    "common_name": null,
+    "slug": "e1410-monostarkelsefosfat",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Frysstabilitet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frysprodukter",
+        "products": [
+          "Frysta såser",
+          "Frysta desserter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Monostärkelsefosfat (E1410) är fosfatmodifierad stärkelse för stabilitet.",
+    "long_description": "Monostärkelsefosfat framställs genom behandling av stärkelse med fosforsyra. Ger bättre stabilitet vid frysning.",
+    "meta_title": "E1410 Monostärkelsefosfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1410 (Monostärkelsefosfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a91d6193-e33d-4849-a5d3-84c8a6565924",
+    "e_number": "E1412",
+    "name": "Distärkelsefosfat",
+    "common_name": null,
+    "slug": "e1412-distarkelsefosfat",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Texturstabilitet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Såser",
+        "products": [
+          "Ketchup",
+          "Dressingar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Distärkelsefosfat (E1412) är tvärbunden stärkelse för bättre textur.",
+    "long_description": "Distärkelsefosfat skapas genom tvärbindning av stärkelse med fosfat. Ger ökad stabilitet mot syra, värme och mekanisk bearbetning.",
+    "meta_title": "E1412 Distärkelsefosfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1412 (Distärkelsefosfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "820dd94e-8393-4f0f-9130-369876d64043",
+    "e_number": "E1413",
+    "name": "Fosfaterat distärkelsefosfat",
+    "common_name": null,
+    "slug": "e1413-fosfaterat-distarkelsefosfat",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Maximal stabilitet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Såser",
+          "Barnmat"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Fosfaterat distärkelsefosfat (E1413) är dubbelt modifierad stärkelse.",
+    "long_description": "E1413 är en stärkelse som behandlats med både fosfat och ytterligare tvärbindning för maximal stabilitet.",
+    "meta_title": "E1413 Fosfaterat distärkelsefosfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1413 (Fosfaterat distärkelsefosfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "4c2e96cf-76fe-47c5-bf05-a29bbd6a85fd",
+    "e_number": "E1414",
+    "name": "Acetylerat distärkelsefosfat",
+    "common_name": null,
+    "slug": "e1414-acetylerat-distarkelsefosfat",
+    "category": "Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel",
+    "origin": null,
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Inget ADI-värde krävs - GRAS status",
+    "children_note": null,
+    "health_effects": {
+      "benefits": [
+        "Förbättrar textur",
+        "Stabil vid olika pH-värden"
+      ],
+      "suspected": [],
+      "documented": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Mejeriprodukter",
+        "products": [
+          "Yoghurt",
+          "Grädde",
+          "Dressingar"
+        ],
+        "average_amount": "0.5-2%"
+      },
+      {
+        "category": "Bakverk",
+        "products": [
+          "Kakor",
+          "Tårtor",
+          "Bröd"
+        ],
+        "average_amount": "1-3%"
+      }
+    ],
+    "avoidance_tips": [
+      "Välj produkter märkta som \"utan tillsatser\"",
+      "Använd naturliga förtjockningsmedel som majsstärkelse"
+    ],
+    "natural_alternatives": [
+      "Majsstärkelse",
+      "Tapiokastärkelse",
+      "Potatismjöl"
+    ],
+    "short_description": "Modifierad stärkelse som används som förtjockningsmedel och stabiliseringsmedel i livsmedel.",
+    "long_description": "E1414 är en kemiskt modifierad stärkelse som får sina egenskaper genom acetylering och fosfatering. Den används som förtjockningsmedel, stabiliseringsmedel och emulgeringsmedel i många livsmedel. Stärkelsen blir mer stabil mot värme, syra och mekanisk behandling.",
+    "meta_title": "E1414 Acetylerad distärkelsfosfat - Modifierad stärkelse som förtjockningsmedel",
+    "meta_description": "E1414 är en modifierad stärkelse som används som förtjockningsmedel i livsmedel. Läs om användning, säkerhet och alternativ.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T09:12:00.656872+00:00",
+    "updated_at": "2026-02-05T09:12:01.126991+00:00",
+    "is_published": true
+  },
+  {
+    "id": "151ccd68-d175-410f-9c55-9fb462db329b",
+    "e_number": "E1420",
+    "name": "Stärkelseacetat",
+    "common_name": null,
+    "slug": "e1420-starkelseacetat",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Klarhet",
+        "Stabilitet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Såser",
+        "products": [
+          "Klara såser",
+          "Dressingar"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Stärkelseacetat (E1420) är acetylerad stärkelse för klarhet och stabilitet.",
+    "long_description": "Stärkelseacetat framställs genom acetylering av stärkelse. Ger bättre klarhet och stabilitet i livsmedel.",
+    "meta_title": "E1420 Stärkelseacetat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1420 (Stärkelseacetat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "e799f94a-d2e9-498c-bfb4-0fa39e33da1b",
+    "e_number": "E1422",
+    "name": "Acetylerat distärkelseadipat",
+    "common_name": null,
+    "slug": "e1422-acetylerat-distarkelseadipat",
+    "category": "Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel",
+    "origin": null,
+    "risk_score": 1,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": "Inget ADI-värde krävs - GRAS status",
+    "children_note": null,
+    "health_effects": {
+      "benefits": [
+        "Förbättrar textur i frysta produkter",
+        "Förhindrar vattenseparation"
+      ],
+      "suspected": [],
+      "documented": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frysta produkter",
+        "products": [
+          "Fryst pizza",
+          "Frysta såser",
+          "Glass"
+        ],
+        "average_amount": "1-5%"
+      }
+    ],
+    "avoidance_tips": [
+      "Läs ingredienslistor på frysta produkter",
+      "Välj hem-tillagade alternativ"
+    ],
+    "natural_alternatives": [
+      "Majsstärkelse",
+      "Agar-agar",
+      "Xantangummi"
+    ],
+    "short_description": "Modifierad stärkelse som fungerar som förtjocknings- och stabiliseringsmedel, särskilt användbar i frysta produkter.",
+    "long_description": "E1422 är en kemiskt modifierad stärkelse som tål frysning och upptining bättre än vanlig stärkelse. Den används främst i frysta livsmedel där den bibehåller sin struktur och förhindrar vattenseparation.",
+    "meta_title": "E1422 Acetylerad distärkelsadipat - Modifierad stärkelse för frysta produkter",
+    "meta_description": "E1422 är en modifierad stärkelse som används i frysta livsmedel. Information om säkerhet, användning och naturliga alternativ.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T09:12:00.656872+00:00",
+    "updated_at": "2026-02-05T09:12:01.129543+00:00",
+    "is_published": true
+  },
+  {
+    "id": "8f86cffe-b411-43a7-bce3-5d395c27106d",
+    "e_number": "E1440",
+    "name": "Hydroxipropylstärkelse",
+    "common_name": null,
+    "slug": "e1440-hydroxipropylstarkelse",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Frysstabilitet",
+        "Klarhet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Frysprodukter",
+        "products": [
+          "Frysta desserter",
+          "Frysta såser"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Hydroxipropylstärkelse (E1440) är modifierad stärkelse med förbättrad klarhet.",
+    "long_description": "Hydroxipropylstärkelse ger bättre klarhet, frysstabilitet och textur än vanlig stärkelse.",
+    "meta_title": "E1440 Hydroxipropylstärkelse - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1440 (Hydroxipropylstärkelse): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "20f49fc9-acdb-4746-bd39-717513b79e4b",
+    "e_number": "E1442",
+    "name": "Hydroxipropyldistärkelsefosfat",
+    "common_name": null,
+    "slug": "e1442-hydroxipropyldistarkelsefosfat",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn, vanligt i barnmat",
+    "health_effects": {
+      "benefits": [
+        "Stabil textur",
+        "Vanlig i barnmat"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Barnmat",
+        "products": [
+          "Barnmat",
+          "Välling",
+          "Gröt"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Hydroxipropyldistärkelsefosfat (E1442) är dubbelt modifierad stärkelse.",
+    "long_description": "E1442 kombinerar hydroxipropylering och fosfat-tvärbindning för maximal stabilitet och klarhet.",
+    "meta_title": "E1442 Hydroxipropyldistärkelsefosfat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1442 (Hydroxipropyldistärkelsefosfat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "34d8ace3-cd92-4ee4-b2e6-5b8dbac1c2ea",
+    "e_number": "E1450",
+    "name": "Natriumoktenylsuccinatstärkelse",
+    "common_name": null,
+    "slug": "e1450-natriumoktenylsuccinatstarkelse",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande stärkelse"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Aromer",
+        "products": [
+          "Aromkapslar",
+          "Pulverdrycker"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Natriumoktenylsuccinatstärkelse (E1450) är modifierad stärkelse med emulgerande egenskaper.",
+    "long_description": "E1450 är en stärkelse modifierad med oktenylbärnstenssyra som ger emulgerande egenskaper. Används i kapslade aromer.",
+    "meta_title": "E1450 Natriumoktenylsuccinatstärkelse - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1450 (Natriumoktenylsuccinatstärkelse): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "adb00fc8-bfe5-4872-b33f-66ec7879c9d5",
+    "e_number": "E1451",
+    "name": "Acetylerad oxiderad stärkelse",
+    "common_name": null,
+    "slug": "e1451-acetylerad-oxiderad-starkelse",
+    "category": "Emulgeringsmedel",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert för barn",
+    "health_effects": {
+      "benefits": [
+        "Kombinerad stabilitet"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Såser",
+        "products": [
+          "Klara såser",
+          "Desserter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Acetylerad oxiderad stärkelse (E1451) är dubbelt modifierad stärkelse.",
+    "long_description": "E1451 kombinerar acetylering och oxidering för förbättrad klarhet och stabilitet.",
+    "meta_title": "E1451 Acetylerad oxiderad stärkelse - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1451 (Acetylerad oxiderad stärkelse): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "23dc1f2d-b289-4d20-9ee4-82299dcb9731",
+    "e_number": "E1452",
+    "name": "Stärkelsealuminiumoktenylsuccinat",
+    "common_name": null,
+    "slug": "e1452-starkelsealuminiumoktenylsuccinat",
+    "category": "Emulgeringsmedel",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn på grund av aluminium",
+    "health_effects": {
+      "benefits": [
+        "Emulgerande"
+      ],
+      "documented": [
+        "Aluminiuminnehåll"
+      ],
+      "suspected": [],
+      "risk_groups": [
+        "Barn",
+        "Njursjuka"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Processat",
+        "products": [
+          "Kapslade aromer"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Stärkelsealuminiumoktenylsuccinat (E1452) är aluminiuminnehållande modifierad stärkelse.",
+    "long_description": "E1452 innehåller aluminium och används som emulgerande stärkelse. Aluminiuminnehållet bör begränsas.",
+    "meta_title": "E1452 Stärkelsealuminiumoktenylsuccinat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1452 (Stärkelsealuminiumoktenylsuccinat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "3e22810b-ae50-4b72-8f7d-f445deaa60cc",
+    "e_number": "E1505",
+    "name": "Trietylcitrat",
+    "common_name": null,
+    "slug": "e1505-trietylcitrat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Mjukgörare"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Dragerade tabletter"
+        ],
+        "average_amount": "Hjälpämne"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Trietylcitrat (E1505) är en ester av citronsyra som används som mjukgörare.",
+    "long_description": "Trietylcitrat fungerar som mjukgörare i tablettdrageringar och som skumstabilisator i äggprodukter.",
+    "meta_title": "E1505 Trietylcitrat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1505 (Trietylcitrat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "434bff8d-8095-49ce-91b3-a8e1b680476b",
+    "e_number": "E1517",
+    "name": "Glyceryldiacetat",
+    "common_name": null,
+    "slug": "e1517-glyceryldiacetat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Lösningsmedel för aromer"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Aromer",
+        "products": [
+          "Arombaserade produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Glyceryldiacetat (E1517) är en ester av glycerol som används som lösningsmedel.",
+    "long_description": "Glyceryldiacetat (diacetin) används som lösningsmedel och bärare för aromer i livsmedel.",
+    "meta_title": "E1517 Glyceryldiacetat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1517 (Glyceryldiacetat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "a4683273-bd07-41d9-88b6-2b9a403abbc9",
+    "e_number": "E1518",
+    "name": "Glyceryltriacetat",
+    "common_name": null,
+    "slug": "e1518-glyceryltriacetat",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 2,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Säkert i normala mängder",
+    "health_effects": {
+      "benefits": [
+        "Lösningsmedel"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Aromer",
+        "products": [
+          "Tuggummi",
+          "Aromer"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Glyceryltriacetat (E1518) är triacetin, ett lösningsmedel och mjukgörare.",
+    "long_description": "Glyceryltriacetat (triacetin) används som lösningsmedel för aromer och som mjukgörare i drageringar.",
+    "meta_title": "E1518 Glyceryltriacetat - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1518 (Glyceryltriacetat): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "50369a49-2455-4dc5-9067-037b01587fb7",
+    "e_number": "E1519",
+    "name": "Benzylalkohol",
+    "common_name": null,
+    "slug": "e1519-benzylalkohol",
+    "category": "Övriga tillsatser",
+    "origin": "Naturlig/Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn",
+    "health_effects": {
+      "benefits": [
+        "Naturligt förekommande"
+      ],
+      "documented": [],
+      "suspected": [
+        "Allergiframkallande vid höga doser"
+      ],
+      "risk_groups": [
+        "Allergiker"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Aromer",
+        "products": [
+          "Aromatiserade produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Benzylalkohol (E1519) är en aromatisk alkohol som används som konserveringsmedel.",
+    "long_description": "Benzylalkohol förekommer naturligt i frukt och te. Används som konserveringsmedel och arombärare i begränsade mängder.",
+    "meta_title": "E1519 Benzylalkohol - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1519 (Benzylalkohol): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "73a371eb-7fa6-4116-8741-5cc40cdfd559",
+    "e_number": "E1520",
+    "name": "Propan-1,2-diol",
+    "common_name": null,
+    "slug": "e1520-propan-12-diol",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn",
+    "health_effects": {
+      "benefits": [
+        "Lösningsmedel"
+      ],
+      "documented": [],
+      "suspected": [
+        "Hudirritationer vid hög exponering"
+      ],
+      "risk_groups": [
+        "Allergiker"
+      ]
+    },
+    "common_products": [
+      {
+        "category": "Bakverk",
+        "products": [
+          "Kakor",
+          "Aromatiserade produkter"
+        ],
+        "average_amount": "Varierar"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Propan-1,2-diol (E1520) är propylenglykol, ett vanligt lösningsmedel.",
+    "long_description": "Propylenglykol används som lösningsmedel för aromer och färger, som mjukgörare och som fukthållande medel.",
+    "meta_title": "E1520 Propan-1,2-diol - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1520 (Propan-1,2-diol): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
+    "is_published": true
+  },
+  {
+    "id": "5bc24684-6073-41ff-b038-0b10b906cdfb",
+    "e_number": "E1521",
+    "name": "Polyetylenglykol",
+    "common_name": null,
+    "slug": "e1521-polyetylenglykol",
+    "category": "Övriga tillsatser",
+    "origin": "Syntetisk",
+    "risk_score": 3,
+    "longevity_impact": "Neutral",
+    "adi_value": null,
+    "adi_source": null,
+    "children_note": "Begränsa för barn",
+    "health_effects": {
+      "benefits": [
+        "Bärare för vitaminer"
+      ],
+      "documented": [],
+      "suspected": [],
+      "risk_groups": []
+    },
+    "common_products": [
+      {
+        "category": "Kosttillskott",
+        "products": [
+          "Dragerade tabletter",
+          "Vitaminkapslar"
+        ],
+        "average_amount": "Hjälpämne"
+      }
+    ],
+    "avoidance_tips": [],
+    "natural_alternatives": [],
+    "short_description": "Polyetylenglykol (E1521) är ett syntetiskt polymer som används som bärare.",
+    "long_description": "Polyetylenglykol (PEG) används som bärare för vitaminer och som drageringsmedel för tabletter.",
+    "meta_title": "E1521 Polyetylenglykol - Information och säkerhet | Vihandlar.se",
+    "meta_description": "Allt om E1521 (Polyetylenglykol): Användning, säkerhet och hälsoeffekter.",
+    "scientific_studies": null,
+    "livsmedelsverket_data": null,
+    "created_at": "2026-02-05T18:45:46.843Z",
+    "updated_at": "2026-02-05T18:45:46.843Z",
     "is_published": true
   }
 ]

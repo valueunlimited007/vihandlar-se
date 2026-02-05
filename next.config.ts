@@ -100,6 +100,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
+      // === Scanner redirects ===
+      {
+        source: "/e-amnen/scanner",
+        destination: "/skanner",
+        permanent: true,
+      },
+      {
+        source: "/scanner",
+        destination: "/skanner",
+        permanent: true,
+      },
+
       // === Inköpslista redirects ===
       {
         source: "/inkopslistor",

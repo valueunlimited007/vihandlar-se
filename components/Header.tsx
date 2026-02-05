@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Handla Mat", href: "/handla" },
   { name: "E-ämnen", href: "/e-amnen" },
+  { name: "Skanner", href: "/skanner" },
   { name: "Livsmedel", href: "/livsmedel" },
   { name: "Inköpslistor", href: "/inkopslista" },
-  { name: "Om oss", href: "/om" },
 ];
 
 export function Header() {

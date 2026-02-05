@@ -26,7 +26,7 @@
 | `/e-amnen` | `/e-amnen` | ✅ Identisk |
 | `/e-amnen/:slug` | `/e-amnen/[slug]` | ✅ Identisk (267 SSG) |
 | `/e-amnen/guide` | `/e-amnen/guide` | 🔜 Planerad |
-| `/e-amnen/scanner` | `/e-amnen/scanner` | 🔜 Planerad |
+| `/e-amnen/scanner` | `/skanner` | 🔄 301 redirect i Fas 6 |
 | `/e-amnen/alla` | `/e-amnen/alla` | 🔜 Planerad |
 | `/e-amnen/historik` | `/e-amnen/historik` | 🔜 Planerad |
 | `/e-amnen/nummer/:letter` | `/e-amnen/nummer/[letter]` | 🔜 Planerad |
@@ -73,17 +73,18 @@ Produktslugs i data inkluderar butikssuffix (t.ex. `produkt-namn-delitea`).
 | `/listor` | `/inkopslista` | 🔜 Planerad (redirect) |
 | `/listor/:slug` | `/inkopslista/mallar/[slug]` | ✅ Byggd i Fas 5 |
 
-## Scanner & Delning
+## Scanner
 
 | Gammal URL (Loveable) | Ny URL (Next.js) | Status |
 |---|---|---|
-| `/scan/:shareToken` | `/scan/[shareToken]` | 🔜 Planerad |
+| `/e-amnen/scanner` | `/skanner` | 🔄 301 redirect i Fas 6 |
+| `/scanner` | `/skanner` | 🔄 301 redirect i Fas 6 |
 
 ## API Routes
 
 | Gammal (Supabase) | Ny (Next.js) | Status |
 |---|---|---|
-| Supabase Edge: scan-e-numbers | `/api/scan` | 🔜 Planerad |
+| Supabase Edge: scan-e-numbers | `/api/scan` | ✅ Byggd i Fas 6 |
 | Supabase Edge: voice-to-text | `/api/voice` | 🔜 Planerad |
 | Intern affiliate redirect | `/api/redirect/[store]` | ✅ Byggd i Fas 4 |
 | Lista CRUD | `/api/lists/*` | ✅ Byggd i Fas 5 |
