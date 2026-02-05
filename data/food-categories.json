@@ -1,0 +1,62 @@
+[
+  {
+    "id": "c19f9a3b-304d-490f-bddd-cc88706d172a",
+    "name": "Bakning & Torrvaror",
+    "slug": "bakning-torrvaror",
+    "description": "Mjöl, socker, bakpulver och andra bakningsingredienser"
+  },
+  {
+    "id": "40b95eb7-eac1-454b-9eba-f056bbeaa19e",
+    "name": "Fisk & Skaldjur",
+    "slug": "fisk-skaldjur",
+    "description": "Fisk, skaldjur och andra havsfrukter"
+  },
+  {
+    "id": "c21f7f17-651e-437b-9ca3-e0a91ba6abee",
+    "name": "Frukt & Bär",
+    "slug": "frukt-bar",
+    "description": "Färsk frukt, bär och torkad frukt"
+  },
+  {
+    "id": "06c892a1-d2f3-43df-b809-33c119811b9a",
+    "name": "Grönsaker",
+    "slug": "gronsaker",
+    "description": "Färska grönsaker, rötter och bladgrönsaker"
+  },
+  {
+    "id": "08da7aca-d2c2-4db0-b262-bcaf30815414",
+    "name": "Kött",
+    "slug": "kott",
+    "description": "Kött från olika djur inklusive nöt, fläsk, kyckling och lamm"
+  },
+  {
+    "id": "c0a347e3-0b78-4814-8e39-839ecf2b98e3",
+    "name": "Kryddor & Örter",
+    "slug": "kryddor-orter",
+    "description": "Kryddor, örter och smaksättare"
+  },
+  {
+    "id": "fbc19209-9814-4362-9ced-7855e255455e",
+    "name": "Mejeri",
+    "slug": "mejeri",
+    "description": "Mjölkprodukter som mjölk, ost, yoghurt och smör"
+  },
+  {
+    "id": "2c7c4064-f779-4b6d-8e83-20c5f6b7f6a6",
+    "name": "Nötter & Frön",
+    "slug": "notter-fron",
+    "description": "Nötter, frön och kärnor"
+  },
+  {
+    "id": "cb9fa5b8-1928-44df-8641-1576fb4886ef",
+    "name": "Oljor & Vinäger",
+    "slug": "oljor-vinager",
+    "description": "Matoljor, vinäger och andra dressingar"
+  },
+  {
+    "id": "bdadaa86-8121-4744-8133-105a23139836",
+    "name": "Spannmål & Baljväxter",
+    "slug": "spannmal-baljvaxter",
+    "description": "Gryn, pasta, ris, linser och bönor"
+  }
+]

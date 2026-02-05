@@ -1,0 +1,28 @@
+{
+  "name": "VIHANDLAR.se",
+  "short_name": "VIHANDLAR.se",
+  "description": "Skapa och dela inköpslistor online i realtid med familj och vänner",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F1A200",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/faad1b7e-1166-4507-a2f1-6ee4197dcc04.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/faad1b7e-1166-4507-a2f1-6ee4197dcc04.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "productivity"],
+  "lang": "sv-SE",
+  "scope": "/",
+  "prefer_related_applications": false
+}

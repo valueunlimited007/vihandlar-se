@@ -1,0 +1,61 @@
+-- Add missing E-additives from Livsmedelsverket - Phase 2: More common additives
+
+INSERT INTO public.e_additives (e_number, name, common_name, slug, category, origin, risk_score, longevity_impact, adi_value, adi_source, short_description, long_description, meta_title, meta_description) VALUES
+
+-- More Color Additives (E100-199)
+('E105', 'Syragult', 'Fast Yellow AB', 'e105-syragult', 'Färgämne', 'Syntetisk', 7, 'Negativ', NULL, NULL, 'Gult syntetiskt färgämne som är förbjudet i många länder', 'Syragult är ett syntetiskt färgämne som är förbjudet i EU sedan många år på grund av hälsorisker. Det kan orsaka allergiska reaktioner och har kopplats till hyperaktivitet hos barn.', 'E105 Syragult - Förbjudet gult färgämne | Vihandlar.se', 'E105 Syragult är förbjudet i EU. Läs om varför detta gula färgämne anses farligt och vilka hälsorisker som finns.'),
+
+('E111', 'Orange GGN', 'Orange GGN', 'e111-orange-ggn', 'Färgämne', 'Syntetisk', 6, 'Negativ', NULL, NULL, 'Orange syntetiskt färgämne som är förbjudet i många länder', 'Orange GGN är ett syntetiskt orange färgämne som är förbjudet i EU på grund av potentiella hälsorisker. Det kan orsaka allergiska reaktioner och hudutslag.', 'E111 Orange GGN - Förbjudet orange färgämne | Vihandlar.se', 'E111 Orange GGN är förbjudet i EU. Läs om detta orange färgämnes hälsorisker och varför det inte är tillåtet.'),
+
+('E125', 'Scarlet GN', 'Ponceau SX', 'e125-scarlet-gn', 'Färgämne', 'Syntetisk', 7, 'Negativ', NULL, NULL, 'Rött syntetiskt färgämne som är förbjudet i många länder', 'Scarlet GN är ett rött syntetiskt färgämne som är förbjudet i EU på grund av säkerhetsbekymmer. Studier har visat kopplingar till allergiska reaktioner och potentiella cancerrisker.', 'E125 Scarlet GN - Förbjudet rött färgämne | Vihandlar.se', 'E125 Scarlet GN är förbjudet i EU. Läs om detta röda färgämnes hälsorisker och säkerhetsbekymmer.'),
+
+('E128', 'Röd 2G', 'Red 2G', 'e128-rod-2g', 'Färgämne', 'Syntetisk', 8, 'Negativ', NULL, NULL, 'Rött syntetiskt färgämne som är förbjudet i EU', 'Röd 2G var ett syntetiskt rött färgämne som förbjöds i EU 2007 efter att studier visade potentiella cancerrisker. Det användes tidigare i charkuteriprodukter och andra livsmedel.', 'E128 Röd 2G - Förbjudet cancerframkallande färgämne | Vihandlar.se', 'E128 Röd 2G förbjöds 2007 på grund av cancerrisker. Läs om detta farliga röda färgämne och dess historia.'),
+
+('E141', 'Klorofyllkopparkomplexx', 'Copper Chlorophyll', 'e141-klorofyllkoppar', 'Färgämne', 'Naturlig', 3, 'Neutral', 15.0, 'WHO/EFSA', 'Naturligt grönt färgämne från klorofyll med koppar', 'Klorofyllkopparkomplexx är ett naturligt grönt färgämne som framställs från klorofyll genom att ersätta magnesium med koppar. Det är mer stabilt än vanlig klorofyll och ger en vacker grön färg.', 'E141 Klorofyllkoppar - Naturligt grönt färgämne | Vihandlar.se', 'E141 Klorofyllkoppar är ett naturligt grönt färgämne från växter. Läs om säkerhet och användning av detta stabila färgämne.'),
+
+('E151', 'Briljantsvart BN', 'Brilliant Black BN', 'e151-briljantsvart', 'Färgämne', 'Syntetisk', 6, 'Negativ', 5.0, 'WHO/EFSA', 'Syntetiskt svart färgämne som kan orsaka allergier', 'Briljantsvart BN är ett syntetiskt svart färgämne som används i konfektyr och andra livsmedel. Det kan orsaka allergiska reaktioner hos känsliga personer och bör undvikas av astmatiker.', 'E151 Briljantsvart BN - Svart färgämne med allergirisk | Vihandlar.se', 'E151 Briljantsvart BN kan orsaka allergiska reaktioner. Läs om detta svarta färgämne och dess biverkningar.'),
+
+('E154', 'Brunfärgämne FK', 'Brown FK', 'e154-brunfargamne-fk', 'Färgämne', 'Syntetisk', 7, 'Negativ', NULL, NULL, 'Brunt syntetiskt färgämne med begränsad användning', 'Brunfärgämne FK är ett syntetiskt brunt färgämne som endast är tillåtet i vissa produkter som kippers (rökta sillar) i Storbritannien. Det har kopplats till allergiska reaktioner.', 'E154 Brunfärgämne FK - Begränsat brunt färgämne | Vihandlar.se', 'E154 Brunfärgämne FK har mycket begränsad användning. Läs om detta brunets färgämne och dess restriktioner.'),
+
+('E160d', 'Lykopin', 'Lycopene', 'e160d-lykopin', 'Färgämne', 'Naturlig', 1, 'Positiv', NULL, NULL, 'Naturligt rött färgämne från tomater med antioxidantegenskaper', 'Lykopin är ett naturligt rött färgämne som finns i tomater och andra röda frukter. Det har stark antioxidanteffekt och kan minska risken för hjärt-kärlsjukdomar och vissa cancerformer.', 'E160d Lykopin - Naturligt rött färgämne med hälsofördelar | Vihandlar.se', 'E160d Lykopin är ett hälsosamt rött färgämne från tomater. Läs om dess antioxidantegenskaper och hälsofördelar.'),
+
+('E161b', 'Lutein', 'Lutein', 'e161b-lutein', 'Färgämne', 'Naturlig', 1, 'Positiv', 2.0, 'WHO/EFSA', 'Naturligt gult färgämne som skydder ögonen', 'Lutein är ett naturligt gult färgämne som tillhör karotenoidfamiljen. Det är viktigt för ögonhälsan och kan minska risken för åldersrelaterad makuladegeneration. Finns naturligt i gröna bladgrönsaker.', 'E161b Lutein - Ögonvårdande gult färgämne | Vihandlar.se', 'E161b Lutein skyddar ögonen och är helt naturligt. Läs om detta gula färgämnes hälsofördelar för synen.'),
+
+-- More Preservatives (E200-299)
+('E213', 'Kalciumbenzoat', 'Calcium Benzoate', 'e213-kalciumbenzoat', 'Konserveringsmedel', 'Syntetisk', 4, 'Neutral', 5.0, 'WHO/EFSA', 'Kalciumsalt av benzoesyra, vanligt konserveringsmedel', 'Kalciumbenzoat är kalciumsaltet av benzoesyra och används som konserveringsmedel mot jäst, mögel och vissa bakterier. Det är vanligt i läskedrycker, sylt och andra sura livsmedel.', 'E213 Kalciumbenzoat - Vanligt konserveringsmedel | Vihandlar.se', 'E213 Kalciumbenzoat är ett säkert konserveringsmedel i läsk och sylt. Läs om användning och säkerhetsprofil.'),
+
+('E221', 'Natriumsulfit', 'Sodium Sulfite', 'e221-natriumsulfit', 'Konserveringsmedel', 'Syntetisk', 6, 'Negativ', 0.7, 'WHO/EFSA', 'Sulfitkonserveringsmedel som kan orsaka astmaanfall', 'Natriumsulfit används som konserveringsmedel och antioxidant, främst i vin och torkad frukt. Det kan orsaka allvarliga allergiska reaktioner hos sulfitallergiker och astmaanfall.', 'E221 Natriumsulfit - Astmarisk i vin och frukt | Vihandlar.se', 'E221 Natriumsulfit kan utlösa astmaanfall hos känsliga. Läs om detta konserveringsmedel och dess risker.'),
+
+('E223', 'Natriummetabisulfit', 'Sodium Metabisulfite', 'e223-natriummetabisulfit', 'Konserveringsmedel', 'Syntetisk', 6, 'Negativ', 0.7, 'WHO/EFSA', 'Stark sulfitkonserveringsmedel med astmarisk', 'Natriummetabisulfit är ett kraftfullt konserveringsmedel som används i vinframställning och andra processer. Det kan frigöra svaveldioxid och orsaka allergiska reaktioner hos känsliga personer.', 'E223 Natriummetabisulfit - Stark konserveringsmedel med risker | Vihandlar.se', 'E223 Natriummetabisulfit kan orsaka allvarliga allergiska reaktioner. Läs om detta starka konserveringsmedel.'),
+
+('E235', 'Natamycin', 'Natamycin', 'e235-natamycin', 'Konserveringsmedel', 'Naturlig', 4, 'Neutral', 0.3, 'WHO/EFSA', 'Naturlig antimykotikum från bakterier', 'Natamycin är ett naturligt antimykotikum som produceras av Streptomyces-bakterier. Det används främst på ytan av ostar för att förhindra mögelväxt och anses vara relativt säkert.', 'E235 Natamycin - Naturligt mögelstopp för ost | Vihandlar.se', 'E235 Natamycin är ett naturligt konserveringsmedel på ostyta. Läs om denna säkra antimykotikum.'),
+
+('E251', 'Natriumnitrat', 'Sodium Nitrate', 'e251-natriumnitrat', 'Konserveringsmedel', 'Syntetisk', 6, 'Negativ', 3.7, 'WHO/EFSA', 'Konserveringsmedel i kött som kan bilda nitrosaminer', 'Natriumnitrat används för att konservera kött och bidra till den rosa färgen i chark. Det kan omvandlas till nitrit i kroppen och bilda potentiellt cancerframkallande nitrosaminer.', 'E251 Natriumnitrat - Konserveringsmedel med cancerrisker | Vihandlar.se', 'E251 Natriumnitrat i chark kan bilda cancerframkallande ämnen. Läs om riskerna med detta konserveringsmedel.'),
+
+-- More Antioxidants (E300-399)
+('E302', 'Kalciumaskorbat', 'Calcium Ascorbate', 'e302-kalciumaskorbat', 'Antioxidant', 'Syntetisk', 2, 'Positiv', NULL, NULL, 'Kalciumsalt av C-vitamin, mild antioxidant', 'Kalciumaskorbat är kalciumsaltet av askorbinsyra (C-vitamin) och fungerar som antioxidant. Det är mindre surt än ren askorbinsyra och kan därför användas i känsligare tillämpningar.', 'E302 Kalciumaskorbat - Mild C-vitamin antioxidant | Vihandlar.se', 'E302 Kalciumaskorbat är en mild form av C-vitamin. Läs om denna skonsamma antioxidant och dess användning.'),
+
+('E304', 'Askorbylpalmitat', 'Ascorbyl Palmitate', 'e304-askorbylpalmitat', 'Antioxidant', 'Syntetisk', 3, 'Neutral', NULL, NULL, 'Fettlöslig form av C-vitamin', 'Askorbylpalmitat är en fettlöslig form av C-vitamin som skapas genom att kombinera askorbinsyra med palmitinsyra. Den fungerar som antioxidant i fetthaltiga produkter där vanlig C-vitamin inte är effektiv.', 'E304 Askorbylpalmitat - Fettlöslig C-vitamin | Vihandlar.se', 'E304 Askorbylpalmitat är fettlöslig C-vitamin för oljiga produkter. Läs om denna specialiserade antioxidant.'),
+
+('E311', 'Oktylgallat', 'Octyl Gallate', 'e311-oktylgallat', 'Antioxidant', 'Syntetisk', 6, 'Negativ', 2.5, 'WHO/EFSA', 'Syntetisk antioxidant som kan vara hormonstörande', 'Oktylgallat är en syntetisk antioxidant som används för att förhindra ranciditet i fetter. Det finns oro för att det kan ha hormonstörande effekter och orsaka allergiska reaktioner hos känsliga personer.', 'E311 Oktylgallat - Syntetisk antioxidant med hormonrisker | Vihandlar.se', 'E311 Oktylgallat kan störa hormoner. Läs om denna syntetiska antioxidant och dess potentiella risker.'),
+
+-- More Emulsifiers (E400-499)
+('E401', 'Natriumalginat', 'Sodium Alginate', 'e401-natriumalginat', 'Förtjockningsmedel', 'Naturlig', 2, 'Neutral', NULL, NULL, 'Naturlig förtjockare och gelbildare från tång', 'Natriumalginat utvinns från brunalger och används som naturlig förtjockare och gelbildare. Det kan binda vatten effektivt och skapar en mjuk gel. Används ofta i molekylär gastronomi.', 'E401 Natriumalginat - Naturlig gelbildare från alger | Vihandlar.se', 'E401 Natriumalginat är en säker gelbildare från havsalger. Läs om denna naturliga förtjockare och dess användning.'),
+
+('E405', 'Propylenglykolalginat', 'Propylene Glycol Alginate', 'e405-propylenglykolalginat', 'Emulgeringsmedel', 'Syntetisk', 4, 'Neutral', 25.0, 'WHO/EFSA', 'Modifierat alginat som fungerar som emulgeringsmedel', 'Propylenglykolalginat är en kemiskt modifierad form av alginat som fungerar som emulgeringsmedel och stabiliseringsmedel. Det hjälper till att blanda olja och vatten i produkter som dressingar.', 'E405 Propylenglykolalginat - Emulgeringsmedel från alginat | Vihandlar.se', 'E405 Propylenglykolalginat hjälper blanda olja och vatten. Läs om detta modifierade alginat.');
+
+-- Add health effects and common products for important new additives
+UPDATE public.e_additives SET 
+  health_effects = '{"documented": ["Astmaanfall", "Allergiska reaktioner"], "suspected": ["Hudutslag"], "risk_groups": ["Astmatiker", "Sulfitallergiker"]}',
+  common_products = '[{"category": "Vin", "products": ["Vitt vin", "Champagne"], "average_amount": "100-400mg per liter"}, {"category": "Torkad frukt", "products": ["Russin", "Aprikoser"], "average_amount": "1000-3000mg per kg"}]'
+WHERE e_number = 'E221';
+
+UPDATE public.e_additives SET 
+  health_effects = '{"documented": ["Ögonhälsa", "Antioxidant"], "benefits": ["Skyddar mot makuladegeneration", "Förbättrar syn"], "risk_groups": []}',
+  common_products = '[{"category": "Kosttillskott", "products": ["Ögonvitaminer"], "average_amount": "10-20mg per kapsel"}, {"category": "Färgade livsmedel", "products": ["Gula produkter"], "average_amount": "1-5mg per portion"}]'
+WHERE e_number = 'E161b';
+
+UPDATE public.e_additives SET 
+  health_effects = '{"documented": ["Antioxidant", "Hjärt-kärlhälsa"], "benefits": ["Minskar cancerrisker", "Skyddar hjärtat"], "risk_groups": []}',
+  common_products = '[{"category": "Tomatprodukter", "products": ["Ketchup", "Tomatsås"], "average_amount": "5-15mg per portion"}, {"category": "Kosttillskott", "products": ["Lykopin kapslar"], "average_amount": "10-30mg per kapsel"}]'
+WHERE e_number = 'E160d';

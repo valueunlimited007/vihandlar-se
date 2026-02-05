@@ -1,0 +1,26 @@
+# humans.txt — VIHANDLAR.se
+TEAM/OWNER/SITE/LOCATION/From
+- Owner: Value Unlimited
+- Site: https://vihandlar.se/
+- Contact: hej@vihandlar.se
+- Location: Sweden (Europe/Stockholm)
+- From: 2024 — built with love for simpler everyday shopping
+
+Last update: 2025/08/12
+
+FEATURES/TECHNICAL
+- JSON API: https://vihandlar.se/api/lists.json (5 min cache)
+- JSON API: https://vihandlar.se/api/lists/<slug>.json (5 min cache)
+- JSON API: https://vihandlar.se/api/health.json (5 min cache)
+- Dynamic sitemap via /sitemap.xml (Supabase Edge Function)
+- LLM-friendly (llms.txt, sitemap, structured data)
+- Regional: Romanian version → https://listacumparaturi.ro/
+
+Stack
+- Frontend: React (SPA), TypeScript, Vite, Tailwind
+- Backend APIs: Supabase Edge Functions (Deno)
+- Database: Supabase Postgres (RLS-enabled public reads)
+- Hosting: Lovable
+
+CHANGELOG
+- 2025-08-12: Launched public JSON API and dynamic sitemap for SEO + LLMs.

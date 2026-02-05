@@ -1,0 +1,290 @@
+-- Korrigerad batch med endast saknade E-ämnen
+-- Undviker dubbletter från tidigare migreringar
+
+INSERT INTO e_additives (
+  e_number, name, common_name, category, slug, 
+  short_description, long_description, risk_score, 
+  adi_value, adi_source, origin, health_effects, 
+  common_products, avoidance_tips, natural_alternatives,
+  children_note, longevity_impact
+) VALUES
+
+-- ENDAST SAKNADE E-NUMMER
+
+-- E308 - Gamma-tokoferol
+('E308', 'Gamma-tokoferol', 'Vitamin E gamma', 'Antioxidationsmedel', 'e308-gamma-tokoferol',
+'Naturlig form av vitamin E med antioxidantegenskaper.',
+'Gamma-tokoferol är en av de naturliga formerna av vitamin E och fungerar som antioxidant i livsmedel.',
+1, NULL, 'Quantum satis', 'Naturlig vitamin E',
+'{"positive": ["Vitamin E", "Naturligt antioxidant", "Hälsofördelaktigt"], "negative": [], "neutral": ["Sällan tillsatt"]}',
+'{"categories": ["Oljor", "Kosttillskott", "Nötter"], "note": "Naturlig vitamin E"}',
+ARRAY['Helt säkert och fördelaktigt'],
+ARRAY['Naturliga nötter', 'Solrosolja', 'Vetegroddar'],
+'Fördelaktigt för barn',
+'Positiv'),
+
+-- E309 - Delta-tokoferol
+('E309', 'Delta-tokoferol', 'Vitamin E delta', 'Antioxidationsmedel', 'e309-delta-tokoferol',
+'En av de naturliga formerna av vitamin E.',
+'Delta-tokoferol är en mindre vanlig form av naturlig vitamin E som används som antioxidant.',
+1, NULL, 'Quantum satis', 'Naturlig vitamin E',
+'{"positive": ["Naturlig vitamin E", "Antioxidant"], "negative": [], "neutral": ["Minst aktiv E-vitamin form"]}',
+'{"categories": ["Oljor", "Kosttillskott"], "note": "Naturlig men mindre aktiv"}',
+ARRAY['Helt säkert'],
+ARRAY['Naturliga E-vitaminkällor'],
+'Säkert för barn',
+'Positiv'),
+
+-- E332 - Kaliumcitrater
+('E332', 'Kaliumcitrater', 'Kaliumsalt av citronsyra', 'Antioxidationsmedel', 'e332-kaliumcitrat',
+'Kaliumsalt av citronsyra, antioxidant och pH-regulator.',
+'Kaliumcitrat fungerar som antioxidant och pH-regulator. Tillför kalium och har mild alkaliserande effekt.',
+2, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Kaliumkälla", "pH-regulator"], "negative": [], "neutral": ["Mild smakpåverkan"]}',
+'{"categories": ["Drycker", "Konserver", "Bakpulver"], "note": "pH-regulator"}',
+ARRAY['Säkert och kan vara fördelaktigt'],
+ARRAY['Naturlig citronsyra', 'Bananer (kalium)'],
+'Fördelaktigt för barn (kalium)',
+'Positiv'),
+
+-- E333 - Kalciumcitrater
+('E333', 'Kalciumcitrater', 'Kalciumsalt av citronsyra', 'Antioxidationsmedel', 'e333-kalciumcitrat',
+'Kalciumsalt av citronsyra för antioxidation och mineralförstärkning.',
+'Kalciumcitrat fungerar som antioxidant och är en bigtillgänglig kalciumkälla. Används både för konservering och näring.',
+1, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Kalciumkälla", "Bigtillgängligt", "Antioxidant"], "negative": [], "neutral": ["Kan påverka surhetsgrad"]}',
+'{"categories": ["Kosttillskott", "Fruktjuicer", "Funktionella livsmedel"], "note": "Näringstillskott"}',
+ARRAY['Fördelaktigt för kalciumintag'],
+ARRAY['Naturliga kalciumkällor som mjölk'],
+'Mycket fördelaktigt för barn',
+'Positiv'),
+
+-- E334 - L-Vinsyra
+('E334', 'L-Vinsyra', 'Naturlig vinsyra', 'Antioxidationsmedel', 'e334-l-vinsyra',
+'Naturlig syra från druvor med antioxidantegenskaper.',
+'L-Vinsyra är en naturlig syra som finns i druvor och används som antioxidant och surhetsreglerare.',
+2, NULL, 'Quantum satis', 'Naturlig (druvor)',
+'{"positive": ["Naturlig från druvor", "pH-regulator"], "negative": [], "neutral": ["Syrlig smak"]}',
+'{"categories": ["Vin", "Bakpulver", "Godis"], "note": "Naturlig druvsyra"}',
+ARRAY['Helt säkert och naturligt'],
+ARRAY['Färska druvor', 'Citronsyra'],
+'Säkert för barn',
+'Positiv'),
+
+-- E335 - Natriumtartrater
+('E335', 'Natriumtartrater', 'Natriumsalt av vinsyra', 'Antioxidationsmedel', 'e335-natriumtartrat',
+'Natriumsalt av vinsyra för antioxidation och pH-kontroll.',
+'Natriumtartrat är natriumsaltet av naturlig vinsyra och fungerar som antioxidant och stabilisator.',
+2, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Från naturlig vinsyra"], "negative": [], "neutral": ["Stabilisator"]}',
+'{"categories": ["Bakverk", "Konditoriprodukter"], "note": "Stabilisator"}',
+ARRAY['Säkert att använda'],
+ARRAY['Naturlig vinsyra'],
+'Säkert för barn',
+'Neutral'),
+
+-- E336 - Kaliumtartrater
+('E336', 'Kaliumtartrater', 'Kaliumsalt av vinsyra', 'Antioxidationsmedel', 'e336-kaliumtartrat',
+'Kaliumsalt av vinsyra, antioxidant och stabilisator.',
+'Kaliumtartrat fungerar som antioxidant och stabilisator, samtidigt som det tillför kalium.',
+2, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Kaliumkälla", "Från naturlig vinsyra"], "negative": [], "neutral": ["Stabiliserande effekt"]}',
+'{"categories": ["Bakverk", "Vin"], "note": "Bakningshjälpmedel"}',
+ARRAY['Fördelaktigt för kaliumintag'],
+ARRAY['Naturlig vinsyra från druvor'],
+'Fördelaktigt för barn',
+'Positiv'),
+
+-- E337 - Natriumkaliumtartrat
+('E337', 'Natriumkaliumtartrat', 'Seignettesalt', 'Antioxidationsmedel', 'e337-natriumkaliumtartrat',
+'Dubbelt salt av vinsyra med stabiliserande egenskaper.',
+'Natriumkaliumtartrat är en dubbel salt av vinsyra som används som stabilisator och emulgeringsmedel.',
+2, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Stabilisator", "Från vinsyra"], "negative": [], "neutral": ["Teknisk funktion"]}',
+'{"categories": ["Konditoriprodukter", "Tekniska tillämpningar"], "note": "Stabilisator"}',
+ARRAY['Säkert vid normal användning'],
+ARRAY['Andra naturliga stabilisatorer'],
+'Säkert för barn',
+'Neutral'),
+
+-- E402 - Kaliumalginat
+('E402', 'Kaliumalginat', 'Kaliumsalt av alginsyra', 'Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel', 'e402-kaliumalginat',
+'Kaliumsalt av naturlig alginsyra från bruna alger.',
+'Kaliumalginat utvinns från bruna alger och används som förtjockningsmedel och stabilisator.',
+2, NULL, 'Quantum satis', 'Naturlig (alger)',
+'{"positive": ["Naturligt från alger", "Fiberlikt"], "negative": [], "neutral": ["Förtjockningsmedel"]}',
+'{"categories": ["Glass", "Såser", "Sallader"], "note": "Naturlig algfiber"}',
+ARRAY['Helt säkert och naturligt'],
+ARRAY['Naturlig agar', 'Gelatin'],
+'Säkert för barn',
+'Positiv'),
+
+-- E403 - Ammoniumalginat
+('E403', 'Ammoniumalginat', 'Ammoniumsalt av alginsyra', 'Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel', 'e403-ammoniumalginat',
+'Ammoniumsalt av alginsyra för gelering och stabilisering.',
+'Ammoniumalginat har liknande egenskaper som andra alginater men används mer sällan.',
+2, NULL, 'Quantum satis', 'Naturlig (alger)',
+'{"positive": ["Naturlig algfiber"], "negative": [], "neutral": ["Mindre vanligt använt"]}',
+'{"categories": ["Speciella tillämpningar"], "note": "Sällan använt"}',
+ARRAY['Säkert vid användning'],
+ARRAY['Andra naturliga alginater'],
+'Säkert för barn',
+'Neutral'),
+
+-- E404 - Kalciumalginat
+('E404', 'Kalciumalginat', 'Kalciumsalt av alginsyra', 'Emulgerings-, stabiliserings-, förtjocknings- och geleringsmedel', 'e404-kalciumalginat',
+'Kalciumsalt av alginsyra med geilerande egenskaper.',
+'Kalciumalginat bildar starka geler och används i molekylär gastronomi och livsmedelsindustrin.',
+2, NULL, 'Quantum satis', 'Naturlig (alger)',
+'{"positive": ["Naturligt från alger", "Kalciumkälla"], "negative": [], "neutral": ["Molekylär gastronomi"]}',
+'{"categories": ["Molekylär gastronomi", "Glass"], "note": "Speciell gelering"}',
+ARRAY['Helt säkert'],
+ARRAY['Naturlig gelatin', 'Agar'],
+'Säkert för barn',
+'Positiv'),
+
+-- E504 - Magnesiumkarbonater
+('E504', 'Magnesiumkarbonater', 'Magnesiasalter', 'Övriga tillsatser', 'e504-magnesiumkarbonat',
+'Magnesiumsalter för surareglering och mineralförstärkning.',
+'Magnesiumkarbonater fungerar som surahets-reglerare och antikantmedel, samtidigt som de tillför magnesium.',
+2, NULL, 'Quantum satis', 'Mineral',
+'{"positive": ["Magnesiumkälla", "Surahetsregulator"], "negative": [], "neutral": ["Antiklumpmedel"]}',
+'{"categories": ["Bakpulver", "Salter", "Kosttillskott"], "note": "Magnesiumtillskott"}',
+ARRAY['Fördelaktigt för magnesiumintag'],
+ARRAY['Naturliga magnesiumkällor'],
+'Fördelaktigt för barn (magnesium)',
+'Positiv'),
+
+-- E508 - Kaliumklorid
+('E508', 'Kaliumklorid', 'Kaliumsalt', 'Övriga tillsatser', 'e508-kaliumklorid',
+'Kaliumsalt som saltminskning och gelningsmedel.',
+'Kaliumklorid används som saltminskning med lägre natrium och som gelningsmedel.',
+2, NULL, 'Quantum satis', 'Mineral',
+'{"positive": ["Kaliumkälla", "Natriumminskning"], "negative": [], "neutral": ["Bitter smak i höga doser"]}',
+'{"categories": ["Saltminskning", "Gelanning"], "note": "Lågnatiumulnäringsal"}',
+ARRAY['Fördelaktigt som natriumalternativ'],
+ARRAY['Naturligt kalium från mat'],
+'Fördelaktigt för barn',
+'Positiv'),
+
+-- E509 - Kalciumklorid
+('E509', 'Kalciumklorid', 'Kalciumsalt', 'Övriga tillsatser', 'e509-kalciumklorid',
+'Kalciumsalt för fast struktur och mineralförstärkning.',
+'Kalciumklorid håller frukt och grönsaker fasta och tillför kalcium.',
+2, NULL, 'Quantum satis', 'Mineral',
+'{"positive": ["Kalciumkälla", "Behåller textur"], "negative": [], "neutral": ["Saltighet"]}',
+'{"categories": ["Konserver", "Pickles", "Tofu"], "note": "Strukturförstärkare"}',
+ARRAY['Fördelaktigt för kalciumintag'],
+ARRAY['Naturligt kalcium från mjölk'],
+'Fördelaktigt för barn (kalcium)',
+'Positiv'),
+
+-- E510 - Ammoniumklorid
+('E510', 'Ammoniumklorid', 'Salmiak', 'Övriga tillsatser', 'e510-ammoniumklorid',
+'Ammoniumsalt med karakteristisk smak.',
+'Ammoniumklorid ger den typiska salmiaksmakmaken och används som smakämne.',
+4, NULL, 'Begränsad användning', 'Syntetisk',
+'{"positive": ["Karakteristisk smak"], "negative": ["Kan vara skarp"], "neutral": ["Nordisk tradition"]}',
+'{"categories": ["Salmiakgodis", "Vissa läsk"], "note": "Nordisk smaktradition"}',
+ARRAY['Måttlig konsumtion', 'Stark smak'],
+ARRAY['Andra naturliga smaker'],
+'Måttlig användning för barn',
+'Neutral'),
+
+-- E511 - Magnesiumklorid
+('E511', 'Magnesiumklorid', 'Magnesiumsalt', 'Övriga tillsatser', 'e511-magnesiumklorid',
+'Magnesiumsalt för koagulering och mineralförstärkning.',
+'Magnesiumklorid används för att koagulera protein och som magnesiumkälla.',
+2, NULL, 'Quantum satis', 'Mineral',
+'{"positive": ["Magnesiumkälla", "Proteinkoagulering"], "negative": [], "neutral": ["Saltsmak"]}',
+'{"categories": ["Tofu", "Sojaprotein", "Kosttillskott"], "note": "Tofu-koagulant"}',
+ARRAY['Fördelaktigt för magnesiumintag'],
+ARRAY['Naturligt magnesium från gröna bladgrönsaker'],
+'Fördelaktigt för barn (magnesium)',
+'Positiv'),
+
+-- E512 - Tenn(II)klorid
+('E512', 'Tenn(II)klorid', 'Stannoklorid', 'Övriga tillsatser', 'e512-tennklorid',
+'Tennförebindelse som antioxidant i konserver.',
+'Tenn(II)klorid används som antioxidant i vitfärgade konserver för att behålla färgen.',
+5, 2, 'mg/kg kroppsvikt/dag - EFSA', 'Syntetisk',
+'{"positive": ["Effektivt antioxidant"], "negative": ["Tungmetall", "Begränsad användning"], "neutral": ["Bara i konserver"]}',
+'{"categories": ["Vita konserver", "Sparris", "Glass"], "note": "Färgbevarande"}',
+ARRAY['Begränsa konserverintag', 'Variera kostval'],
+ARRAY['Naturliga antioxidanter'],
+'Begränsad användning för barn',
+'Negativ'),
+
+-- E516 - Kalciumsulfat
+('E516', 'Kalciumsulfat', 'Gips', 'Övriga tillsatser', 'e516-kalciumsulfat',
+'Kalciumsalt för koagulering och mineralförstärkning.',
+'Kalciumsulfat används för proteinkoagulering och som kalciumkälla.',
+2, NULL, 'Quantum satis', 'Mineral',
+'{"positive": ["Kalciumkälla", "Proteinkoagulering"], "negative": [], "neutral": ["Traditionellt koagulant"]}',
+'{"categories": ["Tofu", "Bröd", "Kosttillskott"], "note": "Traditionell koagulant"}',
+ARRAY['Fördelaktigt för kalciumintag'],
+ARRAY['Naturligt kalcium från mejerivaror'],
+'Fördelaktigt för barn (kalcium)',
+'Positiv'),
+
+-- E517 - Ammoniumsulfat
+('E517', 'Ammoniumsulfat', 'Ammoniumsalt av svavelsyra', 'Övriga tillsatser', 'e517-ammoniumsulfat',
+'Ammoniumsalt för jästnäring och bearbetning.',
+'Ammoniumsulfat fungerar som näring för jäst i brödtillverkning.',
+3, NULL, 'Quantum satis', 'Syntetisk',
+'{"positive": ["Jästnäring"], "negative": [], "neutral": ["Bearbetningshjälpmedel"]}',
+'{"categories": ["Bröd", "Jästprodukter"], "note": "Jästnäring"}',
+ARRAY['Säkert vid brödbak'],
+ARRAY['Naturliga jästnäringsämnen'],
+'Säkert för barn',
+'Neutral'),
+
+-- E520 - Aluminiumsulfat
+('E520', 'Aluminiumsulfat', 'Aluminiumsalt av svavelsyra', 'Övriga tillsatser', 'e520-aluminiumsulfat',
+'Aluminiumsalt för klaring och bearbetning.',
+'Aluminiumsulfat används för klaring av vätskor och som bearbetningshjälpmedel.',
+6, 1, 'mg/kg kroppsvikt/dag - EFSA (som aluminum)', 'Syntetisk',
+'{"positive": ["Effektiv klarning"], "negative": ["Aluminiumexponering", "Begränsad användning"], "neutral": ["Teknisk funktion"]}',
+'{"categories": ["Äggvitor", "Vissa bearbetningar"], "note": "Begränsad användning"}',
+ARRAY['Begränsa aluminiumexponering totalt', 'Undvik onödig exponering'],
+ARRAY['Naturliga klarningsmetoder'],
+'Undvik för barn',
+'Negativ'),
+
+-- HÖGNUMMER-SERIEN
+
+-- E578 - Kalciumglukonat
+('E578', 'Kalciumglukonat', 'Kalciumsalt av glukonsyra', 'Övriga tillsatser', 'e578-kalciumglukonat',
+'Kalciumsalt av glukonsyra för mineralförstärkning.',
+'Kalciumglukonat är en mycket bigtillgänglig form av kalcium som lätt absorberas av kroppen.',
+1, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Bigtillgängligt kalcium", "Lätt att absorbera"], "negative": [], "neutral": ["Mild smak"]}',
+'{"categories": ["Kosttillskott", "Funktionella livsmedel"], "note": "Optimalt kalciumtillskott"}',
+ARRAY['Mycket fördelaktigt för kalciumintag'],
+ARRAY['Naturliga kalciumrika livsmedel'],
+'Mycket fördelaktigt för barn',
+'Positiv'),
+
+-- E579 - Järnglukonat
+('E579', 'Järnglukonat', 'Ferroglukonat', 'Övriga tillsatser', 'e579-jarnglukonat',
+'Järnsalt av glukonsyra för järnberikning.',
+'Järnglukonat är en mild form av järn som används för järnberikning av livsmedel.',
+2, NULL, 'Quantum satis', 'Syntetisk',
+'{"positive": ["Järnkälla", "Mild form av järn"], "negative": [], "neutral": ["Kan påverka färg"]}',
+'{"categories": ["Berikat mjöl", "Kosttillskott"], "note": "Mild järnberikning"}',
+ARRAY['Fördelaktigt för järnintag'],
+ARRAY['Naturligt järn från kött och grönsaker'],
+'Fördelaktigt för barn (järn)',
+'Positiv'),
+
+-- E585 - Järnlaktat
+('E585', 'Järnlaktat', 'Ferrolaktat', 'Övriga tillsatser', 'e585-jarnlaktat',
+'Järnsalt av mjölksyra för järnberikning.',
+'Järnlaktat är en vältolererad form av järn som används för näringsberikring.',
+2, NULL, 'Quantum satis', 'Naturlig/syntetisk',
+'{"positive": ["Järnkälla", "Vältolererat"], "negative": [], "neutral": ["Kan ge metallsmak"]}',
+'{"categories": ["Berikat mjöl", "Babynäring"], "note": "Babynäring säker"}',
+ARRAY['Mycket fördelaktigt för järnintag'],
+ARRAY['Naturligt järn från kött'],
+'Mycket fördelaktigt för barn',
+'Positiv');

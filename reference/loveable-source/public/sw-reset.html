@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SW Reset – ViHandlar</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    button { padding: .6rem 1rem; border: 1px solid #ccc; border-radius: .5rem; cursor: pointer; }
+    code { background: #f6f6f6; padding: .2rem .4rem; border-radius: .25rem; }
+    .log { margin-top: 1rem; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Återställ Service Worker och cache</h1>
+    <p>Denna sida avregistrerar alla service workers och tömmer <code>caches</code>. Använd vid problem med uppdateringar av <code>robots.txt</code>, <code>llms.txt</code> eller andra resurser.</p>
+    <button id="reset">Avregistrera SW och rensa cache</button>
+    <div class="log" id="log"></div>
+  </main>
+  <script>
+    const log = (msg) => { document.getElementById('log').textContent += msg + '\n'; };
+    async function resetAll() {
+      try {
+        if ('serviceWorker' in navigator) {
+          const regs = await navigator.serviceWorker.getRegistrations();
+          for (const r of regs) {
+            const ok = await r.unregister();
+            log('SW unregister: ' + ok);
+          }
+        } else {
+          log('Service workers stöds inte i denna miljö.');
+        }
+        if ('caches' in window) {
+          const keys = await caches.keys();
+          for (const k of keys) {
+            const ok = await caches.delete(k);
+            log('Cache delete ' + k + ': ' + ok);
+          }
+        }
+        log('Klart. Ladda om sidan med hård uppdatering (Cmd+Shift+R / Ctrl+F5).');
+      } catch (e) {
+        log('Fel: ' + (e && e.message ? e.message : e));
+      }
+    }
+    document.getElementById('reset').addEventListener('click', resetAll);
+  </script>
+</body>
+</html>
