@@ -58,7 +58,7 @@ export function searchEAdditives(query: string): EAdditive[] {
     e.name.toLowerCase().includes(q) ||
     e.e_number.toLowerCase().includes(q) ||
     e.common_name?.toLowerCase().includes(q) ||
-    e.short_description.toLowerCase().includes(q)
+    e.short_description?.toLowerCase().includes(q)
   );
 }
 
