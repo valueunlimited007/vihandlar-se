@@ -2,21 +2,24 @@
 
 export interface ShoppingListItem {
   id: string;
+  listId: string;
   name: string;
   quantity: string | null;
   unit: string | null;
   category: string | null;
   completed: boolean;
   position: number;
-  created_at: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface ShoppingList {
   id: string;
   name: string;
+  shareToken: string;
   items: ShoppingListItem[];
-  created_at: string;
-  updated_at: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface PublicList {
@@ -38,44 +41,71 @@ export interface PublicListItem {
   position: number;
 }
 
-export interface SharedList {
-  token: string;
-  items: ShoppingListItem[];
-  created_at: string;
-  expires_at: string;
-}
+// SSE event types
+export type ListEvent =
+  | { type: "item_added"; item: ShoppingListItem }
+  | { type: "item_updated"; item: ShoppingListItem }
+  | { type: "item_deleted"; itemId: string }
+  | { type: "list_updated"; list: Pick<ShoppingList, "name" | "updatedAt"> };
 
 // Kategorier för inköpslistor
 export const LIST_CATEGORIES = [
-  'Mejeri',
-  'Kött',
-  'Fisk',
-  'Frukt',
-  'Grönsaker',
-  'Bageri',
-  'Fryst',
-  'Torrvaror',
-  'Konserver',
-  'Dryck',
-  'Hygien',
-  'Städ',
-  'Övrigt',
+  "Mejeri",
+  "Kött",
+  "Fisk",
+  "Frukt",
+  "Grönsaker",
+  "Bageri",
+  "Fryst",
+  "Torrvaror",
+  "Konserver",
+  "Dryck",
+  "Hygien",
+  "Städ",
+  "Övrigt",
 ] as const;
 
-export type ListCategory = typeof LIST_CATEGORIES[number];
+export type ListCategory = (typeof LIST_CATEGORIES)[number];
 
 // Enheter
 export const UNITS = [
-  'st',
-  'kg',
-  'g',
-  'l',
-  'dl',
-  'ml',
-  'förp',
-  'påse',
-  'burk',
-  'flaska',
+  "st",
+  "kg",
+  "g",
+  "l",
+  "dl",
+  "ml",
+  "förp",
+  "påse",
+  "burk",
+  "flaska",
 ] as const;
 
-export type Unit = typeof UNITS[number];
+export type Unit = (typeof UNITS)[number];
+
+// Quick-add suggestions (top items by priority)
+export const QUICK_ADD_ITEMS = [
+  { name: "Mjölk", category: "Mejeri" },
+  { name: "Bröd", category: "Bageri" },
+  { name: "Smör", category: "Mejeri" },
+  { name: "Ägg", category: "Mejeri" },
+  { name: "Ost", category: "Mejeri" },
+  { name: "Bananer", category: "Frukt" },
+  { name: "Äpplen", category: "Frukt" },
+  { name: "Potatis", category: "Grönsaker" },
+  { name: "Lök", category: "Grönsaker" },
+  { name: "Morötter", category: "Grönsaker" },
+  { name: "Tomater", category: "Grönsaker" },
+  { name: "Gurka", category: "Grönsaker" },
+  { name: "Kycklingfilé", category: "Kött" },
+  { name: "Köttfärs", category: "Kött" },
+  { name: "Pasta", category: "Torrvaror" },
+  { name: "Ris", category: "Torrvaror" },
+  { name: "Yoghurt", category: "Mejeri" },
+  { name: "Kaffe", category: "Dryck" },
+] as const;
+
+// Validation
+export const ITEM_NAME_REGEX = /^[\w\s\-åäöÅÄÖéÉüÜ.,!?()\/&%:]+$/;
+export const MAX_ITEM_NAME_LENGTH = 100;
+export const MAX_LIST_NAME_LENGTH = 50;
