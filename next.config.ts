@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  
+
   images: {
     remotePatterns: [
       {
@@ -13,9 +13,13 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "media.delitea.se",
+      },
     ],
   },
-  
+
   async headers() {
     return [
       {
@@ -35,12 +39,64 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  
+
   async redirects() {
     return [
+      // llms.txt
       {
         source: "/.well-known/llms.txt",
         destination: "/llms.txt",
+        permanent: true,
+      },
+
+      // === Livsmedel: old /livsmedel/:letter/:slug → /livsmedel/:slug ===
+      {
+        source: "/livsmedel/:letter([a-zA-ZåäöÅÄÖ])/:slug",
+        destination: "/livsmedel/:slug",
+        permanent: true,
+      },
+
+      // === Shopping → Handla redirects (301) ===
+      {
+        source: "/shopping",
+        destination: "/handla",
+        permanent: true,
+      },
+      {
+        source: "/shopping/delitea",
+        destination: "/handla",
+        permanent: true,
+      },
+      {
+        source: "/shopping/produkter",
+        destination: "/handla",
+        permanent: true,
+      },
+      {
+        source: "/shopping/produkter/:letter",
+        destination: "/handla",
+        permanent: true,
+      },
+      {
+        source: "/shopping/kategorier",
+        destination: "/handla",
+        permanent: true,
+      },
+      {
+        source: "/shopping/kategori/:slug",
+        destination: "/handla/kategori/:slug",
+        permanent: true,
+      },
+      // Product detail: /shopping/:store/:slug → /handla/produkt/:slug
+      {
+        source: "/shopping/:store/:slug",
+        destination: "/handla/produkt/:slug",
+        permanent: true,
+      },
+      // Catch-all for /shopping/:store (store pages) → /handla
+      {
+        source: "/shopping/:store",
+        destination: "/handla",
         permanent: true,
       },
     ];
