@@ -86,7 +86,7 @@ export default function EAmnenPage() {
       <section className="container mx-auto px-4 py-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
           <Link
-            href="/e-amnen"
+            href="/skanner"
             className="flex items-center gap-3 p-4 rounded-xl border bg-card hover:shadow-md hover:border-primary/50 transition-all group"
           >
             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
