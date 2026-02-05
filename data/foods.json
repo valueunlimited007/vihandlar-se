@@ -1,116 +1,4219 @@
 [
-  {
-    "id": "03d86674-c485-4cc1-9be2-33367424db29",
-    "name": "Ägg",
-    "slug": "agg",
-    "letter": "Ä",
-    "category_id": "fbc19209-9814-4362-9ced-7855e255455e",
-    "subcategory": null,
-    "short_description": "Näringsrikt livsmedel med högkvalitativt protein och viktiga vitaminer.",
-    "long_description": "Ägg är en av naturens mest kompletta proteinkällor och innehåller alla essentiella aminosyror som kroppen behöver. Ett medelstort ägg (cirka 60 gram) innehåller ungefär 6 gram högkvalitativt protein och endast 70 kalorier. Ägg är rika på kolin, som är viktigt för hjärnhälsa och minnesfunktion, samt lutein och zeaxantin som skyddar ögonen. De innehåller också viktiga B-vitaminer, vitamin D och mineraler som järn och selen. Ägg från frigående höns innehåller ofta högre halter av omega-3-fettsyror. De är extremt mångsidiga och kan tillagas på otaliga sätt - kokta, stekta, pocherade, eller användas i bakning. Välj ekologiska ägg när det är möjligt för bästa kvalitet och djurvälfärd.",
-    "calories": null,
-    "protein": null,
-    "fat": null,
-    "carbohydrates": null,
-    "fiber": null,
-    "salt": null,
-    "key_vitamins": null,
-    "key_minerals": null,
-    "storage_method": null,
-    "shelf_life_opened": null,
-    "shelf_life_unopened": null,
-    "can_freeze": false,
-    "freezing_tips": null,
-    "allergens": null,
-    "season": null,
-    "usage_tips": null,
-    "substitutes": null,
-    "related_foods": null,
-    "common_in_lists": null,
-    "faq": null,
-    "meta_title": "Ägg - Näringsvärde och Tillagning | Livsmedel A-Ö",
-    "meta_description": "Komplett guide om ägg: näringsvärde, tillagning, förvaring och hållbarhet. Tips för bästa kvalitet och användning.",
-    "alternative_names": null,
-    "created_at": "2025-09-14T22:28:54.623153+00:00",
-    "updated_at": "2025-09-15T13:28:34.137448+00:00"
-  },
-  {
-    "id": "1319fe25-4e1c-4408-938e-4be5bca45d79",
-    "name": "Apelsin",
-    "slug": "apelsin",
-    "letter": "A",
-    "category_id": "c21f7f17-651e-437b-9ca3-e0a91ba6abee",
-    "subcategory": "Citrusfrukt",
-    "short_description": "Söt citrusfrukt rik på vitamin C och folsyra.",
-    "long_description": "Apelsiner är citrusfrukter fyllda med vitamin C - en medelstor apelsin täcker hela det dagliga behovet av vitamin C (cirka 70 mg). Vitamin C stärker immunförsvaret, hjälper kroppen att absorbera järn och är viktig för kollagenproduktion. Apelsiner innehåller också folsyra som är särskilt viktigt för gravida kvinnor, samt flavonoider som hesperidin som kan hjälpa till att sänka kolesterol och blodtryck. Fibern i apelsiner, särskilt pektinet, hjälper till att reglera blodsockret och främjar god tarmhälsa. Välj apelsiner som känns tunga för sin storlek och har fast, spänd skal. De håller sig fräscha i rumstemperatur i en vecka eller i kylskåp i upp till en månad. Nypress juicen för bästa smak och näringsvärde.",
-    "calories": 47,
-    "protein": 0.9,
-    "fat": 0.1,
-    "carbohydrates": 12.0,
-    "fiber": 2.4,
-    "salt": 0.0,
-    "key_vitamins": { "A": "11μg", "C": "53mg", "Folat": "40μg" },
-    "key_minerals": { "kalium": "181mg", "kalcium": "40mg", "hesperidin": "högt" },
-    "storage_method": "Rumstemperatur 1 vecka, kylskåp 2 veckor",
-    "shelf_life_opened": "2 veckor",
-    "shelf_life_unopened": "2-3 veckor",
-    "can_freeze": true,
-    "freezing_tips": "Skala och dela innan frysning",
-    "allergens": [],
-    "season": [],
-    "usage_tips": ["Frukost juice", "Mellanmål", "Sallad", "Marmelad"],
-    "substitutes": [
-      { "name": "Mandarin", "reason": "Sötare och lättare att skala" },
-      { "name": "Grapefrukt", "reason": "Större citrusfrukt" }
-    ],
-    "related_foods": null,
-    "common_in_lists": ["Vitamin C källa", "Frukostjuice", "Immunförsvar"],
-    "faq": [
-      { "question": "Är färskpressad juice lika bra som hel frukt?", "answer": "Hel frukt ger mer fiber och mättnad, men båda ger vitamin C." },
-      { "question": "Vilken sort apelsin är sötast?", "answer": "Navelapelsiner och blodapelsiner är ofta sötare än vanliga apelsiner." }
-    ],
-    "meta_title": "Apelsin - Vitamin C och Immun | Livsmedel A-Ö",
-    "meta_description": "Allt om apelsiner: näringsvärde, immunförstärkning, juice vs hel frukt och olika sorter.",
-    "alternative_names": null,
-    "created_at": "2025-09-14T22:51:44.331467+00:00",
-    "updated_at": "2025-09-15T13:28:34.137448+00:00"
-  },
-  {
-    "id": "7472932a-1417-4038-81d8-d5a0768ceb64",
-    "name": "Äpple",
-    "slug": "apple",
-    "letter": "Ä",
-    "category_id": "c21f7f17-651e-437b-9ca3-e0a91ba6abee",
-    "subcategory": null,
-    "short_description": "Populär frukt rik på fiber och antioxidanter.",
-    "long_description": "Äpplen är en av världens mest populära frukter och för gott skäl. De är rika på fiber, särskilt pektin, som hjälper till att reglera blodsockret och främjar mättnadskänsla. Ett medelstort äpple innehåller cirka 4 gram fiber och endast 95 kalorier. Äpplen innehåller kraftfulla antioxidanter som quercetin och katekiner som kan hjälpa till att minska inflammation och stödja hjärt-kärlhälsan.",
-    "calories": 52,
-    "protein": null,
-    "fat": 0.2,
-    "carbohydrates": 14.0,
-    "fiber": 2.4,
-    "salt": null,
-    "key_vitamins": { "C": "4.6mg", "K": "2.2μg" },
-    "key_minerals": { "kalium": "107mg", "fosfor": "11mg", "pektin": "hög halt" },
-    "storage_method": null,
-    "shelf_life_opened": null,
-    "shelf_life_unopened": null,
-    "can_freeze": true,
-    "freezing_tips": "Skär i bitar innan frysning",
-    "allergens": [],
-    "season": [],
-    "usage_tips": null,
-    "substitutes": null,
-    "related_foods": null,
-    "common_in_lists": ["Hälsosam frukt", "Svensk tradition", "Barnmat"],
-    "faq": [
-      { "question": "Vilka äppelsorter är bäst för bakning?", "answer": "Fasta sorter som Granny Smith och Ingrid Marie behåller formen bäst." },
-      { "question": "Varför säger man \"ett äpple om dagen\"?", "answer": "Äpplen innehåller fiber, antioxidanter och pektin som kan stödja hälsan." }
-    ],
-    "meta_title": "Äpple - Fiber och Antioxidanter | Livsmedel A-Ö",
-    "meta_description": "Allt om äpplen: näringsvärde, sorter, förvaring och hälsofördelar.",
-    "alternative_names": null,
-    "created_at": "2025-09-14T22:48:01.137492+00:00",
-    "updated_at": "2025-09-15T13:28:34.137448+00:00"
-  }
+    {
+        "id": "baee39c5-46ad-40ff-9256-a4cf7bf2da89",
+        "name": "Apelsin",
+        "slug": "apelsin",
+        "letter": "A",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "Citrusfrukt",
+        "storage_method": "Rumstemperatur 1 vecka, kylsk\u00e5p 2 veckor",
+        "shelf_life_opened": "2 veckor",
+        "shelf_life_unopened": "2-3 veckor",
+        "can_freeze": true,
+        "freezing_tips": "Skala och dela innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 47,
+        "protein": 0.9,
+        "fat": 0.1,
+        "carbohydrates": 12.0,
+        "fiber": 2.4,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "11\u03bcg",
+            "C": "53mg",
+            "Folat": "40\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "181mg",
+            "kalcium": "40mg",
+            "hesperidin": "h\u00f6gt"
+        },
+        "short_description": "S\u00f6t citrusfrukt rik p\u00e5 vitamin C och folsyra.",
+        "long_description": "Apelsiner \u00e4r citrusfrukter fyllda med vitamin C - en medelstor apelsin t\u00e4cker hela det dagliga behovet av vitamin C (cirka 70 mg). Vitamin C st\u00e4rker immunf\u00f6rsvaret, hj\u00e4lper kroppen att absorbera j\u00e4rn och \u00e4r viktig f\u00f6r kollagenproduktion. Apelsiner inneh\u00e5ller ocks\u00e5 folsyra som \u00e4r s\u00e4rskilt viktigt f\u00f6r gravida kvinnor, samt flavonoider som hesperidin som kan hj\u00e4lpa till att s\u00e4nka kolesterol och blodtryck. Fibern i apelsiner, s\u00e4rskilt pektinet, hj\u00e4lper till att reglera blodsockret och fr\u00e4mjar god tarmh\u00e4lsa. V\u00e4lj apelsiner som k\u00e4nns tunga f\u00f6r sin storlek och har fast, sp\u00e4nd skal. De h\u00e5ller sig fr\u00e4scha i rumstemperatur i en vecka eller i kylsk\u00e5p i upp till en m\u00e5nad. Nypress juicen f\u00f6r b\u00e4sta smak och n\u00e4ringsv\u00e4rde.",
+        "usage_tips": [
+            "Frukost juice",
+            "Mellanm\u00e5l",
+            "Sallad",
+            "Marmelad"
+        ],
+        "substitutes": [
+            {
+                "name": "Mandarin",
+                "reason": "S\u00f6tare och l\u00e4ttare att skala"
+            },
+            {
+                "name": "Grapefrukt",
+                "reason": "St\u00f6rre citrusfrukt"
+            }
+        ],
+        "meta_title": "Apelsin - Vitamin C och Immun | Livsmedel A-\u00d6",
+        "meta_description": "Allt om apelsiner: n\u00e4ringsv\u00e4rde, immunf\u00f6rst\u00e4rkning, juice vs hel frukt och olika sorter.",
+        "faq": [
+            {
+                "answer": "Hel frukt ger mer fiber och m\u00e4ttnad, men b\u00e5da ger vitamin C.",
+                "question": "\u00c4r f\u00e4rskpressad juice lika bra som hel frukt?"
+            },
+            {
+                "answer": "Navelapelsiner och blodapelsiner \u00e4r ofta s\u00f6tare \u00e4n vanliga apelsiner.",
+                "question": "Vilken sort apelsin \u00e4r s\u00f6tast?"
+            }
+        ],
+        "common_in_lists": [
+            "Vitamin C k\u00e4lla",
+            "Frukostjuice",
+            "Immunf\u00f6rsvar"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "1a08f85e-090d-4d2a-af03-5e4359e87253",
+        "name": "Aprikos",
+        "slug": "aprikos",
+        "letter": "A",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "Sommar"
+        ],
+        "allergens": [],
+        "calories": 48,
+        "protein": 1.4,
+        "fat": 0.4,
+        "carbohydrates": 11.1,
+        "fiber": 2.0,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "96\u03bcg",
+            "C": "10mg",
+            "E": "0.9mg"
+        },
+        "key_minerals": {
+            "Kalium": "259mg",
+            "Lutein": "89\u03bcg",
+            "Beta-karoten": "1094\u03bcg"
+        },
+        "short_description": "Beta-karotenrik stenfrukt f\u00f6r \u00f6gonh\u00e4lsa",
+        "long_description": "Aprikos inneh\u00e5ller beta-karoten och lutein som st\u00f6djer synen. Vanlig i medelhavsl\u00e4nder och Central Asien Blue Zone-omr\u00e5den.",
+        "usage_tips": [
+            "F\u00e4rsk som snacks",
+            "Torkad som energi",
+            "I m\u00fcsli och bakning"
+        ],
+        "substitutes": null,
+        "meta_title": "Aprikos - Beta-karoten f\u00f6r synen | ViHandlar",
+        "meta_description": "L\u00e4r dig om aprikos beta-karoten och lutein f\u00f6r \u00f6gonh\u00e4lsan. Data fr\u00e5n Livsmedelsverket.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "d4752771-a100-4d8c-aa35-f80b5db6ab1b",
+        "name": "Avokado",
+        "slug": "avokado",
+        "letter": "A",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Fruktgr\u00f6nsak",
+        "storage_method": "Rumstemperatur tills mogen",
+        "shelf_life_opened": "2-3 dagar mogen",
+        "shelf_life_unopened": "3-7 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Mosa innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 160,
+        "protein": 2.0,
+        "fat": 14.7,
+        "carbohydrates": 8.5,
+        "fiber": 6.7,
+        "salt": 0.01,
+        "key_vitamins": {
+            "E": "2.1mg",
+            "K": "21\u03bcg",
+            "Folat": "20\u03bcg"
+        },
+        "key_minerals": {
+            "fiber": "6.7g",
+            "kalium": "485mg",
+            "magnesium": "29mg"
+        },
+        "short_description": "N\u00e4ringsrik frukt med h\u00e4lsosamma enfettade fetter.",
+        "long_description": "Avokado \u00e4r en unik frukt som \u00e4r rik p\u00e5 nyttiga enom\u00e4ttade fetter, s\u00e4rskilt oljesyra som \u00e4r bra f\u00f6r hj\u00e4rth\u00e4lsan. En halv avokado inneh\u00e5ller cirka 15 gram nyttiga fetter, 7 gram fiber och \u00f6ver 10 olika vitaminer och mineraler. Avokadon \u00e4r s\u00e4rskilt rik p\u00e5 kalium (mer \u00e4n bananer), vitamin K, folsyra och vitamin E. De nyttiga fetterna i avokado hj\u00e4lper kroppen att absorbera fettl\u00f6sliga vitaminer fr\u00e5n andra livsmedel. Avokado har en kr\u00e4mig konsistens som g\u00f6r den perfekt f\u00f6r allt fr\u00e5n guacamole till smoothies och som br\u00f6dp\u00e5l\u00e4gg. En mogen avokado ger efter l\u00e4tt n\u00e4r man trycker f\u00f6rsiktigt p\u00e5 den. F\u00f6rvara omogna avokados i rumstemperatur och mogna avokados i kylsk\u00e5p f\u00f6r att f\u00f6rl\u00e4nga h\u00e5llbarheten.",
+        "usage_tips": [
+            "Guacamole",
+            "Sallad",
+            "Smoothies",
+            "Toast"
+        ],
+        "substitutes": [
+            {
+                "name": "Olivolja",
+                "reason": "Liknande h\u00e4lsosamma fetter"
+            },
+            {
+                "name": "N\u00f6tter",
+                "reason": "Andra k\u00e4llor till bra fetter"
+            }
+        ],
+        "meta_title": "Avokado - H\u00e4lsosamma Fetter och N\u00e4ring | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om avokado: n\u00e4ringsv\u00e4rde, h\u00e4lsosamma fetter, mognad och anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "Ska ge l\u00e4tt efter tryck men inte vara f\u00f6r mjuk, f\u00e4rg spelar mindre roll.",
+                "question": "Hur vet man att avokado \u00e4r mogen?"
+            },
+            {
+                "answer": "Oxidation n\u00e4r frukten exponeras f\u00f6r luft - citronjuice f\u00f6rhindrar brunf\u00e4rgning.",
+                "question": "Varf\u00f6r blir avokado brun?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosamma fetter",
+            "Vegetarisk kost",
+            "Trendig mat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "130ea0bc-2add-4932-9d9e-b7d12de6aeed",
+        "name": "Babyspenat",
+        "slug": "babyspenat",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 23,
+        "protein": 2.9,
+        "fat": 0.4,
+        "carbohydrates": 3.6,
+        "fiber": 2.2,
+        "salt": 0.08,
+        "key_vitamins": {
+            "A": "469\u03bcg",
+            "C": "28mg",
+            "K": "483\u03bcg"
+        },
+        "key_minerals": {
+            "Folat": "194\u03bcg",
+            "J\u00e4rn": "2.7mg",
+            "Kalium": "558mg"
+        },
+        "short_description": "Mild bladgr\u00f6nsak rik p\u00e5 j\u00e4rn och folat",
+        "long_description": "Babyspenat har mildare smak \u00e4n vanlig spenat men samma h\u00f6ga j\u00e4rn- och folathalt. Perfekt f\u00f6r sallader och smoothies.",
+        "usage_tips": [
+            "R\u00e5a i sallader",
+            "I smoothies",
+            "L\u00e4tt wokad"
+        ],
+        "substitutes": null,
+        "meta_title": "Babyspenat - J\u00e4rn och folat | ViHandlar",
+        "meta_description": "L\u00e4r dig om babyspinats j\u00e4rn och folat i mild form f\u00f6r sallader. Data fr\u00e5n Livsmedelsverket.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "3986934b-4e83-477a-bb33-70a61b150090",
+        "name": "Bacon",
+        "slug": "bacon",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
+        "subcategory": "R\u00f6kt fl\u00e4sk",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "1 vecka efter \u00f6ppning",
+        "shelf_life_unopened": "2-3 veckor o\u00f6ppnad",
+        "can_freeze": true,
+        "freezing_tips": "Portionera innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 541,
+        "protein": 37.0,
+        "fat": 42.0,
+        "carbohydrates": 1.4,
+        "fiber": 0.0,
+        "salt": 2.3,
+        "key_vitamins": {
+            "B1": "0.4mg",
+            "B12": "0.7\u03bcg",
+            "Niacin": "11.6mg"
+        },
+        "key_minerals": {
+            "selen": "28.5\u03bcg",
+            "fosfor": "280mg"
+        },
+        "short_description": "R\u00f6kt och saltat fl\u00e4sksida med intensiv smak.",
+        "long_description": "Bacon \u00e4r en popul\u00e4r k\u00f6ttprodukt som framst\u00e4lls genom saltning och r\u00f6kning av fl\u00e4sksida. \u00c4ven om bacon \u00e4r smakligt och h\u00f6gt i protein (cirka 37 gram per 100 gram), \u00e4r det ocks\u00e5 h\u00f6gt i m\u00e4ttat fett och natrium. Bacon inneh\u00e5ller B-vitaminer, s\u00e4rskilt B12, niacin och tiamin, samt mineraler som selen och fosfor. Det \u00e4r viktigt att konsumera bacon i m\u00e5ttliga m\u00e4ngder p\u00e5 grund av dess h\u00f6ga halt av bearbetat k\u00f6tt och nitriter. V\u00e4lj bacon utan tillsatta nitriter n\u00e4r det \u00e4r m\u00f6jligt. Bacon kan stekas, grillas eller bakas i ugn. Spara g\u00e4rna baconfettet f\u00f6r matlagning - det ger en rik smak till potatis och gr\u00f6nsaker.",
+        "usage_tips": [
+            "Frukost",
+            "Sallad topping",
+            "Pasta",
+            "Burgare"
+        ],
+        "substitutes": [
+            {
+                "name": "Pancetta",
+                "reason": "Italiensk variant utan r\u00f6k"
+            },
+            {
+                "name": "Chorizo",
+                "reason": "Kryddigare spansk variant"
+            }
+        ],
+        "meta_title": "Bacon - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om bacon: n\u00e4ringsv\u00e4rde, olika typer, tillagning och anv\u00e4ndning i matlagning.",
+        "faq": [
+            {
+                "answer": "Starta med kall panna p\u00e5 medelh\u00f6g v\u00e4rme f\u00f6r j\u00e4mn tillagning och mindre st\u00e4nk.",
+                "question": "Vilket \u00e4r det b\u00e4sta s\u00e4ttet att steka bacon?"
+            },
+            {
+                "answer": "Nej, bacon ska alltid tillagas ordentligt f\u00f6r att vara s\u00e4kert att \u00e4ta.",
+                "question": "Kan man \u00e4ta bacon r\u00e5tt?"
+            }
+        ],
+        "common_in_lists": [
+            "Engelsk frukost",
+            "Amerikansk mat",
+            "Brunch"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:46.440122+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "7e2ea7dd-bece-4e52-a8d0-ebb7705d76af",
+        "name": "Banan",
+        "slug": "banan",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "Tropisk frukt",
+        "storage_method": "Rumstemperatur",
+        "shelf_life_opened": "2-7 dagar",
+        "shelf_life_unopened": "3-7 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Skala och sk\u00e4r innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 89,
+        "protein": 1.1,
+        "fat": 0.3,
+        "carbohydrates": 23.0,
+        "fiber": 2.6,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "8.7mg",
+            "B6": "0.4mg",
+            "Folat": "20\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "358mg",
+            "mangan": "0.3mg",
+            "magnesium": "27mg"
+        },
+        "short_description": "N\u00e4ringsrik tropisk frukt rik p\u00e5 kalium och naturligt socker.",
+        "long_description": "Bananer \u00e4r en av v\u00e4rldens mest popul\u00e4ra frukter och en utm\u00e4rkt k\u00e4lla till kalium, vitamin B6 och vitamin C. En medelstor banan inneh\u00e5ller cirka 400 mg kalium, vilket \u00e4r viktigt f\u00f6r hj\u00e4rt- och muskelfunktion. Bananer inneh\u00e5ller ocks\u00e5 naturligt socker (fruktos, glukos och sackaros) som ger snabb energi, vilket g\u00f6r dem popul\u00e4ra bland idrottare. De inneh\u00e5ller resistente st\u00e4rkelser, s\u00e4rskilt i omoget tillst\u00e5nd, som fungerar som prebiotika och gynnar tarmfloran. Bananer inneh\u00e5ller \u00e4ven tryptofan som kroppen omvandlar till serotonin, vilket kan f\u00f6rb\u00e4ttra hum\u00f6ret. Gula, mogna bananer \u00e4r s\u00f6tast medan gr\u00f6na bananer har mer st\u00e4rkelse och fiber. Anv\u00e4nd \u00f6verrumpna bananer i bakning - de blir extra s\u00f6ta och saftiga i br\u00f6d och muffins.",
+        "usage_tips": [
+            "Smoothies",
+            "Bakad i br\u00f6d",
+            "Mellanm\u00e5l",
+            "M\u00fcsli"
+        ],
+        "substitutes": [
+            {
+                "name": "Plantain",
+                "reason": "Liknande frukt f\u00f6r matlagning"
+            },
+            {
+                "name": "Dadlar",
+                "reason": "Annan s\u00f6tt frukt med kalium"
+            }
+        ],
+        "meta_title": "Banan - Kalium och Naturlig Energi | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om bananer: n\u00e4ringsv\u00e4rde, kalium f\u00f6rdelar, mognadsstadier och anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "Snabba kolhydrater och kalium hj\u00e4lper \u00e5terst\u00e4lla energi och v\u00e4tske-elektrolytbalans.",
+                "question": "Varf\u00f6r \u00e4r bananer bra efter tr\u00e4ning?"
+            },
+            {
+                "answer": "Ja, de \u00e4r bara m\u00f6rkare och s\u00f6tare - perfekta f\u00f6r smoothies och bakning.",
+                "question": "Kan man \u00e4ta bruna bananer?"
+            }
+        ],
+        "common_in_lists": [
+            "Tr\u00e4ningsmat",
+            "Frukost smoothies",
+            "Barnmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "8055dfda-30a8-4e0c-9257-308a7cb3fe1e",
+        "name": "Basilika",
+        "slug": "basilika",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
+        "subcategory": "F\u00e4rsk \u00f6rt",
+        "storage_method": "Kylsk\u00e5p i vatten som blommor",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "3-5 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Frys i olivolja eller som pesto",
+        "season": [
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 22,
+        "protein": 3.2,
+        "fat": 0.6,
+        "carbohydrates": 2.6,
+        "fiber": 1.6,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "264\u03bcg",
+            "C": "18mg",
+            "K": "415\u03bcg"
+        },
+        "key_minerals": {
+            "j\u00e4rn": "3.2mg",
+            "kalium": "295mg",
+            "kalcium": "177mg"
+        },
+        "short_description": "Aromatisk italiensk \u00f6rt med s\u00f6tt, kryddigt arom.",
+        "long_description": "Basilika \u00e4r en aromatisk \u00f6rt som \u00e4r rik p\u00e5 antioxidanter och eteriska oljor som eugenol, vilket ger den sin karakteristiska doft och smak. Basilika inneh\u00e5ller vitamin K f\u00f6r benh\u00e4lsa, vitamin A f\u00f6r synh\u00e4lsa och magnesium f\u00f6r muskelfunktion. Dess antioxidanter, inklusive beta-karotener och lutein, kan hj\u00e4lpa till att bek\u00e4mpa inflammation och oxidativ stress. F\u00e4rsk basilika har h\u00f6gst n\u00e4ringsv\u00e4rde och b\u00e4st smak. F\u00f6rvara f\u00e4rsk basilika med stj\u00e4lkarna i vatten som snittblommor, eller frys in bladen i isbitar med olivolja. Basilika passar perfekt till tomater, mozzarella, pasta och pizza. Odla g\u00e4rna egen basilika p\u00e5 f\u00f6nsterbr\u00e4dan f\u00f6r f\u00e4rsk tillg\u00e5ng \u00e5ret runt.",
+        "usage_tips": [
+            "Pesto",
+            "Pasta",
+            "Pizza",
+            "Caprese"
+        ],
+        "substitutes": [
+            {
+                "name": "Oregano",
+                "reason": "Annan italiensk \u00f6rt"
+            },
+            {
+                "name": "Mynta",
+                "reason": "Liknande fr\u00e4sch smak"
+            }
+        ],
+        "meta_title": "Basilika - Italiensk \u00d6rt och Pesto | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om basilika: odling, f\u00f6rvaring, pesto recept och anv\u00e4ndning i italiensk matlagning.",
+        "faq": [
+            {
+                "answer": "Som blommor i vatten i kylsk\u00e5p, eller frys in som pesto med olivolja.",
+                "question": "Hur h\u00e5ller basilika l\u00e4ngst?"
+            },
+            {
+                "answer": "Ja, de \u00e4r \u00e4tbara och har en mild basiliksmak - fin som garnering.",
+                "question": "Kan man \u00e4ta basilika blommor?"
+            }
+        ],
+        "common_in_lists": [
+            "Italiensk mat",
+            "Pesto",
+            "Pizza"
+        ],
+        "related_foods": [
+            "80a5cbfe-3353-4617-bca8-dda33e7caaee",
+            "20d40f4b-2796-41f0-86b2-fd427f169d86",
+            "ce94f8a8-1679-4cc0-9847-1058183a5f95"
+        ],
+        "created_at": "2026-02-05T09:11:45.947451+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "07459161-863d-44eb-ba60-1e68a27dfcb0",
+        "name": "Bl\u00e5b\u00e4r",
+        "slug": "blaber",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "Vilda b\u00e4r",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1-2 veckor",
+        "can_freeze": true,
+        "freezing_tips": "Frys direkt utan tv\u00e4tt",
+        "season": [
+            "juli",
+            "augusti"
+        ],
+        "allergens": [],
+        "calories": 57,
+        "protein": 0.7,
+        "fat": 0.3,
+        "carbohydrates": 14.5,
+        "fiber": 2.4,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "9.7mg",
+            "E": "0.6mg",
+            "K": "19\u03bcg"
+        },
+        "key_minerals": {
+            "mangan": "0.3mg",
+            "antocyaniner": "extremt h\u00f6gt",
+            "antioxidanter": "mycket h\u00f6gt"
+        },
+        "short_description": "Vilda svenska b\u00e4r med extremt h\u00f6ga antioxidantniv\u00e5er.",
+        "long_description": "Bl\u00e5b\u00e4r \u00e4r sm\u00e5 kraftpaket av antioxidanter och anses vara en av de mest n\u00e4ringsrika b\u00e4ren. De inneh\u00e5ller h\u00f6ga halter av antocyaniner, som ger b\u00e4ren sin djupbl\u00e5 f\u00e4rg och har visat sig kunna f\u00f6rb\u00e4ttra minnesf\u00f6rm\u00e5gan och skydda mot \u00e5ldrande av hj\u00e4rnan. Bl\u00e5b\u00e4r \u00e4r ocks\u00e5 rika p\u00e5 vitamin C, vitamin K och mangan. De inneh\u00e5ller fiber som fr\u00e4mjar tarmh\u00e4lsan och har anti-inflammatoriska egenskaper. Frysta bl\u00e5b\u00e4r beh\u00e5ller sina n\u00e4rings\u00e4mnen v\u00e4l och \u00e4r ofta mer ekonomiska \u00e4n f\u00e4rska. Bl\u00e5b\u00e4r \u00e4r perfekta i smoothies, p\u00e5 flingor, i bakning eller som mellanm\u00e5l. Svenska vilda bl\u00e5b\u00e4r har ofta h\u00f6gre antioxidanthalter \u00e4n odlade varianter.",
+        "usage_tips": [
+            "Pannkakor",
+            "M\u00fcsli",
+            "Smoothies",
+            "Paj"
+        ],
+        "substitutes": [
+            {
+                "name": "Lingon",
+                "reason": "Andra svenska vilda b\u00e4r"
+            },
+            {
+                "name": "A\u00e7aib\u00e4r",
+                "reason": "Liknande antioxidantniv\u00e5er"
+            }
+        ],
+        "meta_title": "Bl\u00e5b\u00e4r - Antioxidanter och Svensk Natur | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om bl\u00e5b\u00e4r: antioxidanter, svensk skogstradition, plockning och h\u00e4lsof\u00f6rdelar.",
+        "faq": [
+            {
+                "answer": "Extremt h\u00f6ga niv\u00e5er av antocyaniner som kan skydda hj\u00e4rna, hj\u00e4rta och syn.",
+                "question": "Varf\u00f6r \u00e4r bl\u00e5b\u00e4r s\u00e5 h\u00e4lsosamma?"
+            },
+            {
+                "answer": "Skogsbl\u00e5b\u00e4r har m\u00f6rkare k\u00f6tt och mer intensiv smak och n\u00e4ringsinneh\u00e5ll.",
+                "question": "Skillnad mellan skogs- och tr\u00e4dg\u00e5rdsbl\u00e5b\u00e4r?"
+            }
+        ],
+        "common_in_lists": [
+            "Antioxidanter",
+            "Svensk skogstradition",
+            "H\u00e4lsosam kost"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "0d06eeeb-4a65-4d24-a505-59a417963c1c",
+        "name": "Bovete",
+        "slug": "bovete",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 343,
+        "protein": 13.3,
+        "fat": 3.4,
+        "carbohydrates": 71.5,
+        "fiber": 10.0,
+        "salt": 0.0,
+        "key_vitamins": {
+            "B3": "7.0mg",
+            "B6": "0.2mg",
+            "Folat": "30\u03bcg"
+        },
+        "key_minerals": {
+            "Rutin": "h\u00f6gt",
+            "Mangan": "1.3mg",
+            "Magnesium": "231mg"
+        },
+        "short_description": "Glutenfri pseudospannm\u00e5l med rutin",
+        "long_description": "Bovete inneh\u00e5ller rutin som st\u00e4rker blodk\u00e4rl och \u00e4r naturligt glutenfritt. Traditionell i \u00f6steuropeiska Blue Zone-omr\u00e5den.",
+        "usage_tips": [
+            "Som gr\u00f6t",
+            "I pannkakor",
+            "Ist\u00e4llet f\u00f6r ris"
+        ],
+        "substitutes": null,
+        "meta_title": "Bovete - Rutin f\u00f6r blodk\u00e4rl | ViHandlar",
+        "meta_description": "Uppt\u00e4ck bovetes rutin och glutenfria egenskaper fr\u00e5n \u00f6steuropeisk tradition. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "4a6909ea-78e8-4927-9fb2-da6108d7ae8a",
+        "name": "Broccoli",
+        "slug": "broccoli",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "K\u00e5lv\u00e4xt",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1 vecka",
+        "can_freeze": true,
+        "freezing_tips": "Blanchera innan frysning",
+        "season": [
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 34,
+        "protein": 2.8,
+        "fat": 0.4,
+        "carbohydrates": 7.0,
+        "fiber": 2.6,
+        "salt": 0.03,
+        "key_vitamins": {
+            "C": "89mg",
+            "K": "102\u03bcg",
+            "Folat": "63\u03bcg"
+        },
+        "key_minerals": {
+            "j\u00e4rn": "0.7mg",
+            "kalium": "316mg",
+            "kalcium": "47mg"
+        },
+        "short_description": "N\u00e4ringsrik k\u00e5lv\u00e4xt med h\u00f6gt inneh\u00e5ll av vitamin C och K.",
+        "long_description": "Broccoli \u00e4r en av de mest n\u00e4ringst\u00e4ta gr\u00f6nsakerna och tillh\u00f6r familjen korsblommiga v\u00e4xter tillsammans med k\u00e5l och blomk\u00e5l. Den \u00e4r exceptionellt rik p\u00e5 vitamin C - 100 gram broccoli inneh\u00e5ller mer vitamin C \u00e4n en apelsin. Broccoli inneh\u00e5ller kraftfulla antioxidanter som sulforafan, som har visat sig ha cancerbek\u00e4mpande egenskaper i studier. Den \u00e4r ocks\u00e5 en bra k\u00e4lla till vitamin K f\u00f6r benh\u00e4lsa, folsyra f\u00f6r celldelning och fiber f\u00f6r tarmh\u00e4lsa. Broccoli inneh\u00e5ller \u00e4ven j\u00e4rn, kalium och krom. F\u00f6r att bevara n\u00e4ringsv\u00e4rdet, \u00e5ngkoka eller woka broccolin kort s\u00e5 att den beh\u00e5ller sin ljusgr\u00f6na f\u00e4rg och knapriga konsistens. \u00d6verkokning f\u00f6rst\u00f6r b\u00e5de smak och n\u00e4rings\u00e4mnen. F\u00e4rsk broccoli ska ha fastslutna, m\u00f6rkgr\u00f6na blomknippen utan gula partier.",
+        "usage_tips": [
+            "\u00c5ngkokt",
+            "Wok",
+            "Grat\u00e4ng",
+            "Soppa"
+        ],
+        "substitutes": [
+            {
+                "name": "Blomk\u00e5l",
+                "reason": "Liknande textur"
+            },
+            {
+                "name": "Romanesco",
+                "reason": "N\u00f6tighare smak"
+            }
+        ],
+        "meta_title": "Broccoli - Superv\u00e4rden och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om broccoli: n\u00e4ringsv\u00e4rde, h\u00e4lsof\u00f6rdelar, tillagning f\u00f6r b\u00e4sta smak och n\u00e4ring.",
+        "faq": [
+            {
+                "answer": "\u00c5ngkoka i 3-4 minuter eller koka i lite vatten kort tid f\u00f6r att bevara vitaminer.",
+                "question": "Hur kokar man broccoli utan att f\u00f6rlora n\u00e4ring?"
+            },
+            {
+                "answer": "Ja, r\u00e5 broccoli i sallader ger mest n\u00e4ring och en krispig textur.",
+                "question": "Kan man \u00e4ta broccoli r\u00e5?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosam mat",
+            "Vitamin C k\u00e4lla",
+            "Antioxidanter"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "d5a35bf0-24c2-400b-85ab-7e1d48c3d14f",
+        "name": "Br\u00f6d",
+        "slug": "brod",
+        "letter": "B",
+        "alternative_names": null,
+        "category_id": "d1e3d3cb-6006-4aa5-8326-3d35a0723e29",
+        "subcategory": null,
+        "storage_method": null,
+        "shelf_life_opened": null,
+        "shelf_life_unopened": null,
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": null,
+        "allergens": null,
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "fiber": null,
+        "salt": null,
+        "key_vitamins": null,
+        "key_minerals": null,
+        "short_description": "Baslivsmedel gjort av mj\u00f6l som ger energi och fiber.",
+        "long_description": "Br\u00f6d \u00e4r en grundl\u00e4ggande n\u00e4ringsk\u00e4lla i den svenska kosten och finns i m\u00e5nga varianter fr\u00e5n ljust vitt br\u00f6d till m\u00f6rkt fullkornsbr\u00f6d. Fullkornsbr\u00f6d \u00e4r det mest n\u00e4ringsrika alternativet eftersom det inneh\u00e5ller hela kornet med dess fiber, vitaminer och mineraler. Br\u00f6d \u00e4r en god k\u00e4lla till kolhydrater f\u00f6r energi, B-vitaminer s\u00e4rskilt tiamin och niacin, samt j\u00e4rn och magnesium. Surdegsbr\u00f6d har f\u00f6rdelen att vara l\u00e4ttare att sm\u00e4lta och kan ha l\u00e4gre glykemiskt index \u00e4n vanligt j\u00e4stbr\u00f6d. V\u00e4lj br\u00f6d med h\u00f6g fiberhalt (minst 6 gram per 100 gram) f\u00f6r b\u00e4sta h\u00e4lsoeffekt. F\u00f6rvara br\u00f6d i rumstemperatur f\u00f6r daglig konsumtion och frys in portioner f\u00f6r l\u00e4ngre h\u00e5llbarhet. Rosta g\u00e4rna br\u00f6det f\u00f6r b\u00e4ttre smak och textur.",
+        "usage_tips": null,
+        "substitutes": null,
+        "meta_title": "Br\u00f6d - N\u00e4ringsv\u00e4rde och F\u00f6rvaring | Livsmedel A-\u00d6",
+        "meta_description": "Allt om br\u00f6d: n\u00e4ringsv\u00e4rde, olika typer, f\u00f6rvaring och h\u00e5llbarhet. Guide f\u00f6r att v\u00e4lja r\u00e4tt br\u00f6d.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.270535+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "bc5e6928-30d8-4cce-bc66-279a80509ed7",
+        "name": "Cantaloupe",
+        "slug": "cantaloupe",
+        "letter": "C",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "Sommar"
+        ],
+        "allergens": [],
+        "calories": 34,
+        "protein": 0.8,
+        "fat": 0.2,
+        "carbohydrates": 8.2,
+        "fiber": 0.9,
+        "salt": 0.02,
+        "key_vitamins": {
+            "A": "169\u03bcg",
+            "C": "37mg",
+            "Folat": "21\u03bcg"
+        },
+        "key_minerals": {
+            "Cholin": "7.6mg",
+            "Kalium": "267mg",
+            "Beta-karoten": "2020\u03bcg"
+        },
+        "short_description": "Beta-karotenrik melon f\u00f6r immunf\u00f6rsvaret",
+        "long_description": "Cantaloupe melon inneh\u00e5ller mycket beta-karoten och C-vitamin f\u00f6r immunst\u00f6d. H\u00f6g vattenhalt f\u00f6r hydrering.",
+        "usage_tips": [
+            "F\u00e4rsk som snacks",
+            "I fruktsallad",
+            "Som f\u00f6rr\u00e4tt med skinka"
+        ],
+        "substitutes": null,
+        "meta_title": "Cantaloupe - Beta-karoten f\u00f6r immunf\u00f6rsvaret | ViHandlar",
+        "meta_description": "Uppt\u00e4ck cantaloupe melonens beta-karoten och C-vitamin f\u00f6r immunst\u00f6d. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "9d1165b0-7818-49aa-a6cd-1c2732a5df53",
+        "name": "Cheddar",
+        "slug": "cheddar",
+        "letter": "C",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "H\u00e5rdost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C i plast eller vax",
+        "shelf_life_opened": "3-4 veckor",
+        "shelf_life_unopened": "6 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Riv innan frysning",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 403,
+        "protein": 25.0,
+        "fat": 33.3,
+        "carbohydrates": 1.3,
+        "fiber": 0.0,
+        "salt": 1.8,
+        "key_vitamins": {
+            "A": "330\u03bcg",
+            "B12": "0.8\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "512mg",
+            "calcium": "721mg"
+        },
+        "short_description": "Engelsk h\u00e5rdost med skarp, fyllig smak.",
+        "long_description": "Cheddar \u00e4r en av v\u00e4rldens mest popul\u00e4ra h\u00e5rdostar och en utm\u00e4rkt k\u00e4lla till kalcium f\u00f6r stark benh\u00e4lsa. 100 gram cheddar inneh\u00e5ller cirka 720 mg kalcium, vilket t\u00e4cker \u00f6ver 70% av det dagliga behovet. Cheddar \u00e4r ocks\u00e5 rik p\u00e5 protein (25 gram per 100 gram) och inneh\u00e5ller viktiga B-vitaminer, s\u00e4rskilt B12 och riboflavin. Osten inneh\u00e5ller \u00e4ven vitamin A f\u00f6r synh\u00e4lsa och zink f\u00f6r immunf\u00f6rsvaret. Mognad cheddar har mer komplex smak och \u00e4r l\u00e4ttare att sm\u00e4lta f\u00f6r laktosintoleraanta personer. V\u00e4lj naturligt lagrad cheddar utan konstgjorda f\u00e4rg\u00e4mnen. F\u00f6rvara cheddar inslaget i papper i kylsk\u00e5p och l\u00e5t den komma till rumstemperatur f\u00f6re servering f\u00f6r b\u00e4sta smak.",
+        "usage_tips": [
+            "Macka topping",
+            "Grat\u00e4ng",
+            "Ostbricka",
+            "Sm\u00e4lt till nachos"
+        ],
+        "substitutes": [
+            {
+                "name": "Gouda",
+                "reason": "Mildare smak"
+            },
+            {
+                "name": "Emmental",
+                "reason": "Bra f\u00f6r sm\u00e4ltning"
+            }
+        ],
+        "meta_title": "Cheddar - N\u00e4ringsv\u00e4rde och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om cheddar: n\u00e4ringsv\u00e4rde, olika styrkor, f\u00f6rvaring och engelska osttraditionen.",
+        "faq": [
+            {
+                "answer": "Ju l\u00e4ngre lagring, desto skarpare smak - mild (2-3 m\u00e5n), medium (5-6 m\u00e5n), sharp (9+ m\u00e5n).",
+                "question": "Vad betyder \"aged cheddar\"?"
+            },
+            {
+                "answer": "Naturlig f\u00e4rg\u00e4mne annatto tills\u00e4tts f\u00f6r den karakteristiska f\u00e4rgen.",
+                "question": "Varf\u00f6r blir cheddar orange?"
+            }
+        ],
+        "common_in_lists": [
+            "Ostsm\u00f6rg\u00e5s",
+            "Engelsk middag",
+            "Pub mat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "38f9a380-92e7-45d9-91b7-8f1d49d58bb5",
+        "name": "Citron",
+        "slug": "citron",
+        "letter": "C",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "Citrusfrukt",
+        "storage_method": "Rumstemperatur 1 vecka, kylsk\u00e5p 1 m\u00e5nad",
+        "shelf_life_opened": "1 m\u00e5nad",
+        "shelf_life_unopened": "1 m\u00e5nad",
+        "can_freeze": true,
+        "freezing_tips": "Pressa saft innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 29,
+        "protein": 1.1,
+        "fat": 0.3,
+        "carbohydrates": 9.0,
+        "fiber": 2.8,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "53mg",
+            "Folat": "6\u03bcg",
+            "Citroflavonoider": "h\u00f6gt"
+        },
+        "key_minerals": {
+            "citrat": "h\u00f6g halt",
+            "kalium": "138mg"
+        },
+        "short_description": "Sur citrusfrukt extremt rik p\u00e5 vitamin C och citrat.",
+        "long_description": "Citron \u00e4r en citrusfrukt som \u00e4r extremt rik p\u00e5 vitamin C och citronensyra. B\u00e5de k\u00f6ttet och skalet inneh\u00e5ller v\u00e4rdefulla n\u00e4rings\u00e4mnen. Citronskal inneh\u00e5ller eteriska oljor som limonen, som har antimikrobiella egenskaper. Citroner inneh\u00e5ller ocks\u00e5 flavonoider som hesperidin och diosmetin som kan st\u00f6dja hj\u00e4rth\u00e4lsan. Citronsyran hj\u00e4lper kroppen att absorbera j\u00e4rn fr\u00e5n vegetabiliska k\u00e4llor. F\u00e4rskpressad citronsaft i varmt vatten p\u00e5 morgonen kan st\u00f6dja matsm\u00e4ltningen och hydreringen. Ekologiska citroner \u00e4r b\u00e4st om du ska anv\u00e4nda skalet. Citron f\u00f6rh\u00f6jer smaken i fisk, k\u00f6tt, desserter och drycker.",
+        "usage_tips": [
+            "Dressing",
+            "Marinader",
+            "Bakning",
+            "Dryck"
+        ],
+        "substitutes": [
+            {
+                "name": "Lime",
+                "reason": "Liknande sur smak"
+            },
+            {
+                "name": "Vin\u00e4ger",
+                "reason": "Annan syrlig smaks\u00e4ttare"
+            }
+        ],
+        "meta_title": "Citron - Vitamin C Bomb | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om citron: n\u00e4ringsv\u00e4rde, vitamin C f\u00f6rdelar, anv\u00e4ndning i matlagning och h\u00e4lsa.",
+        "faq": [
+            {
+                "answer": "Pektin i citron kan ge m\u00e4ttnadsk\u00e4nsla, men ingen magisk viktminskning.",
+                "question": "Hj\u00e4lper citron med viktminskning?"
+            },
+            {
+                "answer": "Ja, skalet inneh\u00e5ller mycket eteriska oljor - v\u00e4lj ekologiska citroner.",
+                "question": "Kan man \u00e4ta citronskal?"
+            }
+        ],
+        "common_in_lists": [
+            "Vitamin C k\u00e4lla",
+            "Matlagning",
+            "Detox drycker"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "42ff47bd-65c6-4d04-ae19-e1d51cfeca78",
+        "name": "Cottage Cheese",
+        "slug": "cottage-cheese",
+        "letter": "C",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "F\u00e4rskost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C",
+        "shelf_life_opened": "3-5 dagar efter \u00f6ppning",
+        "shelf_life_unopened": "1-2 veckor o\u00f6ppnad",
+        "can_freeze": true,
+        "freezing_tips": "Textur kan f\u00f6r\u00e4ndras",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 98,
+        "protein": 11.1,
+        "fat": 4.3,
+        "carbohydrates": 3.4,
+        "fiber": 0.0,
+        "salt": 0.4,
+        "key_vitamins": {
+            "B2": "0.37mg",
+            "B12": "0.43\u03bcg"
+        },
+        "key_minerals": {
+            "selen": "20.4\u03bcg",
+            "fosfor": "159mg",
+            "calcium": "83mg"
+        },
+        "short_description": "Proteinrik f\u00e4rskost med krumblig textur och mild smak.",
+        "long_description": null,
+        "usage_tips": [
+            "Proteinrik frukost",
+            "Sallad topping",
+            "Smoothies",
+            "Bakning"
+        ],
+        "substitutes": [
+            {
+                "name": "Kvarg",
+                "reason": "H\u00f6gre proteinhalt"
+            },
+            {
+                "name": "Ricotta",
+                "reason": "Liknande textur f\u00f6r bakning"
+            }
+        ],
+        "meta_title": "Cottage Cheese - N\u00e4ringsv\u00e4rde och Protein | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om cottage cheese: n\u00e4ringsv\u00e4rde, proteinf\u00f6rdelar, anv\u00e4ndning i h\u00e4lsosam kost.",
+        "faq": [
+            {
+                "answer": "H\u00f6gt proteininneh\u00e5ll (kasein) som ger l\u00e5ngsam aminosyrafris\u00e4ttning, perfekt f\u00f6re s\u00f6mn.",
+                "question": "Varf\u00f6r \u00e4r cottage cheese bra f\u00f6r tr\u00e4ning?"
+            },
+            {
+                "answer": "Ja, utm\u00e4rkt i pannkakor, cheesecake och protein muffins.",
+                "question": "Kan man baka med cottage cheese?"
+            }
+        ],
+        "common_in_lists": [
+            "Proteinrik kost",
+            "Tr\u00e4ningsmat",
+            "H\u00e4lsosam frukost"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:47.837964+00:00"
+    },
+    {
+        "id": "f2415229-c699-42c5-ad2d-e694e20fda87",
+        "name": "Cr\u00e8me Fraiche",
+        "slug": "creme-fraiche",
+        "letter": "C",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "Gr\u00e4ddfil",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C",
+        "shelf_life_opened": "1 vecka efter \u00f6ppning",
+        "shelf_life_unopened": "2-3 veckor o\u00f6ppnad",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 292,
+        "protein": 2.1,
+        "fat": 30.0,
+        "carbohydrates": 2.9,
+        "fiber": 0.0,
+        "salt": 0.05,
+        "key_vitamins": {
+            "A": "280\u03bcg",
+            "D": "0.6\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "60mg",
+            "calcium": "95mg"
+        },
+        "short_description": "Fransk gr\u00e4ddfil med mild, l\u00e4tt sur smak.",
+        "long_description": "Cr\u00e8me fraiche \u00e4r en mj\u00f6lkprodukt med h\u00f6g fetthalt (cirka 34%) som har en mild, l\u00e4tt syrlig smak. Den \u00e4r rik p\u00e5 kalcium, protein och vitamin A. Till skillnad fr\u00e5n vanlig gr\u00e4dde koagulerar inte cr\u00e8me fraiche n\u00e4r den v\u00e4rms upp, vilket g\u00f6r den perfekt f\u00f6r s\u00e5ser och grat\u00e4nger. Den inneh\u00e5ller levande mj\u00f6lksyrabakterier som kan st\u00f6dja tarmh\u00e4lsan. Cr\u00e8me fraiche \u00e4r mer m\u00e4ttande \u00e4n l\u00e4ttare mejeriprodukter och ger en kr\u00e4mig konsistens till b\u00e5de varma och kalla r\u00e4tter. Den h\u00e5ller sig l\u00e4ngre \u00e4n vanlig gr\u00e4dde och \u00e4r mindre k\u00e4nslig f\u00f6r temperaturf\u00f6r\u00e4ndringar. Anv\u00e4nd den sparsammt p\u00e5 grund av dess h\u00f6ga kaloriinneh\u00e5ll.",
+        "usage_tips": [
+            "S\u00e5ser",
+            "T\u00e5rtor",
+            "Soppa",
+            "Dip"
+        ],
+        "substitutes": [
+            {
+                "name": "Sour cream",
+                "reason": "Liknande konsistens"
+            },
+            {
+                "name": "Grekisk yoghurt",
+                "reason": "H\u00e4lsosammare alternativ"
+            }
+        ],
+        "meta_title": "Cr\u00e8me Fraiche - N\u00e4ringsv\u00e4rde och Matlagning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om cr\u00e8me fraiche: n\u00e4ringsv\u00e4rde, fransk kulinarisk tradition, anv\u00e4ndning i s\u00e5ser och desserter.",
+        "faq": [
+            {
+                "answer": "Cr\u00e8me fraiche har h\u00f6gre fetthalt (30%) och t\u00e5l v\u00e4rme b\u00e4ttre \u00e4n vanlig gr\u00e4ddfil.",
+                "question": "Skillnad mellan cr\u00e8me fraiche och gr\u00e4ddfil?"
+            },
+            {
+                "answer": "Ja, den koagulerar inte lika l\u00e4tt som andra mj\u00f6lkprodukter vid uppv\u00e4rmning.",
+                "question": "Kan cr\u00e8me fraiche kokas?"
+            }
+        ],
+        "common_in_lists": [
+            "Fransk matlagning",
+            "Pasta s\u00e5ser",
+            "Desserter"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "ee04a19a-da42-4e62-8104-834bacedd0f4",
+        "name": "Dadel (Medjool)",
+        "slug": "dadel-medjool",
+        "letter": "D",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Rumstemperatur",
+        "shelf_life_opened": "6 m\u00e5nader",
+        "shelf_life_unopened": "1 \u00e5r",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 277,
+        "protein": 1.8,
+        "fat": 0.2,
+        "carbohydrates": 75.0,
+        "fiber": 6.7,
+        "salt": 0.0,
+        "key_vitamins": {
+            "B6": "0.2mg",
+            "Niacin": "1.6mg",
+            "Pantotensyra": "0.8mg"
+        },
+        "key_minerals": {
+            "Kalium": "696mg",
+            "Koppar": "0.4mg",
+            "Antioxidanter": "h\u00f6gt"
+        },
+        "short_description": "Premium dadlar med naturlig karamells\u00f6tma",
+        "long_description": "Medjool dadlar kallas \"dadlarnas kung\" med kr\u00e4mig konsistens och h\u00f6gt kaliuminneh\u00e5ll. Naturligt s\u00f6tningsmedel fr\u00e5n Mellan\u00f6stern.",
+        "usage_tips": [
+            "Som naturligt godis",
+            "Fyllda med n\u00f6tter",
+            "I energibollar"
+        ],
+        "substitutes": null,
+        "meta_title": "Medjool dadlar - Kaliumrika naturliga godis | ViHandlar",
+        "meta_description": "L\u00e4r dig om Medjool dadlars karamells\u00f6tma och h\u00f6ga kaliuminneh\u00e5ll. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "13bbd64a-1709-4df7-aaa0-c78395506518",
+        "name": "Enoki svamp",
+        "slug": "enoki-svamp",
+        "letter": "E",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 37,
+        "protein": 2.7,
+        "fat": 0.3,
+        "carbohydrates": 7.8,
+        "fiber": 2.7,
+        "salt": 0.0,
+        "key_vitamins": {
+            "B3": "6.1mg",
+            "Folat": "25\u03bcg",
+            "Pantotensyra": "1.5mg"
+        },
+        "key_minerals": {
+            "Selen": "2.2\u03bcg",
+            "Kalium": "318mg",
+            "Beta-glukan": "naturligt"
+        },
+        "short_description": "Japansk svamp med beta-glukan f\u00f6r immunf\u00f6rsvaret",
+        "long_description": "Enoki svamp fr\u00e5n Japan inneh\u00e5ller beta-glukan som st\u00f6djer immunsystemet. Vanlig i okinawansk Blue Zone-kost.",
+        "usage_tips": [
+            "I miso-soppa",
+            "Stekt med gr\u00f6nsaker",
+            "Som garnering"
+        ],
+        "substitutes": null,
+        "meta_title": "Enoki svamp - Beta-glukan fr\u00e5n Japan | ViHandlar",
+        "meta_description": "Uppt\u00e4ck enoki svamps beta-glukan f\u00f6r immunf\u00f6rsvaret fr\u00e5n Okinawa Blue Zone. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "c067099e-f6d2-4523-be5e-0f42149d5ead",
+        "name": "Faro (urspelt)",
+        "slug": "faro-urspelt",
+        "letter": "F",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [
+            "Gluten"
+        ],
+        "calories": 338,
+        "protein": 15.1,
+        "fat": 2.5,
+        "carbohydrates": 67.1,
+        "fiber": 7.6,
+        "salt": 0.01,
+        "key_vitamins": {
+            "E": "0.8mg",
+            "B3": "6.8mg",
+            "Folat": "25\u03bcg"
+        },
+        "key_minerals": {
+            "Zink": "2.9mg",
+            "J\u00e4rn": "2.5mg",
+            "Magnesium": "136mg"
+        },
+        "short_description": "Antik spannm\u00e5l med h\u00f6g proteinhalt",
+        "long_description": "Faro (urspelt) \u00e4r en av v\u00e4rldens \u00e4ldsta spannm\u00e5l med h\u00f6gt proteininneh\u00e5ll. Traditionell del av medelhavskosten.",
+        "usage_tips": [
+            "Som risers\u00e4ttning",
+            "I sallader",
+            "Till soppa"
+        ],
+        "substitutes": null,
+        "meta_title": "Faro - Antik protein fr\u00e5n Medelhavet | ViHandlar",
+        "meta_description": "L\u00e4r dig om faros h\u00f6ga protein och roll som antik spannm\u00e5l i medelhavskosten. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "782590f5-5da6-45ee-978a-f0492b8494e0",
+        "name": "Fetaost",
+        "slug": "fetaost",
+        "letter": "F",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "Saltost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C i saltlake",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "2-3 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Kan frysas men textur f\u00f6r\u00e4ndras",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 264,
+        "protein": 14.2,
+        "fat": 21.3,
+        "carbohydrates": 4.1,
+        "fiber": 0.0,
+        "salt": 4.0,
+        "key_vitamins": {
+            "A": "125\u03bcg",
+            "B12": "1.7\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "337mg",
+            "calcium": "493mg"
+        },
+        "short_description": "Grekisk saltost med distinkt smak och krumblig textur.",
+        "long_description": "Fetaost \u00e4r en traditionell grekisk ost gjord p\u00e5 f\u00e5r- eller getmj\u00f6lk som f\u00f6rvaras i saltlake. Den har en karakteristisk salt och kr\u00e4mig smak. Fetaost \u00e4r rik p\u00e5 kalcium f\u00f6r benh\u00e4lsa, protein f\u00f6r muskelbyggnad och probiotiska bakterier som kan gynna tarmfloran. Den inneh\u00e5ller ocks\u00e5 vitamin B12, riboflavin och fosfor. Fetaost har l\u00e4gre kaloriinneh\u00e5ll \u00e4n m\u00e5nga andra h\u00e5rdostar och \u00e4r naturligt laktosfri n\u00e4r den \u00e4r v\u00e4llagrad. Den \u00e4r perfekt i sallader, p\u00e5 pizza, i grat\u00e4nger eller som del av en meze. Sk\u00f6lj osten l\u00e4tt om den \u00e4r f\u00f6r salt. F\u00f6rvara i kylsk\u00e5p i egen lake f\u00f6r b\u00e4sta h\u00e5llbarhet.",
+        "usage_tips": [
+            "Grekisk sallad",
+            "Bakad med \u00f6rter",
+            "Paj fyllning",
+            "Pasta s\u00e5s"
+        ],
+        "substitutes": [
+            {
+                "name": "Getost",
+                "reason": "Liknande salthet och textur"
+            },
+            {
+                "name": "Cottage cheese",
+                "reason": "Mildare alternativ med krumblig textur"
+            }
+        ],
+        "meta_title": "Fetaost - N\u00e4ringsv\u00e4rde och Recept | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om fetaost: n\u00e4ringsv\u00e4rde, f\u00f6rvaring, grekiska recept och anv\u00e4ndning i matlagning.",
+        "faq": [
+            {
+                "answer": "Ja, rik p\u00e5 protein och kalcium men h\u00f6g salthalt - \u00e4t i m\u00e5ttliga m\u00e4ngder.",
+                "question": "\u00c4r fetaost h\u00e4lsosam?"
+            },
+            {
+                "answer": "Ja, m\u00e5nga f\u00f6redrar den vid rumstemperatur f\u00f6r b\u00e4sta smak.",
+                "question": "Kan man \u00e4ta fetaost som \u00e4r rumstempererad?"
+            }
+        ],
+        "common_in_lists": [
+            "Grekisk sallad",
+            "Medelhavsmat",
+            "Vegetarisk middag"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "c2273453-e9b7-4a44-9775-2acea5ab26bb",
+        "name": "Fl\u00e4skfil\u00e9",
+        "slug": "flaskfile",
+        "letter": "F",
+        "alternative_names": null,
+        "category_id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
+        "subcategory": "Magert k\u00f6tt",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "3-5 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Marinera innan frysning f\u00f6r b\u00e4sta smak",
+        "season": [],
+        "allergens": [],
+        "calories": 143,
+        "protein": 23.0,
+        "fat": 5.0,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.05,
+        "key_vitamins": {
+            "B1": "0.9mg",
+            "B6": "0.4mg",
+            "B12": "0.7\u03bcg"
+        },
+        "key_minerals": {
+            "zink": "2.0mg",
+            "selen": "26.4\u03bcg",
+            "fosfor": "230mg"
+        },
+        "short_description": "Mager och m\u00f6r k\u00f6ttbit fr\u00e5n fl\u00e4skryggen.",
+        "long_description": "Fl\u00e4skfil\u00e9 \u00e4r en mager k\u00f6ttbit fr\u00e5n grisens rygg som inneh\u00e5ller mycket protein (cirka 22 gram per 100 gram) och relativt lite fett. Den \u00e4r rik p\u00e5 B-vitaminer, s\u00e4rskilt tiamin (B1) som \u00e4r viktigt f\u00f6r energioms\u00e4ttning, samt niacin och B6. Fl\u00e4skfil\u00e9 inneh\u00e5ller ocks\u00e5 j\u00e4rn, zink och selen. Det \u00e4r viktigt att tillaga fl\u00e4sk ordentligt till minst 70\u00b0C inuti f\u00f6r att undvika smittrisker. Fl\u00e4skfil\u00e9 kan snabbt bli torr vid \u00f6vertillagning, s\u00e5 \u00f6vervaka temperaturen noggrant. Marinera g\u00e4rna k\u00f6ttet f\u00f6r extra smak och saftighet. Den \u00e4r m\u00e5ngsidig och passar till allt fr\u00e5n asiatiska wokar till svenska husmanskost.",
+        "usage_tips": [
+            "Schnitzel",
+            "Wok",
+            "Ugnsstekt",
+            "Grillad"
+        ],
+        "substitutes": [
+            {
+                "name": "Kycklingfil\u00e9",
+                "reason": "\u00c4nnu magrare"
+            },
+            {
+                "name": "Kalvfil\u00e9",
+                "reason": "M\u00f6rare men dyrare"
+            }
+        ],
+        "meta_title": "Fl\u00e4skfil\u00e9 - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om fl\u00e4skfil\u00e9: n\u00e4ringsv\u00e4rde, tillagningsmetoder, marinader och tips f\u00f6r perfekt resultat.",
+        "faq": [
+            {
+                "answer": "Stek inte f\u00f6r l\u00e4nge och l\u00e5t k\u00f6ttet vila efter stekning. Innertemperatur 63\u00b0C.",
+                "question": "Hur f\u00e5r man fl\u00e4skfil\u00e9 saftig?"
+            },
+            {
+                "answer": "Inte n\u00f6dv\u00e4ndigt men f\u00f6rb\u00e4ttrar smak och saftighet, speciellt f\u00f6r grillning.",
+                "question": "Beh\u00f6ver man marinera fl\u00e4skfil\u00e9?"
+            }
+        ],
+        "common_in_lists": [
+            "Vardagsmiddag",
+            "Grillmat",
+            "Snabb middag"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:46.440122+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "19413987-6307-48c5-9f1a-d3b457144ee3",
+        "name": "Goji b\u00e4r",
+        "slug": "goji-bar",
+        "letter": "G",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "1 \u00e5r",
+        "shelf_life_unopened": "2 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 349,
+        "protein": 14.3,
+        "fat": 0.4,
+        "carbohydrates": 77.1,
+        "fiber": 13.0,
+        "salt": 0.3,
+        "key_vitamins": {
+            "A": "1341\u03bcg",
+            "C": "48mg",
+            "Riboflavin": "1.3mg"
+        },
+        "key_minerals": {
+            "J\u00e4rn": "6.8mg",
+            "Kalium": "1132mg",
+            "Zeaxantin": "mycket h\u00f6gt"
+        },
+        "short_description": "Tibetansk superfrukt med zeaxantin f\u00f6r \u00f6gonen",
+        "long_description": "Goji b\u00e4r fr\u00e5n Tibet inneh\u00e5ller zeaxantin som skyddar \u00f6gonen fr\u00e5n bl\u00e5tt ljus. Traditionell \"livsl\u00e4ngds-frukt\" i kinesisk medicin.",
+        "usage_tips": [
+            "Torkade som snacks",
+            "I smoothies",
+            "Som topping p\u00e5 yoghurt"
+        ],
+        "substitutes": null,
+        "meta_title": "Goji b\u00e4r - Zeaxantin f\u00f6r \u00f6gonen fr\u00e5n Tibet | ViHandlar",
+        "meta_description": "Uppt\u00e4ck goji b\u00e4rs zeaxantin och tradition som livsl\u00e4ngds-frukt fr\u00e5n Tibet. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "0c18b609-ab4b-4ee9-a6db-0c6ea2927996",
+        "name": "Gouda",
+        "slug": "gouda",
+        "letter": "G",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "Halvh\u00e5rd ost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C i ostpapper",
+        "shelf_life_opened": "3-4 veckor",
+        "shelf_life_unopened": "4-6 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Riv innan frysning",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 356,
+        "protein": 25.2,
+        "fat": 27.4,
+        "carbohydrates": 2.2,
+        "fiber": 0.0,
+        "salt": 2.0,
+        "key_vitamins": {
+            "A": "270\u03bcg",
+            "B12": "1.5\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "546mg",
+            "calcium": "700mg"
+        },
+        "short_description": "Holl\u00e4ndsk ost med mild, n\u00f6tig smak och kr\u00e4mig textur.",
+        "long_description": null,
+        "usage_tips": [
+            "Ostbricka",
+            "Sm\u00f6rg\u00e5s",
+            "Grat\u00e4ng",
+            "Ostfondue"
+        ],
+        "substitutes": [
+            {
+                "name": "Edam",
+                "reason": "Liknande holl\u00e4ndsk ost"
+            },
+            {
+                "name": "Cheddar",
+                "reason": "Skarpare smak"
+            }
+        ],
+        "meta_title": "Gouda - N\u00e4ringsv\u00e4rde och Holl\u00e4ndsk Tradition | Livsmedel A-\u00d6",
+        "meta_description": "Allt om gouda: n\u00e4ringsv\u00e4rde, holl\u00e4ndska osttraditionen, olika lagringsgrader och anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "Ung gouda (4 veckors lagring) \u00e4r mild och kr\u00e4mig, gammal gouda (18+ m\u00e5nader) \u00e4r skarp med kristaller.",
+                "question": "Skillnad mellan ung och gammal gouda?"
+            },
+            {
+                "answer": "Vaxlagret skyddar osten fr\u00e5n uttorkning och bakterier under lagring.",
+                "question": "Varf\u00f6r har gouda vax p\u00e5 sig?"
+            }
+        ],
+        "common_in_lists": [
+            "Holl\u00e4ndsk mat",
+            "Ostbricka",
+            "Vardagsmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:47.837964+00:00"
+    },
+    {
+        "id": "14550ff9-d5e9-4db2-9528-0d6c98f0bff2",
+        "name": "Gr\u00f6nk\u00e5l",
+        "slug": "gronkal",
+        "letter": "X",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "H\u00f6st",
+            "Vinter"
+        ],
+        "allergens": [],
+        "calories": 49,
+        "protein": 4.3,
+        "fat": 0.9,
+        "carbohydrates": 8.8,
+        "fiber": 3.6,
+        "salt": 0.04,
+        "key_vitamins": {
+            "A": "681\u03bcg",
+            "C": "120mg",
+            "K": "704\u03bcg"
+        },
+        "key_minerals": {
+            "J\u00e4rn": "1.5mg",
+            "Kalcium": "150mg",
+            "Sulforafan": "h\u00f6gt"
+        },
+        "short_description": "N\u00e4ringsrik bladgr\u00f6nsak med h\u00f6ga halter av K-vitamin och antioxidanter",
+        "long_description": "Gr\u00f6nk\u00e5l \u00e4r en av de mest n\u00e4ringsrika gr\u00f6nsakerna med extremt h\u00f6ga halter av K-vitamin, C-vitamin och folsyra. Inneh\u00e5ller ocks\u00e5 kraftfulla antioxidanter som lutein och zeaxantin. Forskning visar att gr\u00f6nk\u00e5l kan st\u00f6dja hj\u00e4rt-k\u00e4rlh\u00e4lsan och har antiinflammatoriska egenskaper. K\u00e4lla: Livsmedelsverket och USDA FoodData Central.",
+        "usage_tips": [
+            "Massera med olivolja f\u00f6r att mildra bitterheten i sallader",
+            "Baka till knapriga chips i ugnen p\u00e5 150\u00b0C",
+            "Mixa i gr\u00f6na smoothies tillsammans med frukt",
+            "Anv\u00e4nd som bas i h\u00e4lsosamma bowls"
+        ],
+        "substitutes": null,
+        "meta_title": "Gr\u00f6nk\u00e5l - N\u00e4ringsrik superfood full av K-vitamin | ViHandlar",
+        "meta_description": "Uppt\u00e4ck gr\u00f6nk\u00e5ls h\u00f6ga halt av K-vitamin, antioxidanter och h\u00e4lsof\u00f6rdelar. Komplett n\u00e4ringsinfo fr\u00e5n Livsmedelsverket och anv\u00e4ndarguide.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:48.105869+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "ec72c834-266a-40d5-91be-5d5c0d7ba1d6",
+        "name": "Gurka",
+        "slug": "gurka",
+        "letter": "G",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Fruktgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 8-10\u00b0C",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1-2 veckor",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa",
+        "season": [
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 16,
+        "protein": 0.7,
+        "fat": 0.1,
+        "carbohydrates": 3.6,
+        "fiber": 0.5,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "2.8mg",
+            "K": "16\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "147mg",
+            "magnesium": "13mg"
+        },
+        "short_description": "Krispig gr\u00f6nsak med h\u00f6g vattenhalt, perfekt f\u00f6r sallader.",
+        "long_description": "Gurka best\u00e5r till 96% av vatten och \u00e4r d\u00e4rf\u00f6r mycket kalorifattig (endast 12 kalorier per 100 gram) samtidigt som den \u00e4r hydrerande. Den inneh\u00e5ller vitamin K f\u00f6r benh\u00e4lsa, vitamin C f\u00f6r immunf\u00f6rsvaret och kalium f\u00f6r hj\u00e4rtfunktion. Gurka inneh\u00e5ller ocks\u00e5 antioxidanter som beta-karoten och flavonoider som kan ha anti-inflammatoriska egenskaper. Skalet inneh\u00e5ller mest n\u00e4rings\u00e4mnen, s\u00e5 \u00e4t g\u00e4rna gurkan med skalet efter noggrann tv\u00e4tt. Gurka \u00e4r perfekt som mellanm\u00e5l, i sallader eller som del av detoxvatten. F\u00f6rvara i kylsk\u00e5p och konsumera inom en vecka f\u00f6r b\u00e4sta kvalitet.",
+        "usage_tips": [
+            "Sallader",
+            "Tzatziki",
+            "Inl\u00e4ggning",
+            "Smoothies"
+        ],
+        "substitutes": [
+            {
+                "name": "Zucchini",
+                "reason": "Liknande mild smak"
+            },
+            {
+                "name": "Selleri",
+                "reason": "Samma krispighet"
+            }
+        ],
+        "meta_title": "Gurka - N\u00e4ringsv\u00e4rde och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om gurka: n\u00e4ringsv\u00e4rde, f\u00f6rvaring, olika sorter och anv\u00e4ndning i matlagning.",
+        "faq": [
+            {
+                "answer": "Beska \u00e4mnen bildas vid stress, v\u00e4lj sm\u00e5 gurkor och skala bort \u00e4ndarna.",
+                "question": "Varf\u00f6r blir gurka besk?"
+            },
+            {
+                "answer": "Ja, skalet inneh\u00e5ller fiber och n\u00e4rings\u00e4mnen - sk\u00f6lj bara ordentligt.",
+                "question": "Kan man \u00e4ta gurkskal?"
+            }
+        ],
+        "common_in_lists": [
+            "Sallader",
+            "Grekisk mat",
+            "Sommarmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "174682fc-8894-4bf6-9921-24630751c253",
+        "name": "Halloumi",
+        "slug": "halloumi",
+        "letter": "H",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p i saltlake",
+        "shelf_life_opened": "2 veckor",
+        "shelf_life_unopened": "3 m\u00e5nader fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [
+            "Mj\u00f6lk"
+        ],
+        "calories": 321,
+        "protein": 24.3,
+        "fat": 24.7,
+        "carbohydrates": 1.2,
+        "fiber": 0.0,
+        "salt": 1.1,
+        "key_vitamins": {
+            "A": "94\u03bcg",
+            "B12": "1.1\u03bcg",
+            "Riboflavin": "0.3mg"
+        },
+        "key_minerals": {
+            "Fosfor": "400mg",
+            "Kalcium": "526mg",
+            "Probiotika": "naturligt"
+        },
+        "short_description": "Cypriotisk grillost med h\u00f6g proteinhalt",
+        "long_description": "Halloumi fr\u00e5n Cypern har h\u00f6g proteinhalt och kan grillas utan att sm\u00e4lta. Traditionell del av medelhavskosten med naturliga probiotika.",
+        "usage_tips": [
+            "Grillad som tillbeh\u00f6r",
+            "I sallader",
+            "Som vegetarisk protein"
+        ],
+        "substitutes": null,
+        "meta_title": "Halloumi - Grillbar protein fr\u00e5n Cypern | ViHandlar",
+        "meta_description": "L\u00e4r dig om halloumis h\u00f6ga protein och cypriotiska tradition i medelhavskosten. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "03520398-d5c9-4007-a607-ede7e7bbf509",
+        "name": "Havssalt",
+        "slug": "havssalt",
+        "letter": "H",
+        "alternative_names": null,
+        "category_id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
+        "subcategory": "Mineralsalt",
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "Obegr\u00e4nsat",
+        "shelf_life_unopened": "Obegr\u00e4nsat",
+        "can_freeze": false,
+        "freezing_tips": "Ej aktuellt",
+        "season": [],
+        "allergens": [],
+        "calories": 0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 99.99,
+        "key_vitamins": {},
+        "key_minerals": {
+            "klorid": "59.9g per 100g",
+            "natrium": "38.8g per 100g",
+            "sp\u00e5rmineraler": "varierande"
+        },
+        "short_description": "Naturligt salt fr\u00e5n havsvatten med sp\u00e5rmineraler.",
+        "long_description": "Havssalt \u00e4r en naturlig salt som utvinns genom avdunstning av havsvatten och beh\u00e5ller sp\u00e5r\u00e4mnen fr\u00e5n havet som magnesium, kalium och kalcium. Till skillnad fr\u00e5n raffinerat bordssalt, har havssalt en mer komplex smak och inneh\u00e5ller naturliga mineraler. Havssalt inneh\u00e5ller huvudsakligen natriumklorid som \u00e4r n\u00f6dv\u00e4ndigt f\u00f6r kroppens v\u00e4tskebalans och nervfunktion, men b\u00f6r konsumeras i m\u00e5ttliga m\u00e4ngder. V\u00e4rldsh\u00e4lsoorganisationen rekommenderar max 5 gram salt per dag. Havssalt \u00e4r perfekt f\u00f6r att krydda mat och framh\u00e4va naturliga smaker. Grovkornig havssalt fungerar bra som finishing salt p\u00e5 k\u00f6tt och gr\u00f6nsaker.",
+        "usage_tips": [
+            "All matlagning",
+            "Bakning",
+            "Konservering",
+            "Finishing salt"
+        ],
+        "substitutes": [
+            {
+                "name": "Himalayasalt",
+                "reason": "Annat mineralsalt"
+            },
+            {
+                "name": "Bordssalt",
+                "reason": "Finare struktur"
+            }
+        ],
+        "meta_title": "Havssalt - Naturligt Salt och Mineraler | Livsmedel A-\u00d6",
+        "meta_description": "Allt om havssalt: tillverkning, mineraler, olika typer och anv\u00e4ndning i matlagning.",
+        "faq": [
+            {
+                "answer": "Minimala skillnader i n\u00e4ring - huvudv\u00e4rdet \u00e4r smak och textur fr\u00e5n sp\u00e5rmineraler.",
+                "question": "\u00c4r havssalt nyttigare \u00e4n vanligt salt?"
+            },
+            {
+                "answer": "Fint salt f\u00f6r bakning, grovt havssalt som finishing salt f\u00f6r textur och smak.",
+                "question": "Vilket salt passar b\u00e4st till vad?"
+            }
+        ],
+        "common_in_lists": [
+            "Grundkrydda",
+            "All matlagning",
+            "Bakning"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.947451+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "890cd80d-ee22-4bec-8745-1130d65dda3a",
+        "name": "Honungsmelon",
+        "slug": "honungsmelon",
+        "letter": "P",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "Sommar",
+            "H\u00f6st"
+        ],
+        "allergens": [],
+        "calories": 36,
+        "protein": 0.5,
+        "fat": 0.1,
+        "carbohydrates": 9.1,
+        "fiber": 0.8,
+        "salt": 0.02,
+        "key_vitamins": {
+            "C": "18mg",
+            "B6": "0.1mg",
+            "Folat": "19\u03bcg"
+        },
+        "key_minerals": {
+            "Kalium": "228mg",
+            "Vatten": "90%",
+            "Beta-karoten": "30\u03bcg"
+        },
+        "short_description": "S\u00f6t och saftig melon med h\u00f6gt inneh\u00e5ll av vitamin A och C",
+        "long_description": "Honungsmelon \u00e4r en s\u00f6t och saftig frukt som \u00e4r rik p\u00e5 vitamin A (betakaroten) och C. Inneh\u00e5ller ocks\u00e5 kalium som \u00e4r viktigt f\u00f6r hj\u00e4rtfunktionen och blodtrycksreglering. Meloner har l\u00e5gt kaloriinneh\u00e5ll och h\u00f6gt vatteninneh\u00e5ll vilket g\u00f6r dem perfekta f\u00f6r \u00e5terfuktning. K\u00e4lla: Livsmedelsverket och europeiska n\u00e4ringsdatabasen.",
+        "usage_tips": [
+            "V\u00e4lj melon som ger lite efter tryck vid stj\u00e4lk\u00e4nden",
+            "Servera kyld som efterr\u00e4tt eller mellanm\u00e5l",
+            "Kombinera med prosciutto f\u00f6r italiensk antipasti",
+            "Mixa till refrescherande smoothies"
+        ],
+        "substitutes": null,
+        "meta_title": "Honungsmelon - S\u00f6t frukt rik p\u00e5 vitamin A och C | ViHandlar",
+        "meta_description": "L\u00e4r dig om honungsmelons n\u00e4ringsf\u00f6rdelar, h\u00f6ga halt av vitamin A och C. Information fr\u00e5n Livsmedelsverket om val och f\u00f6rvaring.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "2d1b57f7-576d-4596-a7ed-59eccccdc3b8",
+        "name": "Ingef\u00e4ra (torkad)",
+        "slug": "ingefara-torkad",
+        "letter": "I",
+        "alternative_names": null,
+        "category_id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
+        "subcategory": null,
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 335,
+        "protein": 8.9,
+        "fat": 4.2,
+        "carbohydrates": 71.6,
+        "fiber": 14.1,
+        "salt": 0.03,
+        "key_vitamins": {
+            "C": "0.7mg",
+            "B6": "0.6mg",
+            "Niacin": "9.6mg"
+        },
+        "key_minerals": {
+            "Kalium": "1320mg",
+            "Gingerol": "koncentrerat",
+            "Magnesium": "214mg"
+        },
+        "short_description": "Koncentrerad anti-inflammatorisk krydda",
+        "long_description": "Torkad ingef\u00e4ra har koncentrerat gingerolinneh\u00e5ll med stark anti-inflammatorisk effekt. Traditionell krydda i Blue Zone-omr\u00e5den.",
+        "usage_tips": [
+            "Som krydda i bakning",
+            "I te-blandningar",
+            "Till curryr\u00e4tter"
+        ],
+        "substitutes": null,
+        "meta_title": "Torkad ingef\u00e4ra - Koncentrerat gingerol | ViHandlar",
+        "meta_description": "Uppt\u00e4ck torkad ingef\u00e4ras koncentrerade gingerol och anti-inflammatoriska kraft. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "4440aa77-00ba-4e93-82ba-135ee7ab7fc3",
+        "name": "Jackfruit",
+        "slug": "jackfruit",
+        "letter": "J",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 95,
+        "protein": 1.7,
+        "fat": 0.6,
+        "carbohydrates": 23.2,
+        "fiber": 1.5,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "5\u03bcg",
+            "C": "13.7mg",
+            "B6": "0.3mg"
+        },
+        "key_minerals": {
+            "Kalium": "448mg",
+            "Magnesium": "29mg",
+            "Antioxidanter": "m\u00e5ttligt"
+        },
+        "short_description": "Tropisk superfrukt med k\u00f6ttig konsistens",
+        "long_description": "Jackfruit har k\u00f6ttig konsistens och \u00e4r rik p\u00e5 kalium. Popul\u00e4r vegansk k\u00f6ttsubstitut fr\u00e5n Sydostasien med l\u00e5ng tradition.",
+        "usage_tips": [
+            "Som vegansk k\u00f6tt",
+            "I currys",
+            "F\u00e4rsk som frukt"
+        ],
+        "substitutes": null,
+        "meta_title": "Jackfruit - Vegansk k\u00f6ttsubstitut fr\u00e5n Asien | ViHandlar",
+        "meta_description": "L\u00e4r dig om jackfruits k\u00f6ttiga konsistens och roll som vegansk protein fr\u00e5n Sydostasien. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "92b28b09-74b7-44bb-ad19-acbfecc566b6",
+        "name": "Jasminris",
+        "slug": "jasminris",
+        "letter": "J",
+        "alternative_names": null,
+        "category_id": "d1e3d3cb-6006-4aa5-8326-3d35a0723e29",
+        "subcategory": "L\u00e5ngkornigt ris",
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "Obegr\u00e4nsat",
+        "shelf_life_unopened": "2-3 \u00e5r",
+        "can_freeze": true,
+        "freezing_tips": "Koka innan frysning",
+        "season": [],
+        "allergens": [],
+        "calories": 365,
+        "protein": 7.1,
+        "fat": 0.7,
+        "carbohydrates": 80.0,
+        "fiber": 0.4,
+        "salt": 0.01,
+        "key_vitamins": {
+            "B1": "0.4mg",
+            "B3": "1.5mg",
+            "Folat": "8\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "115mg",
+            "kalium": "115mg",
+            "mangan": "1.1mg"
+        },
+        "short_description": "Aromatiskt l\u00e5ngkornigt ris fr\u00e5n Thailand med blommig doft.",
+        "long_description": "Jasminris \u00e4r en aromatisk l\u00e5ngkornig ristyp som ursprungligen kommer fr\u00e5n Thailand och har en naturlig blommig doft. Denna ris \u00e4r rik p\u00e5 kolhydrater som ger snabb energi och inneh\u00e5ller mindre st\u00e4rkelse \u00e4n kortkornigt ris, vilket ger en fluffigare konsistens. Jasminris inneh\u00e5ller B-vitaminer, s\u00e4rskilt niacin och tiamin, samt magnesium och fosfor. Den har m\u00e5ttligt glykemiskt index j\u00e4mf\u00f6rt med vitt ris. Koka jasminris i f\u00f6rh\u00e5llandet 1:1,5 (ris:vatten) f\u00f6r perfekt konsistens. Sk\u00f6lj riset f\u00f6re kokning f\u00f6r att ta bort \u00f6verfl\u00f6dig st\u00e4rkelse. Jasminris passar utm\u00e4rkt till asiatiska r\u00e4tter och har en naturligt s\u00f6t smak.",
+        "usage_tips": [
+            "Thail\u00e4ndsk mat",
+            "Curry",
+            "Stir-fry",
+            "Sushi"
+        ],
+        "substitutes": [
+            {
+                "name": "Basmatiiris",
+                "reason": "Annat aromatiskt l\u00e5ngkorns ris"
+            },
+            {
+                "name": "Vanligt ris",
+                "reason": "Mindre aromatiskt alternativ"
+            }
+        ],
+        "meta_title": "Jasminris - Aromatiskt Thail\u00e4ndskt Ris | Livsmedel A-\u00d6",
+        "meta_description": "Allt om jasminris: ursprung fr\u00e5n Thailand, tillagning, aromatiska egenskaper och anv\u00e4ndning i asiatisk mat.",
+        "faq": [
+            {
+                "answer": "Naturliga f\u00f6reningar som 2-acetyl-1-pyrolin ger den karakteristiska blommiga doften.",
+                "question": "Vad ger jasminris sin doft?"
+            },
+            {
+                "answer": "Ja, sk\u00f6lja tills vattnet blir klart f\u00f6r att f\u00e5 luftigt ris utan f\u00f6r mycket st\u00e4rkelse.",
+                "question": "Ska man sk\u00f6lja jasminris?"
+            }
+        ],
+        "common_in_lists": [
+            "Thail\u00e4ndsk mat",
+            "Asiatisk mat",
+            "Curry"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.697311+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "5832c24a-8593-41ad-834f-3b447b427c75",
+        "name": "Jordgubbar",
+        "slug": "jordgubbar",
+        "letter": "J",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "B\u00e4r",
+        "storage_method": "Kylsk\u00e5p 2-4\u00b0C",
+        "shelf_life_opened": "2-3 dagar",
+        "shelf_life_unopened": "3-5 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Rensa och frys hela",
+        "season": [
+            "juni",
+            "juli"
+        ],
+        "allergens": [],
+        "calories": 32,
+        "protein": 0.7,
+        "fat": 0.3,
+        "carbohydrates": 7.7,
+        "fiber": 2.0,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "59mg",
+            "K": "2.2\u03bcg",
+            "Folat": "24\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "153mg",
+            "mangan": "0.4mg",
+            "antocyaniner": "h\u00f6gt"
+        },
+        "short_description": "Svenska sommarb\u00e4r med extremt h\u00f6g vitamin C halt.",
+        "long_description": "Jordgubbar \u00e4r n\u00e4ringsrika b\u00e4r som inneh\u00e5ller mer vitamin C \u00e4n apelsiner - 100 gram jordgubbar t\u00e4cker \u00f6ver 100% av det dagliga behovet av vitamin C. De \u00e4r ocks\u00e5 rika p\u00e5 antioxidanter som antocyaniner och ellagsyra som kan hj\u00e4lpa till att bek\u00e4mpa inflammation och skydda mot hj\u00e4rt-k\u00e4rlsjukdomar. Jordgubbar inneh\u00e5ller folsyra som \u00e4r viktig under graviditet, samt mangan f\u00f6r benh\u00e4lsa. De har l\u00e5g kaloriinneh\u00e5ll (32 kalorier per 100 gram) och h\u00f6g fiberhalt. Svenska jordgubbar har ofta h\u00f6gre n\u00e4ringsv\u00e4rde och s\u00f6tma \u00e4n importerade. V\u00e4lj fasta, r\u00f6da b\u00e4r utan m\u00f6gel och konsumera snabbt f\u00f6r b\u00e4sta kvalitet.",
+        "usage_tips": [
+            "Dessert",
+            "Sylt",
+            "Smoothies",
+            "T\u00e5rtor"
+        ],
+        "substitutes": [
+            {
+                "name": "Hallon",
+                "reason": "Liknande b\u00e4r"
+            },
+            {
+                "name": "Bl\u00e5b\u00e4r",
+                "reason": "Andra antioxidantrika b\u00e4r"
+            }
+        ],
+        "meta_title": "Jordgubbar - Svensk Sommar och Vitamin C | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om jordgubbar: n\u00e4ringsv\u00e4rde, svensk s\u00e4song, plockning och bevarande.",
+        "faq": [
+            {
+                "answer": "Juni-juli \u00e4r h\u00f6gs\u00e4song f\u00f6r svenska jordgubbar, med klimatet varierar s\u00e4songen.",
+                "question": "N\u00e4r \u00e4r jordgubbss\u00e4song i Sverige?"
+            },
+            {
+                "answer": "Nej, tv\u00e4tta f\u00f6rst n\u00e4r du ska \u00e4ta dem f\u00f6r att undvika fukt och m\u00f6gel.",
+                "question": "Ska man tv\u00e4tta jordgubbar innan f\u00f6rvaring?"
+            }
+        ],
+        "common_in_lists": [
+            "Svensk sommar",
+            "Midsommar",
+            "Vitamin C k\u00e4lla"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "753ad649-a676-42f5-9d92-f708cb867c53",
+        "name": "Kamut (Khorasan vete)",
+        "slug": "kamut-khorasan-vete",
+        "letter": "K",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [
+            "Gluten"
+        ],
+        "calories": 337,
+        "protein": 14.7,
+        "fat": 2.2,
+        "carbohydrates": 70.4,
+        "fiber": 7.4,
+        "salt": 0.0,
+        "key_vitamins": {
+            "E": "1.9mg",
+            "B3": "5.4mg",
+            "Thiamin": "0.4mg"
+        },
+        "key_minerals": {
+            "Zink": "3.0mg",
+            "Selen": "89\u03bcg",
+            "Magnesium": "153mg"
+        },
+        "short_description": "Antik veten\u00e4ra besl\u00e4ktad med durumvete",
+        "long_description": "Kamut \u00e4r en antik vetensort fr\u00e5n Egypten med n\u00f6taktig smak och h\u00f6gt proteininneh\u00e5ll. Traditionell spannm\u00e5l fr\u00e5n fertila halvm\u00e5nen.",
+        "usage_tips": [
+            "Som pasta",
+            "Till br\u00f6dbak",
+            "I sallader"
+        ],
+        "substitutes": null,
+        "meta_title": "Kamut - Antik protein fr\u00e5n Egypten | ViHandlar",
+        "meta_description": "Uppt\u00e4ck kamuts n\u00f6taktiga smak och h\u00f6ga protein fr\u00e5n antika Egypten. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "11f13109-2915-489e-aeae-0448be8f0a91",
+        "name": "Kyckling",
+        "slug": "kyckling",
+        "letter": "K",
+        "alternative_names": null,
+        "category_id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
+        "subcategory": null,
+        "storage_method": null,
+        "shelf_life_opened": null,
+        "shelf_life_unopened": null,
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": null,
+        "allergens": null,
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "fiber": null,
+        "salt": null,
+        "key_vitamins": null,
+        "key_minerals": null,
+        "short_description": "Magert k\u00f6tt rikt p\u00e5 protein och B-vitaminer.",
+        "long_description": "Kyckling \u00e4r en av de mest popul\u00e4ra proteinb\u00f6orna globalt och en utm\u00e4rkt k\u00e4lla till komplett protein (cirka 25 gram per 100 gram). Kycklingbr\u00f6st \u00e4r s\u00e4rskilt magert medan l\u00e5r inneh\u00e5ller mer fett och smak. Kyckling \u00e4r rik p\u00e5 B-vitaminer, s\u00e4rskilt niacin och B6, samt selen och fosfor. Det inneh\u00e5ller alla essentiella aminosyror som kroppen beh\u00f6ver f\u00f6r muskelbyggnad och reparation. V\u00e4lj frikl\u00e4ckt kyckling f\u00f6r b\u00e4ttre djurv\u00e4lf\u00e4rd och kvalitet. Tillaga till interntemperatur p\u00e5 minst 74\u00b0C. Kyckling \u00e4r extremt m\u00e5ngsidig och kan tillagas p\u00e5 otaliga s\u00e4tt fr\u00e5n grillning till l\u00e5ngsamkokning.",
+        "usage_tips": null,
+        "substitutes": null,
+        "meta_title": "Kyckling - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om kyckling: n\u00e4ringsv\u00e4rde, tillagning, s\u00e4kerhet och olika delar. Tips f\u00f6r b\u00e4sta smak och kvalitet.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.270535+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "fdbf2576-00d9-4380-a226-a7f0be88fb2f",
+        "name": "Lavendel",
+        "slug": "lavendel",
+        "letter": "L",
+        "alternative_names": null,
+        "category_id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
+        "subcategory": null,
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "Sommar"
+        ],
+        "allergens": [],
+        "calories": 49,
+        "protein": 4.0,
+        "fat": 2.3,
+        "carbohydrates": 9.2,
+        "fiber": 4.6,
+        "salt": 0.01,
+        "key_vitamins": {
+            "A": "287\u03bcg",
+            "C": "12mg",
+            "Kalcium": "215mg"
+        },
+        "key_minerals": {
+            "J\u00e4rn": "2.0mg",
+            "Kalium": "86mg",
+            "Linalool": "h\u00f6gt"
+        },
+        "short_description": "Lugnande \u00f6rt med linalool f\u00f6r avslappning",
+        "long_description": "Lavendel inneh\u00e5ller linalool som kan ha lugnande effekter enligt aromaterapi-forskning. Traditionell medicinalv\u00e4xt fr\u00e5n Medelhavet.",
+        "usage_tips": [
+            "Som te f\u00f6r avslappning",
+            "I bakning sparsamt",
+            "Som aromaterapi"
+        ],
+        "substitutes": null,
+        "meta_title": "Lavendel - Linalool f\u00f6r avslappning | ViHandlar",
+        "meta_description": "L\u00e4r dig om lavendels linalool och lugnande effekter fr\u00e5n medelhavsv tradition. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "a75e0f6e-346f-4cc7-9d09-5fe69df7f6cb",
+        "name": "Lax",
+        "slug": "lax",
+        "letter": "L",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Fet fisk",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C p\u00e5 is",
+        "shelf_life_opened": "1-2 dagar",
+        "shelf_life_unopened": "1-2 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Vakuumf\u00f6rpacka innan frysning",
+        "season": [
+            "maj",
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [
+            "fisk"
+        ],
+        "calories": 208,
+        "protein": 25.4,
+        "fat": 13.0,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.05,
+        "key_vitamins": {
+            "D": "11\u03bcg",
+            "B12": "4.9\u03bcg",
+            "Niacin": "8.5mg"
+        },
+        "key_minerals": {
+            "selen": "41.4\u03bcg",
+            "fosfor": "371mg",
+            "kalium": "628mg"
+        },
+        "short_description": "N\u00e4ringsrik fet fisk med h\u00f6gt inneh\u00e5ll av omega-3.",
+        "long_description": "Lax \u00e4r en fet fisk som \u00e4r exceptionellt rik p\u00e5 omega-3-fettsyror, s\u00e4rskilt EPA och DHA, som \u00e4r avg\u00f6rande f\u00f6r hj\u00e4rn- och hj\u00e4rth\u00e4lsa. 100 gram lax inneh\u00e5ller cirka 22 gram protein och \u00f6ver 2 gram omega-3-fettsyror. Lax \u00e4r ocks\u00e5 en utm\u00e4rkt k\u00e4lla till vitamin D, B12, och selen. Vildlax har generellt h\u00f6gre n\u00e4ringsv\u00e4rde och mindre f\u00f6roreningar \u00e4n fiskfarmlax. Laxen inneh\u00e5ller astaxantin, en kraftfull antioxidant som ger den rosa f\u00e4rgen. Tillaga lax till interntemperatur p\u00e5 63\u00b0C f\u00f6r optimal textur. Konsumera 2-3 portioner fet fisk per vecka enligt n\u00e4ringsrekommendationer.",
+        "usage_tips": [
+            "Grillad",
+            "Rimmad",
+            "Sushi",
+            "Ugnsbakad"
+        ],
+        "substitutes": [
+            {
+                "name": "Regnb\u00e5gslax",
+                "reason": "Liknande smak och textur"
+            },
+            {
+                "name": "Makrill",
+                "reason": "H\u00f6g omega-3 halt"
+            }
+        ],
+        "meta_title": "Lax - N\u00e4ringsv\u00e4rde och Omega-3 | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om lax: n\u00e4ringsv\u00e4rde, omega-3 f\u00f6rdelar, tillagning och skillnad mellan odlad och vild lax.",
+        "faq": [
+            {
+                "answer": "Omega-3 \u00e4r viktigt f\u00f6r hj\u00e4rtat, hj\u00e4rnan och kan minska inflammation i kroppen.",
+                "question": "Vilka f\u00f6rdelar har omega-3?"
+            },
+            {
+                "answer": "Vild lax har fastare k\u00f6tt och mer intensiv smak, odlad lax \u00e4r fetare och tillg\u00e4nglig \u00e5ret runt.",
+                "question": "Skillnad mellan odlad och vild lax?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosam middag",
+            "Omega-3 k\u00e4lla",
+            "Nordisk mat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "8a1a2a63-5943-4285-bfcf-8db30f7138a8",
+        "name": "L\u00f6k Gul",
+        "slug": "lok-gul",
+        "letter": "L",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Rotgr\u00f6nsak",
+        "storage_method": "M\u00f6rkt, torrt och svalt",
+        "shelf_life_opened": "2-3 m\u00e5nader",
+        "shelf_life_unopened": "2-3 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Hacka innan frysning",
+        "season": [
+            "augusti",
+            "september",
+            "oktober"
+        ],
+        "allergens": [],
+        "calories": 40,
+        "protein": 1.1,
+        "fat": 0.1,
+        "carbohydrates": 9.3,
+        "fiber": 1.7,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "7.4mg",
+            "B6": "0.1mg",
+            "Folat": "19\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "146mg",
+            "mangan": "0.1mg"
+        },
+        "short_description": "Grundl\u00e4ggande aromgr\u00f6nsak, bas i de flesta matr\u00e4tter.",
+        "long_description": "Gul l\u00f6k \u00e4r en grundl\u00e4ggande ingrediens i matlagning v\u00e4rlden \u00f6ver och inneh\u00e5ller kraftfulla svavelhaltiga f\u00f6reningar som ger b\u00e5de smak och h\u00e4lsof\u00f6rdelar. L\u00f6k inneh\u00e5ller quercetin, en stark antioxidant som kan ha anti-inflammatoriska egenskaper och st\u00f6dja hj\u00e4rth\u00e4lsan. Den inneh\u00e5ller ocks\u00e5 prebiotikers fibrer som gynnar tarmfloran, vitamin C f\u00f6r immunf\u00f6rsvaret och mangan. L\u00f6k har naturligt antibakteriella egenskaper och kan hj\u00e4lpa till att bek\u00e4mpa infektioner. F\u00f6rvara l\u00f6k i torr, m\u00f6rk plats med god luftcirkulation. Sk\u00e4r l\u00f6k under rinnande vatten f\u00f6r att minska t\u00e5rfl\u00f6de. Karamelliserad l\u00f6k utvecklar naturlig s\u00f6tma perfekt f\u00f6r s\u00e5ser och grat\u00e4nger.",
+        "usage_tips": [
+            "Bas f\u00f6r s\u00e5ser",
+            "Stekt",
+            "Karamelliserad",
+            "Soppa"
+        ],
+        "substitutes": [
+            {
+                "name": "Schalottenl\u00f6k",
+                "reason": "Mildare smak"
+            },
+            {
+                "name": "R\u00f6dl\u00f6k",
+                "reason": "Starkare smak, bra r\u00e5"
+            }
+        ],
+        "meta_title": "L\u00f6k Gul - Grundsmaker och F\u00f6rvaring | Livsmedel A-\u00d6",
+        "meta_description": "Allt om gul l\u00f6k: n\u00e4ringsv\u00e4rde, f\u00f6rvaring, olika typer och grundl\u00e4ggande matlagning.",
+        "faq": [
+            {
+                "answer": "Kyl l\u00f6ken f\u00f6rst, anv\u00e4nd vass kniv och andas genom munnen.",
+                "question": "Hur undviker man t\u00e5rar n\u00e4r man hackar l\u00f6k?"
+            },
+            {
+                "answer": "V\u00e4rme bryter ner sura f\u00f6reningar och f\u00f6rvandlar dem till socker.",
+                "question": "Varf\u00f6r blir l\u00f6k s\u00f6t n\u00e4r man steker den?"
+            }
+        ],
+        "common_in_lists": [
+            "Grundsmaker",
+            "Svensk husmanskost",
+            "Daglig matlagning"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "9c262f3c-826c-43f9-b51e-ade8f29fe91b",
+        "name": "Macadamian\u00f6tter",
+        "slug": "macadamianotter",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "2b7562b7-e366-4be3-bffd-48b81962a5d3",
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "6 m\u00e5nader",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [
+            "N\u00f6tter"
+        ],
+        "calories": 718,
+        "protein": 7.9,
+        "fat": 75.8,
+        "carbohydrates": 13.8,
+        "fiber": 8.6,
+        "salt": 0.01,
+        "key_vitamins": {
+            "E": "0.5mg",
+            "B1": "1.2mg",
+            "Folat": "11\u03bcg"
+        },
+        "key_minerals": {
+            "Mangan": "4.1mg",
+            "Magnesium": "130mg",
+            "Palmitoleinsyra": "17g"
+        },
+        "short_description": "Kr\u00e4miga n\u00f6tter rika p\u00e5 palmitoleinsyra",
+        "long_description": "Macadamian\u00f6tter inneh\u00e5ller palmitoleinsyra som kan st\u00f6dja hj\u00e4rt-k\u00e4rlh\u00e4lsan. Fr\u00e5n Australien med kr\u00e4mig konsistens och mild smak.",
+        "usage_tips": [
+            "Som lyxsnacks",
+            "I bakning",
+            "Rostade med salt"
+        ],
+        "substitutes": null,
+        "meta_title": "Macadamian\u00f6tter - Palmitoleinsyra f\u00f6r hj\u00e4rtat | ViHandlar",
+        "meta_description": "Uppt\u00e4ck macadamian\u00f6tters palmitoleinsyra och kr\u00e4miga konsistens fr\u00e5n Australien. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "648bae36-1570-49ea-87ad-7e6dfdc9f4b1",
+        "name": "Makrill",
+        "slug": "makrill",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Fet fisk",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C p\u00e5 is",
+        "shelf_life_opened": "1-2 dagar",
+        "shelf_life_unopened": "1-2 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Reng\u00f6r och frys inom 24 timmar",
+        "season": [
+            "april",
+            "maj",
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [
+            "fisk"
+        ],
+        "calories": 305,
+        "protein": 18.6,
+        "fat": 25.1,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.15,
+        "key_vitamins": {
+            "D": "4.0\u03bcg",
+            "B12": "19\u03bcg",
+            "Niacin": "9.7mg"
+        },
+        "key_minerals": {
+            "selen": "51.6\u03bcg",
+            "fosfor": "217mg",
+            "omega-3": "2670mg"
+        },
+        "short_description": "Mycket fet fisk med h\u00f6gt omega-3 inneh\u00e5ll och stark smak.",
+        "long_description": "Makrill \u00e4r en fet fisk som \u00e4r rik p\u00e5 omega-3-fettsyror och har en av de h\u00f6gsta halterna av dessa h\u00e4lsosamma fetter bland alla fisksorter. 100 gram makrill inneh\u00e5ller \u00f6ver 4 gram omega-3-fettsyror, vilket \u00e4r mer \u00e4n dubbelt s\u00e5 mycket som lax. Makrill \u00e4r ocks\u00e5 en utm\u00e4rkt k\u00e4lla till protein, vitamin D, B12 och selen. Den inneh\u00e5ller CoQ10, ett viktigt antioxidant f\u00f6r hj\u00e4rth\u00e4lsan. F\u00e4rsk makrill ska lukta hav och ha klara \u00f6gon. P\u00e5 grund av sitt h\u00f6ga fettinneh\u00e5ll \u00e4r makrill s\u00e4rskilt smakfull grillad eller r\u00f6kt. Konsumera makrill regelbundet f\u00f6r optimal hj\u00e4rn- och hj\u00e4rth\u00e4lsa.",
+        "usage_tips": [
+            "Grillad",
+            "R\u00f6kt",
+            "Inkokt",
+            "Stekt"
+        ],
+        "substitutes": [
+            {
+                "name": "Sill",
+                "reason": "Liknande fet fisk"
+            },
+            {
+                "name": "Sardiner",
+                "reason": "Mindre storlek samma familj"
+            }
+        ],
+        "meta_title": "Makrill - Omega-3 K\u00e4lla och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om makrill: extremt h\u00f6g omega-3 halt, tillagning, s\u00e4song och h\u00e4lsof\u00f6rdelar.",
+        "faq": [
+            {
+                "answer": "Extremt h\u00f6gt inneh\u00e5ll av omega-3 (\u00f6ver 2g per 100g) och vitamin B12, bra f\u00f6r hj\u00e4rta och hj\u00e4rna.",
+                "question": "Varf\u00f6r \u00e4r makrill s\u00e5 h\u00e4lsosam?"
+            },
+            {
+                "answer": "Marinera i citron och salt f\u00f6re tillagning, eller v\u00e4lj mindre exemplar som \u00e4r mildare.",
+                "question": "Hur f\u00e5r man bort den starka smaken?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosam fisk",
+            "Omega-3 k\u00e4lla",
+            "Grillmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "b8cc0d4c-faf0-4db6-9a84-ce8ddad41985",
+        "name": "Mj\u00f6lk",
+        "slug": "mjolk",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": null,
+        "storage_method": null,
+        "shelf_life_opened": null,
+        "shelf_life_unopened": null,
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": null,
+        "allergens": null,
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "fiber": null,
+        "salt": null,
+        "key_vitamins": null,
+        "key_minerals": null,
+        "short_description": "N\u00e4ringsrik mj\u00f6lkprodukt som \u00e4r rik p\u00e5 kalcium och protein.",
+        "long_description": "Mj\u00f6lk \u00e4r en komplett n\u00e4ringsk\u00e4lla som inneh\u00e5ller h\u00f6gkvalitativt protein med alla essentiella aminosyror, kalcium f\u00f6r stark benh\u00e4lsa och vitamin D f\u00f6r kalciumabsorption. En kopp mj\u00f6lk (250 ml) t\u00e4cker cirka 30% av det dagliga kalciumbehovet. Mj\u00f6lk inneh\u00e5ller ocks\u00e5 riboflavin, vitamin B12 och fosfor. Laktosfri mj\u00f6lk finns f\u00f6r de som inte t\u00e5l laktos. Ekologisk mj\u00f6lk fr\u00e5n betesdjur inneh\u00e5ller ofta h\u00f6gre halter av omega-3-fettsyror. F\u00f6rvara mj\u00f6lk i kylsk\u00e5p vid max 4\u00b0C och konsumera f\u00f6re b\u00e4st f\u00f6re-datum. Mj\u00f6lk \u00e4r m\u00e5ngsidig och anv\u00e4nds i allt fr\u00e5n drycker till bakning.",
+        "usage_tips": null,
+        "substitutes": null,
+        "meta_title": "Mj\u00f6lk - N\u00e4ringsv\u00e4rde och H\u00e5llbarhet | Livsmedel A-\u00d6",
+        "meta_description": "Allt om mj\u00f6lk: n\u00e4ringsv\u00e4rde, h\u00e5llbarhet, f\u00f6rvaring och anv\u00e4ndning. Komplett guide med tips f\u00f6r k\u00f6p och lagring.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.270535+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "7ca7a982-0856-4772-9934-430d93ba8200",
+        "name": "Morot",
+        "slug": "morot",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Rotgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "3-4 veckor",
+        "shelf_life_unopened": "1 m\u00e5nad",
+        "can_freeze": true,
+        "freezing_tips": "Sk\u00e4r i bitar innan frysning",
+        "season": [
+            "augusti",
+            "september",
+            "oktober",
+            "november"
+        ],
+        "allergens": [],
+        "calories": 41,
+        "protein": 0.9,
+        "fat": 0.2,
+        "carbohydrates": 9.6,
+        "fiber": 2.8,
+        "salt": 0.07,
+        "key_vitamins": {
+            "A": "835\u03bcg",
+            "K": "13\u03bcg",
+            "B6": "0.1mg"
+        },
+        "key_minerals": {
+            "biotin": "6\u03bcg",
+            "kalium": "320mg"
+        },
+        "short_description": "S\u00f6t rotgr\u00f6nsak extremt rik p\u00e5 betakaroten (vitamin A).",
+        "long_description": "Mor\u00f6tter \u00e4r rika p\u00e5 beta-karoten som kroppen omvandlar till vitamin A, viktigt f\u00f6r syn, immunf\u00f6rsvar och celldelning. En stor morot kan t\u00e4cka hela det dagliga behovet av vitamin A. Mor\u00f6tter inneh\u00e5ller ocks\u00e5 fiber, kalium och antioxidanten lutein. Beta-karotenet absorberas b\u00e4ttre n\u00e4r mor\u00f6tter kokas och \u00e4ts med lite fett. Mor\u00f6tter har naturlig s\u00f6tma som \u00f6kar vid tillagning. De \u00e4r perfekta r\u00e5a som mellanm\u00e5l, kokta som tillbeh\u00f6r eller som bas i soppor och s\u00e5ser. F\u00f6rvara mor\u00f6tter i kylsk\u00e5p utan blast f\u00f6r b\u00e4sta h\u00e5llbarhet. Ekologiska mor\u00f6tter beh\u00f6ver inte skalas, bara skrubbas.",
+        "usage_tips": [
+            "R\u00e5 i sallad",
+            "Soppa",
+            "Juice",
+            "Bakad"
+        ],
+        "substitutes": [
+            {
+                "name": "Palsternacka",
+                "reason": "Liknande rotgr\u00f6nsak"
+            },
+            {
+                "name": "S\u00f6tpotatis",
+                "reason": "Liknande s\u00f6tma och f\u00e4rg"
+            }
+        ],
+        "meta_title": "Morot - Vitamin A K\u00e4lla och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om mor\u00f6tter: n\u00e4ringsv\u00e4rde, vitamin A f\u00f6rdelar, odling och olika tillagningss\u00e4tt.",
+        "faq": [
+            {
+                "answer": "Betakaroten omvandlas till vitamin A som beh\u00f6vs f\u00f6r bildningen av rhodopsin i \u00f6gat.",
+                "question": "Varf\u00f6r \u00e4r mor\u00f6tter bra f\u00f6r synen?"
+            },
+            {
+                "answer": "Ja, kyla omvandlar st\u00e4rkelse till socker som en naturlig frostskydd.",
+                "question": "Blir mor\u00f6tter s\u00f6tare efter frost?"
+            }
+        ],
+        "common_in_lists": [
+            "Vitamin A k\u00e4lla",
+            "Barnmat",
+            "H\u00e4lsosam kost"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "80a5cbfe-3353-4617-bca8-dda33e7caaee",
+        "name": "Mozzarella",
+        "slug": "mozzarella",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "F\u00e4rskost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C i egen v\u00e4tska",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1-2 veckor",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 280,
+        "protein": 18.1,
+        "fat": 22.4,
+        "carbohydrates": 2.2,
+        "fiber": 0.0,
+        "salt": 0.6,
+        "key_vitamins": {
+            "A": "179\u03bcg",
+            "B12": "2.3\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "354mg",
+            "calcium": "505mg"
+        },
+        "short_description": "Italiensk f\u00e4rskost med mild smak och kr\u00e4mig konsistens.",
+        "long_description": "Mozzarella \u00e4r en mild, kr\u00e4mig ost som ursprungligen kommer fr\u00e5n Italien och traditionellt gjordes p\u00e5 buffel mj\u00f6lk. Modern mozzarella g\u00f6rs oftast p\u00e5 komj\u00f6lk och \u00e4r rik p\u00e5 kalcium, protein och vitamin B12. F\u00e4rsk mozzarella har h\u00f6g vattenhalt och mild smak, medan lagrad mozzarella \u00e4r fastare och mer koncentrerad i smak. Mozzarella sm\u00e4lter j\u00e4mnt och drar l\u00e5nga str\u00e4ngar, vilket g\u00f6r den perfekt f\u00f6r pizza och grat\u00e4nger. Den inneh\u00e5ller probiotiska bakterier som kan gynna tarmh\u00e4lsan. F\u00f6rvara f\u00e4rsk mozzarella i sin egen v\u00e4tska i kylsk\u00e5p och konsumera inom n\u00e5gra dagar f\u00f6r b\u00e4sta kvalitet och s\u00e4kerhet.",
+        "usage_tips": [
+            "Pizza topping",
+            "Caprese sallad",
+            "Grat\u00e4ng",
+            "Sm\u00f6rg\u00e5s"
+        ],
+        "substitutes": [
+            {
+                "name": "Burrata",
+                "reason": "Kr\u00e4migare variant av mozzarella"
+            },
+            {
+                "name": "Ricotta",
+                "reason": "Mildare smak f\u00f6r bakning"
+            }
+        ],
+        "meta_title": "Mozzarella - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om mozzarella: n\u00e4ringsv\u00e4rde, f\u00f6rvaring, tillagning och italienska recept. Guide f\u00f6r b\u00e4sta kvalitet och anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "I kylsk\u00e5p i sin egen v\u00e4tska eller saltlake f\u00f6r att beh\u00e5lla fuktigheten.",
+                "question": "Hur f\u00f6rvaras mozzarella b\u00e4st?"
+            },
+            {
+                "answer": "\u00d6veruppv\u00e4rmning g\u00f6r att proteiner drar ihop sig - anv\u00e4nd l\u00e5g v\u00e4rme.",
+                "question": "Varf\u00f6r blir mozzarella gummiaktig?"
+            }
+        ],
+        "common_in_lists": [
+            "Pizza Margherita",
+            "Italiensk sallad",
+            "Lasagne"
+        ],
+        "related_foods": [
+            "8055dfda-30a8-4e0c-9257-308a7cb3fe1e",
+            "ce94f8a8-1679-4cc0-9847-1058183a5f95",
+            "81fd186f-a3b0-4168-a409-7919c786300f"
+        ],
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "abf92e8c-d832-47e0-a481-005091b80f75",
+        "name": "Mussla",
+        "slug": "mussla",
+        "letter": "M",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Skaldjur",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C levande",
+        "shelf_life_opened": "1 dag levande",
+        "shelf_life_unopened": "1 dag levande",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa levande",
+        "season": [
+            "september",
+            "oktober",
+            "november",
+            "december",
+            "januari",
+            "februari"
+        ],
+        "allergens": [
+            "skaldjur",
+            "mollusker"
+        ],
+        "calories": 172,
+        "protein": 24.2,
+        "fat": 4.6,
+        "carbohydrates": 7.0,
+        "fiber": 0.0,
+        "salt": 0.29,
+        "key_vitamins": {
+            "C": "13.6mg",
+            "B12": "20.4\u03bcg",
+            "Folat": "76\u03bcg"
+        },
+        "key_minerals": {
+            "zink": "2.7mg",
+            "j\u00e4rn": "6.7mg",
+            "mangan": "6.8mg"
+        },
+        "short_description": "N\u00e4ringsrika skaldjur med h\u00f6g halt av B12 och j\u00e4rn.",
+        "long_description": null,
+        "usage_tips": [
+            "Vin och vitl\u00f6k",
+            "Mariniere",
+            "Pasta",
+            "Soppa"
+        ],
+        "substitutes": [
+            {
+                "name": "Ostron",
+                "reason": "Liknande skaldjur"
+            },
+            {
+                "name": "Kammusslor",
+                "reason": "St\u00f6rre med s\u00f6tare smak"
+            }
+        ],
+        "meta_title": "Mussla - N\u00e4ringsv\u00e4rde och S\u00e4songstips | Livsmedel A-\u00d6",
+        "meta_description": "Allt om musslor: n\u00e4ringsv\u00e4rde, s\u00e4song, tillagning och s\u00e4kerhetstips f\u00f6r skaldjur.",
+        "faq": [
+            {
+                "answer": "Under m\u00e5nader med R (september-april) n\u00e4r vattnet \u00e4r kallare och mindre bakterier.",
+                "question": "N\u00e4r \u00e4r musslor s\u00e4krast att \u00e4ta?"
+            },
+            {
+                "answer": "Skalet ska vara st\u00e4ngt eller st\u00e4ngas n\u00e4r man knackar p\u00e5 det, kassera \u00f6ppna musslor.",
+                "question": "Hur vet man att musslor \u00e4r f\u00e4rska?"
+            }
+        ],
+        "common_in_lists": [
+            "Fransk matlagning",
+            "Skaldjursafton",
+            "Medelhavsmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:47.837964+00:00"
+    },
+    {
+        "id": "8a7c6379-2e8a-4e1b-9316-54a95a36b094",
+        "name": "Nektarin",
+        "slug": "nektarin",
+        "letter": "N",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "Sommar"
+        ],
+        "allergens": [],
+        "calories": 44,
+        "protein": 1.1,
+        "fat": 0.3,
+        "carbohydrates": 10.6,
+        "fiber": 1.7,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "17\u03bcg",
+            "C": "5.4mg",
+            "E": "0.8mg"
+        },
+        "key_minerals": {
+            "Kalium": "201mg",
+            "Lutein": "130\u03bcg",
+            "Beta-karoten": "150\u03bcg"
+        },
+        "short_description": "Len persika-variant rik p\u00e5 antioxidanter",
+        "long_description": "Nektarin \u00e4r en len persika-variant med koncentrerade antioxidanter och beta-karoten. St\u00f6djer \u00f6gonh\u00e4lsa och immunf\u00f6rsvar.",
+        "usage_tips": [
+            "F\u00e4rsk som snacks",
+            "I fruktsallad",
+            "Till smoothies"
+        ],
+        "substitutes": null,
+        "meta_title": "Nektarin - Len antioxidant-frukt | ViHandlar",
+        "meta_description": "L\u00e4r dig om nektarins antioxidanter och beta-karoten f\u00f6r \u00f6gon och immunf\u00f6rsvar. Data fr\u00e5n Livsmedelsverket.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "bef2efbf-5434-41a1-b7cc-22df8bc7660c",
+        "name": "N\u00f6tf\u00e4rs",
+        "slug": "notfars",
+        "letter": "N",
+        "alternative_names": null,
+        "category_id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
+        "subcategory": "Malet k\u00f6tt",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "1-2 dagar",
+        "shelf_life_unopened": "1-2 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Frys inom 2 dagar, h\u00e5ller 3-4 m\u00e5nader fryst",
+        "season": [],
+        "allergens": [],
+        "calories": 254,
+        "protein": 26.1,
+        "fat": 15.0,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.07,
+        "key_vitamins": {
+            "B6": "0.4mg",
+            "B12": "2.6\u03bcg",
+            "Niacin": "4.2mg"
+        },
+        "key_minerals": {
+            "zink": "4.5mg",
+            "j\u00e4rn": "2.6mg",
+            "selen": "14.2\u03bcg"
+        },
+        "short_description": "Malet n\u00f6tk\u00f6tt, perfekt f\u00f6r k\u00f6ttf\u00e4rss\u00e5s och k\u00f6ttbullar.",
+        "long_description": "N\u00f6tf\u00e4rs \u00e4r malet n\u00f6tk\u00f6tt som \u00e4r en rik k\u00e4lla till protein, j\u00e4rn och B-vitaminer. Det inneh\u00e5ller hemj\u00e4rn som absorberas l\u00e4ttare \u00e4n j\u00e4rn fr\u00e5n vegetabiliska k\u00e4llor. N\u00f6tf\u00e4rs \u00e4r ocks\u00e5 en bra k\u00e4lla till zink, selen och kreatin. V\u00e4lj n\u00f6tf\u00e4rs med l\u00e4gre fetthalt (max 15%) f\u00f6r h\u00e4lsosammare alternativ. Ekologiskt n\u00f6tf\u00e4rs fr\u00e5n betesdjur inneh\u00e5ller ofta h\u00f6gre halter av omega-3-fettsyror och konjugerad linolsyra (CLA). Tillaga n\u00f6tf\u00e4rs till minst 70\u00b0C inuti f\u00f6r s\u00e4kerhet. Anv\u00e4nd f\u00e4rskt n\u00f6tf\u00e4rs inom 1-2 dagar eller frys in f\u00f6r l\u00e4ngre h\u00e5llbarhet. Perfekt f\u00f6r k\u00f6ttf\u00e4rs\u00e5s, k\u00f6ttbullar och hamburgare.",
+        "usage_tips": [
+            "K\u00f6ttf\u00e4rss\u00e5s",
+            "K\u00f6ttbullar",
+            "Tacos",
+            "Lasagne"
+        ],
+        "substitutes": [
+            {
+                "name": "Fl\u00e4skf\u00e4rs",
+                "reason": "Fetare och saftigare"
+            },
+            {
+                "name": "Blandf\u00e4rs",
+                "reason": "Kombination av n\u00f6t och fl\u00e4sk"
+            }
+        ],
+        "meta_title": "N\u00f6tf\u00e4rs - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om n\u00f6tf\u00e4rs: n\u00e4ringsv\u00e4rde, s\u00e4kerhetstips, tillagning och klassiska recept.",
+        "faq": [
+            {
+                "answer": "Max 1-2 dagar i kylsk\u00e5p, anv\u00e4nd eller frys omg\u00e5ende efter k\u00f6p.",
+                "question": "Hur l\u00e4nge h\u00e5ller n\u00f6tf\u00e4rs i kylsk\u00e5pet?"
+            },
+            {
+                "answer": "Minst 70\u00b0C i centrum f\u00f6r att d\u00f6da eventuella bakterier.",
+                "question": "Vilken temperatur ska n\u00f6tf\u00e4rs ha n\u00e4r den \u00e4r klar?"
+            }
+        ],
+        "common_in_lists": [
+            "K\u00f6ttf\u00e4rss\u00e5s",
+            "Tacos",
+            "Lasagne"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:46.440122+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "1cee1137-3893-494e-bfc6-b0dceb763d40",
+        "name": "Oliv (Kalamata)",
+        "slug": "oliv-kalamata",
+        "letter": "O",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p i olja",
+        "shelf_life_opened": "3 m\u00e5nader",
+        "shelf_life_unopened": "2 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 115,
+        "protein": 0.8,
+        "fat": 10.7,
+        "carbohydrates": 6.3,
+        "fiber": 3.2,
+        "salt": 3.3,
+        "key_vitamins": {
+            "A": "20\u03bcg",
+            "E": "1.6mg",
+            "K": "1.4\u03bcg"
+        },
+        "key_minerals": {
+            "J\u00e4rn": "3.3mg",
+            "Natrium": "735mg",
+            "Polyfenol": "mycket h\u00f6gt"
+        },
+        "short_description": "Grekiska oliver rika p\u00e5 polyfenol",
+        "long_description": "Kalamata oliver fr\u00e5n Grekland har h\u00f6gt polyfenolinneh\u00e5ll med anti-inflammatoriska egenskaper. Grundpelare i grekisk Blue Zone Ikaria.",
+        "usage_tips": [
+            "Som meze",
+            "I grekisk sallad",
+            "Till ost och vin"
+        ],
+        "substitutes": null,
+        "meta_title": "Kalamata oliver - Polyfenol fr\u00e5n Grekland | ViHandlar",
+        "meta_description": "Uppt\u00e4ck Kalamata olivers polyfenol och roll i grekiska Blue Zone Ikaria. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "f6e24cba-9915-4fa8-895c-180d00767123",
+        "name": "Paprika R\u00f6d",
+        "slug": "paprika-rod",
+        "letter": "P",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Fruktgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 7-10\u00b0C",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1-2 veckor",
+        "can_freeze": true,
+        "freezing_tips": "Sk\u00e4r i remsor innan frysning",
+        "season": [
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 31,
+        "protein": 1.0,
+        "fat": 0.3,
+        "carbohydrates": 6.0,
+        "fiber": 2.5,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "157\u03bcg",
+            "C": "128mg",
+            "B6": "0.3mg"
+        },
+        "key_minerals": {
+            "folat": "46\u03bcg",
+            "kalium": "211mg"
+        },
+        "short_description": "S\u00f6t och f\u00e4rgstark gr\u00f6nsak med mycket vitamin C.",
+        "long_description": "R\u00f6d paprika \u00e4r rik p\u00e5 vitamin C - en medelstor r\u00f6d paprika inneh\u00e5ller mer \u00e4n dubbelt s\u00e5 mycket vitamin C som en apelsin. Den f\u00e5r sin r\u00f6da f\u00e4rg fr\u00e5n karotener, s\u00e4rskilt beta-karoten och lycopene, kraftfulla antioxidanter som kan skydda mot cellskador. R\u00f6d paprika inneh\u00e5ller ocks\u00e5 vitamin A f\u00f6r synh\u00e4lsa, folsyra och kalium. R\u00f6d paprika \u00e4r s\u00f6tare \u00e4n gr\u00f6n paprika eftersom den f\u00e5r mogna l\u00e4ngre p\u00e5 plantan. Den \u00e4r perfekt r\u00e5a i sallader, grillad, stekt eller fylld. F\u00f6rvara i kylsk\u00e5p och anv\u00e4nd inom en vecka f\u00f6r b\u00e4sta kvalitet.",
+        "usage_tips": [
+            "Wok",
+            "Sallader",
+            "Grillad",
+            "Fyllning"
+        ],
+        "substitutes": [
+            {
+                "name": "Gul paprika",
+                "reason": "Liknande s\u00f6tma"
+            },
+            {
+                "name": "Chilipaprika",
+                "reason": "Hetare variant"
+            }
+        ],
+        "meta_title": "Paprika R\u00f6d - Vitamin C K\u00e4lla | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om r\u00f6d paprika: n\u00e4ringsv\u00e4rde, vitamin C f\u00f6rdelar, tillagning och odling.",
+        "faq": [
+            {
+                "answer": "R\u00f6d paprika \u00e4r fullt mogen och har utvecklat mer socker \u00e4n gr\u00f6n paprika.",
+                "question": "Varf\u00f6r \u00e4r r\u00f6d paprika s\u00f6tare?"
+            },
+            {
+                "answer": "Ja, de \u00e4r \u00e4tbara men kan vara lite beska.",
+                "question": "Kan man \u00e4ta paprikak\u00e4rnor?"
+            }
+        ],
+        "common_in_lists": [
+            "Wok mat",
+            "Medelhavsmat",
+            "Vitamin C"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "81fd186f-a3b0-4168-a409-7919c786300f",
+        "name": "Parmigiano Reggiano",
+        "slug": "parmigiano-reggiano",
+        "letter": "P",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "H\u00e5rdost",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C, helst i ostpapper",
+        "shelf_life_opened": "4-6 veckor",
+        "shelf_life_unopened": "6-8 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Riv osten innan frysning f\u00f6r b\u00e4sta resultat",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 431,
+        "protein": 38.5,
+        "fat": 29.0,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 1.6,
+        "key_vitamins": {
+            "A": "300\u03bcg",
+            "D": "0.5\u03bcg",
+            "B12": "2.0\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "680mg",
+            "calcium": "1184mg"
+        },
+        "short_description": "Italiensk h\u00e5rdost med rik, n\u00f6tig smak och granul\u00e4r textur.",
+        "long_description": "Parmigiano Reggiano \u00e4r \"ostkungarnas kung\" fr\u00e5n Italien, lagrad i minst 12 m\u00e5nader f\u00f6r att utveckla sin karakteristiska n\u00f6tiga, komplexa smak. Det \u00e4r extremt rikt p\u00e5 kalcium - 100 gram inneh\u00e5ller \u00f6ver 1000 mg kalcium. Parmigiano Reggiano \u00e4r ocks\u00e5 en utm\u00e4rkt k\u00e4lla till protein och inneh\u00e5ller alla essentiella aminosyror. Den naturligt l\u00e5ga laktoshalten g\u00f6r den l\u00e4mplig f\u00f6r m\u00e5nga laktosintoleraanta personer. \u00c4kta Parmigiano Reggiano \u00e4r m\u00e4rkt med ursprungsbeteckning. K\u00f6p helst hela bitar och riv sj\u00e4lv f\u00f6r b\u00e4sta smak. F\u00f6rvara inslaget i kylsk\u00e5p och anv\u00e4nd skorpan i soppor och s\u00e5ser f\u00f6r extra smak.",
+        "usage_tips": [
+            "Riv \u00f6ver pasta",
+            "Tugga som snacks",
+            "Anv\u00e4nd i risotto",
+            "Toppa sallader"
+        ],
+        "substitutes": [
+            {
+                "name": "Grana Padano",
+                "reason": "Liknande smak men mildare"
+            },
+            {
+                "name": "Pecorino Romano",
+                "reason": "Saltare men liknande textur"
+            }
+        ],
+        "meta_title": "Parmigiano Reggiano - N\u00e4ringsv\u00e4rde och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om Parmigiano Reggiano: n\u00e4ringsv\u00e4rde, f\u00f6rvaring, anv\u00e4ndning och italienska osttraditionen. Tips f\u00f6r b\u00e4sta smak.",
+        "faq": [
+            {
+                "answer": "Hela bitar h\u00e5ller 6-8 m\u00e5nader o\u00f6ppnade, 4-6 veckor efter \u00f6ppning i kylsk\u00e5p.",
+                "question": "Hur l\u00e4nge h\u00e5ller Parmigiano Reggiano?"
+            },
+            {
+                "answer": "Ja, men riv osten f\u00f6rst f\u00f6r b\u00e4sta resultat efter upptining.",
+                "question": "Kan man frysa Parmigiano Reggiano?"
+            }
+        ],
+        "common_in_lists": [
+            "Pasta Carbonara",
+            "Caesar Sallad",
+            "Italiensk middag"
+        ],
+        "related_foods": [
+            "80a5cbfe-3353-4617-bca8-dda33e7caaee",
+            "8055dfda-30a8-4e0c-9257-308a7cb3fe1e",
+            "ce94f8a8-1679-4cc0-9847-1058183a5f95"
+        ],
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "b07a3041-a023-4e66-a317-98b1fcef0d1d",
+        "name": "Potatis",
+        "slug": "potatis",
+        "letter": "P",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Rotgr\u00f6nsak",
+        "storage_method": "M\u00f6rkt, torrt och svalt 4-8\u00b0C",
+        "shelf_life_opened": "2-3 m\u00e5nader",
+        "shelf_life_unopened": "2-3 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Koka innan frysning",
+        "season": [
+            "augusti",
+            "september",
+            "oktober"
+        ],
+        "allergens": [],
+        "calories": 77,
+        "protein": 2.0,
+        "fat": 0.1,
+        "carbohydrates": 17.0,
+        "fiber": 2.2,
+        "salt": 0.01,
+        "key_vitamins": {
+            "C": "20mg",
+            "B6": "0.3mg",
+            "Folat": "15\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "57mg",
+            "kalium": "429mg",
+            "magnesium": "23mg"
+        },
+        "short_description": "Sveriges viktigaste grundgr\u00f6nsak, rik p\u00e5 st\u00e4rkelse.",
+        "long_description": "Potatis \u00e4r en n\u00e4ringsrik rotfrukt som \u00e4r rik p\u00e5 kolhydrater, kalium och vitamin C. En medelstor potatis med skal inneh\u00e5ller mer kalium \u00e4n en banan och betydande m\u00e4ngder fiber. Potatis inneh\u00e5ller ocks\u00e5 vitamin B6, magnesium och antioxidanter. Olika sorter har olika egenskaper - fastkokarande potatis h\u00e5ller formen bra i sallader medan mj\u00f6lig potatis \u00e4r perfekt f\u00f6r mos. Skalet inneh\u00e5ller mycket av n\u00e4rings\u00e4mnena, s\u00e5 skala s\u00e5 lite som m\u00f6jligt. F\u00f6rvara potatis m\u00f6rkt och svalt men inte i kylsk\u00e5p. Gr\u00f6n potatis ska undvikas d\u00e5 den inneh\u00e5ller giftiga alkaloider.",
+        "usage_tips": [
+            "Kokt",
+            "Bakad",
+            "Stekt",
+            "Mos"
+        ],
+        "substitutes": [
+            {
+                "name": "S\u00f6tpotatis",
+                "reason": "S\u00f6tare smak, mer vitamin A"
+            },
+            {
+                "name": "Pasta",
+                "reason": "Annan kolhydratk\u00e4lla"
+            }
+        ],
+        "meta_title": "Potatis - N\u00e4ringsv\u00e4rde och Svenska Sorter | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om potatis: n\u00e4ringsv\u00e4rde, svenska sorter, f\u00f6rvaring och tillagningsmetoder.",
+        "faq": [
+            {
+                "answer": "Mandelpotatis h\u00e5ller formen b\u00e4st, mj\u00f6liga sorter passar b\u00e4st f\u00f6r mos.",
+                "question": "Vilken potatis \u00e4r b\u00e4st f\u00f6r kokning?"
+            },
+            {
+                "answer": "Nej, gr\u00f6n f\u00e4rg indikerar solanin som \u00e4r giftigt - skala bort gr\u00f6na delar.",
+                "question": "Kan man \u00e4ta gr\u00f6n potatis?"
+            }
+        ],
+        "common_in_lists": [
+            "Svensk husmanskost",
+            "Grundmat",
+            "Vardagsmiddag"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "4183b267-303e-4be0-bb29-28e2c79604c1",
+        "name": "Quorn (mykoprotein)",
+        "slug": "quorn-mykoprotein",
+        "letter": "Q",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "3-4 dagar",
+        "shelf_life_unopened": "3 m\u00e5nader fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [
+            "\u00c4gg"
+        ],
+        "calories": 86,
+        "protein": 11.5,
+        "fat": 2.9,
+        "carbohydrates": 4.5,
+        "fiber": 6.0,
+        "salt": 0.55,
+        "key_vitamins": {
+            "B12": "1.8\u03bcg",
+            "Folat": "36\u03bcg",
+            "Riboflavin": "0.7mg"
+        },
+        "key_minerals": {
+            "Zink": "1.1mg",
+            "Fiber": "6g",
+            "J\u00e4rn": "2.4mg"
+        },
+        "short_description": "Svamprotein med fullst\u00e4ndig aminosyraprofil",
+        "long_description": "Quorn fr\u00e5n svampar ger komplett protein med alla essentiella aminosyror plus h\u00f6g fiber. H\u00e5llbart proteinval f\u00f6r framtiden.",
+        "usage_tips": [
+            "Som k\u00f6tt-ers\u00e4ttning",
+            "I k\u00f6ttf\u00e4rssr\u00e4tter",
+            "Till grillning"
+        ],
+        "substitutes": null,
+        "meta_title": "Quorn - H\u00e5llbart svamprotein | ViHandlar",
+        "meta_description": "Uppt\u00e4ck quorns kompletta aminosyror och h\u00e5llbara svamprotein f\u00f6r framtiden. Data fr\u00e5n tillverkare.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "ba48bad7-8e5a-4ada-916b-3c25de9705b7",
+        "name": "Romansallad",
+        "slug": "romansallad",
+        "letter": "R",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "6 m\u00e5nader fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 17,
+        "protein": 1.2,
+        "fat": 0.3,
+        "carbohydrates": 3.3,
+        "fiber": 2.1,
+        "salt": 0.03,
+        "key_vitamins": {
+            "A": "436\u03bcg",
+            "C": "4mg",
+            "K": "126\u03bcg"
+        },
+        "key_minerals": {
+            "Folat": "136\u03bcg",
+            "Kalium": "247mg",
+            "Lutein": "1730\u03bcg"
+        },
+        "short_description": "Sallad rik p\u00e5 lutein f\u00f6r \u00f6gonh\u00e4lsa",
+        "long_description": "Romansallad inneh\u00e5ller mycket lutein som skyddar \u00f6gonen fr\u00e5n bl\u00e5tt ljus. Krispig bas f\u00f6r n\u00e4ringsrika Caesar-sallader.",
+        "usage_tips": [
+            "Som Caesar-sallad",
+            "Grillad halverad",
+            "Som wraps"
+        ],
+        "substitutes": null,
+        "meta_title": "Romansallad - Lutein f\u00f6r \u00f6gonen | ViHandlar",
+        "meta_description": "L\u00e4r dig om romansallads lutein f\u00f6r \u00f6gonh\u00e4lsa och Caesar-tradition. Data fr\u00e5n Livsmedelsverket.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "6141e717-c719-4bef-9c47-b61e1f21c3b2",
+        "name": "Rucola",
+        "slug": "rucola",
+        "letter": "R",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Bladgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 2-4\u00b0C",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1 vecka",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa",
+        "season": [
+            "april",
+            "maj",
+            "juni",
+            "september",
+            "oktober"
+        ],
+        "allergens": [],
+        "calories": 25,
+        "protein": 2.6,
+        "fat": 0.7,
+        "carbohydrates": 3.7,
+        "fiber": 1.6,
+        "salt": 0.03,
+        "key_vitamins": {
+            "C": "15mg",
+            "K": "109\u03bcg",
+            "Folat": "97\u03bcg"
+        },
+        "key_minerals": {
+            "j\u00e4rn": "1.5mg",
+            "kalium": "369mg",
+            "kalcium": "160mg"
+        },
+        "short_description": "Pepprig bladgr\u00f6nsak med distinkt smak, popul\u00e4r i Italien.",
+        "long_description": null,
+        "usage_tips": [
+            "Sallad",
+            "Pizza topping",
+            "Pesto",
+            "Pasta"
+        ],
+        "substitutes": [
+            {
+                "name": "Spenat",
+                "reason": "Mildare bladgr\u00f6nsak"
+            },
+            {
+                "name": "Vattenkrasse",
+                "reason": "Liknande pepprig smak"
+            }
+        ],
+        "meta_title": "Rucola - Pepprig Smak och N\u00e4ring | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om rucola: n\u00e4ringsv\u00e4rde, pepprig smak, odling och anv\u00e4ndning i italiensk mat.",
+        "faq": [
+            {
+                "answer": "Inneh\u00e5ller senapsoljeglykoside som ger den karakteristiska skarpa smaken.",
+                "question": "Varf\u00f6r \u00e4r rucola s\u00e5 pepprig?"
+            },
+            {
+                "answer": "Ja, men blir mild - tills\u00e4tt i slutet av tillagningen f\u00f6r att beh\u00e5lla lite sting.",
+                "question": "Kan man koka rucola?"
+            }
+        ],
+        "common_in_lists": [
+            "Italiensk mat",
+            "Gourmet sallader",
+            "Pizza"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:47.837964+00:00"
+    },
+    {
+        "id": "c24346fa-c9b5-45e3-a651-d210b50733e6",
+        "name": "R\u00e4kor",
+        "slug": "rakor",
+        "letter": "R",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Skaldjur",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "2-3 dagar kokta",
+        "shelf_life_unopened": "2-3 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Frys kokta r\u00e4kor upp till 3 m\u00e5nader",
+        "season": [
+            "maj",
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [
+            "skaldjur"
+        ],
+        "calories": 99,
+        "protein": 20.3,
+        "fat": 1.4,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.25,
+        "key_vitamins": {
+            "D": "0.2\u03bcg",
+            "E": "1.1mg",
+            "B12": "1.3\u03bcg"
+        },
+        "key_minerals": {
+            "jod": "35\u03bcg",
+            "zink": "1.6mg",
+            "selen": "38\u03bcg"
+        },
+        "short_description": "Popul\u00e4ra skaldjur med s\u00f6t smak och fast textur.",
+        "long_description": "R\u00e4kor \u00e4r magra skaldjur som \u00e4r rika p\u00e5 protein och l\u00e5ga i kalorier - 100 gram r\u00e4kor inneh\u00e5ller cirka 18 gram protein och endast 85 kalorier. De \u00e4r en utm\u00e4rkt k\u00e4lla till selen, jod och vitamin B12. R\u00e4kor inneh\u00e5ller ocks\u00e5 omega-3-fettsyror och astaxantin, en kraftfull antioxidant. F\u00e4rska r\u00e4kor ska lukta hav och ha fast konsistens. De tillagas snabbt - f\u00f6r l\u00e4nge kokning g\u00f6r dem gummiga. R\u00e4kor \u00e4r perfekta i wok, sallader, pasta eller som tilltugg. Frys r\u00e5a r\u00e4kor om de inte ska anv\u00e4ndas samma dag.",
+        "usage_tips": [
+            "R\u00e4ksm\u00f6rg\u00e5s",
+            "R\u00e4ksallad",
+            "Pasta",
+            "Sushi"
+        ],
+        "substitutes": [
+            {
+                "name": "Kr\u00e4ftor",
+                "reason": "Liknande skaldjur"
+            },
+            {
+                "name": "Havskr\u00e4fta",
+                "reason": "St\u00f6rre med mer k\u00f6tt"
+            }
+        ],
+        "meta_title": "R\u00e4kor - N\u00e4ringsv\u00e4rde och Svensk Tradition | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om r\u00e4kor: n\u00e4ringsv\u00e4rde, svensk r\u00e4ktradition, tillagning och h\u00e5llbarhetsaspekter.",
+        "faq": [
+            {
+                "answer": "Saltvatten (30g salt per liter), koka 2-3 minuter f\u00f6r f\u00e4rska r\u00e4kor tills de blir rosa.",
+                "question": "Hur kokar man r\u00e4kor?"
+            },
+            {
+                "answer": "Ja, kokta r\u00e4kor \u00e4r s\u00e4kra, undvik dock r\u00e5a r\u00e4kor som i vissa sushir\u00e4tter.",
+                "question": "Kan man \u00e4ta r\u00e4kor som gravid?"
+            }
+        ],
+        "common_in_lists": [
+            "R\u00e4ksm\u00f6rg\u00e5s",
+            "Midsommar",
+            "Kr\u00e4ftskiva"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "9e2cddfa-46cb-424a-aad1-3f0e0defa614",
+        "name": "Sm\u00f6r",
+        "slug": "smor",
+        "letter": "S",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": null,
+        "storage_method": null,
+        "shelf_life_opened": null,
+        "shelf_life_unopened": null,
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": null,
+        "allergens": null,
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "fiber": null,
+        "salt": null,
+        "key_vitamins": null,
+        "key_minerals": null,
+        "short_description": "Mj\u00f6lkfett som anv\u00e4nds f\u00f6r matlagning och som p\u00e5l\u00e4gg.",
+        "long_description": "Sm\u00f6r \u00e4r en mejeriproduk med h\u00f6g fetthalt (cirka 82%) som framst\u00e4lls genom k\u00e4rnande av gr\u00e4dde. Det inneh\u00e5ller fr\u00e4mst m\u00e4ttade fetter men ocks\u00e5 vitamin A f\u00f6r synh\u00e4lsa och vitamin E som antioxidant. Sm\u00f6r fr\u00e5n betesdjur inneh\u00e5ller h\u00f6gre halter av vitamin K2 och konjugerad linolsyra (CLA). Sm\u00f6r t\u00e5l v\u00e4rme b\u00e4ttre \u00e4n m\u00e5nga andra fetter och ger rik smak till b\u00e5de bakning och stekning. Osaltat sm\u00f6r \u00e4r b\u00e4st f\u00f6r bakning medan saltat sm\u00f6r h\u00e5ller l\u00e4ngre. F\u00f6rvara i kylsk\u00e5p och anv\u00e4nd inom b\u00e4st f\u00f6re-datum. Sm\u00f6r fr\u00e5n ekologiska k\u00e4llor \u00e4r ofta av h\u00f6gre kvalitet.",
+        "usage_tips": null,
+        "substitutes": null,
+        "meta_title": "Sm\u00f6r - N\u00e4ringsv\u00e4rde och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om sm\u00f6r: n\u00e4ringsv\u00e4rde, matlagning, f\u00f6rvaring och olika typer av sm\u00f6r.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.270535+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "20d40f4b-2796-41f0-86b2-fd427f169d86",
+        "name": "Spaghetti",
+        "slug": "spaghetti",
+        "letter": "S",
+        "alternative_names": null,
+        "category_id": "d1e3d3cb-6006-4aa5-8326-3d35a0723e29",
+        "subcategory": "Pasta",
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "Obegr\u00e4nsat torr",
+        "shelf_life_unopened": "2-3 \u00e5r",
+        "can_freeze": true,
+        "freezing_tips": "Koka innan frysning",
+        "season": [],
+        "allergens": [
+            "gluten"
+        ],
+        "calories": 371,
+        "protein": 13.0,
+        "fat": 1.5,
+        "carbohydrates": 74.0,
+        "fiber": 3.2,
+        "salt": 0.01,
+        "key_vitamins": {
+            "B1": "0.9mg",
+            "Folat": "18\u03bcg",
+            "Niacin": "5.9mg"
+        },
+        "key_minerals": {
+            "selen": "26\u03bcg",
+            "fosfor": "189mg",
+            "kalium": "223mg"
+        },
+        "short_description": "Klassisk l\u00e5ngstr\u00e4ckt italiensk pasta av durumvete.",
+        "long_description": "Spaghetti \u00e4r en klassisk italiensk pasta gjord av durumvete som \u00e4r rik p\u00e5 kolhydrater f\u00f6r energi. Den inneh\u00e5ller protein, B-vitaminer och j\u00e4rn enligt berikningsf\u00f6rordningar. Fullkornsspaghetti inneh\u00e5ller mer fiber och n\u00e4rings\u00e4mnen \u00e4n vanlig spaghetti. Pasta har m\u00e5ttligt glykemiskt index, s\u00e4rskilt n\u00e4r den kokas al dente. Koka spaghetti i saltat vatten enligt f\u00f6rpackningens anvisningar. Kombinera med gr\u00f6nsaker, protein och nyttiga fetter f\u00f6r en balanserad m\u00e5ltid. Spaghetti \u00e4r bas f\u00f6r otaliga r\u00e4tter fr\u00e5n carbonara till marinara.",
+        "usage_tips": [
+            "Carbonara",
+            "Bolognese",
+            "Aglio e olio",
+            "K\u00f6ttbullar"
+        ],
+        "substitutes": [
+            {
+                "name": "Linguine",
+                "reason": "Liknande l\u00e5ng pasta"
+            },
+            {
+                "name": "Penne",
+                "reason": "Kort pasta alternativ"
+            }
+        ],
+        "meta_title": "Spaghetti - Italiensk Pasta Klassiker | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om spaghetti: tillagning, italienska recept, olika typer och perfekt al dente.",
+        "faq": [
+            {
+                "answer": "Koka 1-2 minuter kortare tid \u00e4n f\u00f6rpackningen anger och testa genom att bita.",
+                "question": "Hur kokar man spaghetti al dente?"
+            },
+            {
+                "answer": "Nej, det hindrar s\u00e5sen fr\u00e5n att f\u00e4sta - salta vattnet ist\u00e4llet och r\u00f6r om.",
+                "question": "Ska man h\u00e4lla olja i pastavattnet?"
+            }
+        ],
+        "common_in_lists": [
+            "Italiensk mat",
+            "Pasta carbonara",
+            "Vardagsmiddag"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.697311+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "d78d8c59-c5a5-4104-b2e1-63ab812e7ad0",
+        "name": "Spenat",
+        "slug": "spenat",
+        "letter": "S",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Bladgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1 vecka",
+        "can_freeze": true,
+        "freezing_tips": "Blanchera innan frysning",
+        "season": [
+            "mars",
+            "april",
+            "maj",
+            "september",
+            "oktober"
+        ],
+        "allergens": [],
+        "calories": 23,
+        "protein": 2.9,
+        "fat": 0.4,
+        "carbohydrates": 3.6,
+        "fiber": 2.2,
+        "salt": 0.08,
+        "key_vitamins": {
+            "A": "469\u03bcg",
+            "K": "483\u03bcg",
+            "Folat": "194\u03bcg"
+        },
+        "key_minerals": {
+            "j\u00e4rn": "2.7mg",
+            "kalium": "558mg",
+            "magnesium": "79mg"
+        },
+        "short_description": "J\u00e4rnrik bladgr\u00f6nsak med mycket folsyra och vitamin K.",
+        "long_description": "Spenat \u00e4r ett n\u00e4ringst\u00e4tt gr\u00f6nt bladgr\u00f6nsak som \u00e4r rikt p\u00e5 j\u00e4rn, folsyra och vitamin K. Det inneh\u00e5ller ocks\u00e5 h\u00f6ga halter av antioxidanter som lutein och zeaxantin som \u00e4r viktiga f\u00f6r \u00f6gonh\u00e4lsan. Spenat \u00e4r en bra k\u00e4lla till magnesium, vitamin A och vitamin C. F\u00e4rsk spenat \u00e4r mer n\u00e4ringsrik \u00e4n fryst men b\u00e5da \u00e4r h\u00e4lsosamma alternativ. Spenat inneh\u00e5ller oxalater som kan minska j\u00e4rnabsorptionen, s\u00e5 kombinera med vitamin C-rika livsmedel. Perfekt i sallader, smoothies, quiche eller som tillagat tillbeh\u00f6r.",
+        "usage_tips": [
+            "Sallad",
+            "Smoothies",
+            "Stuvad",
+            "Pasta"
+        ],
+        "substitutes": [
+            {
+                "name": "Mangold",
+                "reason": "Liknande bladgr\u00f6nsak"
+            },
+            {
+                "name": "Rucola",
+                "reason": "Starkare smak"
+            }
+        ],
+        "meta_title": "Spenat - J\u00e4rn och Folsyra | Livsmedel A-\u00d6",
+        "meta_description": "Allt om spenat: n\u00e4ringsv\u00e4rde, j\u00e4rninneh\u00e5ll, tillagning och anv\u00e4ndning i h\u00e4lsosam kost.",
+        "faq": [
+            {
+                "answer": "Ja, men j\u00e4rnet fr\u00e5n v\u00e4xter absorberas s\u00e4mre - kombinera med vitamin C f\u00f6r b\u00e4ttre upptag.",
+                "question": "\u00c4r spenat verkligen s\u00e5 j\u00e4rnrik?"
+            },
+            {
+                "answer": "Spenat inneh\u00e5ller oxalater som kan p\u00e5verka kalciumupptag - variera med andra gr\u00f6nsaker.",
+                "question": "Kan man \u00e4ta mycket spenat?"
+            }
+        ],
+        "common_in_lists": [
+            "J\u00e4rnk\u00e4lla",
+            "Smoothies",
+            "H\u00e4lsosam kost"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "4b7838c1-a846-4c32-b58c-02012c9c11f1",
+        "name": "Spirulina",
+        "slug": "spirulina",
+        "letter": "S",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Torrt och m\u00f6rkt",
+        "shelf_life_opened": "2 \u00e5r",
+        "shelf_life_unopened": "3 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 290,
+        "protein": 57.5,
+        "fat": 7.7,
+        "carbohydrates": 23.9,
+        "fiber": 3.6,
+        "salt": 1.05,
+        "key_vitamins": {
+            "A": "29\u03bcg",
+            "K": "25\u03bcg",
+            "B12": "2.6\u03bcg"
+        },
+        "key_minerals": {
+            "J\u00e4rn": "28.5mg",
+            "Fykocyanin": "mycket h\u00f6gt",
+            "Gamma-linolen": "1.25g"
+        },
+        "short_description": "Bl\u00e5gr\u00f6na alger med komplett protein",
+        "long_description": "Spirulina inneh\u00e5ller alla essentiella aminosyror plus fykocyanin som ger bl\u00e5 f\u00e4rg och antioxidant-egenskaper. NASA-godk\u00e4nd superfood.",
+        "usage_tips": [
+            "I smoothies sparsamt",
+            "Som pulver-tillskott",
+            "Blandad i juicer"
+        ],
+        "substitutes": null,
+        "meta_title": "Spirulina - Komplett algprotein | ViHandlar",
+        "meta_description": "Uppt\u00e4ck spirulinas kompletta aminosyror och fykocyanin fr\u00e5n NASA-godk\u00e4nd superfood. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "b61c41b9-bd4b-48f3-90f0-68755c69b957",
+        "name": "Tigern\u00f6t",
+        "slug": "tigernot",
+        "letter": "T",
+        "alternative_names": null,
+        "category_id": "2b7562b7-e366-4be3-bffd-48b81962a5d3",
+        "subcategory": null,
+        "storage_method": "Torrt och svalt",
+        "shelf_life_opened": "1 \u00e5r",
+        "shelf_life_unopened": "2 \u00e5r",
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 386,
+        "protein": 4.2,
+        "fat": 24.9,
+        "carbohydrates": 65.3,
+        "fiber": 33.0,
+        "salt": 0.03,
+        "key_vitamins": {
+            "C": "8mg",
+            "E": "2.2mg",
+            "B6": "0.3mg"
+        },
+        "key_minerals": {
+            "Kalium": "485mg",
+            "Magnesium": "84mg",
+            "Oleinsyra": "18g"
+        },
+        "short_description": "Spansk jordemandel med h\u00f6g fiberhalt",
+        "long_description": "Tigern\u00f6t (chufa) fr\u00e5n Spanien har extremt h\u00f6g fiberhalt och anv\u00e4nds f\u00f6r att g\u00f6ra horchata. Traditionell superfood fr\u00e5n Valencia.",
+        "usage_tips": [
+            "Som snacks",
+            "Till horchata-dryck",
+            "Malda till mj\u00f6l"
+        ],
+        "substitutes": null,
+        "meta_title": "Tigern\u00f6t - Spansk fiber-superfood | ViHandlar",
+        "meta_description": "L\u00e4r dig om tigern\u00f6tens h\u00f6ga fiber och spanska horchata-tradition fr\u00e5n Valencia. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "ce94f8a8-1679-4cc0-9847-1058183a5f95",
+        "name": "Tomat",
+        "slug": "tomat",
+        "letter": "T",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Fruktgr\u00f6nsak",
+        "storage_method": "Rumstemperatur, kylsk\u00e5p n\u00e4r mogen",
+        "shelf_life_opened": "3-5 dagar",
+        "shelf_life_unopened": "1 vecka",
+        "can_freeze": true,
+        "freezing_tips": "Sk\u00e4r i bitar innan frysning",
+        "season": [
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 18,
+        "protein": 0.9,
+        "fat": 0.2,
+        "carbohydrates": 3.9,
+        "fiber": 1.2,
+        "salt": 0.01,
+        "key_vitamins": {
+            "C": "14mg",
+            "K": "8\u03bcg",
+            "Folat": "15\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "24mg",
+            "kalium": "237mg"
+        },
+        "short_description": "Saftig fruktgr\u00f6nsak rik p\u00e5 lycopene och vitamin C.",
+        "long_description": "Tomater \u00e4r tekniskt sett frukter som \u00e4r rika p\u00e5 lycopene, en kraftfull antioxidant som ger tomater sin r\u00f6da f\u00e4rg och kan skydda mot hj\u00e4rt-k\u00e4rlsjukdomar och vissa cancerformer. De inneh\u00e5ller vitamin C, kalium och folsyra. Lycopene absorberas b\u00e4ttre fr\u00e5n tillagade tomater \u00e4n r\u00e5a. Tomater har l\u00e5g kaloriinneh\u00e5ll men h\u00f6g smak. Olika sorter har olika egenskaper - plomtomater f\u00f6r konservering, k\u00f6rsb\u00e4rstomater f\u00f6r mellanm\u00e5l. F\u00f6rvara mogna tomater i rumstemperatur f\u00f6r b\u00e4sta smak, omogna kan mogna p\u00e5 f\u00f6nsterbr\u00e4dan.",
+        "usage_tips": [
+            "Sallader",
+            "S\u00e5ser",
+            "Soppa",
+            "Pizza"
+        ],
+        "substitutes": [
+            {
+                "name": "K\u00f6rsb\u00e4rstomater",
+                "reason": "S\u00f6tare och mindre"
+            },
+            {
+                "name": "San Marzano",
+                "reason": "Perfekt f\u00f6r s\u00e5ser"
+            }
+        ],
+        "meta_title": "Tomat - N\u00e4ringsv\u00e4rde och Odling | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om tomater: n\u00e4ringsv\u00e4rde, olika sorter, odling och anv\u00e4ndning i matlagning.",
+        "faq": [
+            {
+                "answer": "Nej, mogna tomater f\u00f6rvaras b\u00e4st i rumstemperatur f\u00f6r b\u00e4sta smak.",
+                "question": "Ska tomater f\u00f6rvaras i kylsk\u00e5p?"
+            },
+            {
+                "answer": "En antioxidant som ger tomater r\u00f6d f\u00e4rg och kan ha h\u00e4lsof\u00f6rdelar.",
+                "question": "Vad \u00e4r lycopene?"
+            }
+        ],
+        "common_in_lists": [
+            "Italiensk mat",
+            "Sallader",
+            "Sommarmiddag"
+        ],
+        "related_foods": [
+            "20d40f4b-2796-41f0-86b2-fd427f169d86",
+            "8055dfda-30a8-4e0c-9257-308a7cb3fe1e",
+            "81fd186f-a3b0-4168-a409-7919c786300f"
+        ],
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "28f8ca85-1360-4eb2-b989-18d2f35b5d04",
+        "name": "Tonfisk Konserverad",
+        "slug": "tonfisk-konserverad",
+        "letter": "T",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Konserverad fisk",
+        "storage_method": "Rumstemperatur f\u00f6re \u00f6ppning",
+        "shelf_life_opened": "3-4 dagar i kylsk\u00e5p",
+        "shelf_life_unopened": "2-5 \u00e5r o\u00f6ppnad",
+        "can_freeze": false,
+        "freezing_tips": "Rekommenderas ej att frysa",
+        "season": null,
+        "allergens": [
+            "fisk"
+        ],
+        "calories": 128,
+        "protein": 25.5,
+        "fat": 2.5,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.4,
+        "key_vitamins": {
+            "B3": "18.8mg",
+            "B6": "1.0mg",
+            "B12": "2.6\u03bcg"
+        },
+        "key_minerals": {
+            "selen": "78.2\u03bcg",
+            "fosfor": "267mg"
+        },
+        "short_description": "Proteinrik konserverad fisk, perfekt f\u00f6r snabba m\u00e5ltider.",
+        "long_description": "Konserverad tonfisk \u00e4r en praktisk och n\u00e4ringsrik proteinb\u00f6lla som \u00e4r rik p\u00e5 omega-3-fettsyror, protein och selen. 100 gram tonfisk inneh\u00e5ller cirka 25 gram protein och \u00e4r en bra k\u00e4lla till vitamin D och B12. Tonfisk p\u00e5 vatten har l\u00e4gre kaloriinneh\u00e5ll \u00e4n tonfisk i olja. V\u00e4lj tonfisk fr\u00e5n h\u00e5llbara k\u00e4llor n\u00e4r det \u00e4r m\u00f6jligt och begr\u00e4nsa konsumtionen p\u00e5 grund av potentiell kvicksilverexponering. Tonfisk \u00e4r perfekt i sallader, mackor, pasta eller som snabb proteinb\u00f6lla. Sk\u00f6lj konserverad tonfisk f\u00f6r att minska salthalten.",
+        "usage_tips": [
+            "Tonfisksallad",
+            "Pasta",
+            "Sm\u00f6rg\u00e5s",
+            "Nicoise sallad"
+        ],
+        "substitutes": [
+            {
+                "name": "Konserverad makrill",
+                "reason": "H\u00f6gre omega-3 halt"
+            },
+            {
+                "name": "Konserverad sardiner",
+                "reason": "Mindre fisk med ben"
+            }
+        ],
+        "meta_title": "Tonfisk Konserverad - N\u00e4ringsv\u00e4rde och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Allt om konserverad tonfisk: n\u00e4ringsv\u00e4rde, h\u00e5llbarhet, olika varianter och snabba recept.",
+        "faq": [
+            {
+                "answer": "Leta efter MSC-m\u00e4rkt tonfisk som kommer fr\u00e5n h\u00e5llbart fiske med selektiva f\u00e5ngstmetoder.",
+                "question": "Vilken tonfisk \u00e4r mest h\u00e5llbar?"
+            },
+            {
+                "answer": "Tonfisk i olja \u00e4r saftigare men mer kaloririk, i vatten \u00e4r magrare men kan vara torrare.",
+                "question": "Skillnad mellan tonfisk i olja och vatten?"
+            }
+        ],
+        "common_in_lists": [
+            "Snabb lunch",
+            "Protein k\u00e4lla",
+            "Vardagsmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "71c4a289-201e-4fde-b15e-c763ef598a60",
+        "name": "Torsk",
+        "slug": "torsk",
+        "letter": "T",
+        "alternative_names": null,
+        "category_id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
+        "subcategory": "Mager fisk",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C p\u00e5 is",
+        "shelf_life_opened": "1-2 dagar",
+        "shelf_life_unopened": "1-2 dagar",
+        "can_freeze": true,
+        "freezing_tips": "Frys inom 24 timmar efter k\u00f6p",
+        "season": [
+            "oktober",
+            "november",
+            "december",
+            "januari",
+            "februari"
+        ],
+        "allergens": [
+            "fisk"
+        ],
+        "calories": 105,
+        "protein": 23.0,
+        "fat": 0.9,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "salt": 0.18,
+        "key_vitamins": {
+            "B6": "0.2mg",
+            "B12": "1.0\u03bcg",
+            "Niacin": "2.3mg"
+        },
+        "key_minerals": {
+            "jod": "110\u03bcg",
+            "selen": "33.1\u03bcg",
+            "fosfor": "203mg"
+        },
+        "short_description": "Mager vitfisk med mild smak och fast k\u00f6tt.",
+        "long_description": "Torsk \u00e4r en mager vitfisk som \u00e4r en utm\u00e4rkt k\u00e4lla till protein (cirka 18 gram per 100 gram) med mycket l\u00e5g fetthalt. Den \u00e4r rik p\u00e5 selen, vitamin B12 och fosfor. Torsk har mild smak och fast konsistens som passar m\u00e5nga tillagningsmetoder. F\u00e4rsk torsk ska lukta hav och ha fast, vit k\u00f6tt. Torsk \u00e4r popul\u00e4r i nordisk matkultur och \u00e4r bas f\u00f6r r\u00e4tter som fish and chips. Tillaga f\u00f6rsiktigt f\u00f6r att undvika att k\u00f6ttet blir torrt. Perfekt grillad, stekt, bakad eller kokt.",
+        "usage_tips": [
+            "Fish and chips",
+            "Kokt med \u00e4ggstuvning",
+            "Fisksoppa",
+            "Panerad"
+        ],
+        "substitutes": [
+            {
+                "name": "Kolja",
+                "reason": "Liknande mild smak"
+            },
+            {
+                "name": "Vitling",
+                "reason": "Mer prisv\u00e4rt alternativ"
+            }
+        ],
+        "meta_title": "Torsk - N\u00e4ringsv\u00e4rde och Nordisk Tradition | Livsmedel A-\u00d6",
+        "meta_description": "Allt om torsk: n\u00e4ringsv\u00e4rde, nordiska fisktraditionen, tillagning och h\u00e5llbarhet.",
+        "faq": [
+            {
+                "answer": "Mild smak som passar de flesta, mager och proteinrik, samt traditionell i nordisk matkultur.",
+                "question": "Varf\u00f6r \u00e4r torsk s\u00e5 popul\u00e4r?"
+            },
+            {
+                "answer": "Klara \u00f6gon, r\u00f6da g\u00e4lar, fast k\u00f6tt som studsar tillbaka n\u00e4r man trycker p\u00e5 det.",
+                "question": "Hur vet man att torsk \u00e4r f\u00e4rsk?"
+            }
+        ],
+        "common_in_lists": [
+            "Svensk husmanskost",
+            "Fish and chips",
+            "Nordisk mat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.491133+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "4044ff26-0d28-439d-8ea7-c2f21ae20232",
+        "name": "Umami svamp (Shiitake)",
+        "slug": "umami-svamp-shiitake",
+        "letter": "U",
+        "alternative_names": null,
+        "category_id": null,
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "\u00c5ret runt"
+        ],
+        "allergens": [],
+        "calories": 34,
+        "protein": 2.2,
+        "fat": 0.5,
+        "carbohydrates": 6.8,
+        "fiber": 2.5,
+        "salt": 0.01,
+        "key_vitamins": {
+            "D": "0.4\u03bcg",
+            "B5": "1.5mg",
+            "B6": "0.3mg"
+        },
+        "key_minerals": {
+            "Selen": "5.7\u03bcg",
+            "Kalium": "304mg",
+            "Lentinan": "h\u00f6gt"
+        },
+        "short_description": "Japansk umami-svamp med lentinan",
+        "long_description": "Shiitake svamp fr\u00e5n Japan ger umami-smak och inneh\u00e5ller lentinan som kan st\u00f6dja immunf\u00f6rsvaret enligt japansk forskning.",
+        "usage_tips": [
+            "I miso-soppa",
+            "Stekta med gr\u00f6nsaker",
+            "Som umami-bas"
+        ],
+        "substitutes": null,
+        "meta_title": "Shiitake - Umami och lentinan fr\u00e5n Japan | ViHandlar",
+        "meta_description": "Uppt\u00e4ck shiitakes umami-smak och lentinan f\u00f6r immunf\u00f6rsvaret fr\u00e5n Japan. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "27f6c00a-fdd3-46fc-bc89-92d7c28d92b1",
+        "name": "Vannmelon",
+        "slug": "vannmelon",
+        "letter": "V",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": null,
+        "storage_method": "Kylsk\u00e5p",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1 \u00e5r fryst",
+        "can_freeze": true,
+        "freezing_tips": null,
+        "season": [
+            "Sommar"
+        ],
+        "allergens": [],
+        "calories": 30,
+        "protein": 0.6,
+        "fat": 0.2,
+        "carbohydrates": 7.6,
+        "fiber": 0.4,
+        "salt": 0.0,
+        "key_vitamins": {
+            "A": "28\u03bcg",
+            "C": "8.1mg",
+            "Lykopen": "4.5mg"
+        },
+        "key_minerals": {
+            "Kalium": "112mg",
+            "Vatten": "91%",
+            "Citrullin": "h\u00f6gt"
+        },
+        "short_description": "Lykopen- och citrullinrik sommarfrukt",
+        "long_description": "Vattenmelon inneh\u00e5ller lykopen f\u00f6r hj\u00e4rth\u00e4lsa och citrullin som kan st\u00f6dja blodcirkulationen. Perfekt hydrering p\u00e5 sommaren.",
+        "usage_tips": [
+            "F\u00e4rsk som hydrering",
+            "Pressad som juice",
+            "I fruktsallad"
+        ],
+        "substitutes": null,
+        "meta_title": "Vattenmelon - Lykopen och hydrering | ViHandlar",
+        "meta_description": "L\u00e4r dig om vattenmelonens lykopen och citrullin f\u00f6r hj\u00e4rt- och k\u00e4rlh\u00e4lsa. Data fr\u00e5n USDA.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:47.815598+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "37f03bb4-5c0b-4c3f-a10b-9381be21f6c9",
+        "name": "Vitl\u00f6k",
+        "slug": "vitlok",
+        "letter": "V",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "L\u00f6kv\u00e4xt",
+        "storage_method": "M\u00f6rkt, torrt och svalt",
+        "shelf_life_opened": "3-6 m\u00e5nader",
+        "shelf_life_unopened": "6 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Hacka innan frysning",
+        "season": [
+            "juli",
+            "augusti"
+        ],
+        "allergens": [],
+        "calories": 149,
+        "protein": 6.4,
+        "fat": 0.5,
+        "carbohydrates": 33.1,
+        "fiber": 2.1,
+        "salt": 0.02,
+        "key_vitamins": {
+            "C": "31mg",
+            "B6": "1.2mg",
+            "Mangan": "1.7mg"
+        },
+        "key_minerals": {
+            "selen": "14\u03bcg",
+            "fosfor": "153mg",
+            "kalium": "401mg"
+        },
+        "short_description": "Kraftfull aromgr\u00f6nsak med antibakteriella egenskaper.",
+        "long_description": "Vitl\u00f6k \u00e4r en aromatisk l\u00f6kv\u00e4t som inneh\u00e5ller kraftfulla svavelhaltiga f\u00f6reningar, s\u00e4rskilt allicin, som har antimikrobiella och anti-inflammatoriska egenskaper. Vitl\u00f6k kan hj\u00e4lpa till att s\u00e4nka blodtryck och kolesterol enligt flera studier. Den inneh\u00e5ller ocks\u00e5 mangan, vitamin B6 och vitamin C. Vitl\u00f6k f\u00e5r sina h\u00e4lsoegenskaper n\u00e4r den krossas eller hackas och allicin frig\u00f6rs. L\u00e5t krossad vitl\u00f6k vila n\u00e5gra minuter f\u00f6re tillagning f\u00f6r maximal effekt. F\u00f6rvara i torr, m\u00f6rk plats med god luftcirkulation.",
+        "usage_tips": [
+            "Marinader",
+            "S\u00e5ser",
+            "Stekt",
+            "R\u00e5 i dressing"
+        ],
+        "substitutes": [
+            {
+                "name": "Schalottenl\u00f6k",
+                "reason": "Mildare aromgr\u00f6nsak"
+            },
+            {
+                "name": "Ingef\u00e4ra",
+                "reason": "Annan stark smaks\u00e4ttare"
+            }
+        ],
+        "meta_title": "Vitl\u00f6k - H\u00e4lsof\u00f6rdelar och Anv\u00e4ndning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om vitl\u00f6k: n\u00e4ringsv\u00e4rde, h\u00e4lsof\u00f6rdelar, f\u00f6rvaring och kulinarisk anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "Allicin i vitl\u00f6k kan ha antibakteriella och hj\u00e4rt-k\u00e4rlskyddande effekter.",
+                "question": "Vilka h\u00e4lsof\u00f6rdelar har vitl\u00f6k?"
+            },
+            {
+                "answer": "Tugga persilja, drick mj\u00f6lk eller \u00e4t \u00e4pple efter vitl\u00f6k.",
+                "question": "Hur f\u00e5r man bort vitl\u00f6ksandedr\u00e4kt?"
+            }
+        ],
+        "common_in_lists": [
+            "Medelhavsmat",
+            "H\u00e4lsosam krydda",
+            "Antibakteriellt"
+        ],
+        "related_foods": [
+            "20d40f4b-2796-41f0-86b2-fd427f169d86",
+            "81fd186f-a3b0-4168-a409-7919c786300f"
+        ],
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "7d14e9c7-a08f-461c-a753-cf003b1e6218",
+        "name": "Yoghurt Naturell",
+        "slug": "yoghurt-naturell",
+        "letter": "Y",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": "Fermenterad mj\u00f6lkprodukt",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C",
+        "shelf_life_opened": "1 vecka efter \u00f6ppning",
+        "shelf_life_unopened": "2-3 veckor o\u00f6ppnad",
+        "can_freeze": true,
+        "freezing_tips": "Textur f\u00f6r\u00e4ndras efter frysning",
+        "season": null,
+        "allergens": [
+            "mj\u00f6lk"
+        ],
+        "calories": 59,
+        "protein": 10.0,
+        "fat": 0.4,
+        "carbohydrates": 3.6,
+        "fiber": 0.0,
+        "salt": 0.05,
+        "key_vitamins": {
+            "D": "0.1\u03bcg",
+            "B2": "0.27mg",
+            "B12": "0.75\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "135mg",
+            "calcium": "110mg"
+        },
+        "short_description": "Naturell yoghurt utan tillsatser, rik p\u00e5 probiotika.",
+        "long_description": "Naturell yoghurt \u00e4r en fermenterad mj\u00f6lkprodukt som inneh\u00e5ller levande probiotiska bakterier som kan gynna tarmh\u00e4lsan och immunf\u00f6rsvaret. Den \u00e4r rik p\u00e5 protein, kalcium och riboflavin. Grekisk yoghurt har h\u00f6gre proteininneh\u00e5ll \u00e4n vanlig yoghurt. V\u00e4lj yoghurt utan tillsatt socker f\u00f6r b\u00e4sta h\u00e4lsoeffekt. Probiotika i yoghurt kan hj\u00e4lpa till att f\u00f6rb\u00e4ttra laktostolerans. Yoghurt \u00e4r m\u00e5ngsidig och kan \u00e4tas som den \u00e4r, i smoothies, som tillbeh\u00f6r eller i marinader f\u00f6r k\u00f6tt.",
+        "usage_tips": [
+            "Frukost med m\u00fcsli",
+            "Smoothies",
+            "S\u00e5s bas",
+            "Marinad"
+        ],
+        "substitutes": [
+            {
+                "name": "Filmj\u00f6lk",
+                "reason": "Liknande probiotika"
+            },
+            {
+                "name": "Skyr",
+                "reason": "H\u00f6gre protinhalt"
+            }
+        ],
+        "meta_title": "Yoghurt Naturell - N\u00e4ringsv\u00e4rde och H\u00e4lsof\u00f6rdelar | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om naturell yoghurt: n\u00e4ringsv\u00e4rde, probiotika, anv\u00e4ndning och h\u00e4lsof\u00f6rdelar.",
+        "faq": [
+            {
+                "answer": "Lactobacillus bulgaricus och Streptococcus thermophilus \u00e4r de vanligaste kulturerna.",
+                "question": "Vilka probiotika finns i yoghurt?"
+            },
+            {
+                "answer": "Ja, men undvik h\u00f6g v\u00e4rme som kan f\u00e5 den att separera.",
+                "question": "Kan man laga mat med yoghurt?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosam frukost",
+            "Smoothie bowl",
+            "Indisk mat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.472129+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "9e6bc81b-e266-4589-851e-f7e8e4eac88e",
+        "name": "Zucchini",
+        "slug": "zucchini",
+        "letter": "Z",
+        "alternative_names": null,
+        "category_id": "e654b609-4eed-4da6-8153-abf8ae179442",
+        "subcategory": "Fruktgr\u00f6nsak",
+        "storage_method": "Kylsk\u00e5p 4-8\u00b0C",
+        "shelf_life_opened": "1 vecka",
+        "shelf_life_unopened": "1-2 veckor",
+        "can_freeze": true,
+        "freezing_tips": "Sk\u00e4r i skivor innan frysning",
+        "season": [
+            "juni",
+            "juli",
+            "augusti",
+            "september"
+        ],
+        "allergens": [],
+        "calories": 17,
+        "protein": 1.2,
+        "fat": 0.3,
+        "carbohydrates": 3.1,
+        "fiber": 1.0,
+        "salt": 0.01,
+        "key_vitamins": {
+            "C": "18mg",
+            "K": "4.3\u03bcg",
+            "Folat": "24\u03bcg"
+        },
+        "key_minerals": {
+            "kalium": "261mg",
+            "mangan": "0.2mg"
+        },
+        "short_description": "Mild fruktgr\u00f6nsak med l\u00e5gt kaloriinneh\u00e5ll, m\u00e5ngsidig.",
+        "long_description": "Zucchini \u00e4r en m\u00e5ngsidig sommarsquash som \u00e4r mycket kalorifattig (endast 17 kalorier per 100 gram) men rik p\u00e5 vatten och fiber. Den inneh\u00e5ller vitamin C, mangan och antioxidanter som lutein och zeaxantin. Zucchini har mild smak och kan anv\u00e4ndas p\u00e5 otaliga s\u00e4tt - spiraliserad som \"zoodles\", grillad, bakad eller i bakverk som zucchinibr\u00f6d. Skalet \u00e4r \u00e4tbart och inneh\u00e5ller m\u00e5nga n\u00e4rings\u00e4mnen. V\u00e4lj fasta zucchini utan mjuka fl\u00e4ckar. F\u00f6rvara i kylsk\u00e5p och anv\u00e4nd inom en vecka.",
+        "usage_tips": [
+            "Spiraler som pasta",
+            "Grat\u00e4ng",
+            "Br\u00f6d",
+            "Grillad"
+        ],
+        "substitutes": [
+            {
+                "name": "Gurka",
+                "reason": "Liknande mild smak"
+            },
+            {
+                "name": "Squash",
+                "reason": "Samma familj"
+            }
+        ],
+        "meta_title": "Zucchini - L\u00e5g Kalori Alternativ | Livsmedel A-\u00d6",
+        "meta_description": "Allt om zucchini: n\u00e4ringsv\u00e4rde, kreativa tillagningss\u00e4tt, zucchininudlar och bakning.",
+        "faq": [
+            {
+                "answer": "Ja, perfekt r\u00e5 i sallader eller som spiraler ist\u00e4llet f\u00f6r pasta.",
+                "question": "Kan man \u00e4ta zucchini r\u00e5?"
+            },
+            {
+                "answer": "H\u00f6g vattenhalten - salta och l\u00e5t rinna av f\u00f6re tillagning f\u00f6r fastare textur.",
+                "question": "Varf\u00f6r blir zucchini vattnig?"
+            }
+        ],
+        "common_in_lists": [
+            "L\u00e5g kolhydrat",
+            "Pasta alternativ",
+            "Sommarmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.674812+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "47b5528a-fe56-4232-becf-e595dc3d1f23",
+        "name": "\u00c4gg",
+        "slug": "agg",
+        "letter": "\u00c4",
+        "alternative_names": null,
+        "category_id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
+        "subcategory": null,
+        "storage_method": null,
+        "shelf_life_opened": null,
+        "shelf_life_unopened": null,
+        "can_freeze": false,
+        "freezing_tips": null,
+        "season": null,
+        "allergens": null,
+        "calories": null,
+        "protein": null,
+        "fat": null,
+        "carbohydrates": null,
+        "fiber": null,
+        "salt": null,
+        "key_vitamins": null,
+        "key_minerals": null,
+        "short_description": "N\u00e4ringsrikt livsmedel med h\u00f6gkvalitativt protein och viktiga vitaminer.",
+        "long_description": "\u00c4gg \u00e4r en av naturens mest kompletta proteink\u00e4llor och inneh\u00e5ller alla essentiella aminosyror som kroppen beh\u00f6ver. Ett medelstort \u00e4gg (cirka 60 gram) inneh\u00e5ller ungef\u00e4r 6 gram h\u00f6gkvalitativt protein och endast 70 kalorier. \u00c4gg \u00e4r rika p\u00e5 kolin, som \u00e4r viktigt f\u00f6r hj\u00e4rnh\u00e4lsa och minnesfunktion, samt lutein och zeaxantin som skyddar \u00f6gonen. De inneh\u00e5ller ocks\u00e5 viktiga B-vitaminer, vitamin D och mineraler som j\u00e4rn och selen. \u00c4gg fr\u00e5n frig\u00e5ende h\u00f6ns inneh\u00e5ller ofta h\u00f6gre halter av omega-3-fettsyror. De \u00e4r extremt m\u00e5ngsidiga och kan tillagas p\u00e5 otaliga s\u00e4tt - kokta, stekta, pocherade, eller anv\u00e4ndas i bakning. V\u00e4lj ekologiska \u00e4gg n\u00e4r det \u00e4r m\u00f6jligt f\u00f6r b\u00e4sta kvalitet och djurv\u00e4lf\u00e4rd.",
+        "usage_tips": null,
+        "substitutes": null,
+        "meta_title": "\u00c4gg - N\u00e4ringsv\u00e4rde och Tillagning | Livsmedel A-\u00d6",
+        "meta_description": "Komplett guide om \u00e4gg: n\u00e4ringsv\u00e4rde, tillagning, f\u00f6rvaring och h\u00e5llbarhet. Tips f\u00f6r b\u00e4sta kvalitet och anv\u00e4ndning.",
+        "faq": null,
+        "common_in_lists": null,
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.270535+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    },
+    {
+        "id": "43d2999e-9974-4d97-9db0-71e090826f71",
+        "name": "\u00c4pple",
+        "slug": "apple",
+        "letter": "\u00c4",
+        "alternative_names": null,
+        "category_id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
+        "subcategory": "K\u00e4rnfrukt",
+        "storage_method": "Kylsk\u00e5p 0-4\u00b0C",
+        "shelf_life_opened": "1-2 m\u00e5nader",
+        "shelf_life_unopened": "1-3 m\u00e5nader",
+        "can_freeze": true,
+        "freezing_tips": "Sk\u00e4r i bitar innan frysning",
+        "season": [
+            "augusti",
+            "september",
+            "oktober",
+            "november"
+        ],
+        "allergens": [],
+        "calories": 52,
+        "protein": 0.3,
+        "fat": 0.2,
+        "carbohydrates": 14.0,
+        "fiber": 2.4,
+        "salt": 0.0,
+        "key_vitamins": {
+            "C": "4.6mg",
+            "K": "2.2\u03bcg"
+        },
+        "key_minerals": {
+            "fosfor": "11mg",
+            "kalium": "107mg",
+            "pektin": "h\u00f6g halt"
+        },
+        "short_description": "Sveriges mest popul\u00e4ra frukt, rik p\u00e5 fiber och antioxidanter.",
+        "long_description": "\u00c4pplen \u00e4r en av v\u00e4rldens mest popul\u00e4ra frukter och f\u00f6r gott sk\u00e4l. De \u00e4r rika p\u00e5 fiber, s\u00e4rskilt pektin, som hj\u00e4lper till att reglera blodsockret och fr\u00e4mjar m\u00e4ttnadsk\u00e4nsla. Ett medelstort \u00e4pple inneh\u00e5ller cirka 4 gram fiber och endast 95 kalorier. \u00c4pplen inneh\u00e5ller kraftfulla antioxidanter som quercetin och katekiner som kan hj\u00e4lpa till att minska inflammation och st\u00f6dja hj\u00e4rth\u00e4lsan. Skalet inneh\u00e5ller flest n\u00e4ringsstoffer, s\u00e5 \u00e4t g\u00e4rna \u00e4pplet med skalet efter noggrann sk\u00f6ljning. Svenska sorter som Ingrid Marie, Aroma och Discovery har utm\u00e4rkt smak och n\u00e4ringsv\u00e4rde. \u00c4pplen h\u00e5ller sig fr\u00e4scha l\u00e4ngst n\u00e4r de f\u00f6rvaras i kylsk\u00e5p och \u00e4r perfekta som mellanm\u00e5l, i bakning eller som en del av en balanserad frukost.",
+        "usage_tips": [
+            "R\u00e5 som mellanm\u00e5l",
+            "Paj",
+            "Mos",
+            "Juice"
+        ],
+        "substitutes": [
+            {
+                "name": "P\u00e4ron",
+                "reason": "Liknande k\u00e4rnfrukt"
+            },
+            {
+                "name": "Kvitten",
+                "reason": "Bra f\u00f6r kokning och sylt"
+            }
+        ],
+        "meta_title": "\u00c4pple - Fiber och Antioxidanter | Livsmedel A-\u00d6",
+        "meta_description": "Allt om \u00e4pplen: n\u00e4ringsv\u00e4rde, svenska sorter, f\u00f6rvaring och traditionell anv\u00e4ndning.",
+        "faq": [
+            {
+                "answer": "Fasta sorter som Granny Smith och Ingrid Marie beh\u00e5ller formen b\u00e4st.",
+                "question": "Vilka \u00e4ppelsorter \u00e4r b\u00e4st f\u00f6r bakning?"
+            },
+            {
+                "answer": "\u00c4pplen inneh\u00e5ller fiber, antioxidanter och pektin som kan st\u00f6dja h\u00e4lsan.",
+                "question": "Varf\u00f6r s\u00e4ger man \"ett \u00e4pple om dagen\"?"
+            }
+        ],
+        "common_in_lists": [
+            "H\u00e4lsosam frukt",
+            "Svensk tradition",
+            "Barnmat"
+        ],
+        "related_foods": null,
+        "created_at": "2026-02-05T09:11:45.691894+00:00",
+        "updated_at": "2026-02-05T09:11:52.153598+00:00"
+    }
 ]
