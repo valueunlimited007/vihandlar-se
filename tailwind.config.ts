@@ -19,8 +19,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Futura", "system-ui", "sans-serif"],
-        display: ["Futura", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
