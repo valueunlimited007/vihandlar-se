@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Statiska sidor + e-nummer + livsmedel + kategorier -->
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=main</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  
+  <!-- Produktsidor - Edge Functions (8 filer med produkter) -->
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-1</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-2</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-3</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-4</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-5</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-6</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-7</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/sitemap?type=products-8</loc>
+    <lastmod>2025-11-17</lastmod>
+  </sitemap>
+</sitemapindex>

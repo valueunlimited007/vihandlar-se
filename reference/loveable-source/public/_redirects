@@ -1,0 +1,10 @@
+# Serve SEO-critical files
+/robots.txt /robots.txt 200
+/llms.txt /llms.txt 200
+/llms.en.txt /llms.en.txt 200
+/.well-known/llms.txt /.well-known/llms.txt 200
+
+# Notes:
+# - Sitemap files are served as physical files from public/ directory
+# - If you need SPA fallback, add it below these rules, e.g.:
+# /* /index.html 200

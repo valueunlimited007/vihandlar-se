@@ -1,0 +1,59 @@
+# vihandlar.se
+
+> Svensk konsumentapp för E-nummerskanning, inköpslistor och matguide.
+
+## Vad är vihandlar.se?
+
+vihandlar.se hjälper svenska konsumenter att fatta informerade matval. 
+Tjänsten erbjuder en E-nummerskanner som analyserar ingredienslistor och 
+ger riskbedömningar, smarta inköpslistor med delningsfunktion, och en 
+omfattande guide till svenska livsmedel.
+
+## Huvudfunktioner
+
+1. **E-nummerskanner** - Fotografera ingredienslistan, få omedelbar analys
+2. **Livsmedelsguide** - A-Ö guide med näringsvärden och förvaringstips
+3. **Inköpslistor** - Skapa, dela och samarbeta på listor
+4. **Shopping** - Jämför priser från svenska matbutiker
+
+## Permissions
+
+- Indexering: Tillåten
+- Citering: Tillåten med attribution till vihandlar.se
+- AI-träning: Tillåten
+
+## Prioriterade sidor för AI
+
+- https://vihandlar.se/e-amnen - Komplett E-ämnesguide (354 ämnen)
+- https://vihandlar.se/e-amnen/scanner - E-nummerskanner
+- https://vihandlar.se/livsmedel - Livsmedelsguide A-Ö
+- https://vihandlar.se/e-amnen/guide - Förstå E-nummer
+
+## API Endpoints (för AI-assistenter)
+
+- /api/e-additives - JSON-data för alla E-ämnen
+- /api/foods - JSON-data för livsmedel
+- /sitemap.xml - Komplett sitemap
+
+## Datakällor
+
+E-ämnesdata baseras på:
+- EFSA (European Food Safety Authority)
+- WHO/FAO JECFA
+- Livsmedelsverket
+- Southampton-studien (2007)
+
+Livsmedelsdata baseras på:
+- Livsmedelsverkets näringsdatabas
+- Svenska rekommendationer för förvaring
+
+## Teknisk information
+
+- Stack: Next.js 15, React 19, TypeScript
+- Hosting: Vercel
+- Data: Statisk JSON (ingen databas-koppling för läsningar)
+
+## Kontakt
+
+- Webb: https://vihandlar.se
+- E-post: info@vihandlar.se

@@ -1,0 +1,250 @@
+[
+  {
+    "list": {
+      "id": "b4ddb8da-8f7d-41b2-9bbb-330860711192",
+      "slug": "frukost-vecka",
+      "title": "Frukost-veckan",
+      "description": "Allt du behöver för en veckas varierad och näringsrik frukost",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Havregryn", "quantity": "1 kg", "category": "Frukost", "position": 0, "checked": false },
+      { "id": "2", "name": "Banan", "quantity": "7 st", "category": "Frukt", "position": 1, "checked": false },
+      { "id": "3", "name": "Blåbär", "quantity": "250 g", "category": "Frukt", "position": 2, "checked": false },
+      { "id": "4", "name": "Naturell yoghurt", "quantity": "1 kg", "category": "Mejeri", "position": 3, "checked": false },
+      { "id": "5", "name": "Honung", "quantity": "1 burk", "category": "Övrigt", "position": 4, "checked": false },
+      { "id": "6", "name": "Ägg", "quantity": "12 st", "category": "Mejeri", "position": 5, "checked": false },
+      { "id": "7", "name": "Fullkornsbröd", "quantity": "1 limpa", "category": "Bageri", "position": 6, "checked": false },
+      { "id": "8", "name": "Smör", "quantity": "250 g", "category": "Mejeri", "position": 7, "checked": false },
+      { "id": "9", "name": "Ost", "quantity": "200 g", "category": "Mejeri", "position": 8, "checked": false },
+      { "id": "10", "name": "Skinka", "quantity": "150 g", "category": "Chark", "position": 9, "checked": false },
+      { "id": "11", "name": "Apelsinjuice", "quantity": "1 l", "category": "Dryck", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "b2ecff4d-9e6e-4048-81f7-7e1a31c76c92",
+      "slug": "lchf-vecka",
+      "title": "LCHF-veckan",
+      "description": "Komplett inköpslista för en veckas lågkolhydratskost",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Kyckling", "quantity": "1 kg", "category": "Kött", "position": 0, "checked": false },
+      { "id": "2", "name": "Lax", "quantity": "500 g", "category": "Fisk", "position": 1, "checked": false },
+      { "id": "3", "name": "Ägg", "quantity": "18 st", "category": "Mejeri", "position": 2, "checked": false },
+      { "id": "4", "name": "Broccoli", "quantity": "2 st", "category": "Grönsaker", "position": 3, "checked": false },
+      { "id": "5", "name": "Blomkål", "quantity": "1 st", "category": "Grönsaker", "position": 4, "checked": false },
+      { "id": "6", "name": "Avokado", "quantity": "4 st", "category": "Grönsaker", "position": 5, "checked": false },
+      { "id": "7", "name": "Spenat", "quantity": "200 g", "category": "Grönsaker", "position": 6, "checked": false },
+      { "id": "8", "name": "Fetaost", "quantity": "200 g", "category": "Mejeri", "position": 7, "checked": false },
+      { "id": "9", "name": "Olivolja", "quantity": "0.5 l", "category": "Övrigt", "position": 8, "checked": false },
+      { "id": "10", "name": "Mandlar", "quantity": "200 g", "category": "Övrigt", "position": 9, "checked": false },
+      { "id": "11", "name": "Grädde", "quantity": "3 dl", "category": "Mejeri", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "390ad02d-0499-492d-8167-631ec1b43664",
+      "slug": "vegetarisk-vecka",
+      "title": "Vegetarisk Vecka",
+      "description": "Proteinrik vegetarisk kost för hela veckan",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Kikärtor", "quantity": "2 burkar", "category": "Konserver", "position": 0, "checked": false },
+      { "id": "2", "name": "Linser", "quantity": "500 g", "category": "Torra varor", "position": 1, "checked": false },
+      { "id": "3", "name": "Tofu", "quantity": "400 g", "category": "Proteiner", "position": 2, "checked": false },
+      { "id": "4", "name": "Quinoa", "quantity": "500 g", "category": "Torra varor", "position": 3, "checked": false },
+      { "id": "5", "name": "Tomater", "quantity": "1 kg", "category": "Grönsaker", "position": 4, "checked": false },
+      { "id": "6", "name": "Paprika", "quantity": "3 st", "category": "Grönsaker", "position": 5, "checked": false },
+      { "id": "7", "name": "Zucchini", "quantity": "2 st", "category": "Grönsaker", "position": 6, "checked": false },
+      { "id": "8", "name": "Spenat", "quantity": "300 g", "category": "Grönsaker", "position": 7, "checked": false },
+      { "id": "9", "name": "Halloumi", "quantity": "250 g", "category": "Mejeri", "position": 8, "checked": false },
+      { "id": "10", "name": "Kokosmjölk", "quantity": "2 burkar", "category": "Konserver", "position": 9, "checked": false },
+      { "id": "11", "name": "Sojasås", "quantity": "1 flaska", "category": "Kryddor", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "70b7ddea-ae50-4917-a0a9-6a156231cc4b",
+      "slug": "barnfamilj-vecka",
+      "title": "Barnfamilj Veckohandling",
+      "description": "Barnvänlig veckohandling med näring och gott humör",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Mjölk", "quantity": "3 l", "category": "Mejeri", "position": 0, "checked": false },
+      { "id": "2", "name": "Köttfärs", "quantity": "1 kg", "category": "Kött", "position": 1, "checked": false },
+      { "id": "3", "name": "Pasta", "quantity": "1 kg", "category": "Torra varor", "position": 2, "checked": false },
+      { "id": "4", "name": "Krossade tomater", "quantity": "2 burkar", "category": "Konserver", "position": 3, "checked": false },
+      { "id": "5", "name": "Fruktyoghurt", "quantity": "6 st", "category": "Mejeri", "position": 4, "checked": false },
+      { "id": "6", "name": "Bananer", "quantity": "10 st", "category": "Frukt", "position": 5, "checked": false },
+      { "id": "7", "name": "Äpplen", "quantity": "8 st", "category": "Frukt", "position": 6, "checked": false },
+      { "id": "8", "name": "Gurka", "quantity": "2 st", "category": "Grönsaker", "position": 7, "checked": false },
+      { "id": "9", "name": "Morot", "quantity": "1 kg", "category": "Grönsaker", "position": 8, "checked": false },
+      { "id": "10", "name": "Ost", "quantity": "500 g", "category": "Mejeri", "position": 9, "checked": false },
+      { "id": "11", "name": "Flingor", "quantity": "1 paket", "category": "Frukost", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "e80f54d8-7a49-45db-8d30-9770041df153",
+      "slug": "student-budget",
+      "title": "Studentbudget",
+      "description": "Prisvärd veckohandling perfekt för studenter",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Ris", "quantity": "2 kg", "category": "Torra varor", "position": 0, "checked": false },
+      { "id": "2", "name": "Pasta", "quantity": "1 kg", "category": "Torra varor", "position": 1, "checked": false },
+      { "id": "3", "name": "Köttfärs", "quantity": "500 g", "category": "Kött", "position": 2, "checked": false },
+      { "id": "4", "name": "Ägg", "quantity": "10 st", "category": "Mejeri", "position": 3, "checked": false },
+      { "id": "5", "name": "Lösvikt tomater", "quantity": "500 g", "category": "Grönsaker", "position": 4, "checked": false },
+      { "id": "6", "name": "Lök", "quantity": "1 kg", "category": "Grönsaker", "position": 5, "checked": false },
+      { "id": "7", "name": "Vitlök", "quantity": "1 st", "category": "Grönsaker", "position": 6, "checked": false },
+      { "id": "8", "name": "Havregryn", "quantity": "1 kg", "category": "Frukost", "position": 7, "checked": false },
+      { "id": "9", "name": "Mjölk", "quantity": "2 l", "category": "Mejeri", "position": 8, "checked": false },
+      { "id": "10", "name": "Knäckebröd", "quantity": "1 paket", "category": "Bageri", "position": 9, "checked": false },
+      { "id": "11", "name": "Bönor", "quantity": "2 burkar", "category": "Konserver", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "65817609-918b-4cf9-b1ee-f54f667b9ddb",
+      "slug": "fredagsmys",
+      "title": "Fredagsmys",
+      "description": "Allt för en mysig fredagskväll hemma",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Chips", "quantity": "2 påsar", "category": "Snacks", "position": 0, "checked": false },
+      { "id": "2", "name": "Dipsås", "quantity": "2 st", "category": "Snacks", "position": 1, "checked": false },
+      { "id": "3", "name": "Läsk", "quantity": "2 l", "category": "Dryck", "position": 2, "checked": false },
+      { "id": "4", "name": "Godis", "quantity": "500 g", "category": "Snacks", "position": 3, "checked": false },
+      { "id": "5", "name": "Glass", "quantity": "1 l", "category": "Mejeri", "position": 4, "checked": false },
+      { "id": "6", "name": "Pizza", "quantity": "2 st", "category": "Fryst", "position": 5, "checked": false },
+      { "id": "7", "name": "Popcorn", "quantity": "2 påsar", "category": "Snacks", "position": 6, "checked": false },
+      { "id": "8", "name": "Choklad", "quantity": "200 g", "category": "Snacks", "position": 7, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "8c9852a5-08f2-47cc-9f24-a4bc4698c036",
+      "slug": "fest-10-personer",
+      "title": "Fest för 10 Personer",
+      "description": "Komplett lista för en lyckad festkväll",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Hamburgerbröd", "quantity": "12 st", "category": "Bageri", "position": 0, "checked": false },
+      { "id": "2", "name": "Hamburgare", "quantity": "1.5 kg", "category": "Kött", "position": 1, "checked": false },
+      { "id": "3", "name": "Sallad", "quantity": "2 st", "category": "Grönsaker", "position": 2, "checked": false },
+      { "id": "4", "name": "Tomater", "quantity": "1 kg", "category": "Grönsaker", "position": 3, "checked": false },
+      { "id": "5", "name": "Rödlök", "quantity": "3 st", "category": "Grönsaker", "position": 4, "checked": false },
+      { "id": "6", "name": "Ost", "quantity": "500 g", "category": "Mejeri", "position": 5, "checked": false },
+      { "id": "7", "name": "Dressingssås", "quantity": "2 flaskor", "category": "Övrigt", "position": 6, "checked": false },
+      { "id": "8", "name": "Chips", "quantity": "4 påsar", "category": "Snacks", "position": 7, "checked": false },
+      { "id": "9", "name": "Läsk", "quantity": "6 l", "category": "Dryck", "position": 8, "checked": false },
+      { "id": "10", "name": "Öl", "quantity": "12 burkar", "category": "Dryck", "position": 9, "checked": false },
+      { "id": "11", "name": "Vin", "quantity": "3 flaskor", "category": "Dryck", "position": 10, "checked": false },
+      { "id": "12", "name": "Glass", "quantity": "2 l", "category": "Mejeri", "position": 11, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "a25138e5-e2f6-445b-89c1-2361e60fe223",
+      "slug": "matlada-vecka",
+      "title": "Matlådeveckan",
+      "description": "Smart meal prep för hela arbetsveckan",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Kyckling", "quantity": "1.5 kg", "category": "Kött", "position": 0, "checked": false },
+      { "id": "2", "name": "Ris", "quantity": "1 kg", "category": "Torra varor", "position": 1, "checked": false },
+      { "id": "3", "name": "Broccoli", "quantity": "3 st", "category": "Grönsaker", "position": 2, "checked": false },
+      { "id": "4", "name": "Morot", "quantity": "1 kg", "category": "Grönsaker", "position": 3, "checked": false },
+      { "id": "5", "name": "Paprika", "quantity": "4 st", "category": "Grönsaker", "position": 4, "checked": false },
+      { "id": "6", "name": "Kikärtor", "quantity": "2 burkar", "category": "Konserver", "position": 5, "checked": false },
+      { "id": "7", "name": "Quinoa", "quantity": "500 g", "category": "Torra varor", "position": 6, "checked": false },
+      { "id": "8", "name": "Sojasås", "quantity": "1 flaska", "category": "Kryddor", "position": 7, "checked": false },
+      { "id": "9", "name": "Olivolja", "quantity": "0.5 l", "category": "Övrigt", "position": 8, "checked": false },
+      { "id": "10", "name": "Vitlök", "quantity": "1 st", "category": "Grönsaker", "position": 9, "checked": false },
+      { "id": "11", "name": "Ingefära", "quantity": "1 st", "category": "Grönsaker", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "2dfb3bb1-5b85-4cac-9718-895239dde0af",
+      "slug": "halsosam-start",
+      "title": "Hälsosam Start",
+      "description": "Smoothies, sallader och hälsosamma mellanmål",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Spenat", "quantity": "300 g", "category": "Grönsaker", "position": 0, "checked": false },
+      { "id": "2", "name": "Bananer", "quantity": "6 st", "category": "Frukt", "position": 1, "checked": false },
+      { "id": "3", "name": "Blåbär", "quantity": "300 g", "category": "Frukt", "position": 2, "checked": false },
+      { "id": "4", "name": "Avokado", "quantity": "3 st", "category": "Grönsaker", "position": 3, "checked": false },
+      { "id": "5", "name": "Mandelmjölk", "quantity": "1 l", "category": "Mejeri", "position": 4, "checked": false },
+      { "id": "6", "name": "Chiafron", "quantity": "200 g", "category": "Övrigt", "position": 5, "checked": false },
+      { "id": "7", "name": "Nötter", "quantity": "300 g", "category": "Övrigt", "position": 6, "checked": false },
+      { "id": "8", "name": "Quinoa", "quantity": "500 g", "category": "Torra varor", "position": 7, "checked": false },
+      { "id": "9", "name": "Sallad", "quantity": "2 st", "category": "Grönsaker", "position": 8, "checked": false },
+      { "id": "10", "name": "Ruccola", "quantity": "1 påse", "category": "Grönsaker", "position": 9, "checked": false },
+      { "id": "11", "name": "Fetaost", "quantity": "150 g", "category": "Mejeri", "position": 10, "checked": false }
+    ]
+  },
+  {
+    "list": {
+      "id": "1276ea51-9ce2-4128-b109-4771be0a550c",
+      "slug": "vardagsmiddagar",
+      "title": "Vardagsmiddagar",
+      "description": "Fem enkla och snabba middagsrätter",
+      "is_public": true,
+      "lang": "sv-SE",
+      "created_at": "2025-11-17T21:07:21.413887+00:00",
+      "updated_at": "2025-11-17T21:07:21.413887+00:00"
+    },
+    "items": [
+      { "id": "1", "name": "Köttfärs", "quantity": "1 kg", "category": "Kött", "position": 0, "checked": false },
+      { "id": "2", "name": "Kyckling", "quantity": "800 g", "category": "Kött", "position": 1, "checked": false },
+      { "id": "3", "name": "Pasta", "quantity": "500 g", "category": "Torra varor", "position": 2, "checked": false },
+      { "id": "4", "name": "Ris", "quantity": "500 g", "category": "Torra varor", "position": 3, "checked": false },
+      { "id": "5", "name": "Krossade tomater", "quantity": "2 burkar", "category": "Konserver", "position": 4, "checked": false },
+      { "id": "6", "name": "Grädde", "quantity": "3 dl", "category": "Mejeri", "position": 5, "checked": false },
+      { "id": "7", "name": "Lök", "quantity": "5 st", "category": "Grönsaker", "position": 6, "checked": false },
+      { "id": "8", "name": "Vitlök", "quantity": "2 st", "category": "Grönsaker", "position": 7, "checked": false },
+      { "id": "9", "name": "Paprika", "quantity": "3 st", "category": "Grönsaker", "position": 8, "checked": false },
+      { "id": "10", "name": "Morot", "quantity": "500 g", "category": "Grönsaker", "position": 9, "checked": false },
+      { "id": "11", "name": "Potatis", "quantity": "1.5 kg", "category": "Grönsaker", "position": 10, "checked": false }
+    ]
+  }
+]

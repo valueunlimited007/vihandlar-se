@@ -1,0 +1,56 @@
+project_id = "giznqbjxcxllmgamxgaa"
+
+[functions.lists]
+verify_jwt = false
+
+[functions.health]
+verify_jwt = false
+
+[functions.sitemap]
+verify_jwt = false
+
+[functions.sitemap-index]
+verify_jwt = false
+
+[functions.robots]
+verify_jwt = false
+
+[functions.llms]
+verify_jwt = false
+
+[functions.generate-sitemap]
+verify_jwt = false
+
+[functions.validate-data]
+verify_jwt = false
+
+[functions.voice-to-text]
+verify_jwt = false
+
+[functions.complete-eadditives]
+verify_jwt = false
+
+[functions.data-fix]
+verify_jwt = false
+
+[functions.scan-e-numbers]
+verify_jwt = false
+
+[functions.update-existing-scores]
+verify_jwt = false
+
+[functions.reset-and-fix-risk-scores]
+verify_jwt = false
+
+[functions.import-csv-products]
+verify_jwt = false
+
+[functions.import-product-feed]
+verify_jwt = false
+
+[functions.generate-static-sitemaps]
+verify_jwt = false
+
+[functions.download-sitemaps]
+verify_jwt = false
+

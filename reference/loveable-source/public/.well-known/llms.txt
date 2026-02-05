@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/llms">
+  <script>window.location.href='https://giznqbjxcxllmgamxgaa.supabase.co/functions/v1/llms';</script>
+  <title>Redirecting to LLMs.txt</title>
+</head>
+<body>
+  <p>Redirecting to llms.txt...</p>
+</body>
+</html>
