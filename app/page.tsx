@@ -54,7 +54,7 @@ export default function LandingPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent leading-tight">
               Din smarta matassistent
               <br />
-              – allt på ett ställe
+              - allt på ett ställe
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -123,7 +123,7 @@ export default function LandingPage() {
           {/* Service 1: Delad Inköpslista */}
           <Card className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50 animate-fade-in">
             <CardHeader className="space-y-4">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-[hsl(var(--primary-glow))] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <ShoppingCart className="w-8 h-8 text-primary-foreground" />
               </div>
               <CardTitle className="text-2xl">Delad Inköpslista</CardTitle>
@@ -272,7 +272,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center space-y-4 p-6 rounded-lg bg-card border hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-[hsl(var(--primary-glow))] flex items-center justify-center mx-auto">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center mx-auto">
                 <Sparkles className="w-7 h-7 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold">Smart & Hälsosamt</h3>
@@ -343,7 +343,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary to-[hsl(var(--primary-glow))] py-16 md:py-20">
+      <section className="bg-gradient-to-r from-primary to-primary-glow py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Redo att börja?

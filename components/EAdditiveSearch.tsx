@@ -61,7 +61,7 @@ export function EAdditiveSearch({ additives }: EAdditiveSearchProps) {
   return (
     <div>
       {/* Search & Filter Controls */}
-      <div className="bg-card border rounded-xl p-4 mb-8 shadow-sm">
+      <div className="bg-card border border-primary/20 rounded-xl p-4 mb-8 shadow-sm">
         <div className="flex flex-col sm:flex-row gap-3">
           {/* Search Input */}
           <div className="relative flex-1">
