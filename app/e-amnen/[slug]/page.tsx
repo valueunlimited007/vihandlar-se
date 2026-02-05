@@ -19,7 +19,7 @@ import {
   getAllEAdditives,
   getEAdditiveBySlug,
 } from "@/lib/data/e-additives";
-import { getRiskLevel } from "@/types/e-additive";
+import { getRiskLevel, type CommonProduct } from "@/types/e-additive";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -291,25 +291,46 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {additive.common_products.map((product, i) => (
-                  <div key={i} className="border-l-2 border-primary/30 pl-4">
-                    <h4 className="font-semibold text-sm mb-2">
-                      {product.category}
-                    </h4>
-                    <div className="flex flex-wrap gap-1.5">
-                      {product.products.map((p, j) => (
-                        <Badge key={j} variant="secondary" className="text-xs">
-                          {p}
+                {typeof additive.common_products[0] === "string" ? (
+                  <div className="flex flex-wrap gap-1.5">
+                    {(additive.common_products as unknown as string[]).map(
+                      (product, i) => (
+                        <Badge key={i} variant="secondary" className="text-xs">
+                          {product}
                         </Badge>
-                      ))}
-                    </div>
-                    {product.average_amount && (
-                      <p className="text-xs text-muted-foreground mt-2">
-                        Genomsnittlig mängd: {product.average_amount}
-                      </p>
+                      )
                     )}
                   </div>
-                ))}
+                ) : (
+                  (additive.common_products as CommonProduct[]).map(
+                    (product, i) => (
+                      <div
+                        key={i}
+                        className="border-l-2 border-primary/30 pl-4"
+                      >
+                        <h4 className="font-semibold text-sm mb-2">
+                          {product.category}
+                        </h4>
+                        <div className="flex flex-wrap gap-1.5">
+                          {product.products.map((p, j) => (
+                            <Badge
+                              key={j}
+                              variant="secondary"
+                              className="text-xs"
+                            >
+                              {p}
+                            </Badge>
+                          ))}
+                        </div>
+                        {product.average_amount && (
+                          <p className="text-xs text-muted-foreground mt-2">
+                            Genomsnittlig mängd: {product.average_amount}
+                          </p>
+                        )}
+                      </div>
+                    )
+                  )
+                )}
               </CardContent>
             </Card>
           )}
