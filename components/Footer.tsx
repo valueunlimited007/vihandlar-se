@@ -1,145 +1,294 @@
 import Link from "next/link";
+import { ShoppingCart } from "lucide-react";
 import { E_CATEGORIES } from "@/types/e-additive";
 
 const ALPHABET_SV = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ".split("");
-
-const footerLinks = {
-  produkt: [
-    { href: "/inkopslistor", label: "Inköpslista" },
-    { href: "/e-amnen", label: "E-ämnen Scanner" },
-    { href: "/livsmedel", label: "Livsmedelsguide" },
-    { href: "/handla", label: "Handla Mat" },
-  ],
-  foretag: [
-    { href: "/om", label: "Om ViHandlar" },
-    { href: "mailto:hej@vihandlar.se", label: "Kontakt" },
-  ],
-  juridiskt: [
-    { href: "/integritetspolicy", label: "Integritetspolicy" },
-    { href: "/sitemap.xml", label: "Sajtkarta" },
-  ],
-};
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t bg-muted/30">
-      <div className="container mx-auto px-4 py-12">
-        {/* Main footer grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Brand */}
-          <div className="md:col-span-2">
-            <Link href="/" className="inline-block mb-3">
-              <span className="text-xl font-bold">
-                <span className="text-primary">vi</span>handlar
-                <span className="text-muted-foreground text-sm">.se</span>
+          <div className="space-y-3">
+            <Link href="/" className="flex items-center gap-2">
+              <ShoppingCart className="h-6 w-6 text-primary" />
+              <span className="text-xl font-bold italic tracking-tight">
+                <span className="text-primary">Vi</span>
+                <span className="text-foreground">Handlar</span>
+                <span className="text-muted-foreground text-sm font-normal">.se</span>
               </span>
             </Link>
-            <p className="text-sm text-muted-foreground max-w-xs">
-              Smart inköpslista online med röstinmatning och realtidsdelning.
-              Komplett guide till E-nummer och svenska livsmedel.
+            <p className="text-sm text-muted-foreground">
+              Delad inköpslista online för familjen
             </p>
           </div>
 
           {/* Produkt */}
-          <div>
-            <h3 className="font-medium mb-3">Produkt</h3>
-            <ul className="space-y-2">
-              {footerLinks.produkt.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+          <div className="space-y-3">
+            <h4 className="font-medium">Produkt</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/inkopslistor"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Inköpslista
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/e-amnen"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  title="E-ämnen Scanner - Skanna ingredienslistor för E-ämnen analys"
+                >
+                  E-ämnen Scanner
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/livsmedel"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Livsmedelsguide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/handla"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Handla Mat
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Företag */}
-          <div>
-            <h3 className="font-medium mb-3">Företag</h3>
-            <ul className="space-y-2">
-              {footerLinks.foretag.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+          <div className="space-y-3">
+            <h4 className="font-medium">Företag</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/om"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Om ViHandlar
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:hej@vihandlar.se"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Kontakt
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Juridiskt */}
-          <div>
-            <h3 className="font-medium mb-3">Juridiskt</h3>
-            <ul className="space-y-2">
-              {footerLinks.juridiskt.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+          <div className="space-y-3">
+            <h4 className="font-medium">Juridiskt</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/integritetspolicy"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Integritetspolicy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/sajtkarta"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Sajtkarta
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Internationellt */}
+          <div className="space-y-3">
+            <h4 className="font-medium">Internationellt</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://listacumparaturi.ro"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hrefLang="ro"
+                  title="Lista de Cumpărături online - Delad inköpslista i Rumänien"
+                >
+                  🇷🇴 Rumänien
+                </a>
+              </li>
+              <li>
+                <span className="text-muted-foreground">🇸🇪 Sverige (Live)</span>
+              </li>
+              <li>
+                <span className="text-muted-foreground/70">
+                  🇪🇸 Spanien – 2025
+                </span>
+              </li>
+              <li>
+                <span className="text-muted-foreground/70">
+                  🌍 Globalt (.com) – 2025
+                </span>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/* SEO sections */}
-        <div className="space-y-6 border-t border-border/40 pt-8 mb-8">
+        {/* SEO Sections */}
+        <div className="border-t mt-8 pt-6 space-y-6">
           {/* Livsmedel A-Ö */}
-          <div>
-            <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+          <div className="space-y-3">
+            <h4 className="text-sm font-semibold text-foreground">
               Livsmedel A-Ö
             </h4>
-            <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-2">
               {ALPHABET_SV.map((letter) => (
                 <Link
                   key={`food-${letter}`}
-                  href={`/livsmedel?bokstav=${letter.toLowerCase()}`}
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline px-1"
+                  href={`/livsmedel/${letter.toLowerCase()}`}
+                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
                 >
                   {letter}
                 </Link>
               ))}
             </div>
+            <Link
+              href="/livsmedel"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
+            >
+              Se alla livsmedel →
+            </Link>
           </div>
 
-          {/* E-ämnen by category */}
-          <div>
-            <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
-              E-ämnen per kategori
+          {/* Produkter A-Ö */}
+          <div className="space-y-3">
+            <h4 className="text-sm font-semibold text-foreground">
+              Produkter A-Ö
             </h4>
-            <div className="flex flex-wrap gap-x-4 gap-y-1">
+            <div className="flex flex-wrap gap-2">
+              {ALPHABET_SV.map((letter) => (
+                <Link
+                  key={`prod-${letter}`}
+                  href={`/handla/produkter/${letter.toLowerCase()}`}
+                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                >
+                  {letter}
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/handla"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
+            >
+              Bläddra alla produkter →
+            </Link>
+          </div>
+
+          {/* Produktkategorier */}
+          <div className="space-y-3">
+            <h4 className="text-sm font-semibold text-foreground">
+              Produktkategorier
+            </h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <Link
+                href="/handla/kategori/dryck"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Dryck
+              </Link>
+              <Link
+                href="/handla/kategori/pasta"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Pasta
+              </Link>
+              <Link
+                href="/handla/kategori/godis"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Godis
+              </Link>
+              <Link
+                href="/handla/kategori/choklad"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Choklad
+              </Link>
+              <Link
+                href="/handla/kategori/bakning"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Bakning
+              </Link>
+              <Link
+                href="/handla/kategori/fika"
+                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+              >
+                Fika
+              </Link>
+            </div>
+            <Link
+              href="/handla/kategorier"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
+            >
+              Se alla kategorier →
+            </Link>
+          </div>
+
+          {/* E-ämnen */}
+          <div className="space-y-3">
+            <h4 className="text-sm font-semibold text-foreground">
+              E-ämnen A-Ö
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((number) => (
+                <Link
+                  key={`enum-${number}`}
+                  href={`/e-amnen/nummer/${number}`}
+                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                >
+                  E{number}XX
+                </Link>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-2 mt-2">
               {E_CATEGORIES.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/e-amnen/kategori/${cat.slug}`}
                   className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
                 >
-                  {cat.name} ({cat.range})
+                  {cat.name}
                 </Link>
               ))}
             </div>
+            <Link
+              href="/e-amnen"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
+            >
+              Se alla E-ämnen A-Ö →
+            </Link>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-border/40 pt-6 text-center">
-          <p className="text-xs text-muted-foreground">
+        <div className="border-t mt-8 pt-8 text-center space-y-2">
+          <p className="text-sm text-muted-foreground">
             &copy; {year} ViHandlar. Smart inköpslista online med röstinmatning
             och realtidsdelning.
           </p>
-          <p className="text-xs text-muted-foreground mt-1">
+          <p className="text-xs text-muted-foreground/70">
             En del av Value Unlimited
           </p>
         </div>
