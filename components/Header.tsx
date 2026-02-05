@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ShoppingCart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Handla Mat", href: "/handla" },
   { name: "E-ämnen", href: "/e-amnen" },
   { name: "Livsmedel", href: "/livsmedel" },
-  { name: "Inköpslistor", href: "/inkopslistor" },
+  { name: "Inköpslistor", href: "/inkopslista" },
   { name: "Om oss", href: "/om" },
 ];
 
@@ -22,16 +22,16 @@ export function Header() {
     <header className="bg-gradient-to-r from-background via-background/95 to-background border-b border-border/40 backdrop-blur-lg supports-[backdrop-filter]:bg-background/80 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center bg-transparent group">
           <div className="relative">
-            <div className="flex items-center gap-2 transition-transform duration-300 group-hover:scale-105">
-              <ShoppingCart className="h-7 w-7 text-primary" />
-              <span className="text-2xl font-bold italic tracking-tight">
-                <span className="text-primary">Vi</span>
-                <span className="text-foreground">Handlar</span>
-                <span className="text-muted-foreground text-base font-normal">.se</span>
-              </span>
-            </div>
+            <Image
+              src="/vihandlar-logo.png"
+              alt="ViHandlar - Delad inköpslista online"
+              width={200}
+              height={50}
+              className="h-[30px] sm:h-[35px] md:h-[50px] w-auto transition-transform duration-300 group-hover:scale-105"
+              priority
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
           </div>
         </Link>

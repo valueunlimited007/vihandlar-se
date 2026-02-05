@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import { E_CATEGORIES } from "@/types/e-additive";
 
 const ALPHABET_SV = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ".split("");
@@ -13,13 +13,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="space-y-3">
-            <Link href="/" className="flex items-center gap-2">
-              <ShoppingCart className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold italic tracking-tight">
-                <span className="text-primary">Vi</span>
-                <span className="text-foreground">Handlar</span>
-                <span className="text-muted-foreground text-sm font-normal">.se</span>
-              </span>
+            <Link href="/" className="flex items-center bg-transparent">
+              <Image
+                src="/vihandlar-logo.png"
+                alt="ViHandlar - Delad inköpslista online"
+                width={160}
+                height={40}
+                className="h-[30px] md:h-[40px] w-auto"
+              />
             </Link>
             <p className="text-sm text-muted-foreground">
               Delad inköpslista online för familjen

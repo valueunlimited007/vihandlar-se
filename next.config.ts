@@ -99,6 +99,19 @@ const nextConfig: NextConfig = {
         destination: "/handla",
         permanent: true,
       },
+
+      // === Inköpslista redirects ===
+      {
+        source: "/inkopslistor",
+        destination: "/inkopslista",
+        permanent: true,
+      },
+      // Old shared list URL: /list/:token → /inkopslista/dela/:token
+      {
+        source: "/list/:token",
+        destination: "/inkopslista/dela/:token",
+        permanent: true,
+      },
     ];
   },
 };

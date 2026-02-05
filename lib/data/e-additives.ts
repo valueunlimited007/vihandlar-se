@@ -141,10 +141,8 @@ export function getHighRiskAdditives(): EAdditive[] {
 }
 
 /**
- * Hämta säkra E-ämnen (naturliga med låg risk)
+ * Hämta E-ämnen med låg risk (risk_score <= 3)
  */
 export function getSafeAdditives(): EAdditive[] {
-  return eAdditives.filter(e => 
-    e.risk_score <= 2 && e.origin === 'Naturlig'
-  );
+  return eAdditives.filter(e => e.risk_score <= 3);
 }

@@ -67,11 +67,11 @@ Produktslugs i data inkluderar butikssuffix (t.ex. `produkt-namn-delitea`).
 
 | Gammal URL (Loveable) | Ny URL (Next.js) | Status |
 |---|---|---|
-| `/inkopslistor` | `/inkopslistor` | 🔜 Planerad |
-| `/inkopslista` | `/inkopslistor` | 🔜 301 redirect planerad |
-| `/list/:shareToken` | `/list/[shareToken]` | 🔜 Planerad |
-| `/listor` | `/listor` | 🔜 Planerad |
-| `/listor/:slug` | `/listor/[slug]` | 🔜 Planerad |
+| `/inkopslistor` | `/inkopslista` | 🔄 301 redirect |
+| `/inkopslista` | `/inkopslista` | ✅ Byggd i Fas 5 |
+| `/list/:shareToken` | `/inkopslista/dela/[token]` | 🔄 301 redirect |
+| `/listor` | `/inkopslista` | 🔜 Planerad (redirect) |
+| `/listor/:slug` | `/inkopslista/mallar/[slug]` | ✅ Byggd i Fas 5 |
 
 ## Scanner & Delning
 
@@ -86,6 +86,8 @@ Produktslugs i data inkluderar butikssuffix (t.ex. `produkt-namn-delitea`).
 | Supabase Edge: scan-e-numbers | `/api/scan` | 🔜 Planerad |
 | Supabase Edge: voice-to-text | `/api/voice` | 🔜 Planerad |
 | Intern affiliate redirect | `/api/redirect/[store]` | ✅ Byggd i Fas 4 |
+| Lista CRUD | `/api/lists/*` | ✅ Byggd i Fas 5 |
+| Lista SSE stream | `/api/lists/[token]/stream` | ✅ Byggd i Fas 5 |
 | Supabase Edge: health | `/api/health` | 🔜 Planerad |
 
 ---
@@ -98,7 +100,7 @@ Produktslugs i data inkluderar butikssuffix (t.ex. `produkt-namn-delitea`).
 | E-ämnen | 8 | 2 (+ 267 SSG) | 0 | 6 |
 | Livsmedel | 4 | 1 (+ 68 SSG) | 2 | 1 |
 | Shopping/Handla | 8 | 0 | 8 | 0 |
-| Inköpslistor | 5 | 0 | 0 | 5 |
+| Inköpslistor | 5 | 2 | 2 | 1 |
 | Scanner | 1 | 0 | 0 | 1 |
 | **Totalt** | **32** | **4** | **10** | **18** |
 
