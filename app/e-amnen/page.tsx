@@ -57,7 +57,7 @@ export default function EAmnenPage() {
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
             <div className="bg-card border rounded-xl p-4 text-center shadow-sm">
               <div className="text-3xl font-bold text-primary">
                 {allAdditives.length}
@@ -131,7 +131,7 @@ export default function EAmnenPage() {
           </Link>
 
           <Link
-            href="#alla"
+            href="/e-amnen/guide"
             className="flex items-center gap-3 p-4 rounded-xl border bg-card hover:shadow-md hover:border-primary/50 transition-all group"
           >
             <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -140,7 +140,7 @@ export default function EAmnenPage() {
             <div>
               <div className="font-medium text-sm">Komplett guide</div>
               <div className="text-xs text-muted-foreground">
-                Alla {allAdditives.length} E-ämnen
+                Lär dig om E-ämnen
               </div>
             </div>
           </Link>
@@ -205,7 +205,7 @@ export default function EAmnenPage() {
               return (
                 <Link
                   key={num}
-                  href={`/e-amnen?serie=${num}`}
+                  href={`/e-amnen/nummer/${num}`}
                   className="flex flex-col items-center gap-1 p-4 rounded-xl border bg-card hover:shadow-md hover:border-primary hover:bg-primary/5 transition-all hover:scale-105"
                 >
                   <span className="text-lg font-bold text-primary">
@@ -240,7 +240,7 @@ export default function EAmnenPage() {
                 return (
                   <Link
                     key={cat.slug}
-                    href={`/e-amnen?kategori=${cat.slug}`}
+                    href={`/e-amnen/kategori/${cat.slug}`}
                     className="p-4 rounded-xl border bg-card hover:shadow-lg hover:border-primary/50 transition-all hover:scale-[1.02] group"
                   >
                     <div className="font-semibold group-hover:text-primary transition-colors">

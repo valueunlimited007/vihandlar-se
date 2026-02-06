@@ -120,7 +120,7 @@ export default function InkopslistaPage() {
           </div>
 
           {/* Feature highlights */}
-          <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto mt-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-lg mx-auto mt-10">
             <div className="text-center">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
                 <Share2 className="w-5 h-5 text-primary" />
