@@ -12,10 +12,13 @@ import {
   Loader2,
   X,
   ListChecks,
+  Mic,
+  MicOff,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useShoppingList } from "@/hooks/useShoppingList";
+import { useVoiceInput } from "@/hooks/useVoiceInput";
 import { QUICK_ADD_ITEMS } from "@/types/shopping-list";
 
 interface ShoppingListProps {
@@ -39,6 +42,26 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
   const [showCompleted, setShowCompleted] = useState(false);
   const [shareStatus, setShareStatus] = useState<"idle" | "copied">("idle");
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Voice input
+  const handleVoiceResult = async (text: string) => {
+    // Split comma-separated items and add each
+    const items = text
+      .split(/[,،]+/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+    for (const item of items) {
+      await addItem(item);
+    }
+  };
+
+  const {
+    isRecording,
+    isProcessing,
+    error: voiceError,
+    startRecording,
+    stopRecording,
+  } = useVoiceInput(handleVoiceResult);
 
   // Save list to user's local storage on first load
   useEffect(() => {
@@ -172,6 +195,40 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
               autoComplete="off"
             />
             <button
+              type="button"
+              onClick={isRecording ? stopRecording : startRecording}
+              disabled={isProcessing}
+              className={`px-3 py-2.5 rounded-lg font-medium text-sm transition-all flex items-center gap-1.5 ${
+                isRecording
+                  ? "bg-red-500 text-white animate-pulse"
+                  : isProcessing
+                    ? "bg-muted text-muted-foreground cursor-wait"
+                    : "bg-primary/10 text-primary hover:bg-primary/20"
+              }`}
+              aria-label={
+                isRecording
+                  ? "Stoppa inspelning"
+                  : isProcessing
+                    ? "Bearbetar röst..."
+                    : "Tala in varor"
+              }
+              title={
+                isRecording
+                  ? "Stoppa inspelning"
+                  : isProcessing
+                    ? "Bearbetar..."
+                    : "Tala in varor"
+              }
+            >
+              {isProcessing ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : isRecording ? (
+                <MicOff className="w-4 h-4" />
+              ) : (
+                <Mic className="w-4 h-4" />
+              )}
+            </button>
+            <button
               type="submit"
               disabled={!inputValue.trim()}
               className="px-4 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
@@ -180,6 +237,25 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
               Lägg till
             </button>
           </form>
+
+          {/* Voice status/error */}
+          {(isRecording || isProcessing || voiceError) && (
+            <div
+              className={`mt-2 text-xs px-3 py-1.5 rounded-md ${
+                isRecording
+                  ? "bg-red-50 text-red-600 dark:bg-red-950/20 dark:text-red-400"
+                  : voiceError
+                    ? "bg-amber-50 text-amber-600 dark:bg-amber-950/20 dark:text-amber-400"
+                    : "bg-primary/5 text-primary"
+              }`}
+            >
+              {isRecording
+                ? "Lyssnar... Säg vad du vill lägga till (t.ex. \"mjölk, bröd, ägg\")"
+                : isProcessing
+                  ? "Bearbetar röst..."
+                  : voiceError}
+            </div>
+          )}
 
           {/* Quick add suggestions */}
           {filteredSuggestions.length > 0 && (
