@@ -72,7 +72,7 @@ export function Header() {
             MENY
           </span>
           <button
-            className="bg-accent hover:bg-accent/80 rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 text-accent-foreground"
+            className="bg-accent hover:bg-accent/80 rounded-full w-11 h-11 flex items-center justify-center transition-all duration-300 text-accent-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Stäng meny" : "Öppna meny"}
             aria-expanded={isMenuOpen}

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ShoppingCart,
@@ -20,6 +21,22 @@ import {
 import { getAllEAdditives } from "@/lib/data/e-additives";
 import { getAllFoods } from "@/lib/data/foods";
 import { getAllProducts } from "@/lib/data/products";
+
+export const metadata: Metadata = {
+  title: "ViHandlar – Din smarta matassistent | Inköpslistor, E-ämnen & Produkter",
+  description:
+    "Sveriges smartaste matplattform. Skapa delade inköpslistor, scanna E-ämnen, jämför priser på 10 000+ produkter och utforska 2500+ livsmedel.",
+  alternates: {
+    canonical: "https://vihandlar.se",
+  },
+  openGraph: {
+    title: "ViHandlar – Din smarta matassistent",
+    description:
+      "Delade inköpslistor, E-ämnesscanner och produktjämförelse.",
+    url: "https://vihandlar.se",
+    type: "website",
+  },
+};
 
 export default function LandingPage() {
   const eAdditiveCount = getAllEAdditives().length;
@@ -69,7 +86,7 @@ export default function LandingPage() {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all"
               >
-                <Link href="/inkopslistor">
+                <Link href="/inkopslista">
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Skapa inköpslista
                 </Link>
@@ -155,10 +172,10 @@ export default function LandingPage() {
                   asChild
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
-                  <Link href="/inkopslistor">Skapa lista nu</Link>
+                  <Link href="/inkopslista">Skapa lista nu</Link>
                 </Button>
                 <Button asChild variant="ghost" className="w-full text-sm">
-                  <Link href="/inkopslistor">Läs mer om inköpslistor →</Link>
+                  <Link href="/inkopslista">Läs mer om inköpslistor →</Link>
                 </Button>
               </div>
             </CardContent>
@@ -354,7 +371,7 @@ export default function LandingPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" variant="secondary" className="shadow-lg hover:shadow-xl">
-              <Link href="/inkopslistor">
+              <Link href="/inkopslista">
                 <ShoppingCart className="w-5 h-5 mr-2" />
                 Skapa inköpslista
               </Link>
