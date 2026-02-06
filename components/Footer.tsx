@@ -33,7 +33,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/inkopslistor"
+                  href="/inkopslista"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Inköpslista
@@ -96,7 +96,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/integritetspolicy"
+                  href="/integritet"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Integritetspolicy

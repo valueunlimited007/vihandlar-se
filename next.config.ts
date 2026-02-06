@@ -124,6 +124,25 @@ const nextConfig: NextConfig = {
         destination: "/inkopslista/dela/:token",
         permanent: true,
       },
+      // /listor → /inkopslista
+      {
+        source: "/listor",
+        destination: "/inkopslista",
+        permanent: true,
+      },
+      // /listor/:slug → /inkopslista/mallar/:slug
+      {
+        source: "/listor/:slug",
+        destination: "/inkopslista/mallar/:slug",
+        permanent: true,
+      },
+
+      // === Integritetspolicy redirect ===
+      {
+        source: "/integritetspolicy",
+        destination: "/integritet",
+        permanent: true,
+      },
     ];
   },
 };
