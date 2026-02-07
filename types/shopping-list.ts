@@ -41,6 +41,14 @@ export interface PublicListItem {
   position: number;
 }
 
+// Presence
+export interface PresenceEntry {
+  sessionId: string;
+  deviceType: string;
+  joinedAt: string;
+  lastSeen: string;
+}
+
 // SSE event types
 export type ListEvent =
   | { type: "item_added"; item: ShoppingListItem }

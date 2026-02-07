@@ -57,7 +57,7 @@ function getCachedList(token: string): ShoppingList | null {
   }
 }
 
-export function useShoppingList(shareToken?: string) {
+export function useShoppingList(shareToken?: string, onSSEMessage?: (data: Record<string, unknown>) => void) {
   const [list, setList] = useState<ShoppingList | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -123,6 +123,8 @@ export function useShoppingList(shareToken?: string) {
             setList(null);
             setError("Listan har tagits bort");
           }
+          // Forward all SSE events to caller (for presence handling etc.)
+          onSSEMessage?.(data);
         } catch {
           // Ignore parse errors
         }

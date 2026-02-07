@@ -1,6 +1,6 @@
-// GET /api/lists/[token]/stream — SSE endpoint for realtime updates
+// GET /api/lists/[token]/stream — SSE endpoint for realtime updates + presence
 import { NextRequest } from "next/server";
-import { getListByToken } from "@/lib/kv";
+import { getListByToken, getPresenceCount } from "@/lib/kv";
 
 interface RouteParams {
   params: Promise<{ token: string }>;
@@ -19,14 +19,18 @@ export async function GET(_request: NextRequest, { params }: RouteParams) {
   // SSE stream: poll for changes every 2 seconds
   const encoder = new TextEncoder();
   let lastUpdate = list.updatedAt;
+  let lastPresenceCount = -1;
   let closed = false;
 
   const stream = new ReadableStream({
     async start(controller) {
-      // Send initial state
+      // Send initial state with presence
+      const presence = await getPresenceCount(list.id);
+      lastPresenceCount = presence.count;
+
       controller.enqueue(
         encoder.encode(
-          `data: ${JSON.stringify({ type: "connected", list })}\n\n`
+          `data: ${JSON.stringify({ type: "connected", list, presenceCount: presence.count })}\n\n`
         )
       );
 
@@ -50,11 +54,29 @@ export async function GET(_request: NextRequest, { params }: RouteParams) {
             return;
           }
 
+          // Check list changes
           if (current.updatedAt !== lastUpdate) {
             lastUpdate = current.updatedAt;
             controller.enqueue(
               encoder.encode(
                 `data: ${JSON.stringify({ type: "update", list: current })}\n\n`
+              )
+            );
+          }
+
+          // Check presence changes
+          const presence = await getPresenceCount(current.id);
+          if (presence.count !== lastPresenceCount) {
+            const previousCount = lastPresenceCount;
+            lastPresenceCount = presence.count;
+            controller.enqueue(
+              encoder.encode(
+                `data: ${JSON.stringify({
+                  type: "presence",
+                  count: presence.count,
+                  entries: presence.entries,
+                  increased: presence.count > previousCount,
+                })}\n\n`
               )
             );
           }

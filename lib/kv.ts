@@ -1,7 +1,7 @@
 // lib/kv.ts — Storage abstraction for shopping lists
 // Uses Vercel KV (Redis) in production, in-memory fallback for development
 
-import type { ShoppingList, ShoppingListItem } from "@/types/shopping-list";
+import type { ShoppingList, ShoppingListItem, PresenceEntry } from "@/types/shopping-list";
 
 // ─── In-memory fallback for development ───────────────────────────
 
@@ -221,4 +221,72 @@ export async function getUserLists(
   return lists.sort(
     (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
   );
+}
+
+// ─── Presence Operations ─────────────────────────────────────────
+
+const PRESENCE_TTL = 60; // seconds — entries expire after 60s without heartbeat
+
+export async function setPresence(
+  listId: string,
+  sessionId: string,
+  deviceType: string
+): Promise<PresenceEntry> {
+  const entry: PresenceEntry = {
+    sessionId,
+    deviceType,
+    joinedAt: new Date().toISOString(),
+    lastSeen: new Date().toISOString(),
+  };
+  await kvSet(`presence:${listId}:${sessionId}`, entry, PRESENCE_TTL);
+
+  // Track session in the list's presence set
+  const sessions = (await kvGet<string[]>(`presence-sessions:${listId}`)) ?? [];
+  if (!sessions.includes(sessionId)) {
+    sessions.push(sessionId);
+    await kvSet(`presence-sessions:${listId}`, sessions, PRESENCE_TTL * 2);
+  }
+
+  return entry;
+}
+
+export async function removePresence(
+  listId: string,
+  sessionId: string
+): Promise<void> {
+  await kvDel(`presence:${listId}:${sessionId}`);
+  const sessions = (await kvGet<string[]>(`presence-sessions:${listId}`)) ?? [];
+  const filtered = sessions.filter((s) => s !== sessionId);
+  if (filtered.length > 0) {
+    await kvSet(`presence-sessions:${listId}`, filtered, PRESENCE_TTL * 2);
+  } else {
+    await kvDel(`presence-sessions:${listId}`);
+  }
+}
+
+export async function getPresenceCount(listId: string): Promise<{ count: number; entries: PresenceEntry[] }> {
+  const sessions = (await kvGet<string[]>(`presence-sessions:${listId}`)) ?? [];
+  const entries: PresenceEntry[] = [];
+  const expired: string[] = [];
+
+  for (const sid of sessions) {
+    const entry = await kvGet<PresenceEntry>(`presence:${listId}:${sid}`);
+    if (entry) {
+      entries.push(entry);
+    } else {
+      expired.push(sid);
+    }
+  }
+
+  // Clean up expired sessions
+  if (expired.length > 0) {
+    const alive = sessions.filter((s) => !expired.includes(s));
+    if (alive.length > 0) {
+      await kvSet(`presence-sessions:${listId}`, alive, PRESENCE_TTL * 2);
+    } else {
+      await kvDel(`presence-sessions:${listId}`);
+    }
+  }
+
+  return { count: entries.length, entries };
 }
