@@ -101,20 +101,28 @@ export async function POST(request: NextRequest) {
     }
 
     // Validate minimum size (avoid empty recordings)
-    if (audioFile.size < 1000) {
+    if (audioFile.size < 500) {
       return NextResponse.json(
         { error: "Inspelningen var för kort. Försök igen." },
         { status: 400 }
       );
     }
 
+    // Determine correct file extension from MIME type
+    const mimeType = audioFile.type || "audio/webm";
+    let ext = "webm";
+    if (mimeType.includes("mp4") || mimeType.includes("m4a")) ext = "mp4";
+    else if (mimeType.includes("ogg")) ext = "ogg";
+    else if (mimeType.includes("wav")) ext = "wav";
+    else if (mimeType.includes("mpeg") || mimeType.includes("mp3")) ext = "mp3";
+
     // Call OpenAI Whisper API
     const whisperForm = new FormData();
-    whisperForm.append("file", audioFile, "audio.webm");
+    whisperForm.append("file", audioFile, `audio.${ext}`);
     whisperForm.append("model", "whisper-1");
     whisperForm.append("language", "sv");
     whisperForm.append("response_format", "json");
-    whisperForm.append("prompt", "Inköpslista: livsmedel och hushållsvaror på svenska");
+    whisperForm.append("prompt", "Transkribera svenska matvarunamn som mjölk, bröd, äpplen, ost, smör, kyckling, pasta, ris, tomat, gurka, bananer");
 
     const whisperResponse = await fetch(
       "https://api.openai.com/v1/audio/transcriptions",
@@ -129,7 +137,15 @@ export async function POST(request: NextRequest) {
 
     if (!whisperResponse.ok) {
       const errorData = await whisperResponse.text();
-      console.error("Whisper API error:", whisperResponse.status, errorData);
+      console.error("Whisper API error:", whisperResponse.status, errorData, "MIME:", mimeType, "Ext:", ext, "Size:", audioFile.size);
+
+      if (whisperResponse.status === 401) {
+        return NextResponse.json(
+          { error: "API-nyckel saknas eller är ogiltig." },
+          { status: 500 }
+        );
+      }
+
       return NextResponse.json(
         { error: "Kunde inte bearbeta ljudet. Försök igen." },
         { status: 500 }
