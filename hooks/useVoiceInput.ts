@@ -12,7 +12,7 @@ interface UseVoiceInputReturn {
 }
 
 // Max recording duration in ms
-const MAX_RECORDING_MS = 4000;
+const MAX_RECORDING_MS = 8000;
 
 // Check if MediaRecorder is supported
 function getMediaRecorderSupport(): boolean {
@@ -27,11 +27,13 @@ function getSupportedMimeType(): string {
     "audio/webm",
     "audio/mp4",
     "audio/ogg;codecs=opus",
+    "audio/wav",
   ];
   for (const type of types) {
     if (MediaRecorder.isTypeSupported(type)) return type;
   }
-  return "audio/webm";
+  // Let browser decide
+  return "";
 }
 
 export function useVoiceInput(
@@ -66,19 +68,8 @@ export function useVoiceInput(
 
       try {
         // If the recording is too short, skip API call
-        if (audioBlob.size < 8000) {
-          // Try demo mode instead
-          const res = await fetch("/api/voice", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ demo: true }),
-          });
-          const data = await res.json();
-          if (data.text) {
-            onResult(data.text);
-          } else {
-            setError("Inspelningen var för kort. Försök igen.");
-          }
+        if (audioBlob.size < 2000) {
+          setError("Inspelningen var för kort. Försök igen.");
           return;
         }
 
@@ -147,6 +138,7 @@ export function useVoiceInput(
         audio: {
           echoCancellation: true,
           noiseSuppression: true,
+          autoGainControl: true,
           sampleRate: 44100,
           channelCount: 1,
         },
@@ -156,7 +148,9 @@ export function useVoiceInput(
       chunksRef.current = [];
 
       const mimeType = getSupportedMimeType();
-      const recorder = new MediaRecorder(stream, { mimeType });
+      const recorder = mimeType
+        ? new MediaRecorder(stream, { mimeType })
+        : new MediaRecorder(stream);
       mediaRecorderRef.current = recorder;
 
       recorder.ondataavailable = (event) => {
@@ -166,7 +160,8 @@ export function useVoiceInput(
       };
 
       recorder.onstop = () => {
-        const audioBlob = new Blob(chunksRef.current, { type: mimeType });
+        const actualType = mimeType || recorder.mimeType || "audio/webm";
+        const audioBlob = new Blob(chunksRef.current, { type: actualType });
         cleanup();
         processAudio(audioBlob);
       };

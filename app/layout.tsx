@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="sv" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <GoogleAnalytics />
+        <Analytics />
         <Header />
         <main className="min-h-screen">
           {children}

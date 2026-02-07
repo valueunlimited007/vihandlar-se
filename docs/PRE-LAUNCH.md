@@ -22,7 +22,6 @@ Gå till **Settings → Environment Variables** och lägg till:
 | `KV_REST_API_TOKEN` | *(sätts automatiskt)* | Alla | Koppla Vercel KV |
 | `GOOGLE_CLOUD_API_KEY` | Din GCP API-nyckel | Production, Preview | Google Cloud Console |
 | `OPENAI_API_KEY` | Din OpenAI API-nyckel | Production, Preview | OpenAI Dashboard |
-| `NEXT_PUBLIC_GA_ID` | `G-96FB72HXEJ` | Production | Google Analytics |
 
 ### Steg för Vercel KV:
 1. Gå till **Storage** i Vercel Dashboard
@@ -44,10 +43,9 @@ Gå till **Settings → Environment Variables** och lägg till:
 2. Skapa ny API-nyckel
 3. Klistra in som `OPENAI_API_KEY` i Vercel
 
-### Steg för Google Analytics:
-1. Befintligt GA4-konto: **G-96FB72HXEJ** (samma som originalet)
-2. Lägg till som `NEXT_PUBLIC_GA_ID` → **endast Production**
-3. Uppdatera GA4-propertyn med ny domän om nödvändigt
+### Analytics (Besökskollen):
+Analytics är hårdkodat i `components/Analytics.tsx` via Besökskollen/Savri.
+Ingen env-variabel behövs — scriptet laddas automatiskt.
 
 ## 3. Domän-konfiguration
 
@@ -100,7 +98,7 @@ Gå till **Settings → Environment Variables** och lägg till:
 ## 8. Efter lansering
 
 - [ ] Övervaka felloggar i Vercel Dashboard (Functions → Logs)
-- [ ] Kontrollera Google Analytics-data flödar
+- [ ] Kontrollera Besökskollen-data flödar (besokskollen.se)
 - [ ] Verifiera att Google Search Console inte rapporterar 404-fel
 - [ ] Kör Coverage-rapport i Search Console efter 1 vecka
 - [ ] Ta bort gammal `data/e_additives_rows.csv` om den finns
