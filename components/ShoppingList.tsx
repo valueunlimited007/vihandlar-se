@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import {
   Plus,
   Check,
@@ -14,11 +14,17 @@ import {
   ListChecks,
   Mic,
   MicOff,
+  Users,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { ToastContainer } from "@/components/Toast";
 import { useShoppingList } from "@/hooks/useShoppingList";
 import { useVoiceInput } from "@/hooks/useVoiceInput";
+import { useAudioFeedback } from "@/hooks/useAudioFeedback";
+import { usePresence } from "@/hooks/usePresence";
 import { QUICK_ADD_ITEMS } from "@/types/shopping-list";
 
 interface ShoppingListProps {
@@ -26,6 +32,19 @@ interface ShoppingListProps {
 }
 
 export function ShoppingList({ shareToken }: ShoppingListProps) {
+  // Presence (must be before useShoppingList to get handlePresenceEvent)
+  const { presenceCount, handlePresenceEvent } = usePresence(shareToken);
+
+  // SSE callback — forward presence events
+  const onSSEMessage = useCallback(
+    (data: Record<string, unknown>) => {
+      if (data.type === "presence") {
+        handlePresenceEvent(data as Parameters<typeof handlePresenceEvent>[0]);
+      }
+    },
+    [handlePresenceEvent]
+  );
+
   const {
     list,
     loading,
@@ -36,7 +55,16 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
     toggleItem,
     deleteItem,
     saveLocalListId,
-  } = useShoppingList(shareToken);
+  } = useShoppingList(shareToken, onSSEMessage);
+
+  // Audio feedback
+  const {
+    isEnabled: soundEnabled,
+    setEnabled: setSoundEnabled,
+    playItemAdded,
+    playItemCompleted,
+    playItemRemoved,
+  } = useAudioFeedback();
 
   const [inputValue, setInputValue] = useState("");
   const [showCompleted, setShowCompleted] = useState(false);
@@ -45,13 +73,13 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
 
   // Voice input
   const handleVoiceResult = async (text: string) => {
-    // Split comma-separated items and add each
     const items = text
       .split(/[,،]+/)
       .map((s) => s.trim())
       .filter(Boolean);
     for (const item of items) {
       await addItem(item);
+      playItemAdded();
     }
   };
 
@@ -74,11 +102,11 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
     const trimmed = inputValue.trim();
     if (!trimmed) return;
 
-    // Support comma-separated items
     const items = trimmed.split(",").map((s) => s.trim()).filter(Boolean);
 
     for (const item of items) {
       await addItem(item);
+      playItemAdded();
     }
 
     setInputValue("");
@@ -87,7 +115,20 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
 
   const handleQuickAdd = async (name: string) => {
     await addItem(name);
+    playItemAdded();
     inputRef.current?.focus();
+  };
+
+  const handleToggle = async (itemId: string, wasCompleted: boolean) => {
+    await toggleItem(itemId);
+    if (!wasCompleted) {
+      playItemCompleted();
+    }
+  };
+
+  const handleDelete = async (itemId: string) => {
+    playItemRemoved();
+    await deleteItem(itemId);
   };
 
   const handleShare = async () => {
@@ -147,32 +188,58 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
 
   return (
     <div className="max-w-2xl mx-auto space-y-4">
+      {/* Toast container for join notifications */}
+      <ToastContainer />
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold">{list.name}</h1>
-          <p className="text-sm text-muted-foreground">
-            {pendingItems.length} kvar
-            {completedItems.length > 0 &&
-              ` · ${completedItems.length} avklarade`}
-          </p>
+          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+            <span>
+              {pendingItems.length} kvar
+              {completedItems.length > 0 &&
+                ` \u00B7 ${completedItems.length} avklarade`}
+            </span>
+            <span className={`flex items-center gap-1 ${presenceCount > 1 ? "text-green-600 dark:text-green-400" : ""}`}>
+              <Users className="w-3.5 h-3.5" />
+              {presenceCount > 1
+                ? `${presenceCount} personer`
+                : "Endast jag"}
+            </span>
+          </div>
         </div>
-        <button
-          onClick={handleShare}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors"
-        >
-          {shareStatus === "copied" ? (
-            <>
-              <CheckCheck className="w-4 h-4" />
-              Kopierad!
-            </>
-          ) : (
-            <>
-              <Share2 className="w-4 h-4" />
-              Dela
-            </>
-          )}
-        </button>
+        <div className="flex items-center gap-2">
+          {/* Audio toggle */}
+          <button
+            onClick={() => setSoundEnabled(!soundEnabled)}
+            className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            aria-label={soundEnabled ? "Stäng av ljud" : "Slå på ljud"}
+            title={soundEnabled ? "Ljud på" : "Ljud av"}
+          >
+            {soundEnabled ? (
+              <Volume2 className="w-4 h-4" />
+            ) : (
+              <VolumeX className="w-4 h-4" />
+            )}
+          </button>
+          <button
+            onClick={handleShare}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors"
+          >
+            {shareStatus === "copied" ? (
+              <>
+                <CheckCheck className="w-4 h-4" />
+                Kopierad!
+              </>
+            ) : (
+              <>
+                <Share2 className="w-4 h-4" />
+                Dela
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Add Item Form */}
@@ -283,7 +350,7 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
               className="flex items-center gap-3 p-3 rounded-lg bg-card border hover:border-primary/30 transition-colors group"
             >
               <button
-                onClick={() => toggleItem(item.id)}
+                onClick={() => handleToggle(item.id, item.completed)}
                 className="w-6 h-6 rounded-full border-2 border-muted-foreground/30 hover:border-primary hover:bg-primary/10 transition-colors flex items-center justify-center shrink-0"
                 aria-label={`Markera ${item.name} som klar`}
               >
@@ -299,7 +366,7 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
                 )}
               </div>
               <button
-                onClick={() => deleteItem(item.id)}
+                onClick={() => handleDelete(item.id)}
                 className="p-1.5 rounded-md text-muted-foreground/30 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 transition-colors opacity-0 group-hover:opacity-100"
                 aria-label={`Ta bort ${item.name}`}
               >
@@ -339,7 +406,7 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
                   className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-transparent group"
                 >
                   <button
-                    onClick={() => toggleItem(item.id)}
+                    onClick={() => handleToggle(item.id, item.completed)}
                     className="w-6 h-6 rounded-full bg-primary/20 border-2 border-primary/40 flex items-center justify-center shrink-0"
                     aria-label={`Markera ${item.name} som ej klar`}
                   >
@@ -355,7 +422,7 @@ export function ShoppingList({ shareToken }: ShoppingListProps) {
                     )}
                   </span>
                   <button
-                    onClick={() => deleteItem(item.id)}
+                    onClick={() => handleDelete(item.id)}
                     className="p-1.5 rounded-md text-muted-foreground/30 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 transition-colors opacity-0 group-hover:opacity-100"
                     aria-label={`Ta bort ${item.name}`}
                   >
