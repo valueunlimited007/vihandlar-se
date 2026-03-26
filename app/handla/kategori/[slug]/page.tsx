@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Grid3X3, Package, ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProductCard } from "@/components/ProductCard";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 import {
   getCategoryBySlug,
   getProductsByCategory,
@@ -112,8 +113,18 @@ export default async function CategoryPage({
     return `/handla/kategori/${slug}${qs ? `?${qs}` : ""}`;
   };
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "Handla", url: "https://vihandlar.se/handla" },
+    { name: category.name, url: `https://vihandlar.se/handla/kategori/${slug}` },
+  ]);
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
         <Link href="/" className="hover:text-primary transition-colors">

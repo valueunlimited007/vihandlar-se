@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getAllEAdditives } from "@/lib/data/e-additives";
 import { E_CATEGORIES, RISK_LEVELS } from "@/types/e-additive";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "E-ämnesguide – Förstå livsmedelstillsatser | ViHandlar",
@@ -26,8 +27,18 @@ export default function EAmnenGuidePage() {
   const mediumRisk = allAdditives.filter((a) => a.risk_score >= 4 && a.risk_score <= 6);
   const lowRisk = allAdditives.filter((a) => a.risk_score <= 3);
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "E-ämnen", url: "https://vihandlar.se/e-amnen" },
+    { name: "Guide", url: "https://vihandlar.se/e-amnen/guide" },
+  ]);
+
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">
         <Link href="/" className="hover:text-foreground">Hem</Link>

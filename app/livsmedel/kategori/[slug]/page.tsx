@@ -6,6 +6,7 @@ import {
   getFoodCategoryBySlug,
   getFoodsByCategory,
 } from "@/lib/data/foods";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -40,8 +41,18 @@ export default async function FoodCategoryPage({ params }: Props) {
   const foods = getFoodsByCategory(category.id);
   const allCategories = getAllFoodCategories();
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "Livsmedel", url: "https://vihandlar.se/livsmedel" },
+    { name: category.name, url: `https://vihandlar.se/livsmedel/kategori/${slug}` },
+  ]);
+
   return (
     <div className="container mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">
         <Link href="/" className="hover:text-foreground">Hem</Link>

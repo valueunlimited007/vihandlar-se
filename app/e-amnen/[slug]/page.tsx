@@ -82,8 +82,105 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
   const isHighRisk = additive.risk_score >= 7;
   const adiMax = additive.adi_value ? Math.round(additive.adi_value * 70) : null;
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${additive.e_number} ${additive.name} – Hälsoeffekter & Risknivå`,
+    description:
+      additive.short_description ||
+      `Information om ${additive.e_number} (${additive.name}), risknivå ${additive.risk_score}/10.`,
+    url: `https://vihandlar.se/e-amnen/${additive.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "vihandlar.se",
+      url: "https://vihandlar.se",
+    },
+    mainEntityOfPage: `https://vihandlar.se/e-amnen/${additive.slug}`,
+    ...(additive.updated_at && { dateModified: additive.updated_at }),
+    ...(additive.created_at && { datePublished: additive.created_at }),
+    inLanguage: "sv-SE",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Hem",
+        item: "https://vihandlar.se",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "E-ämnen",
+        item: "https://vihandlar.se/e-amnen",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${additive.e_number} ${additive.name}`,
+        item: `https://vihandlar.se/e-amnen/${additive.slug}`,
+      },
+    ],
+  };
+
+  // Build FAQ schema if health effects have useful data
+  const faqEntries: { question: string; answer: string }[] = [];
+  if (additive.short_description) {
+    faqEntries.push({
+      question: `Vad är ${additive.e_number} (${additive.name})?`,
+      answer: additive.short_description,
+    });
+  }
+  if (additive.health_effects?.documented?.length) {
+    faqEntries.push({
+      question: `Vilka biverkningar har ${additive.e_number}?`,
+      answer: `Dokumenterade biverkningar: ${additive.health_effects.documented.join(", ")}.`,
+    });
+  }
+  if (additive.children_note) {
+    faqEntries.push({
+      question: `Är ${additive.e_number} säkert för barn?`,
+      answer: additive.children_note,
+    });
+  }
+
+  const faqSchema =
+    faqEntries.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntries.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* Back link */}
       <Link
         href="/e-amnen"

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EAdditiveCard } from "@/components/EAdditiveCard";
 import { getAllEAdditives } from "@/lib/data/e-additives";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ series: string }>;
@@ -52,8 +53,18 @@ export default async function EAmnenSeriesPage({ params }: Props) {
 
   const name = SERIES_NAMES[series] || `E${series}XX`;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "E-ämnen", url: "https://vihandlar.se/e-amnen" },
+    { name: `E${series}XX – ${name}`, url: `https://vihandlar.se/e-amnen/nummer/${series}` },
+  ]);
+
   return (
     <div className="container mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">
         <Link href="/" className="hover:text-foreground">Hem</Link>

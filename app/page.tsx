@@ -43,6 +43,36 @@ export default function LandingPage() {
   const foodCount = getAllFoods().length;
   const productCount = getAllProducts().length;
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "vihandlar.se",
+    alternateName: "ViHandlar",
+    url: "https://vihandlar.se",
+    description:
+      "Sveriges smartaste matplattform. Skapa delade inköpslistor, scanna E-ämnen och jämför priser.",
+    inLanguage: "sv-SE",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://vihandlar.se/e-amnen?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "vihandlar.se",
+    url: "https://vihandlar.se",
+    logo: "https://vihandlar.se/icon.svg",
+    description:
+      "Sveriges smartaste matplattform med E-nummerskanner, delade inköpslistor och produktjämförelse.",
+    sameAs: [],
+  };
+
   const stats = [
     { value: "10 000+", label: "Inköpslistor" },
     {
@@ -55,6 +85,16 @@ export default function LandingPage() {
 
   return (
     <div>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-accent/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-50" />

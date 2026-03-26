@@ -97,7 +97,33 @@ export default async function ProductDetailPage({ params }: PageProps) {
     ? product.description.replace(/<[^>]*>/g, "")
     : null;
 
-  // JSON-LD Schema
+  // BreadcrumbList JSON-LD
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Hem",
+        item: "https://vihandlar.se",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Handla",
+        item: "https://vihandlar.se/handla",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: `https://vihandlar.se/handla/produkt/${slug}`,
+      },
+    ],
+  };
+
+  // Product JSON-LD Schema
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -129,6 +155,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Breadcrumbs */}

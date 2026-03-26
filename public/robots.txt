@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://vihandlar.se/sitemap.xml
-
-# Blockera API-routes
-Disallow: /api/
