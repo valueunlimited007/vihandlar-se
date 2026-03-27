@@ -21,11 +21,16 @@ Alla affiliatelänkar MÅSTE gå via `/api/redirect/[store]`:
 ```
 
 ## Adtraction URL-format
+Använder `trackingBase` från stores.json (go.adt242.com) för exakt matchning med Adtraction.
 ```typescript
 function buildAdtractionUrl(store: Store, productUrl: string): string {
-  const { programId, channelId } = store.affiliate_config;
   const encodedUrl = encodeURIComponent(productUrl);
-  return `https://track.adtraction.com/t/t?a=${programId}&as=${channelId}&t=2&tk=1&url=${encodedUrl}`;
+  const { trackingBase, programAdId, programId, channelId } = store.affiliate_config;
+  if (trackingBase) {
+    return `${trackingBase}&url=${encodedUrl}`;
+  }
+  const adId = programAdId || programId;
+  return `https://go.adt242.com/t/t?a=${adId}&as=${channelId}&t=2&tk=1&url=${encodedUrl}`;
 }
 ```
 
@@ -53,7 +58,6 @@ export async function GET(request: Request, { params }) {
 "Denna sida innehåller affiliatelänkar. Vi kan få provision vid köp, utan extra kostnad för dig."
 
 ## Sidor
-- `/shopping` - Hub med butiker
-- `/shopping/[store]` - Butikssida
-- `/shopping/[store]/[slug]` - Produktsida
-- `/shopping/kategori/[slug]` - Produktkategori
+- `/handla` - Hub med butiker
+- `/handla/produkt/[slug]` - Produktsida
+- `/handla/kategori/[slug]` - Produktkategori
