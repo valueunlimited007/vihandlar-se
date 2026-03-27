@@ -134,12 +134,12 @@ export function Footer() {
               </li>
               <li>
                 <span className="text-muted-foreground/70">
-                  🇪🇸 Spanien – 2025
+                  🇪🇸 Spanien – 2026
                 </span>
               </li>
               <li>
                 <span className="text-muted-foreground/70">
-                  🌍 Globalt (.com) – 2025
+                  🌍 Globalt (.com) – 2026
                 </span>
               </li>
             </ul>
