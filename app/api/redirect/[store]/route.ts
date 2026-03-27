@@ -1,6 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStoreBySlug, buildAdtractionUrl } from "@/lib/data/stores";
 
+// Known Adtraction tracking domains
+const TRACKING_DOMAINS = [
+  "go.adt242.com",
+  "track.adtraction.com",
+];
+
+// Known store domains (raw product URLs)
+const STORE_DOMAINS = [
+  "www.delitea.se",
+  "delitea.se",
+];
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ store: string }> }
@@ -24,7 +36,7 @@ export async function GET(
     );
   }
 
-  // Validate URL - must be a valid URL pointing to a known store domain
+  // Validate URL
   let targetUrl: URL;
   try {
     targetUrl = new URL(url);
@@ -35,20 +47,23 @@ export async function GET(
     );
   }
 
-  // Only allow product URLs from known store domains
-  const allowedStoreDomains = [
-    "www.delitea.se",
-    "delitea.se",
-  ];
+  const hostname = targetUrl.hostname;
 
-  if (!allowedStoreDomains.some((d) => targetUrl.hostname === d)) {
-    return NextResponse.json(
-      { error: "URL domain not allowed" },
-      { status: 403 }
-    );
+  // If URL is already an Adtraction tracking URL, redirect directly
+  // (product_url from feed already contains complete tracking URL)
+  if (TRACKING_DOMAINS.some((d) => hostname === d)) {
+    return NextResponse.redirect(url, 302);
   }
 
-  // Build Adtraction tracking URL and redirect
-  const trackingUrl = buildAdtractionUrl(store, url);
-  return NextResponse.redirect(trackingUrl, 302);
+  // If URL is a raw store URL, wrap it in Adtraction tracking
+  if (STORE_DOMAINS.some((d) => hostname === d)) {
+    const trackingUrl = buildAdtractionUrl(store, url);
+    return NextResponse.redirect(trackingUrl, 302);
+  }
+
+  // Unknown domain — reject
+  return NextResponse.json(
+    { error: "URL domain not allowed" },
+    { status: 403 }
+  );
 }
