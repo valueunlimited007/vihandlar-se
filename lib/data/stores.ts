@@ -27,14 +27,23 @@ export function getStoreById(id: string): Store | undefined {
 
 /**
  * Bygg Adtraction tracking URL
+ * Använder trackingBase från stores.json för att matcha exakt samma
+ * URL-format som gamla Loveable-versionen (go.adt242.com med programAdId)
  */
 export function buildAdtractionUrl(
   store: Store,
   productUrl: string
 ): string {
-  const { programId, channelId } = store.affiliate_config;
   const encodedUrl = encodeURIComponent(productUrl);
-  return `https://track.adtraction.com/t/t?a=${programId}&as=${channelId}&t=2&tk=1&url=${encodedUrl}`;
+  const { trackingBase, programAdId, programId, channelId } = store.affiliate_config;
+
+  if (trackingBase) {
+    return `${trackingBase}&url=${encodedUrl}`;
+  }
+
+  // Fallback: bygg URL manuellt (använd programAdId om tillgängligt)
+  const adId = programAdId || programId;
+  return `https://go.adt242.com/t/t?a=${adId}&as=${channelId}&t=2&tk=1&url=${encodedUrl}`;
 }
 
 /**

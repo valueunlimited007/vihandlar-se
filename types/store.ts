@@ -59,12 +59,3 @@ export interface ProductCategory {
   updated_at?: string;
 }
 
-// Adtraction tracking URL builder
-export function buildAdtractionUrl(
-  programId: string,
-  channelId: string,
-  productUrl: string
-): string {
-  const encodedUrl = encodeURIComponent(productUrl);
-  return `https://track.adtraction.com/t/t?a=${programId}&as=${channelId}&t=2&tk=1&url=${encodedUrl}`;
-}

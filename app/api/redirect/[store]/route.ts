@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getStoreBySlug } from "@/lib/data/stores";
+import { getStoreBySlug, buildAdtractionUrl } from "@/lib/data/stores";
 
 export async function GET(
   request: NextRequest,
@@ -24,7 +24,7 @@ export async function GET(
     );
   }
 
-  // Validate URL - must be a valid URL pointing to a known domain
+  // Validate URL - must be a valid URL pointing to a known store domain
   let targetUrl: URL;
   try {
     targetUrl = new URL(url);
@@ -35,21 +35,20 @@ export async function GET(
     );
   }
 
-  // Only allow redirect to known affiliate domains
-  const allowedDomains = [
-    "go.adt242.com",
-    "track.adtraction.com",
-    "clk.tradedoubler.com",
-    "www.awin1.com",
+  // Only allow product URLs from known store domains
+  const allowedStoreDomains = [
     "www.delitea.se",
+    "delitea.se",
   ];
 
-  if (!allowedDomains.some((d) => targetUrl.hostname === d)) {
+  if (!allowedStoreDomains.some((d) => targetUrl.hostname === d)) {
     return NextResponse.json(
       { error: "URL domain not allowed" },
       { status: 403 }
     );
   }
 
-  return NextResponse.redirect(url, 302);
+  // Build Adtraction tracking URL and redirect
+  const trackingUrl = buildAdtractionUrl(store, url);
+  return NextResponse.redirect(trackingUrl, 302);
 }
