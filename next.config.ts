@@ -55,6 +55,12 @@ const nextConfig: NextConfig = {
         destination: "/livsmedel/:slug",
         permanent: true,
       },
+      // === Livsmedel: old letter landing pages /livsmedel/:letter → /livsmedel ===
+      {
+        source: "/livsmedel/:letter([a-zA-ZåäöÅÄÖ])",
+        destination: "/livsmedel",
+        permanent: true,
+      },
 
       // === Shopping → Handla redirects (301) ===
       {
@@ -108,6 +114,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/scanner",
+        destination: "/skanner",
+        permanent: true,
+      },
+      // Old shared scan URL: /scan/:token → /skanner
+      {
+        source: "/scan/:token",
         destination: "/skanner",
         permanent: true,
       },
