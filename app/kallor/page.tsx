@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Källor och referenser - ViHandlar",
@@ -61,8 +62,17 @@ const sources = [
 ];
 
 export default function KallorPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "Källor och referenser", url: "https://vihandlar.se/kallor" },
+  ]);
+
   return (
     <div className="container max-w-4xl mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">
         <Link href="/" className="hover:text-foreground">

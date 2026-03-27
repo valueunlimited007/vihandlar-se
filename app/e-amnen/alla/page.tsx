@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EAdditiveSearch } from "@/components/EAdditiveSearch";
 import { getAllEAdditives, getHighRiskAdditives, getSafeAdditives } from "@/lib/data/e-additives";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Alla E-ämnen A-Ö – Komplett databas | ViHandlar",
@@ -22,8 +23,18 @@ export default function AllaEAmnenPage() {
   const highRisk = getHighRiskAdditives();
   const safe = getSafeAdditives();
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "E-ämnen", url: "https://vihandlar.se/e-amnen" },
+    { name: "Alla E-ämnen", url: "https://vihandlar.se/e-amnen/alla" },
+  ]);
+
   return (
     <div className="container mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">
         <Link href="/" className="hover:text-foreground">Hem</Link>

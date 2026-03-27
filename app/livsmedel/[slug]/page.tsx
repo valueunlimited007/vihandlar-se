@@ -81,8 +81,108 @@ export default async function FoodDetailPage({ params }: PageProps) {
 
   const hasNutrition = food.calories != null;
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${food.name} – Näringsvärde & Tips`,
+    description:
+      food.short_description ||
+      `Information om ${food.name}, näringsvärden, förvaring och matlagning.`,
+    url: `https://vihandlar.se/livsmedel/${food.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "vihandlar.se",
+      url: "https://vihandlar.se",
+    },
+    mainEntityOfPage: `https://vihandlar.se/livsmedel/${food.slug}`,
+    ...(food.updated_at && { dateModified: food.updated_at }),
+    ...(food.created_at && { datePublished: food.created_at }),
+    inLanguage: "sv-SE",
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Hem",
+        item: "https://vihandlar.se",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Livsmedel",
+        item: "https://vihandlar.se/livsmedel",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: food.name,
+        item: `https://vihandlar.se/livsmedel/${food.slug}`,
+      },
+    ],
+  };
+
+  const nutritionSchema = hasNutrition
+    ? {
+        "@context": "https://schema.org",
+        "@type": "NutritionInformation",
+        calories: food.calories != null ? `${food.calories} kcal` : undefined,
+        proteinContent:
+          food.protein != null ? `${food.protein} g` : undefined,
+        fatContent: food.fat != null ? `${food.fat} g` : undefined,
+        carbohydrateContent:
+          food.carbohydrates != null ? `${food.carbohydrates} g` : undefined,
+        fiberContent: food.fiber != null ? `${food.fiber} g` : undefined,
+        sodiumContent: food.salt != null ? `${food.salt} g` : undefined,
+        servingSize: "100 g",
+      }
+    : null;
+
+  const faqSchema =
+    food.faq && food.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: food.faq.map(
+            (item: { question: string; answer: string }) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })
+          ),
+        }
+      : null;
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {nutritionSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(nutritionSchema) }}
+        />
+      )}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* Back link */}
       <Link
         href="/livsmedel"
