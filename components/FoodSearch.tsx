@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { Search, X } from "lucide-react";
+import { Search, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import type { Food, FoodCategory } from "@/types/food";
 import { SWEDISH_ALPHABET } from "@/types/food";
+
+const PAGE_SIZE = 60;
 
 interface FoodSearchProps {
   foods: Food[];
@@ -18,6 +20,7 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
   const [query, setQuery] = useState("");
   const [activeLetter, setActiveLetter] = useState("");
   const [activeCategory, setActiveCategory] = useState("");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const filtered = useMemo(() => {
     let result = foods;
@@ -39,13 +42,23 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
     }
 
     if (activeCategory) {
-      result = result.filter((f) => f.category_id === activeCategory);
+      result = result.filter(
+        (f) => f.category_id === activeCategory || f.category_slug === activeCategory
+      );
     }
 
     return result.sort((a, b) => a.name.localeCompare(b.name, "sv"));
   }, [foods, query, activeLetter, activeCategory]);
 
+  // Reset visible count when filters change
+  const setFilterAndReset = useCallback((setter: () => void) => {
+    setter();
+    setVisibleCount(PAGE_SIZE);
+  }, []);
+
   const hasActiveFilters = query || activeLetter || activeCategory;
+  const visibleFoods = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
 
   return (
     <div>
@@ -56,8 +69,8 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
           <input
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Sök livsmedel (t.ex. Apelsin, Lax, Havregryn)..."
+            onChange={(e) => { setQuery(e.target.value); setVisibleCount(PAGE_SIZE); }}
+            placeholder="Sök bland alla livsmedel (t.ex. Lax, Havregryn, Äpple)..."
             className="w-full h-10 pl-9 pr-9 rounded-lg border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
           />
           {query && (
@@ -80,9 +93,10 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
             return (
               <button
                 key={letter}
-                onClick={() =>
-                  setActiveLetter(isActive ? "" : letter)
-                }
+                onClick={() => {
+                  setActiveLetter(isActive ? "" : letter);
+                  setVisibleCount(PAGE_SIZE);
+                }}
                 disabled={count === 0}
                 className={cn(
                   "alphabet-item",
@@ -101,7 +115,7 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
       {/* Category Pills */}
       <div className="flex flex-wrap gap-2 mb-6 justify-center">
         <button
-          onClick={() => setActiveCategory("")}
+          onClick={() => { setActiveCategory(""); setVisibleCount(PAGE_SIZE); }}
           className={cn(
             "category-pill",
             !activeCategory && "category-pill-active"
@@ -111,18 +125,22 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
         </button>
         {categories.map((cat) => (
           <button
-            key={cat.id}
-            onClick={() =>
+            key={cat.slug}
+            onClick={() => {
               setActiveCategory(
-                activeCategory === cat.id ? "" : cat.id
-              )
-            }
+                activeCategory === cat.slug ? "" : cat.slug
+              );
+              setVisibleCount(PAGE_SIZE);
+            }}
             className={cn(
               "category-pill",
-              activeCategory === cat.id && "category-pill-active"
+              activeCategory === cat.slug && "category-pill-active"
             )}
           >
             {cat.name}
+            {cat.count != null && (
+              <span className="ml-1 text-xs opacity-60">({cat.count})</span>
+            )}
           </button>
         ))}
       </div>
@@ -143,6 +161,7 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
                 setQuery("");
                 setActiveLetter("");
                 setActiveCategory("");
+                setVisibleCount(PAGE_SIZE);
               }}
               className="text-primary hover:underline"
             >
