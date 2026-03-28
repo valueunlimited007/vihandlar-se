@@ -20,5 +20,36 @@ export default function InkopslistaLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "ViHandlar \u2013 Delad Ink\u00f6pslista",
+    description:
+      "Skapa och dela ink\u00f6pslistor i realtid med familjen. R\u00f6stinmatning, QR-kod delning och realtidssynkronisering.",
+    url: "https://vihandlar.se/inkopslista",
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "All",
+    inLanguage: "sv-SE",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "SEK",
+    },
+    featureList: [
+      "Realtidsdelning mellan enheter",
+      "R\u00f6stinmatning p\u00e5 svenska",
+      "QR-kod delning",
+      "Ingen registrering kr\u00e4vs",
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
+      {children}
+    </>
+  );
 }

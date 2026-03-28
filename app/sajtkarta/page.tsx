@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { E_CATEGORIES } from "@/types/e-additive";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Sajtkarta - ViHandlar | Hitta allt innehåll på en plats",
@@ -125,9 +126,18 @@ const sections: SitemapSection[] = [
   },
 ];
 
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Hem", url: "https://vihandlar.se" },
+  { name: "Sajtkarta", url: "https://vihandlar.se/sajtkarta" },
+]);
+
 export default function SajtkartaPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-3 mb-4">

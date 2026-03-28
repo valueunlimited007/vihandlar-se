@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { EAdditiveCard } from "@/components/EAdditiveCard";
 import { getAllEAdditives, getEAdditivesByCategory, getEAdditiveCategories } from "@/lib/data/e-additives";
 import { E_CATEGORIES } from "@/types/e-additive";
-import { buildBreadcrumbSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildCollectionPageSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -51,11 +51,22 @@ export default async function EAmnenCategoryPage({ params }: Props) {
     { name: category.name, url: `https://vihandlar.se/e-amnen/kategori/${slug}` },
   ]);
 
+  const collectionSchema = buildCollectionPageSchema({
+    name: category.name,
+    description: `Alla E-ämnen i kategorin ${category.name}`,
+    url: `https://vihandlar.se/e-amnen/kategori/${slug}`,
+    numberOfItems: additives.length,
+  });
+
   return (
     <div className="container mx-auto px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EAdditiveCard } from "@/components/EAdditiveCard";
 import { getAllEAdditives } from "@/lib/data/e-additives";
-import { buildBreadcrumbSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildCollectionPageSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ series: string }>;
@@ -59,11 +59,22 @@ export default async function EAmnenSeriesPage({ params }: Props) {
     { name: `E${series}XX – ${name}`, url: `https://vihandlar.se/e-amnen/nummer/${series}` },
   ]);
 
+  const collectionSchema = buildCollectionPageSchema({
+    name: `E${series}XX – ${name}`,
+    description: `${filtered.length} E-ämnen i serien E${series}XX`,
+    url: `https://vihandlar.se/e-amnen/nummer/${series}`,
+    numberOfItems: filtered.length,
+  });
+
   return (
     <div className="container mx-auto px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">

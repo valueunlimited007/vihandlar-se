@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EAdditiveSearch } from "@/components/EAdditiveSearch";
 import { getAllEAdditives, getHighRiskAdditives, getSafeAdditives } from "@/lib/data/e-additives";
-import { buildBreadcrumbSchema } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildCollectionPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Alla E-ämnen A-Ö – Komplett databas | ViHandlar",
@@ -29,11 +29,22 @@ export default function AllaEAmnenPage() {
     { name: "Alla E-ämnen", url: "https://vihandlar.se/e-amnen/alla" },
   ]);
 
+  const collectionSchema = buildCollectionPageSchema({
+    name: "Alla E-ämnen",
+    description: `Komplett databas med ${allAdditives.length} E-ämnen`,
+    url: "https://vihandlar.se/e-amnen/alla",
+    numberOfItems: allAdditives.length,
+  });
+
   return (
     <div className="container mx-auto px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">

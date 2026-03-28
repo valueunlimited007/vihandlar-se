@@ -33,11 +33,30 @@ export default function EAmnenGuidePage() {
     { name: "Guide", url: "https://vihandlar.se/e-amnen/guide" },
   ]);
 
+  const guideArticleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "E-ämnesguide – Förstå livsmedelstillsatser",
+    description:
+      "Komplett guide till E-ämnen: vad de är, hur de klassificeras, risknivåer och hur du läser ingredienslistor.",
+    url: "https://vihandlar.se/e-amnen/guide",
+    publisher: {
+      "@type": "Organization",
+      name: "vihandlar.se",
+      url: "https://vihandlar.se",
+    },
+    inLanguage: "sv-SE",
+  };
+
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(guideArticleSchema) }}
       />
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-muted-foreground">

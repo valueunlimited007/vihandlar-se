@@ -15,6 +15,7 @@ import {
   List,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Om ViHandlar - Smart mathandel med E-ämnesscanning & näringsguider",
@@ -31,9 +32,31 @@ export const metadata: Metadata = {
   },
 };
 
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "Om ViHandlar",
+  url: "https://vihandlar.se/om",
+  description: "ViHandlar är Sveriges smartaste matplattform med E-nummerskanner, delade inköpslistor och produktjämförelse.",
+  inLanguage: "sv-SE",
+};
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Hem", url: "https://vihandlar.se" },
+  { name: "Om ViHandlar", url: "https://vihandlar.se/om" },
+]);
+
 export default function OmPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">

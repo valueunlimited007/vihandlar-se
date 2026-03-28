@@ -11,6 +11,7 @@ import {
   ArrowUpDown,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title:
@@ -119,9 +120,18 @@ const features = [
   },
 ];
 
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Hem", url: "https://vihandlar.se" },
+  { name: "Funktioner", url: "https://vihandlar.se/funktioner" },
+]);
+
 export default function FunktionerPage() {
   return (
     <div className="container max-w-6xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">

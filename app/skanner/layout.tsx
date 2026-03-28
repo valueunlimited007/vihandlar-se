@@ -20,5 +20,36 @@ export default function SkannerLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  const webAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "ViHandlar E-nummerskanner",
+    description:
+      "AI-driven OCR-skanner som identifierar E-ämnen i ingredienslistor och ger riskbedömning",
+    url: "https://vihandlar.se/skanner",
+    applicationCategory: "HealthApplication",
+    operatingSystem: "All",
+    inLanguage: "sv-SE",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "SEK",
+    },
+    featureList: [
+      "AI-driven OCR-skanning av ingredienslistor",
+      "Automatisk identifiering av E-nummer",
+      "Riskbedömning med färgkodning",
+      "Stöd för kamerafoton",
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+      />
+      {children}
+    </>
+  );
 }

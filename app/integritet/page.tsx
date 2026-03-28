@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Shield, Eye, Lock, Mic, Database, Mail } from "lucide-react";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Integritetspolicy - ViHandlar GDPR & Datasäkerhet",
@@ -16,9 +17,18 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Hem", url: "https://vihandlar.se" },
+  { name: "Integritetspolicy", url: "https://vihandlar.se/integritet" },
+]);
+
 export default function IntegritetPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
           Integritetspolicy
