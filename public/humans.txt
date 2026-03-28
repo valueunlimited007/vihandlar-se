@@ -1,0 +1,21 @@
+/* TEAM */
+
+Plattform: vihandlar.se
+Organisation: Value Unlimited
+Kontakt: hej@vihandlar.se
+
+/* SITE */
+
+Plattform: Next.js 15 + React 19
+Hosting: Vercel
+Språk: Svenska (sv-SE)
+AI-optimering: Value Unlimited
+Senast uppdaterad: 2026-03-28
+
+/* TECH */
+
+Framework: Next.js 15 (App Router)
+UI: Tailwind CSS + shadcn/ui (Radix)
+Data: JSON (statisk) + Vercel KV (Redis)
+Analys: Besökskollen (cookiefri, Savri.io)
+Affiliate: Adtraction (Delitea)

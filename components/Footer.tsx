@@ -292,6 +292,11 @@ export function Footer() {
           <p className="text-xs text-muted-foreground/70">
             En del av Value Unlimited
           </p>
+          <p className="text-xs text-muted-foreground/40 mt-2">
+            <a href="/llms-full.txt" className="hover:text-muted-foreground/60 transition-colors">LLM</a>
+            {" · "}
+            <a href="https://besokskollen.se" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground/60 transition-colors">Analytics av Savri</a>
+          </p>
         </div>
       </div>
     </footer>

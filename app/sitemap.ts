@@ -9,6 +9,22 @@ const BASE_URL = "https://vihandlar.se";
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
 
+  // AI policy files
+  const aiPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/llms.txt`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/llms-full.txt`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.3,
+    },
+  ];
+
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -116,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
+    ...aiPages,
     ...staticPages,
     ...eAdditivePages,
     ...foodPages,
