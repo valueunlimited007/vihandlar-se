@@ -197,6 +197,28 @@ export function getFeaturedProducts(limit: number = 12): Product[] {
 }
 
 /**
+ * Hämta relaterade produkter (samma kategori, exkludera angiven slug)
+ */
+export function getRelatedProducts(
+  categoryPath: string,
+  excludeSlug: string,
+  limit: number = 4
+): Product[] {
+  // Find the category slug matching this category path
+  for (const cat of productCategories) {
+    if (cat.category_path && cat.category_path === categoryPath) {
+      return (productsByCategorySlug.get(cat.slug) ?? [])
+        .filter((p) => p.slug !== excludeSlug)
+        .slice(0, limit);
+    }
+  }
+  // Fallback: filter all products by category string
+  return products
+    .filter((p) => p.category === categoryPath && p.slug !== excludeSlug)
+    .slice(0, limit);
+}
+
+/**
  * Hämta produkter med rabatt
  */
 export function getDiscountedProducts(limit: number = 12): Product[] {

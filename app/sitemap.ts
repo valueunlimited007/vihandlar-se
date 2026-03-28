@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { getAllEAdditives } from "@/lib/data/e-additives";
-import { getAllFoods } from "@/lib/data/foods";
+import { getAllFoods, getAllFoodCategories } from "@/lib/data/foods";
 import { getAllProducts } from "@/lib/data/products";
 import { getAllProductCategories } from "@/lib/data/products";
+import { E_CATEGORIES } from "@/types/e-additive";
 
 const BASE_URL = "https://vihandlar.se";
 
@@ -95,6 +96,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // E-ämnes kategori-sidor
+  const eCategoryPages: MetadataRoute.Sitemap = E_CATEGORIES.map((cat) => ({
+    url: `${BASE_URL}/e-amnen/kategori/${cat.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  // E-ämnes nummer/serie-sidor
+  const eSeriesPages: MetadataRoute.Sitemap = [1, 2, 3, 4, 5, 6, 9].map(
+    (series) => ({
+      url: `${BASE_URL}/e-amnen/nummer/${series}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    })
+  );
+
+  // E-ämnen guide + alla
+  const eExtraPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/e-amnen/guide`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/e-amnen/alla`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
+  ];
+
+  // Livsmedelskategorisidor
+  const foodCategories = getAllFoodCategories();
+  const foodCategoryPages: MetadataRoute.Sitemap = foodCategories.map((c) => ({
+    url: `${BASE_URL}/livsmedel/kategori/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
   // E-additive pages
   const eAdditives = getAllEAdditives();
   const eAdditivePages: MetadataRoute.Sitemap = eAdditives.map((e) => ({
@@ -134,6 +178,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...aiPages,
     ...staticPages,
+    ...eCategoryPages,
+    ...eSeriesPages,
+    ...eExtraPages,
+    ...foodCategoryPages,
     ...eAdditivePages,
     ...foodPages,
     ...categoryPages,

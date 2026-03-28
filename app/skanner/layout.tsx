@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "E-ämnesscanner – Scanna ingredienslistor | ViHandlar",
+  title: "E-nummerskanner – Scanna ingredienser",
   description:
-    "Scanna ingredienslistor med kameran eller ladda upp en bild. Få direkt information om alla E-ämnen, risknivåer och hälsoeffekter.",
+    "Fotografera ingredienslistor och få omedelbar analys av E-ämnen med riskbedömning. Identifiera farliga tillsatser direkt i butiken.",
   alternates: {
     canonical: "https://vihandlar.se/skanner",
   },
   openGraph: {
-    title: "E-ämnesscanner – Scanna ingredienslistor",
+    title: "E-nummerskanner – Scanna ingredienser",
     description:
-      "Scanna ingredienslistor och få direkt info om E-ämnen och risknivåer.",
+      "Fotografera ingredienslistor och få omedelbar analys av E-ämnen.",
     url: "https://vihandlar.se/skanner",
   },
 };

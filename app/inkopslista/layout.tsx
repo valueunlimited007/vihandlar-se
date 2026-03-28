@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inköpslista – Skapa och dela smart | ViHandlar",
+  title: "Skapa delad inköpslista",
   description:
-    "Skapa delade inköpslistor som synkas i realtid. Perfekt för familjer – dela via länk, ingen app behövs. Röstinmatning med AI.",
+    "Skapa och dela inköpslistor i realtid. Dela via QR-kod, checka av varor och använd röstinmatning. Gratis utan registrering.",
   alternates: {
     canonical: "https://vihandlar.se/inkopslista",
   },
   openGraph: {
-    title: "Inköpslista – Skapa och dela smart",
+    title: "Skapa delad inköpslista",
     description:
-      "Delade inköpslistor som synkas i realtid. Perfekt för familjer.",
+      "Skapa och dela inköpslistor i realtid. Dela via QR-kod och röstinmatning.",
     url: "https://vihandlar.se/inkopslista",
   },
 };

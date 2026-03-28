@@ -16,7 +16,8 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getProductBySlug } from "@/lib/data/products";
+import { getProductBySlug, getRelatedProducts } from "@/lib/data/products";
+import { ProductCard } from "@/components/ProductCard";
 import {
   getAllStores,
   getRedirectUrl,
@@ -77,6 +78,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const stores = getAllStores();
   const store = stores[0];
   const storeName = store?.name ?? "Delitea";
+
+  const relatedProducts = product.category
+    ? getRelatedProducts(product.category, slug)
+    : [];
 
   const hasDiscount =
     product.original_price != null && product.original_price > product.price;
@@ -438,6 +443,25 @@ export default async function ProductDetailPage({ params }: PageProps) {
           ))}
         </CardContent>
       </Card>
+
+      {/* Related Products */}
+      {relatedProducts.length > 0 && (
+        <Card className="mb-12">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Package className="w-5 h-5 text-primary" />
+              Andra produkter i samma kategori
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {relatedProducts.map((p) => (
+                <ProductCard key={p.id} product={p} storeName={storeName} />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Back link */}
       <div className="text-center">
