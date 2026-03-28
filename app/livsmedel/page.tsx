@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+export const revalidate = 1800; // ISR: rebuild every 30 minutes
 import Link from "next/link";
 import { Utensils, Snowflake, Star, BarChart3 } from "lucide-react";
 import { FoodSearch } from "@/components/FoodSearch";

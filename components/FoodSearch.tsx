@@ -174,7 +174,7 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
       {/* Results Grid */}
       {filtered.length > 0 ? (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((food) => (
+          {visibleFoods.map((food) => (
             <Link
               key={food.id}
               href={`/livsmedel/${food.slug}`}
@@ -239,10 +239,24 @@ export function FoodSearch({ foods, categories, letterCounts }: FoodSearchProps)
               setQuery("");
               setActiveLetter("");
               setActiveCategory("");
+              setVisibleCount(PAGE_SIZE);
             }}
             className="text-primary hover:underline text-sm font-medium"
           >
             Rensa alla filter
+          </button>
+        </div>
+      )}
+
+      {/* Load more */}
+      {hasMore && (
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border bg-card hover:bg-primary/5 hover:border-primary/50 transition-all text-sm font-medium"
+          >
+            <ChevronDown className="w-4 h-4" />
+            Visa fler ({filtered.length - visibleCount} kvar)
           </button>
         </div>
       )}
