@@ -219,6 +219,48 @@ export function getRelatedProducts(
 }
 
 /**
+ * Hämta relaterade produkter för ett livsmedel (matchning via namn/kategori)
+ */
+export function getRelatedProductsForFood(
+  foodName: string,
+  foodCategory: string | null,
+  limit: number = 4
+): Product[] {
+  const searchTerms = foodName
+    .toLowerCase()
+    .split(/[\s,]+/)
+    .filter((t) => t.length > 3);
+
+  const scored: { product: Product; score: number }[] = [];
+
+  for (const product of products) {
+    const pName = product.name.toLowerCase();
+    const pCategory = (product.category || "").toLowerCase();
+    let score = 0;
+
+    // Exact food name match in product name
+    if (pName.includes(foodName.toLowerCase())) {
+      score += 10;
+    }
+
+    // Partial keyword matches
+    for (const term of searchTerms) {
+      if (pName.includes(term)) score += 3;
+      if (pCategory.includes(term)) score += 1;
+    }
+
+    if (score > 0) {
+      scored.push({ product, score });
+    }
+  }
+
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((s) => s.product);
+}
+
+/**
  * Hämta produkter med rabatt
  */
 export function getDiscountedProducts(limit: number = 12): Product[] {

@@ -149,6 +149,24 @@ livsmedelsdatabas 2025. Varje livsmedel har:
 - Ersättningsvaror
 - Användningstips
 - FAQ med vanliga frågor
+- Källhänvisning till Livsmedelsverket på varje livsmedelssida
+
+### Auto-genererade FAQ per livsmedel
+Varje livsmedelssida har en dynamiskt genererad FAQ-sektion baserad på
+livsmedlets faktiska näringsvärden. FAQ:n innehåller frågor och svar om:
+- Kaloriinnehåll (t.ex. "Hur många kalorier har lax?")
+- Proteininnehåll (t.ex. "Hur mycket protein innehåller kycklingbröst?")
+- Förvaring (t.ex. "Hur förvarar man avokado?")
+- Frysning (t.ex. "Kan man frysa ost?")
+- Näringsämnen (t.ex. "Vilka vitaminer finns i broccoli?")
+Alla FAQ har FAQPage schema.org-markup för sökmotorer och AI-assistenter.
+
+### Relaterade produkter på livsmedelssidor
+Varje livsmedelssida visar relaterade produkter från Delitea genom dynamisk
+matchning mot 10 500+ produkter i produktdatabasen. Produkterna visas med
+bild, pris och köplänk via Adtraction affiliatenätverket. Detta ger
+användarna möjlighet att direkt handla produkter relaterade till livsmedlet
+de läser om.
 
 ### Livsmedelskategorier (28 kategorier)
 - Bröd (92 livsmedel): Bröd, knäckebröd, skorpor m.m.
@@ -340,6 +358,18 @@ Varje livsmedel har upp till 62 näringsämnen: energi (kcal/kJ), protein, fett,
 kolhydrater, fiber, socker, salt, vitaminer (A, D, E, K, C, B-vitaminer),
 mineraler (kalcium, järn, magnesium, zink, selen m.fl.), fettsyror (mättat,
 enkelomättat, fleromättat, omega-3, omega-6) och mer.
+
+## Finns det produkter att köpa på livsmedelssidorna?
+Ja, varje livsmedelssida visar relaterade produkter från Delitea som matchar
+livsmedlet. Produkterna väljs dynamiskt från över 10 500 produkter och visas
+med bild, pris och köplänk. Köp sker via Deliteas webbshop genom Adtraction
+affiliatenätverket — utan extra kostnad för dig.
+
+## Har varje livsmedel vanliga frågor?
+Ja, alla livsmedelssidor har en automatiskt genererad FAQ-sektion med vanliga
+frågor baserade på livsmedlets näringsvärden. Frågorna täcker kaloriinnehåll,
+protein, förvaring, frysning och näringsämnen. FAQ:n har FAQPage schema.org-
+markup som gör att svaren kan visas direkt i sökmotorer och AI-assistenter.
 
 # ============================================================
 # ALLA VIKTIGA SIDOR

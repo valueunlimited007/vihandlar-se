@@ -12,6 +12,7 @@ import {
   HelpCircle,
   BarChart3,
   Leaf,
+  ShoppingBag,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,6 +21,72 @@ import {
   getAllFoodCategories,
   getFoodCategoryBySlug,
 } from "@/lib/data/foods";
+import { getRelatedProductsForFood } from "@/lib/data/products";
+import { ProductCard } from "@/components/ProductCard";
+import type { Food } from "@/types/food";
+
+function generateFoodFaq(food: Food): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+
+  // 1. Calories question (always if calories exist)
+  if (food.calories != null) {
+    faqs.push({
+      question: `Hur många kalorier har ${food.name}?`,
+      answer: `${food.name} innehåller ${food.calories} kcal per 100 gram.${food.protein != null ? ` Det innehåller också ${food.protein}g protein, ${food.fat}g fett och ${food.carbohydrates}g kolhydrater.` : ''}`,
+    });
+  }
+
+  // 2. Protein question (if protein data)
+  if (food.protein != null && food.protein > 5) {
+    faqs.push({
+      question: `Hur mycket protein finns i ${food.name}?`,
+      answer: `${food.name} innehåller ${food.protein}g protein per 100 gram.${food.protein > 15 ? ' Det är en bra proteinkälla.' : ''}`,
+    });
+  }
+
+  // 3. Storage question (if storage_method exists)
+  if (food.storage_method) {
+    faqs.push({
+      question: `Hur förvarar man ${food.name}?`,
+      answer: food.storage_method + (food.shelf_life_opened ? ` Hållbarhet efter öppning: ${food.shelf_life_opened}.` : ''),
+    });
+  }
+
+  // 4. Freezing question (if can_freeze data)
+  if (food.can_freeze != null) {
+    faqs.push({
+      question: `Kan man frysa ${food.name}?`,
+      answer: food.can_freeze
+        ? `Ja, ${food.name} kan frysas.${food.freezing_tips ? ` Tips: ${food.freezing_tips}` : ''}`
+        : `Nej, ${food.name} rekommenderas inte att frysas.`,
+    });
+  }
+
+  // 5. Vitamin/mineral highlight (if notable nutrients)
+  const highlights: string[] = [];
+  if (food.vitamin_c != null && food.vitamin_c > 20) highlights.push(`${food.vitamin_c} mg C-vitamin`);
+  if (food.iron != null && food.iron > 2) highlights.push(`${food.iron} mg järn`);
+  if (food.calcium != null && food.calcium > 100) highlights.push(`${food.calcium} mg kalcium`);
+  if (food.vitamin_d != null && food.vitamin_d > 2) highlights.push(`${food.vitamin_d} µg D-vitamin`);
+  if (food.omega_3 != null && food.omega_3 > 0.5) highlights.push(`${food.omega_3}g omega-3`);
+
+  if (highlights.length > 0) {
+    faqs.push({
+      question: `Vilka näringsämnen finns i ${food.name}?`,
+      answer: `${food.name} innehåller bland annat ${highlights.join(', ')} per 100 gram. Källa: Livsmedelsverkets livsmedelsdatabas 2025.`,
+    });
+  }
+
+  // 6. Category-based generic question (fallback)
+  if (food.subcategory && faqs.length < 3) {
+    faqs.push({
+      question: `Vilken typ av livsmedel är ${food.name}?`,
+      answer: `${food.name} tillhör kategorin ${food.subcategory}.${food.calories != null ? ` Det innehåller ${food.calories} kcal per 100 gram.` : ''}`,
+    });
+  }
+
+  return faqs;
+}
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -81,6 +148,12 @@ export default async function FoodDetailPage({ params }: PageProps) {
 
   const hasNutrition = food.calories != null;
 
+  const relatedProducts = getRelatedProductsForFood(
+    food.name,
+    food.subcategory || food.category_slug || null,
+    4
+  );
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -141,12 +214,17 @@ export default async function FoodDetailPage({ params }: PageProps) {
       }
     : null;
 
+  // Use existing FAQ for original foods, otherwise generate from data
+  const faqItems = food.faq && food.faq.length > 0
+    ? food.faq
+    : generateFoodFaq(food);
+
   const faqSchema =
-    food.faq && food.faq.length > 0
+    faqItems.length > 0
       ? {
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: food.faq.map(
+          mainEntity: faqItems.map(
             (item: { question: string; answer: string }) => ({
               "@type": "Question",
               name: item.question,
@@ -489,7 +567,7 @@ export default async function FoodDetailPage({ params }: PageProps) {
           )}
 
           {/* FAQ */}
-          {food.faq && food.faq.length > 0 && (
+          {faqItems.length > 0 && (
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -498,7 +576,7 @@ export default async function FoodDetailPage({ params }: PageProps) {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {food.faq.map((item, i) => (
+                {faqItems.map((item, i) => (
                   <div key={i}>
                     <h4 className="font-semibold text-sm mb-1">
                       {item.question}
@@ -726,6 +804,31 @@ export default async function FoodDetailPage({ params }: PageProps) {
           )}
         </div>
       </div>
+
+      {/* Related products */}
+      {relatedProducts.length > 0 && (
+        <Card className="mt-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <ShoppingBag className="w-5 h-5 text-primary" />
+              Handla {food.name} online
+            </CardTitle>
+            <p className="text-sm text-muted-foreground">
+              Relaterade produkter från Delitea
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {relatedProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">
+              * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
+            </p>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Source attribution */}
       {food.source === "Livsmedelsverkets livsmedelsdatabas 2025" && (

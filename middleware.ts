@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
   } else if (pathname === "/e-amnen/guide") {
     schemaTypes = "Organization, Article, BreadcrumbList";
   } else if (pathname.match(/^\/livsmedel\/[^/]+$/) && !pathname.startsWith("/livsmedel/kategori")) {
-    schemaTypes = "Organization, Article, NutritionInformation, BreadcrumbList";
+    schemaTypes = "Organization, Article, NutritionInformation, FAQPage, BreadcrumbList";
   } else if (pathname === "/livsmedel") {
     schemaTypes = "Organization, CollectionPage, BreadcrumbList";
   } else if (pathname.match(/^\/handla\/produkt\/[^/]+$/)) {
