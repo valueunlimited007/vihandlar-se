@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
   } else if (pathname === "/livsmedel") {
     schemaTypes = "Organization, CollectionPage, BreadcrumbList";
   } else if (pathname.match(/^\/handla\/produkt\/[^/]+$/)) {
-    schemaTypes = "Organization, Product, Offer, BreadcrumbList";
+    schemaTypes = "Organization, Product, Offer, FAQPage, BreadcrumbList";
   } else if (pathname === "/handla") {
     schemaTypes = "Organization, CollectionPage, BreadcrumbList";
   } else if (pathname.startsWith("/handla/kategori/") || pathname.startsWith("/livsmedel/kategori/") || pathname.startsWith("/e-amnen/kategori/") || pathname.startsWith("/e-amnen/nummer/")) {

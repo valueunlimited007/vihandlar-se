@@ -12,6 +12,7 @@ import {
   Package,
   Info,
   Truck,
+  HelpCircle,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -59,7 +60,7 @@ export async function generateMetadata({
       type: "website",
       url: `https://vihandlar.se/handla/produkt/${slug}`,
       ...(product.image_url && {
-        images: [{ url: product.image_url, alt: product.name }],
+        images: [{ url: product.image_url, alt: `${product.name}${product.brand ? ` från ${product.brand}` : ""} – ${product.price.toFixed(0)} kr hos ${storeName}` }],
       }),
     },
   };
@@ -96,6 +97,65 @@ export default async function ProductDetailPage({ params }: PageProps) {
   const cleanDescription = product.description
     ? product.description.replace(/<[^>]*>/g, "")
     : null;
+
+  // Improved alt text
+  const imageAlt = [
+    product.name,
+    product.brand ? `från ${product.brand}` : null,
+    `${product.price.toFixed(0)} kr`,
+    `hos ${storeName}`,
+  ]
+    .filter(Boolean)
+    .join(" – ");
+
+  // Dynamic FAQ generation
+  const categoryShort = product.category?.split(" - ").pop() ?? null;
+  const faqItems: { question: string; answer: string }[] = [
+    {
+      question: `Vad kostar ${product.name}?`,
+      answer: hasDiscount
+        ? `${product.name} kostar ${product.price.toFixed(2)} kr hos ${storeName} (ordinarie pris ${product.original_price!.toFixed(2)} kr, du sparar ${savings} kr).`
+        : `${product.name} kostar ${product.price.toFixed(2)} kr hos ${storeName}.`,
+    },
+    {
+      question: `Finns ${product.name} i lager?`,
+      answer: product.in_stock !== false
+        ? `Ja, ${product.name} finns i lager hos ${storeName} och kan beställas direkt.`
+        : `${product.name} är tyvärr slut i lager hos ${storeName} just nu.`,
+    },
+    {
+      question: `Var kan jag köpa ${product.name}?`,
+      answer: `Du kan köpa ${product.name} online hos ${storeName} med snabb leverans direkt hem.${product.shipping_cost === 0 ? " Fri frakt ingår." : ""}`,
+    },
+  ];
+
+  if (product.brand) {
+    faqItems.push({
+      question: `Vem tillverkar ${product.name}?`,
+      answer: `${product.name} tillverkas av ${product.brand}.`,
+    });
+  }
+
+  if (categoryShort) {
+    faqItems.push({
+      question: `Vilken kategori tillhör ${product.name}?`,
+      answer: `${product.name} tillhör kategorin ${categoryShort} hos ${storeName}.`,
+    });
+  }
+
+  // FAQPage JSON-LD
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
   // BreadcrumbList JSON-LD
   const breadcrumbSchema = {
@@ -160,6 +220,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
@@ -191,7 +255,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
           {product.image_url ? (
             <Image
               src={product.image_url}
-              alt={product.name}
+              alt={imageAlt}
               fill
               className="object-contain p-4"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -356,6 +420,24 @@ export default async function ProductDetailPage({ params }: PageProps) {
           )}
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <Card className="mb-12">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-primary" />
+            Vanliga frågor om {product.name}
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          {faqItems.map((faq, i) => (
+            <div key={i}>
+              <h3 className="font-semibold text-sm mb-1">{faq.question}</h3>
+              <p className="text-sm text-muted-foreground">{faq.answer}</p>
+            </div>
+          ))}
+        </CardContent>
+      </Card>
 
       {/* Back link */}
       <div className="text-center">

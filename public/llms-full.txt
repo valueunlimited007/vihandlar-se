@@ -172,6 +172,14 @@ Produktjämförelse med:
 - Lagerstatus
 - Affiliate-spårning via Adtraction (go.adt242.com)
 
+Varje produktsida har dynamiskt genererade FAQ (vanliga frågor) med:
+- Pris och eventuell rabatt
+- Lagerstatus
+- Var man kan köpa produkten
+- Tillverkare/varumärke
+- Produktkategori
+Alla FAQ har FAQPage schema.org-markup för sökmotorer och AI-assistenter.
+
 Sida: https://vihandlar.se/handla
 
 ## Delade Inköpslistor

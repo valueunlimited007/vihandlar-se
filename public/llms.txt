@@ -61,7 +61,7 @@ Omfattande guide till svenska livsmedel med naringsvarden (kalorier, protein, fe
 - https://vihandlar.se/livsmedel
 
 ## Produkter & Shopping (10 500+ produkter)
-Over 10 500 produkter fran Delitea (via Adtraction affiliatenatverket) med realtidspriser, bilder och kategorisering. Sok bland produkter, filtrera pa 144 kategorier, sortera pa pris, namn eller rabatt. Inkluderar choklad, pasta, dryck, godis, bakning, fika och manga fler kategorier.
+Over 10 500 produkter fran Delitea (via Adtraction affiliatenatverket) med realtidspriser, bilder och kategorisering. Sok bland produkter, filtrera pa 144 kategorier, sortera pa pris, namn eller rabatt. Inkluderar choklad, pasta, dryck, godis, bakning, fika och manga fler kategorier. Varje produktsida har dynamiskt genererade FAQ (vanliga fragor) med pris, lagerstatus, kopinformation, varumarke och kategorisering — alla med FAQPage schema.org markup.
 - https://vihandlar.se/handla
 
 ## Delade Inkopslistor (10 000+ skapade)
