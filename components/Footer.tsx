@@ -8,59 +8,49 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-muted/30">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+    <footer className="border-t bg-gradient-to-b from-muted/30 to-muted/60">
+      <div className="container mx-auto px-4 py-12">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12">
           {/* Brand */}
-          <div className="space-y-3">
-            <Link href="/" className="flex items-center bg-transparent">
+          <div className="col-span-2 md:col-span-1 space-y-4">
+            <Link href="/" className="inline-block">
               <Image
                 src="/vihandlar-logo.png"
                 alt="ViHandlar - Delad inköpslista online"
                 width={160}
                 height={40}
-                className="h-[30px] md:h-[40px] w-auto"
+                className="h-[32px] w-auto"
               />
             </Link>
-            <p className="text-sm text-muted-foreground">
-              Delad inköpslista online för familjen
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Din smarta matassistent — inköpslistor, E-ämnen och produkter.
             </p>
           </div>
 
           {/* Produkt */}
-          <div className="space-y-3">
-            <h4 className="font-medium">Produkt</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold tracking-wide uppercase text-foreground/80">
+              Produkt
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
-                <Link
-                  href="/inkopslista"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/inkopslista" className="text-muted-foreground hover:text-primary transition-colors">
                   Inköpslista
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/e-amnen"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  title="E-ämnen Scanner - Skanna ingredienslistor för E-ämnen analys"
-                >
-                  E-ämnen Scanner
+                <Link href="/skanner" className="text-muted-foreground hover:text-primary transition-colors">
+                  E-nummerskanner
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/livsmedel"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/livsmedel" className="text-muted-foreground hover:text-primary transition-colors">
                   Livsmedelsguide
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/handla"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/handla" className="text-muted-foreground hover:text-primary transition-colors">
                   Handla Mat
                 </Link>
               </li>
@@ -68,22 +58,28 @@ export function Footer() {
           </div>
 
           {/* Företag */}
-          <div className="space-y-3">
-            <h4 className="font-medium">Företag</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold tracking-wide uppercase text-foreground/80">
+              Företag
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
-                <Link
-                  href="/om"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/om" className="text-muted-foreground hover:text-primary transition-colors">
                   Om ViHandlar
                 </Link>
               </li>
               <li>
-                <a
-                  href="mailto:hej@vihandlar.se"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/funktioner" className="text-muted-foreground hover:text-primary transition-colors">
+                  Funktioner
+                </Link>
+              </li>
+              <li>
+                <Link href="/kallor" className="text-muted-foreground hover:text-primary transition-colors">
+                  Källor
+                </Link>
+              </li>
+              <li>
+                <a href="mailto:hej@vihandlar.se" className="text-muted-foreground hover:text-primary transition-colors">
                   Kontakt
                 </a>
               </li>
@@ -91,22 +87,18 @@ export function Footer() {
           </div>
 
           {/* Juridiskt */}
-          <div className="space-y-3">
-            <h4 className="font-medium">Juridiskt</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold tracking-wide uppercase text-foreground/80">
+              Juridiskt
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
-                <Link
-                  href="/integritet"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/integritet" className="text-muted-foreground hover:text-primary transition-colors">
                   Integritetspolicy
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/sajtkarta"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <Link href="/sajtkarta" className="text-muted-foreground hover:text-primary transition-colors">
                   Sajtkarta
                 </Link>
               </li>
@@ -114,9 +106,11 @@ export function Footer() {
           </div>
 
           {/* Internationellt */}
-          <div className="space-y-3">
-            <h4 className="font-medium">Internationellt</h4>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-4">
+            <h4 className="text-sm font-semibold tracking-wide uppercase text-foreground/80">
+              Internationellt
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
                 <a
                   href="https://listacumparaturi.ro"
@@ -124,179 +118,136 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   hrefLang="ro"
-                  title="Lista de Cumpărături online - Delad inköpslista i Rumänien"
+                  title="Lista de Cumpărături online"
                 >
-                  🇷🇴 Rumänien
+                  Rumänien
                 </a>
               </li>
               <li>
-                <span className="text-muted-foreground">🇸🇪 Sverige (Live)</span>
+                <span className="text-muted-foreground">Sverige (Live)</span>
               </li>
               <li>
-                <span className="text-muted-foreground/70">
-                  🇪🇸 Spanien – 2026
-                </span>
+                <span className="text-muted-foreground/60">Spanien – 2026</span>
               </li>
               <li>
-                <span className="text-muted-foreground/70">
-                  🌍 Globalt (.com) – 2026
-                </span>
+                <span className="text-muted-foreground/60">Globalt (.com) – 2026</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* SEO Sections */}
-        <div className="border-t mt-8 pt-6 space-y-6">
+        {/* SEO Link Sections — compact grid */}
+        <div className="border-t mt-10 pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Livsmedel A-Ö */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold text-foreground">
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-3">
               Livsmedel A-Ö
             </h4>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5">
               {ALPHABET_SV.map((letter) => (
                 <Link
                   key={`food-${letter}`}
                   href={`/livsmedel/${letter.toLowerCase()}`}
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                  className="text-xs text-muted-foreground/70 hover:text-primary transition-colors w-5 text-center"
                 >
                   {letter}
                 </Link>
               ))}
             </div>
-            <Link
-              href="/livsmedel"
-              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
-            >
-              Se alla livsmedel →
+            <Link href="/livsmedel" className="text-xs text-primary/70 hover:text-primary transition-colors mt-2 inline-block">
+              Alla livsmedel →
             </Link>
           </div>
 
           {/* Produkter A-Ö */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold text-foreground">
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-3">
               Produkter A-Ö
             </h4>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5">
               {ALPHABET_SV.map((letter) => (
                 <Link
                   key={`prod-${letter}`}
                   href={`/handla/produkter/${letter.toLowerCase()}`}
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                  className="text-xs text-muted-foreground/70 hover:text-primary transition-colors w-5 text-center"
                 >
                   {letter}
                 </Link>
               ))}
             </div>
-            <Link
-              href="/handla"
-              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
-            >
-              Bläddra alla produkter →
+            <Link href="/handla" className="text-xs text-primary/70 hover:text-primary transition-colors mt-2 inline-block">
+              Alla produkter →
             </Link>
           </div>
 
           {/* Produktkategorier */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold text-foreground">
-              Produktkategorier
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-3">
+              Kategorier
             </h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              <Link
-                href="/handla/kategori/dryck"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Dryck
-              </Link>
-              <Link
-                href="/handla/kategori/pasta"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Pasta
-              </Link>
-              <Link
-                href="/handla/kategori/godis"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Godis
-              </Link>
-              <Link
-                href="/handla/kategori/choklad"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Choklad
-              </Link>
-              <Link
-                href="/handla/kategori/bakning"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Bakning
-              </Link>
-              <Link
-                href="/handla/kategori/fika"
-                className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
-              >
-                Fika
-              </Link>
+            <div className="flex flex-wrap gap-x-3 gap-y-1">
+              {["Dryck", "Pasta", "Godis", "Choklad", "Bakning", "Fika"].map((cat) => (
+                <Link
+                  key={cat}
+                  href={`/handla/kategori/${cat.toLowerCase()}`}
+                  className="text-xs text-muted-foreground/70 hover:text-primary transition-colors"
+                >
+                  {cat}
+                </Link>
+              ))}
             </div>
-            <Link
-              href="/handla/kategorier"
-              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
-            >
-              Se alla kategorier →
+            <Link href="/handla" className="text-xs text-primary/70 hover:text-primary transition-colors mt-2 inline-block">
+              Alla kategorier →
             </Link>
           </div>
 
           {/* E-ämnen */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold text-foreground">
-              E-ämnen A-Ö
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-foreground/60 mb-3">
+              E-ämnen
             </h4>
-            <div className="flex flex-wrap gap-2">
-              {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((number) => (
+            <div className="flex flex-wrap gap-x-2 gap-y-1">
+              {[1, 2, 3, 4, 5, 6, 9].map((n) => (
                 <Link
-                  key={`enum-${number}`}
-                  href={`/e-amnen/nummer/${number}`}
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                  key={n}
+                  href={`/e-amnen/nummer/${n}`}
+                  className="text-xs text-muted-foreground/70 hover:text-primary transition-colors"
                 >
-                  E{number}XX
+                  E{n}XX
                 </Link>
               ))}
             </div>
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-x-2 gap-y-1 mt-1.5">
               {E_CATEGORIES.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/e-amnen/kategori/${cat.slug}`}
-                  className="text-xs text-muted-foreground hover:text-primary transition-colors hover:underline"
+                  className="text-xs text-muted-foreground/70 hover:text-primary transition-colors"
                 >
                   {cat.name}
                 </Link>
               ))}
             </div>
-            <Link
-              href="/e-amnen"
-              className="text-xs text-muted-foreground hover:text-primary transition-colors inline-block mt-2"
-            >
-              Se alla E-ämnen A-Ö →
+            <Link href="/e-amnen" className="text-xs text-primary/70 hover:text-primary transition-colors mt-2 inline-block">
+              Alla E-ämnen →
             </Link>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t mt-8 pt-8 text-center space-y-2">
-          <p className="text-sm text-muted-foreground">
-            &copy; {year} ViHandlar. Smart inköpslista online med röstinmatning
-            och realtidsdelning.
+        <div className="border-t mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-muted-foreground/60">
+            &copy; {year} ViHandlar &middot; En del av Value Unlimited
           </p>
-          <p className="text-xs text-muted-foreground/70">
-            En del av Value Unlimited
-          </p>
-          <p className="text-xs text-muted-foreground/40 mt-2">
-            <a href="/llms-full.txt" className="hover:text-muted-foreground/60 transition-colors">LLM</a>
-            {" · "}
-            <a href="https://besokskollen.se" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground/60 transition-colors">Analytics av Savri</a>
-          </p>
+          <div className="flex items-center gap-3 text-xs text-muted-foreground/40">
+            <a href="/llms-full.txt" className="hover:text-muted-foreground/60 transition-colors" title="AI-information för språkmodeller">
+              AI-info
+            </a>
+            <span>&middot;</span>
+            <a href="https://besokskollen.se" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground/60 transition-colors">
+              Analytics av Savri
+            </a>
+          </div>
         </div>
       </div>
     </footer>
