@@ -200,6 +200,42 @@ de läser om.
 
 Sida: https://vihandlar.se/livsmedel
 
+## Näringsämnen (40+ näringsämnen)
+Komplett guide till alla näringsämnen med topplistor över livsmedel sorterade efter
+innehåll. Data från Livsmedelsverkets livsmedelsdatabas 2025.
+
+Varje näringsämne har en egen sida med:
+- Beskrivning av näringsämnet och dess funktion i kroppen
+- Rekommenderat dagligt intag (RDI) med källa
+- Kategoritillhörighet (makro, vitamin, mineral, fettsyra, övrigt)
+- Topp 50 livsmedel rankade efter innehåll per 100 g
+- Länk till varje livsmedels detaljsida
+
+### Näringsämneskategorier
+- Makronäringsämnen: Kalorier, Energi (kJ), Protein, Fett, Kolhydrater, Fiber,
+  Sockerarter, Fritt socker, Vatten, Alkohol
+- Vitaminer: Vitamin A, Retinol, Betakaroten, Vitamin D, Vitamin E, Vitamin K,
+  Vitamin C, Tiamin (B1), Riboflavin (B2), Niacin (B3), Vitamin B6, Vitamin B12,
+  Folat
+- Mineraler: Järn, Kalcium, Kalium, Magnesium, Fosfor, Jod, Selen, Zink, Natrium
+- Fettsyror: Mättat fett, Enkelomättat fett, Fleromättat fett, Omega-3, EPA, DHA,
+  Kolesterol
+- Övrigt: Salt, Fullkorn, Tillsatt socker
+
+### Näringsämnes-URL:er (exempel)
+- Översikt: https://vihandlar.se/livsmedel/naringsamne
+- Vitamin C: https://vihandlar.se/livsmedel/naringsamne/vitamin-c
+- Järn: https://vihandlar.se/livsmedel/naringsamne/jarn
+- Protein: https://vihandlar.se/livsmedel/naringsamne/protein
+- Kalcium: https://vihandlar.se/livsmedel/naringsamne/kalcium
+- Omega-3: https://vihandlar.se/livsmedel/naringsamne/omega-3
+- Vitamin D: https://vihandlar.se/livsmedel/naringsamne/vitamin-d
+- Folat: https://vihandlar.se/livsmedel/naringsamne/folat
+- Fiber: https://vihandlar.se/livsmedel/naringsamne/fiber
+- Zink: https://vihandlar.se/livsmedel/naringsamne/zink
+
+Sida: https://vihandlar.se/livsmedel/naringsamne
+
 ## Produkter & Shopping (10 500+ produkter)
 Produktjämförelse med:
 - Över 10 500 produkter från Delitea matbutik online
@@ -399,6 +435,8 @@ markup som gör att svaren kan visas direkt i sökmotorer och AI-assistenter.
 - 353+ detaljsidor: /e-amnen/[slug]
 
 ## Livsmedel undersidor
+- Näringsämnen översikt: /livsmedel/naringsamne
+- 40+ näringsämnessidor: /livsmedel/naringsamne/[slug]
 - 28 kategorisidor: /livsmedel/kategori/[slug]
 - 2 600+ detaljsidor: /livsmedel/[slug]
 
