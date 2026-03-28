@@ -13,7 +13,7 @@ import { buildCollectionPageSchema, buildBreadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Livsmedel A-Ö – Komplett guide till svenska livsmedel",
   description:
-    "Utforska 68 svenska livsmedel med näringsvärden, förvaringstips, allergener och matlagningsråd. Komplett livsmedelsguide från A till Ö.",
+    "Utforska 2600+ svenska livsmedel med näringsvärden, vitaminer, mineraler och matlagningsråd. Komplett livsmedelsguide från A till Ö.",
   keywords: [
     "livsmedel",
     "näringsvärde",
@@ -185,19 +185,19 @@ export default function LivsmedelPage() {
             <h2 className="text-2xl font-bold mb-6 text-center">
               Kategorier
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              {categories.slice(0, 10).map((cat) => (
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {categories.map((cat) => (
                 <Link
                   key={cat.id}
-                  href={`/livsmedel?kategori=${cat.slug}`}
-                  className="p-4 rounded-xl border bg-card hover:shadow-lg hover:border-primary/50 transition-all hover:scale-[1.02] group text-center"
+                  href={`/livsmedel/kategori/${cat.slug}`}
+                  className="p-3 rounded-xl border bg-card hover:shadow-lg hover:border-primary/50 transition-all hover:scale-[1.02] group text-center"
                 >
                   <div className="font-semibold text-sm group-hover:text-primary transition-colors">
                     {cat.name}
                   </div>
-                  {cat.description && (
-                    <div className="text-xs text-muted-foreground mt-1 line-clamp-1">
-                      {cat.description}
+                  {cat.count != null && (
+                    <div className="text-xs text-muted-foreground mt-1">
+                      {cat.count} livsmedel
                     </div>
                   )}
                 </Link>

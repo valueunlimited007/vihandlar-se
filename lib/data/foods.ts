@@ -14,10 +14,25 @@ function deriveLetter(name: string): string {
 }
 
 /**
+ * Mapping from legacy UUID category_id values (from the original 68 foods)
+ * to the new category slug system used by the expanded database.
+ */
+const LEGACY_CATEGORY_MAP: Record<string, string> = {
+  '253c25d0-7c29-41e1-8b80-ca4e061e192e': 'frukt-bar',
+  'e654b609-4eed-4da6-8153-abf8ae179442': 'gronsaker-baljvaxter',
+  '99db3018-223e-4828-a3b7-5f6467ec9e4e': 'kott',
+  '96a6077f-068d-4b0b-9db1-16d2f6b2611a': 'smaksattare-kryddor',
+  'd1e3d3cb-6006-4aa5-8326-3d35a0723e29': 'pasta-ris-gryn',
+  '5cf4f015-56b6-465a-a606-dd896d815ac4': 'mejeri',
+  '992dd8ca-229c-4ba9-8546-05b975a60cd9': 'fisk-skaldjur',
+  '2b7562b7-e366-4be3-bffd-48b81962a5d3': 'notter-fron',
+};
+
+/**
  * Normalize and hydrate raw food entries:
  * - Derive `letter` for entries that lack it
  * - Normalize `food_number` / `source` from legacy fields
- * - Ensure `category_slug` is populated where possible
+ * - Map legacy UUID `category_id` to `category_slug`
  */
 function hydrateFoods(raw: unknown[]): Food[] {
   return (raw as Record<string, unknown>[]).map((entry) => {
@@ -32,6 +47,14 @@ function hydrateFoods(raw: unknown[]): Food[] {
     }
     if (entry.lv_source && !entry.source) {
       entry.source = entry.lv_source;
+    }
+
+    // Map legacy UUID category_id to category_slug
+    if (!entry.category_slug && typeof entry.category_id === 'string') {
+      const mapped = LEGACY_CATEGORY_MAP[entry.category_id];
+      if (mapped) {
+        entry.category_slug = mapped;
+      }
     }
 
     return entry as unknown as Food;

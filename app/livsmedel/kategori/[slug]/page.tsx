@@ -12,10 +12,7 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  const categories = getAllFoodCategories();
-  return categories.map((c) => ({ slug: c.slug }));
-}
+export const revalidate = 3600; // ISR: rebuild every hour
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
@@ -38,7 +35,7 @@ export default async function FoodCategoryPage({ params }: Props) {
     notFound();
   }
 
-  const foods = getFoodsByCategory(category.id);
+  const foods = getFoodsByCategory(category.slug);
   const allCategories = getAllFoodCategories();
 
   const breadcrumbSchema = buildBreadcrumbSchema([

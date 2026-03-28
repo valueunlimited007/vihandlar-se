@@ -16,20 +16,16 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  getAllFoods,
   getFoodBySlug,
   getAllFoodCategories,
+  getFoodCategoryBySlug,
 } from "@/lib/data/foods";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-export function generateStaticParams() {
-  return getAllFoods().map((food) => ({
-    slug: food.slug,
-  }));
-}
+export const revalidate = 3600; // ISR: rebuild every hour
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -76,8 +72,12 @@ export default async function FoodDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const categories = getAllFoodCategories();
-  const category = categories.find((c) => c.id === food.category_id);
+  // Resolve category: try category_slug first (new foods), then fall back to category_id (original 68)
+  const category = food.category_slug
+    ? getFoodCategoryBySlug(food.category_slug)
+    : food.category_id
+      ? getAllFoodCategories().find((c) => c.id === food.category_id)
+      : undefined;
 
   const hasNutrition = food.calories != null;
 
@@ -366,6 +366,86 @@ export default async function FoodDetailPage({ params }: PageProps) {
             </Card>
           )}
 
+          {/* Sugar breakdown */}
+          {(food.sugar_total != null || food.added_sugar != null || food.free_sugar != null) && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BarChart3 className="w-5 h-5 text-pink-500" />
+                  Socker per 100g
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  {food.sugar_total != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Totalt socker</span>
+                      <span className="font-medium">{food.sugar_total} g</span>
+                    </div>
+                  )}
+                  {food.added_sugar != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Tillsatt socker</span>
+                      <span className="font-medium">{food.added_sugar} g</span>
+                    </div>
+                  )}
+                  {food.free_sugar != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Fritt socker</span>
+                      <span className="font-medium">{food.free_sugar} g</span>
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Fatty acids breakdown */}
+          {(food.saturated_fat != null || food.monounsaturated_fat != null || food.polyunsaturated_fat != null || food.omega_3 != null || food.cholesterol != null) && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BarChart3 className="w-5 h-5 text-amber-500" />
+                  Fettsyror per 100g
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  {food.saturated_fat != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Mättat fett</span>
+                      <span className="font-medium">{food.saturated_fat} g</span>
+                    </div>
+                  )}
+                  {food.monounsaturated_fat != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Enkelomättat fett</span>
+                      <span className="font-medium">{food.monounsaturated_fat} g</span>
+                    </div>
+                  )}
+                  {food.polyunsaturated_fat != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Fleromättat fett</span>
+                      <span className="font-medium">{food.polyunsaturated_fat} g</span>
+                    </div>
+                  )}
+                  {food.omega_3 != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Omega-3</span>
+                      <span className="font-medium">{food.omega_3} g</span>
+                    </div>
+                  )}
+                  {food.cholesterol != null && (
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-muted-foreground">Kolesterol</span>
+                      <span className="font-medium">{food.cholesterol} mg</span>
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
           {/* Usage Tips */}
           {food.usage_tips && food.usage_tips.length > 0 && (
             <Card>
@@ -487,58 +567,101 @@ export default async function FoodDetailPage({ params }: PageProps) {
 
         {/* Right Sidebar (1/3) */}
         <div className="space-y-6">
-          {/* Vitamins & Minerals */}
-          {food.key_vitamins && Object.keys(food.key_vitamins).length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-base">
-                  <Leaf className="w-5 h-5 text-green-500" />
-                  Vitaminer
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  {Object.entries(food.key_vitamins).map(([key, value]) => (
-                    <div
-                      key={key}
-                      className="flex items-center justify-between text-sm"
-                    >
-                      <span className="text-muted-foreground">
-                        Vitamin {key}
-                      </span>
-                      <span className="font-medium">{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          )}
+          {/* Vitamins — new numeric fields or legacy key_vitamins */}
+          {(() => {
+            const vitaminRows: { label: string; value: string }[] = [];
+            if (food.vitamin_a != null) vitaminRows.push({ label: "Vitamin A", value: `${food.vitamin_a} \u00b5g` });
+            if (food.vitamin_d != null) vitaminRows.push({ label: "Vitamin D", value: `${food.vitamin_d} \u00b5g` });
+            if (food.vitamin_e != null) vitaminRows.push({ label: "Vitamin E", value: `${food.vitamin_e} mg` });
+            if (food.vitamin_k != null) vitaminRows.push({ label: "Vitamin K", value: `${food.vitamin_k} \u00b5g` });
+            if (food.thiamin_b1 != null) vitaminRows.push({ label: "Tiamin (B1)", value: `${food.thiamin_b1} mg` });
+            if (food.riboflavin_b2 != null) vitaminRows.push({ label: "Riboflavin (B2)", value: `${food.riboflavin_b2} mg` });
+            if (food.niacin_b3 != null) vitaminRows.push({ label: "Niacin (B3)", value: `${food.niacin_b3} mg` });
+            if (food.vitamin_b6 != null) vitaminRows.push({ label: "Vitamin B6", value: `${food.vitamin_b6} mg` });
+            if (food.folate != null) vitaminRows.push({ label: "Folat", value: `${food.folate} \u00b5g` });
+            if (food.vitamin_b12 != null) vitaminRows.push({ label: "Vitamin B12", value: `${food.vitamin_b12} \u00b5g` });
+            if (food.vitamin_c != null) vitaminRows.push({ label: "Vitamin C", value: `${food.vitamin_c} mg` });
 
-          {food.key_minerals && Object.keys(food.key_minerals).length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-base">
-                  <Leaf className="w-5 h-5 text-blue-500" />
-                  Mineraler
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  {Object.entries(food.key_minerals).map(([key, value]) => (
-                    <div
-                      key={key}
-                      className="flex items-center justify-between text-sm"
-                    >
-                      <span className="text-muted-foreground capitalize">
-                        {key}
-                      </span>
-                      <span className="font-medium">{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          )}
+            // Fall back to legacy key_vitamins if no numeric vitamins
+            if (vitaminRows.length === 0 && food.key_vitamins && Object.keys(food.key_vitamins).length > 0) {
+              Object.entries(food.key_vitamins).forEach(([key, value]) => {
+                vitaminRows.push({ label: `Vitamin ${key}`, value });
+              });
+            }
+
+            if (vitaminRows.length === 0) return null;
+
+            return (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-base">
+                    <Leaf className="w-5 h-5 text-green-500" />
+                    Vitaminer
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    {vitaminRows.map((row) => (
+                      <div
+                        key={row.label}
+                        className="flex items-center justify-between text-sm"
+                      >
+                        <span className="text-muted-foreground">{row.label}</span>
+                        <span className="font-medium">{row.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })()}
+
+          {/* Minerals — new numeric fields or legacy key_minerals */}
+          {(() => {
+            const mineralRows: { label: string; value: string }[] = [];
+            if (food.iron != null) mineralRows.push({ label: "Järn", value: `${food.iron} mg` });
+            if (food.calcium != null) mineralRows.push({ label: "Kalcium", value: `${food.calcium} mg` });
+            if (food.potassium != null) mineralRows.push({ label: "Kalium", value: `${food.potassium} mg` });
+            if (food.magnesium != null) mineralRows.push({ label: "Magnesium", value: `${food.magnesium} mg` });
+            if (food.phosphorus != null) mineralRows.push({ label: "Fosfor", value: `${food.phosphorus} mg` });
+            if (food.iodine != null) mineralRows.push({ label: "Jod", value: `${food.iodine} \u00b5g` });
+            if (food.selenium != null) mineralRows.push({ label: "Selen", value: `${food.selenium} \u00b5g` });
+            if (food.zinc != null) mineralRows.push({ label: "Zink", value: `${food.zinc} mg` });
+            if (food.sodium != null) mineralRows.push({ label: "Natrium", value: `${food.sodium} mg` });
+
+            // Fall back to legacy key_minerals if no numeric minerals
+            if (mineralRows.length === 0 && food.key_minerals && Object.keys(food.key_minerals).length > 0) {
+              Object.entries(food.key_minerals).forEach(([key, value]) => {
+                mineralRows.push({ label: key, value });
+              });
+            }
+
+            if (mineralRows.length === 0) return null;
+
+            return (
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-base">
+                    <Leaf className="w-5 h-5 text-blue-500" />
+                    Mineraler
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-2">
+                    {mineralRows.map((row) => (
+                      <div
+                        key={row.label}
+                        className="flex items-center justify-between text-sm"
+                      >
+                        <span className="text-muted-foreground">{row.label}</span>
+                        <span className="font-medium">{row.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })()}
 
           {/* Substitutes */}
           {food.substitutes && food.substitutes.length > 0 && (
@@ -603,6 +726,23 @@ export default async function FoodDetailPage({ params }: PageProps) {
           )}
         </div>
       </div>
+
+      {/* Source attribution */}
+      {food.source === "Livsmedelsverkets livsmedelsdatabas 2025" && (
+        <div className="mt-8 pt-6 border-t text-sm text-muted-foreground">
+          <p>
+            Källa:{" "}
+            <a
+              href="https://soknaringsinnehall.livsmedelsverket.se/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Livsmedelsverkets livsmedelsdatabas 2025
+            </a>
+          </p>
+        </div>
+      )}
     </div>
   );
 }
