@@ -19,6 +19,10 @@ export function middleware(request: NextRequest) {
     schemaTypes = "Organization, CollectionPage, BreadcrumbList";
   } else if (pathname === "/e-amnen/guide") {
     schemaTypes = "Organization, Article, BreadcrumbList";
+  } else if (pathname === "/livsmedel/naringsamne") {
+    schemaTypes = "Organization, CollectionPage, BreadcrumbList";
+  } else if (pathname.match(/^\/livsmedel\/naringsamne\/[^/]+$/)) {
+    schemaTypes = "Organization, CollectionPage, ItemList, BreadcrumbList";
   } else if (pathname.match(/^\/livsmedel\/[^/]+$/) && !pathname.startsWith("/livsmedel/kategori")) {
     schemaTypes = "Organization, Article, NutritionInformation, FAQPage, BreadcrumbList";
   } else if (pathname === "/livsmedel") {

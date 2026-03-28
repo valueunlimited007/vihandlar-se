@@ -3,6 +3,7 @@ import { getAllEAdditives } from "@/lib/data/e-additives";
 import { getAllFoods, getAllFoodCategories } from "@/lib/data/foods";
 import { getAllProducts } from "@/lib/data/products";
 import { getAllProductCategories } from "@/lib/data/products";
+import { getAllNutrients } from "@/lib/data/nutrients";
 import { E_CATEGORIES } from "@/types/e-additive";
 
 const BASE_URL = "https://vihandlar.se";
@@ -92,6 +93,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Näringsämnesidor
+  const nutrients = getAllNutrients();
+  const nutrientPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/livsmedel/naringsamne`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    ...nutrients.map((n) => ({
+      url: `${BASE_URL}/livsmedel/naringsamne/${n.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
+  ];
+
   // ALL produktsidor (10 500+) — previously only 1000!
   const products = getAllProducts();
   const productPages: MetadataRoute.Sitemap = products.map((p) => ({
@@ -109,6 +127,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...productCategoryPages,
     ...eAdditivePages,
     ...foodPages,
+    ...nutrientPages,
     ...productPages,
   ];
 }

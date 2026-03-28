@@ -154,9 +154,14 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-            <Link href="/livsmedel" className="text-xs text-primary/70 hover:text-primary transition-colors mt-2 inline-block">
-              Alla livsmedel →
-            </Link>
+            <div className="flex gap-x-3 mt-2">
+              <Link href="/livsmedel" className="text-xs text-primary/70 hover:text-primary transition-colors inline-block">
+                Alla livsmedel →
+              </Link>
+              <Link href="/livsmedel/naringsamne" className="text-xs text-primary/70 hover:text-primary transition-colors inline-block">
+                Näringsämnen →
+              </Link>
+            </div>
           </div>
 
           {/* Produkter A-Ö */}

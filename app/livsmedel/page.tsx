@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 export const revalidate = 1800; // ISR: rebuild every 30 minutes
 import Link from "next/link";
-import { Utensils, Snowflake, Star, BarChart3 } from "lucide-react";
+import { Utensils, Snowflake, Star, BarChart3, FlaskConical } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FoodSearch } from "@/components/FoodSearch";
 import {
   getAllFoods,
@@ -176,6 +177,28 @@ export default function LivsmedelPage() {
               </div>
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* Näringsämnen */}
+      <section className="container mx-auto px-4">
+        <div className="max-w-5xl mx-auto">
+          <Card className="border-primary/20 bg-gradient-to-r from-primary/5 to-accent/5">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <FlaskConical className="w-5 h-5 text-primary" />
+                Näringsämnen
+              </CardTitle>
+              <p className="text-sm text-muted-foreground">
+                Se vilka livsmedel som innehåller mest vitamin C, järn, protein och fler näringsämnen.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <Link href="/livsmedel/naringsamne" className="text-primary hover:underline font-medium">
+                Utforska alla näringsämnen →
+              </Link>
+            </CardContent>
+          </Card>
         </div>
       </section>
 

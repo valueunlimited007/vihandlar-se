@@ -24,6 +24,7 @@ import {
 import { getRelatedProductsForFood } from "@/lib/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import type { Food } from "@/types/food";
+import { NUTRIENTS } from "@/lib/data/nutrients";
 
 function generateFoodFaq(food: Food): { question: string; answer: string }[] {
   const faqs: { question: string; answer: string }[] = [];
@@ -87,6 +88,11 @@ function generateFoodFaq(food: Food): { question: string; answer: string }[] {
 
   return faqs;
 }
+
+// Build a lookup from nutrient field name to slug for linking
+const NUTRIENT_FIELD_TO_SLUG = new Map<string, string>(
+  NUTRIENTS.map((n) => [n.field, n.slug])
+);
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -457,19 +463,19 @@ export default async function FoodDetailPage({ params }: PageProps) {
                 <div className="space-y-2">
                   {food.sugar_total != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Totalt socker</span>
+                      <Link href="/livsmedel/naringsamne/socker" className="text-muted-foreground hover:text-primary transition-colors">Totalt socker</Link>
                       <span className="font-medium">{food.sugar_total} g</span>
                     </div>
                   )}
                   {food.added_sugar != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Tillsatt socker</span>
+                      <Link href="/livsmedel/naringsamne/tillsatt-socker" className="text-muted-foreground hover:text-primary transition-colors">Tillsatt socker</Link>
                       <span className="font-medium">{food.added_sugar} g</span>
                     </div>
                   )}
                   {food.free_sugar != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Fritt socker</span>
+                      <Link href="/livsmedel/naringsamne/fritt-socker" className="text-muted-foreground hover:text-primary transition-colors">Fritt socker</Link>
                       <span className="font-medium">{food.free_sugar} g</span>
                     </div>
                   )}
@@ -491,31 +497,31 @@ export default async function FoodDetailPage({ params }: PageProps) {
                 <div className="space-y-2">
                   {food.saturated_fat != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Mättat fett</span>
+                      <Link href="/livsmedel/naringsamne/mattat-fett" className="text-muted-foreground hover:text-primary transition-colors">Mättat fett</Link>
                       <span className="font-medium">{food.saturated_fat} g</span>
                     </div>
                   )}
                   {food.monounsaturated_fat != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Enkelomättat fett</span>
+                      <Link href="/livsmedel/naringsamne/enkelomattat-fett" className="text-muted-foreground hover:text-primary transition-colors">Enkelomättat fett</Link>
                       <span className="font-medium">{food.monounsaturated_fat} g</span>
                     </div>
                   )}
                   {food.polyunsaturated_fat != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Fleromättat fett</span>
+                      <Link href="/livsmedel/naringsamne/fleromattatt-fett" className="text-muted-foreground hover:text-primary transition-colors">Fleromättat fett</Link>
                       <span className="font-medium">{food.polyunsaturated_fat} g</span>
                     </div>
                   )}
                   {food.omega_3 != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Omega-3</span>
+                      <Link href="/livsmedel/naringsamne/omega-3" className="text-muted-foreground hover:text-primary transition-colors">Omega-3</Link>
                       <span className="font-medium">{food.omega_3} g</span>
                     </div>
                   )}
                   {food.cholesterol != null && (
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Kolesterol</span>
+                      <Link href="/livsmedel/naringsamne/kolesterol" className="text-muted-foreground hover:text-primary transition-colors">Kolesterol</Link>
                       <span className="font-medium">{food.cholesterol} mg</span>
                     </div>
                   )}
@@ -647,18 +653,18 @@ export default async function FoodDetailPage({ params }: PageProps) {
         <div className="space-y-6">
           {/* Vitamins — new numeric fields or legacy key_vitamins */}
           {(() => {
-            const vitaminRows: { label: string; value: string }[] = [];
-            if (food.vitamin_a != null) vitaminRows.push({ label: "Vitamin A", value: `${food.vitamin_a} \u00b5g` });
-            if (food.vitamin_d != null) vitaminRows.push({ label: "Vitamin D", value: `${food.vitamin_d} \u00b5g` });
-            if (food.vitamin_e != null) vitaminRows.push({ label: "Vitamin E", value: `${food.vitamin_e} mg` });
-            if (food.vitamin_k != null) vitaminRows.push({ label: "Vitamin K", value: `${food.vitamin_k} \u00b5g` });
-            if (food.thiamin_b1 != null) vitaminRows.push({ label: "Tiamin (B1)", value: `${food.thiamin_b1} mg` });
-            if (food.riboflavin_b2 != null) vitaminRows.push({ label: "Riboflavin (B2)", value: `${food.riboflavin_b2} mg` });
-            if (food.niacin_b3 != null) vitaminRows.push({ label: "Niacin (B3)", value: `${food.niacin_b3} mg` });
-            if (food.vitamin_b6 != null) vitaminRows.push({ label: "Vitamin B6", value: `${food.vitamin_b6} mg` });
-            if (food.folate != null) vitaminRows.push({ label: "Folat", value: `${food.folate} \u00b5g` });
-            if (food.vitamin_b12 != null) vitaminRows.push({ label: "Vitamin B12", value: `${food.vitamin_b12} \u00b5g` });
-            if (food.vitamin_c != null) vitaminRows.push({ label: "Vitamin C", value: `${food.vitamin_c} mg` });
+            const vitaminRows: { label: string; value: string; field?: string }[] = [];
+            if (food.vitamin_a != null) vitaminRows.push({ label: "Vitamin A", value: `${food.vitamin_a} \u00b5g`, field: "vitamin_a" });
+            if (food.vitamin_d != null) vitaminRows.push({ label: "Vitamin D", value: `${food.vitamin_d} \u00b5g`, field: "vitamin_d" });
+            if (food.vitamin_e != null) vitaminRows.push({ label: "Vitamin E", value: `${food.vitamin_e} mg`, field: "vitamin_e" });
+            if (food.vitamin_k != null) vitaminRows.push({ label: "Vitamin K", value: `${food.vitamin_k} \u00b5g`, field: "vitamin_k" });
+            if (food.thiamin_b1 != null) vitaminRows.push({ label: "Tiamin (B1)", value: `${food.thiamin_b1} mg`, field: "thiamin_b1" });
+            if (food.riboflavin_b2 != null) vitaminRows.push({ label: "Riboflavin (B2)", value: `${food.riboflavin_b2} mg`, field: "riboflavin_b2" });
+            if (food.niacin_b3 != null) vitaminRows.push({ label: "Niacin (B3)", value: `${food.niacin_b3} mg`, field: "niacin_b3" });
+            if (food.vitamin_b6 != null) vitaminRows.push({ label: "Vitamin B6", value: `${food.vitamin_b6} mg`, field: "vitamin_b6" });
+            if (food.folate != null) vitaminRows.push({ label: "Folat", value: `${food.folate} \u00b5g`, field: "folate" });
+            if (food.vitamin_b12 != null) vitaminRows.push({ label: "Vitamin B12", value: `${food.vitamin_b12} \u00b5g`, field: "vitamin_b12" });
+            if (food.vitamin_c != null) vitaminRows.push({ label: "Vitamin C", value: `${food.vitamin_c} mg`, field: "vitamin_c" });
 
             // Fall back to legacy key_vitamins if no numeric vitamins
             if (vitaminRows.length === 0 && food.key_vitamins && Object.keys(food.key_vitamins).length > 0) {
@@ -679,15 +685,24 @@ export default async function FoodDetailPage({ params }: PageProps) {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    {vitaminRows.map((row) => (
-                      <div
-                        key={row.label}
-                        className="flex items-center justify-between text-sm"
-                      >
-                        <span className="text-muted-foreground">{row.label}</span>
-                        <span className="font-medium">{row.value}</span>
-                      </div>
-                    ))}
+                    {vitaminRows.map((row) => {
+                      const slug = row.field ? NUTRIENT_FIELD_TO_SLUG.get(row.field) : undefined;
+                      return (
+                        <div
+                          key={row.label}
+                          className="flex items-center justify-between text-sm"
+                        >
+                          {slug ? (
+                            <Link href={`/livsmedel/naringsamne/${slug}`} className="text-muted-foreground hover:text-primary transition-colors">
+                              {row.label}
+                            </Link>
+                          ) : (
+                            <span className="text-muted-foreground">{row.label}</span>
+                          )}
+                          <span className="font-medium">{row.value}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </CardContent>
               </Card>
@@ -696,16 +711,16 @@ export default async function FoodDetailPage({ params }: PageProps) {
 
           {/* Minerals — new numeric fields or legacy key_minerals */}
           {(() => {
-            const mineralRows: { label: string; value: string }[] = [];
-            if (food.iron != null) mineralRows.push({ label: "Järn", value: `${food.iron} mg` });
-            if (food.calcium != null) mineralRows.push({ label: "Kalcium", value: `${food.calcium} mg` });
-            if (food.potassium != null) mineralRows.push({ label: "Kalium", value: `${food.potassium} mg` });
-            if (food.magnesium != null) mineralRows.push({ label: "Magnesium", value: `${food.magnesium} mg` });
-            if (food.phosphorus != null) mineralRows.push({ label: "Fosfor", value: `${food.phosphorus} mg` });
-            if (food.iodine != null) mineralRows.push({ label: "Jod", value: `${food.iodine} \u00b5g` });
-            if (food.selenium != null) mineralRows.push({ label: "Selen", value: `${food.selenium} \u00b5g` });
-            if (food.zinc != null) mineralRows.push({ label: "Zink", value: `${food.zinc} mg` });
-            if (food.sodium != null) mineralRows.push({ label: "Natrium", value: `${food.sodium} mg` });
+            const mineralRows: { label: string; value: string; field?: string }[] = [];
+            if (food.iron != null) mineralRows.push({ label: "Järn", value: `${food.iron} mg`, field: "iron" });
+            if (food.calcium != null) mineralRows.push({ label: "Kalcium", value: `${food.calcium} mg`, field: "calcium" });
+            if (food.potassium != null) mineralRows.push({ label: "Kalium", value: `${food.potassium} mg`, field: "potassium" });
+            if (food.magnesium != null) mineralRows.push({ label: "Magnesium", value: `${food.magnesium} mg`, field: "magnesium" });
+            if (food.phosphorus != null) mineralRows.push({ label: "Fosfor", value: `${food.phosphorus} mg`, field: "phosphorus" });
+            if (food.iodine != null) mineralRows.push({ label: "Jod", value: `${food.iodine} \u00b5g`, field: "iodine" });
+            if (food.selenium != null) mineralRows.push({ label: "Selen", value: `${food.selenium} \u00b5g`, field: "selenium" });
+            if (food.zinc != null) mineralRows.push({ label: "Zink", value: `${food.zinc} mg`, field: "zinc" });
+            if (food.sodium != null) mineralRows.push({ label: "Natrium", value: `${food.sodium} mg`, field: "sodium" });
 
             // Fall back to legacy key_minerals if no numeric minerals
             if (mineralRows.length === 0 && food.key_minerals && Object.keys(food.key_minerals).length > 0) {
@@ -726,15 +741,24 @@ export default async function FoodDetailPage({ params }: PageProps) {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    {mineralRows.map((row) => (
-                      <div
-                        key={row.label}
-                        className="flex items-center justify-between text-sm"
-                      >
-                        <span className="text-muted-foreground">{row.label}</span>
-                        <span className="font-medium">{row.value}</span>
-                      </div>
-                    ))}
+                    {mineralRows.map((row) => {
+                      const slug = row.field ? NUTRIENT_FIELD_TO_SLUG.get(row.field) : undefined;
+                      return (
+                        <div
+                          key={row.label}
+                          className="flex items-center justify-between text-sm"
+                        >
+                          {slug ? (
+                            <Link href={`/livsmedel/naringsamne/${slug}`} className="text-muted-foreground hover:text-primary transition-colors">
+                              {row.label}
+                            </Link>
+                          ) : (
+                            <span className="text-muted-foreground">{row.label}</span>
+                          )}
+                          <span className="font-medium">{row.value}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </CardContent>
               </Card>
