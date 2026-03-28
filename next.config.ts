@@ -25,9 +25,54 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: [
+          // --- Existing security headers ---
           { key: "X-Frame-Options", value: "DENY" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+
+          // --- Additional security headers (A grade on SecurityHeaders.com) ---
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=31536000; includeSubDomains; preload",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: "upgrade-insecure-requests",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(self), microphone=(self), geolocation=()",
+          },
+
+          // --- Link headers (RFC 8288) for AI discovery ---
+          {
+            key: "Link",
+            value: [
+              '<https://vihandlar.se/llms.txt>; rel="ai-info"; type="text/plain"',
+              '<https://vihandlar.se/llms.txt>; rel="llms-txt"; type="text/plain"',
+              '<https://vihandlar.se/llms.txt>; rel="alternate"; type="text/plain"; title="LLM Information"',
+              '<https://vihandlar.se/llms-full.txt>; rel="ai-info-full"; type="text/plain"',
+              '<https://vihandlar.se/robots.txt>; rel="robots"',
+              '<https://vihandlar.se/sitemap.xml>; rel="sitemap"; type="application/xml"',
+            ].join(", "),
+          },
+
+          // --- Custom X-headers for AI crawlers ---
+          { key: "X-LLM-Policy", value: "https://vihandlar.se/llms.txt" },
+          {
+            key: "X-LLM-Full-Policy",
+            value: "https://vihandlar.se/llms-full.txt",
+          },
+          { key: "X-AI-Indexable", value: "true" },
+          { key: "X-Content-Language", value: "sv-SE" },
+          {
+            key: "X-Robots-Tag",
+            value: "index, follow, max-image-preview:large",
+          },
+          {
+            key: "X-Robots-Policy",
+            value: "https://vihandlar.se/robots.txt",
+          },
         ],
       },
       {

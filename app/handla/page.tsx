@@ -23,6 +23,7 @@ import {
 } from "@/lib/data/products";
 import { getAllStores } from "@/lib/data/stores";
 import { getAffiliateDisclaimer } from "@/lib/data/stores";
+import { buildCollectionPageSchema, buildBreadcrumbSchema } from "@/lib/schema";
 
 export const revalidate = 3600;
 
@@ -58,8 +59,30 @@ export default function ShoppingPage() {
   const stores = getAllStores();
   const storeName = stores[0]?.name ?? "Delitea";
 
+  const collectionPageSchema = buildCollectionPageSchema({
+    name: "Handla mat online – Jämför priser på matvaror",
+    description: `Utforska ${productCount.toLocaleString("sv-SE")} produkter från ${storeName}. Jämför priser och handla smidigt online.`,
+    url: "https://vihandlar.se/handla",
+    numberOfItems: productCount,
+  });
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "Handla", url: "https://vihandlar.se/handla" },
+  ]);
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero */}
       <div className="text-center mb-10">
         <Badge

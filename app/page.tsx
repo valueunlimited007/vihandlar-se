@@ -21,6 +21,7 @@ import {
 import { getAllEAdditives } from "@/lib/data/e-additives";
 import { getAllFoods } from "@/lib/data/foods";
 import { getAllProducts } from "@/lib/data/products";
+import { buildWebSiteSchema, buildOrganizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "ViHandlar – Din smarta matassistent | Inköpslistor, E-ämnen & Produkter",
@@ -43,35 +44,8 @@ export default function LandingPage() {
   const foodCount = getAllFoods().length;
   const productCount = getAllProducts().length;
 
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "vihandlar.se",
-    alternateName: "ViHandlar",
-    url: "https://vihandlar.se",
-    description:
-      "Sveriges smartaste matplattform. Skapa delade inköpslistor, scanna E-ämnen och jämför priser.",
-    inLanguage: "sv-SE",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://vihandlar.se/e-amnen?q={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
-  };
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "vihandlar.se",
-    url: "https://vihandlar.se",
-    logo: "https://vihandlar.se/icon.svg",
-    description:
-      "Sveriges smartaste matplattform med E-nummerskanner, delade inköpslistor och produktjämförelse.",
-    sameAs: [],
-  };
+  const websiteSchema = buildWebSiteSchema();
+  const organizationSchema = buildOrganizationSchema();
 
   const stats = [
     { value: "10 000+", label: "Inköpslistor" },

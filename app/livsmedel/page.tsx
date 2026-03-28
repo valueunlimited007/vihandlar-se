@@ -8,6 +8,7 @@ import {
   getFoodsCountByLetter,
   getFreezableFoods,
 } from "@/lib/data/foods";
+import { buildCollectionPageSchema, buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Livsmedel A-Ö – Komplett guide till svenska livsmedel",
@@ -38,8 +39,29 @@ export default function LivsmedelPage() {
       allFoods.filter((f) => f.calories != null).length
   );
 
+  const collectionPageSchema = buildCollectionPageSchema({
+    name: "Livsmedel A-Ö – Komplett guide till svenska livsmedel",
+    description: `Utforska ${allFoods.length} svenska livsmedel med näringsvärden, förvaringstips och matlagningsråd.`,
+    url: "https://vihandlar.se/livsmedel",
+    numberOfItems: allFoods.length,
+  });
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "Livsmedel", url: "https://vihandlar.se/livsmedel" },
+  ]);
+
   return (
     <div>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4 py-12 md:py-16">

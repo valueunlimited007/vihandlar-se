@@ -57,6 +57,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vihandlar.se",
   },
+  other: {
+    "ai-content-declaration":
+      "This site provides structured data optimized for AI consumption. See /llms.txt for details.",
+    "llms-txt": "https://vihandlar.se/llms.txt",
+    "ai-policy": "https://vihandlar.se/llms.txt",
+    "ai-indexing": "allowed",
+  },
 };
 
 export const viewport: Viewport = {
@@ -75,6 +82,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv" suppressHydrationWarning>
+      <head>
+        <link
+          rel="llms-policy"
+          href="https://vihandlar.se/llms.txt"
+          type="text/plain"
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Analytics />
         <Header />

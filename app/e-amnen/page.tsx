@@ -16,6 +16,7 @@ import {
   getSafeAdditives,
 } from "@/lib/data/e-additives";
 import { E_CATEGORIES } from "@/types/e-additive";
+import { buildCollectionPageSchema, buildBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "E-ämnen A-Ö – Komplett guide till livsmedelstillsatser",
@@ -41,8 +42,29 @@ export default function EAmnenPage() {
   const highRisk = getHighRiskAdditives();
   const safe = getSafeAdditives();
 
+  const collectionPageSchema = buildCollectionPageSchema({
+    name: "E-ämnen A-Ö – Komplett guide till livsmedelstillsatser",
+    description: `Utforska alla ${allAdditives.length} E-nummer med riskbedömning, hälsoeffekter och ADI-värden.`,
+    url: "https://vihandlar.se/e-amnen",
+    numberOfItems: allAdditives.length,
+  });
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Hem", url: "https://vihandlar.se" },
+    { name: "E-ämnen", url: "https://vihandlar.se/e-amnen" },
+  ]);
+
   return (
     <div>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-accent/5">
         <div className="container mx-auto px-4 py-12 md:py-16">
