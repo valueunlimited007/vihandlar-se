@@ -24,7 +24,7 @@ export default function IntegritetPage() {
           Integritetspolicy
         </h1>
         <p className="text-lg text-muted-foreground">
-          Senast uppdaterad: 2025-01-01
+          Senast uppdaterad: 2026-03-28
         </p>
       </div>
 
@@ -281,36 +281,56 @@ export default function IntegritetPage() {
         </div>
       </section>
 
+      {/* Webbanalys */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6">
+          Webbanalys
+        </h2>
+
+        <div className="space-y-4">
+          <div className="bg-green-50 border border-green-200 rounded-lg p-6 dark:bg-green-950/20 dark:border-green-800">
+            <p className="text-green-700 dark:text-green-300">
+              Denna webbplats använder{" "}
+              <a href="https://besokskollen.se" target="_blank" rel="noopener" className="underline font-medium">
+                Besökskollen – cookiefri webbanalys
+              </a>{" "}
+              för besöksstatistik. Besökskollen är en integritetsvänlig analystjänst
+              utvecklad av{" "}
+              <a href="https://savri.io" target="_blank" rel="noopener" className="underline font-medium">
+                Savri – privacy-friendly web analytics
+              </a>{" "}
+              som inte använder cookies och inte samlar in några personuppgifter.
+              All data är aggregerad och inga enskilda besökare kan identifieras.
+              Tjänsten är helt GDPR-kompatibel och all data behandlas inom EU.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Cookies */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">
-          Cookies och spårning
+          Cookies
         </h2>
 
         <div className="space-y-4">
           <p className="text-muted-foreground">
-            ViHandlar använder minimal mängd cookies för att fungera:
+            ViHandlar använder minimal mängd cookies:
           </p>
 
           <div className="space-y-3">
             <div>
               <h4 className="font-medium">Nödvändiga cookies</h4>
               <p className="text-sm text-muted-foreground">
-                För att komma ihåg dina inställningar och listor. Dessa kan inte
-                stängas av.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-medium">Prestanda cookies</h4>
-              <p className="text-sm text-muted-foreground">
-                För att förstå hur sajten används och förbättra prestanda. Du
-                kan välja bort dessa.
+                För att komma ihåg dina inställningar och listor (localStorage).
+                Dessa kan inte stängas av.
               </p>
             </div>
           </div>
 
           <p className="text-sm text-muted-foreground">
             Vi använder inga cookies för reklam eller tredjepartsanalys.
+            Besöksstatistik hanteras cookiefritt via Besökskollen (se ovan).
           </p>
         </div>
       </section>
