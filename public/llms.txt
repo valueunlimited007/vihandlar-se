@@ -60,6 +60,14 @@ AI-driven OCR-skanner som läser av ingredienslistor från foton och identifiera
 Omfattande guide till svenska livsmedel med detaljerade näringsvärden (62 näringsämnen per livsmedel: kalorier, protein, fett, kolhydrater, vitaminer, mineraler, fettsyror m.m.), förvaringstips, hållbarhet (öppnad och oöppnad), allergener och vanliga frågor (FAQ). Data från Livsmedelsverkets livsmedelsdatabas 2025. Varje livsmedelssida har dynamiskt genererade FAQ (vanliga frågor) baserade på näringsvärden — med frågor om kalorier, protein, förvaring, frysning och näringsämnen — alla med FAQPage schema.org-markup. Relaterade produkter från Delitea visas på varje livsmedelssida med dynamisk matchning mot 10 500+ produkter. Organiserat alfabetiskt A-Ö och i 28 kategorier: Bröd, Bullar/Kakor/Tårtor, Dryck, Fett & Olja, Fisk & Skaldjur, Flingor & Müsli, Frukt & Bär, Färdiga Rätter, Glass, Godis, Grönsaker & Baljväxter, Inälvsmat, Korv & Chark, Kyckling & Fågel, Kött, Mejeri, Mjöl & Gryn, Nötter & Frön, Pasta/Ris/Gryn, Potatis, Pålägg, Smaksättare & Kryddor, Snacks, Sportnutrition, Sylt & Marmelad, Vegetariskt & Växtbaserat, Ägg & Kaviar, Övrigt.
 - https://vihandlar.se/livsmedel
 
+## Näringsämnen (40+ näringsämnen)
+Komplett guide till näringsämnen med topplista över livsmedel sorterade efter innehåll. Varje näringsämne har en egen sida med beskrivning, rekommenderat dagligt intag (RDI) och en rankad lista över de 50 livsmedel som innehåller mest av det näringsämnet. Näringsämnena är indelade i kategorier: Makronäringsämnen (kalorier, protein, fett, kolhydrater, fiber m.m.), Vitaminer (A, D, E, K, C, B-vitaminer, folat m.m.), Mineraler (järn, kalcium, kalium, magnesium, zink, selen m.m.), Fettsyror (mättat, enkelomättat, fleromättat, omega-3, DHA, EPA m.m.) och Övrigt (salt, fullkorn, tillsatt socker).
+- https://vihandlar.se/livsmedel/naringsamne
+- https://vihandlar.se/livsmedel/naringsamne/vitamin-c (Vitamin C – livsmedel med mest C-vitamin)
+- https://vihandlar.se/livsmedel/naringsamne/jarn (Järn – livsmedel med mest järn)
+- https://vihandlar.se/livsmedel/naringsamne/protein (Protein – livsmedel med mest protein)
+- https://vihandlar.se/livsmedel/naringsamne/kalcium (Kalcium – livsmedel med mest kalcium)
+
 ## Produkter & Shopping (10 500+ produkter)
 Över 10 500 produkter från Delitea (via Adtraction affiliatenätverket) med realtidspriser, bilder och kategorisering. Sök bland produkter, filtrera på 144 kategorier, sortera på pris, namn eller rabatt. Inkluderar choklad, pasta, dryck, godis, bakning, fika och många fler kategorier. Varje produktsida har dynamiskt genererade FAQ (vanliga frågor) med pris, lagerstatus, köpinformation, varumärke och kategorisering — alla med FAQPage schema.org markup.
 - https://vihandlar.se/handla
@@ -108,6 +116,8 @@ Lägg till varor på inköpslistan med rösten. Använder Web Speech API för di
 - https://vihandlar.se/e-amnen/[slug] (353+ individuella E-ämnessidor, t.ex. /e-amnen/e100-kurkumin)
 
 ## Livsmedel undersidor
+- https://vihandlar.se/livsmedel/naringsamne (Alla näringsämnen – översikt med 40+ näringsämnen)
+- https://vihandlar.se/livsmedel/naringsamne/[slug] (40+ individuella näringsämnessidor, t.ex. /livsmedel/naringsamne/vitamin-c)
 - https://vihandlar.se/livsmedel/a till /livsmedel/o (Per bokstav A-Ö, svensk alfabetisk ordning)
 - https://vihandlar.se/livsmedel/kategori/brod (Bröd)
 - https://vihandlar.se/livsmedel/kategori/bullar-kakor-tartor (Bullar/Kakor/Tårtor)

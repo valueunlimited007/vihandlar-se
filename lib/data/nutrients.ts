@@ -420,7 +420,7 @@ export const NUTRIENTS: NutrientConfig[] = [
     unit: "g",
     category: "fatty_acid",
     categoryName: "Fettsyror",
-    description: "Eikosapentaensyra (EPA) är en omega-3-fettsyra som finns i fet fisk och har antiinflammatoriska egenskaper.",
+    description: "Eikosapentaensyra (EPA) är en omega-3-fettsyra med antiinflammatoriska egenskaper. Finns främst i fet fisk.",
   },
   {
     slug: "dha",
@@ -429,7 +429,7 @@ export const NUTRIENTS: NutrientConfig[] = [
     unit: "g",
     category: "fatty_acid",
     categoryName: "Fettsyror",
-    description: "Dokosahexaensyra (DHA) är en omega-3-fettsyra som är viktig för hjärnans och ögonens utveckling och funktion.",
+    description: "Dokosahexaensyra (DHA) är en omega-3-fettsyra viktig för hjärnans och ögonens funktion. Finns främst i fet fisk.",
   },
   {
     slug: "kolesterol",
@@ -471,6 +471,15 @@ export const NUTRIENTS: NutrientConfig[] = [
     category: "other",
     categoryName: "Övrigt",
     description: "Tillsatt socker är socker som tillförts vid tillverkning, inte det naturliga sockret i frukter och mjölk.",
+  },
+  {
+    slug: "fritt-socker",
+    name: "Fritt socker",
+    field: "free_sugar",
+    unit: "g",
+    category: "other",
+    categoryName: "Övrigt",
+    description: "Fritt socker inkluderar tillsatt socker samt naturligt socker i juice och honung. Bör begränsas till under 10 % av energiintaget.",
   },
 ];
 
