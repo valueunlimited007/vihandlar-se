@@ -1,82 +1,198 @@
 [
-    {
-        "id": "6b6c19f5-3fc5-4ab5-a6a6-92a9a3cfa939",
-        "name": "Bakning & Torrvaror",
-        "slug": "bakning-torrvaror",
-        "description": "Mj\u00f6l, socker, bakpulver och andra bakningsingredienser",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "992dd8ca-229c-4ba9-8546-05b975a60cd9",
-        "name": "Fisk & Skaldjur",
-        "slug": "fisk-skaldjur",
-        "description": "Fisk, skaldjur och andra havsfrukter",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "253c25d0-7c29-41e1-8b80-ca4e061e192e",
-        "name": "Frukt & B\u00e4r",
-        "slug": "frukt-bar",
-        "description": "F\u00e4rsk frukt, b\u00e4r och torkad frukt",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "e654b609-4eed-4da6-8153-abf8ae179442",
-        "name": "Gr\u00f6nsaker",
-        "slug": "gronsaker",
-        "description": "F\u00e4rska gr\u00f6nsaker, r\u00f6tter och bladgr\u00f6nsaker",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "96a6077f-068d-4b0b-9db1-16d2f6b2611a",
-        "name": "Kryddor & \u00d6rter",
-        "slug": "kryddor-orter",
-        "description": "Kryddor, \u00f6rter och smaks\u00e4ttare",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "99db3018-223e-4828-a3b7-5f6467ec9e4e",
-        "name": "K\u00f6tt",
-        "slug": "kott",
-        "description": "K\u00f6tt fr\u00e5n olika djur inklusive n\u00f6t, fl\u00e4sk, kyckling och lamm",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "5cf4f015-56b6-465a-a606-dd896d815ac4",
-        "name": "Mejeri",
-        "slug": "mejeri",
-        "description": "Mj\u00f6lkprodukter som mj\u00f6lk, ost, yoghurt och sm\u00f6r",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "2b7562b7-e366-4be3-bffd-48b81962a5d3",
-        "name": "N\u00f6tter & Fr\u00f6n",
-        "slug": "notter-fron",
-        "description": "N\u00f6tter, fr\u00f6n och k\u00e4rnor",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "93166711-1461-45f5-89a0-f3b924ff35b9",
-        "name": "Oljor & Vin\u00e4ger",
-        "slug": "oljor-vinager",
-        "description": "Matoljor, vin\u00e4ger och andra dressingar",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    },
-    {
-        "id": "d1e3d3cb-6006-4aa5-8326-3d35a0723e29",
-        "name": "Spannm\u00e5l & Baljv\u00e4xter",
-        "slug": "spannmal-baljvaxter",
-        "description": "Gryn, pasta, ris, linser och b\u00f6nor",
-        "created_at": "2026-02-05T09:11:45.267108+00:00",
-        "updated_at": "2026-02-05T09:11:45.267108+00:00"
-    }
+  {
+    "id": "brod",
+    "name": "Bröd",
+    "slug": "brod",
+    "description": null,
+    "count": 92
+  },
+  {
+    "id": "bullar-kakor-tartor",
+    "name": "Bullar, Kakor & Tårtor",
+    "slug": "bullar-kakor-tartor",
+    "description": null,
+    "count": 105
+  },
+  {
+    "id": "dryck",
+    "name": "Dryck",
+    "slug": "dryck",
+    "description": null,
+    "count": 120
+  },
+  {
+    "id": "fett-olja",
+    "name": "Fett & Olja",
+    "slug": "fett-olja",
+    "description": null,
+    "count": 47
+  },
+  {
+    "id": "fisk-skaldjur",
+    "name": "Fisk & Skaldjur",
+    "slug": "fisk-skaldjur",
+    "description": null,
+    "count": 152
+  },
+  {
+    "id": "flingor-musli",
+    "name": "Flingor & Müsli",
+    "slug": "flingor-musli",
+    "description": null,
+    "count": 93
+  },
+  {
+    "id": "frukt-bar",
+    "name": "Frukt & Bär",
+    "slug": "frukt-bar",
+    "description": null,
+    "count": 106
+  },
+  {
+    "id": "fardiga-ratter",
+    "name": "Färdiga Rätter",
+    "slug": "fardiga-ratter",
+    "description": null,
+    "count": 680
+  },
+  {
+    "id": "glass",
+    "name": "Glass",
+    "slug": "glass",
+    "description": null,
+    "count": 29
+  },
+  {
+    "id": "godis",
+    "name": "Godis",
+    "slug": "godis",
+    "description": null,
+    "count": 54
+  },
+  {
+    "id": "gronsaker-baljvaxter",
+    "name": "Grönsaker & Baljväxter",
+    "slug": "gronsaker-baljvaxter",
+    "description": null,
+    "count": 222
+  },
+  {
+    "id": "inalvsmat",
+    "name": "Inälvsmat",
+    "slug": "inalvsmat",
+    "description": null,
+    "count": 34
+  },
+  {
+    "id": "korv-chark",
+    "name": "Korv & Chark",
+    "slug": "korv-chark",
+    "description": null,
+    "count": 43
+  },
+  {
+    "id": "kyckling-fagel",
+    "name": "Kyckling & Fågel",
+    "slug": "kyckling-fagel",
+    "description": null,
+    "count": 44
+  },
+  {
+    "id": "kott",
+    "name": "Kött",
+    "slug": "kott",
+    "description": null,
+    "count": 174
+  },
+  {
+    "id": "mejeri",
+    "name": "Mejeri",
+    "slug": "mejeri",
+    "description": null,
+    "count": 85
+  },
+  {
+    "id": "mjol-gryn",
+    "name": "Mjöl & Gryn",
+    "slug": "mjol-gryn",
+    "description": null,
+    "count": 25
+  },
+  {
+    "id": "notter-fron",
+    "name": "Nötter & Frön",
+    "slug": "notter-fron",
+    "description": null,
+    "count": 37
+  },
+  {
+    "id": "pasta-ris-gryn",
+    "name": "Pasta, Ris & Gryn",
+    "slug": "pasta-ris-gryn",
+    "description": null,
+    "count": 70
+  },
+  {
+    "id": "potatis",
+    "name": "Potatis",
+    "slug": "potatis",
+    "description": null,
+    "count": 34
+  },
+  {
+    "id": "palagg",
+    "name": "Pålägg",
+    "slug": "palagg",
+    "description": null,
+    "count": 86
+  },
+  {
+    "id": "smaksattare-kryddor",
+    "name": "Smaksättare & Kryddor",
+    "slug": "smaksattare-kryddor",
+    "description": null,
+    "count": 69
+  },
+  {
+    "id": "snacks",
+    "name": "Snacks",
+    "slug": "snacks",
+    "description": null,
+    "count": 19
+  },
+  {
+    "id": "sportnutrition",
+    "name": "Sportnutrition",
+    "slug": "sportnutrition",
+    "description": null,
+    "count": 4
+  },
+  {
+    "id": "sylt-marmelad",
+    "name": "Sylt & Marmelad",
+    "slug": "sylt-marmelad",
+    "description": null,
+    "count": 22
+  },
+  {
+    "id": "vegetariskt-vaxtbaserat",
+    "name": "Vegetariskt & Växtbaserat",
+    "slug": "vegetariskt-vaxtbaserat",
+    "description": null,
+    "count": 72
+  },
+  {
+    "id": "agg-kaviar",
+    "name": "Ägg & Kaviar",
+    "slug": "agg-kaviar",
+    "description": null,
+    "count": 17
+  },
+  {
+    "id": "ovrigt",
+    "name": "Övrigt",
+    "slug": "ovrigt",
+    "description": null,
+    "count": 22
+  }
 ]

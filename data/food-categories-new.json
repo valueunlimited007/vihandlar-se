@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Bröd",
+    "slug": "brod",
+    "count": 92
+  },
+  {
+    "name": "Bullar, Kakor & Tårtor",
+    "slug": "bullar-kakor-tartor",
+    "count": 105
+  },
+  {
+    "name": "Dryck",
+    "slug": "dryck",
+    "count": 120
+  },
+  {
+    "name": "Fett & Olja",
+    "slug": "fett-olja",
+    "count": 47
+  },
+  {
+    "name": "Fisk & Skaldjur",
+    "slug": "fisk-skaldjur",
+    "count": 152
+  },
+  {
+    "name": "Flingor & Müsli",
+    "slug": "flingor-musli",
+    "count": 93
+  },
+  {
+    "name": "Frukt & Bär",
+    "slug": "frukt-bar",
+    "count": 114
+  },
+  {
+    "name": "Färdiga Rätter",
+    "slug": "fardiga-ratter",
+    "count": 680
+  },
+  {
+    "name": "Glass",
+    "slug": "glass",
+    "count": 29
+  },
+  {
+    "name": "Godis",
+    "slug": "godis",
+    "count": 54
+  },
+  {
+    "name": "Grönsaker & Baljväxter",
+    "slug": "gronsaker-baljvaxter",
+    "count": 231
+  },
+  {
+    "name": "Inälvsmat",
+    "slug": "inalvsmat",
+    "count": 34
+  },
+  {
+    "name": "Korv & Chark",
+    "slug": "korv-chark",
+    "count": 43
+  },
+  {
+    "name": "Kyckling & Fågel",
+    "slug": "kyckling-fagel",
+    "count": 44
+  },
+  {
+    "name": "Kött",
+    "slug": "kott",
+    "count": 174
+  },
+  {
+    "name": "Mejeri",
+    "slug": "mejeri",
+    "count": 85
+  },
+  {
+    "name": "Mjöl & Gryn",
+    "slug": "mjol-gryn",
+    "count": 25
+  },
+  {
+    "name": "Nötter & Frön",
+    "slug": "notter-fron",
+    "count": 38
+  },
+  {
+    "name": "Pasta, Ris & Gryn",
+    "slug": "pasta-ris-gryn",
+    "count": 70
+  },
+  {
+    "name": "Potatis",
+    "slug": "potatis",
+    "count": 34
+  },
+  {
+    "name": "Pålägg",
+    "slug": "palagg",
+    "count": 86
+  },
+  {
+    "name": "Smaksättare & Kryddor",
+    "slug": "smaksattare-kryddor",
+    "count": 69
+  },
+  {
+    "name": "Snacks",
+    "slug": "snacks",
+    "count": 19
+  },
+  {
+    "name": "Sportnutrition",
+    "slug": "sportnutrition",
+    "count": 4
+  },
+  {
+    "name": "Sylt & Marmelad",
+    "slug": "sylt-marmelad",
+    "count": 22
+  },
+  {
+    "name": "Vegetariskt & Växtbaserat",
+    "slug": "vegetariskt-vaxtbaserat",
+    "count": 72
+  },
+  {
+    "name": "Ägg & Kaviar",
+    "slug": "agg-kaviar",
+    "count": 17
+  },
+  {
+    "name": "Övrigt",
+    "slug": "ovrigt",
+    "count": 22
+  }
+]

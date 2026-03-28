@@ -28,7 +28,7 @@ npm run type-check   # TypeScript
 | Innehåll | Strategi | Detaljer |
 |----------|----------|---------|
 | E-ämnen (267) | SSG | generateStaticParams vid build |
-| Livsmedel (68) | SSG | generateStaticParams vid build |
+| Livsmedel (2625) | ISR | revalidate: 3600 |
 | Produkter (10521) | ISR | revalidate: 3600 |
 | Kategorier (144) | ISR | revalidate: 3600 |
 | Startsida | ISR | revalidate: 1800 |

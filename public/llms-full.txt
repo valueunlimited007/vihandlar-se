@@ -54,7 +54,7 @@ vihandlar.se är Sveriges smartaste matplattform — en heltäckande tjänst som
 hjälper svenska konsumenter att fatta informerade matval. Plattformen
 kombinerar en AI-driven E-nummerskanner som fotograferar och analyserar
 ingredienslistor, en komplett databas med 353+ livsmedelstillsatser (E-ämnen)
-med riskbedömning, en livsmedelsguide med 68+ livsmedel och näringsvärden,
+med riskbedömning, en livsmedelsguide med 2 600+ livsmedel och detaljerade näringsvärden (62 näringsämnen per livsmedel),
 delade inköpslistor med realtidssynkronisering, röstinmatning för
 handsfree-användning, och produktjämförelse med över 10 500 produkter från
 svenska matbutiker.
@@ -133,10 +133,14 @@ AI-driven OCR-skanner som analyserar ingredienslistor:
 Kräver kameraåtkomst i webbläsaren.
 Sida: https://vihandlar.se/skanner
 
-## Livsmedelsguide (68+ livsmedel)
-Omfattande guide till svenska livsmedel med:
-- Näringsvärden per 100g: kalorier, protein, fett, kolhydrater, fiber, salt
-- Vitaminer och mineraler
+## Livsmedelsguide (2 600+ livsmedel)
+Omfattande guide till svenska livsmedel med data från Livsmedelsverkets
+livsmedelsdatabas 2025. Varje livsmedel har:
+- 62 näringsämnen per livsmedel: energi, makronäringsämnen (protein, fett,
+  kolhydrater, fiber), vitaminer (A, D, E, K, C, B1, B2, B6, B12, folat,
+  niacin m.fl.), mineraler (kalcium, järn, magnesium, zink, selen m.fl.),
+  fettsyror (mättat, enkelomättat, fleromättat, omega-3, omega-6), salt
+- Näringsvärden per 100g
 - Förvaringstips (kyl, frys, rumstemperatur)
 - Hållbarhet (öppnad och oöppnad)
 - Frysinformation och frystips
@@ -146,17 +150,35 @@ Omfattande guide till svenska livsmedel med:
 - Användningstips
 - FAQ med vanliga frågor
 
-### Livsmedelskategorier
-- Mejeri: Mjölk, ost, yoghurt, smör, grädde
-- Kött: Nötkött, fläskkött, kycklingkött, lammkött
-- Fisk & Skaldjur: Lax, torsk, räkor, musslor
-- Frukt & Bär: Äpple, banan, jordgubbar, blåbär
-- Grönsaker: Tomat, gurka, broccoli, morot
-- Kryddor & Örter: Basilika, oregano, kanel, ingefära
-- Spannmål & Baljväxter: Ris, pasta, linser, kikärtor
-- Bakning & Torrvaror: Mjöl, socker, bakpulver
-- Nötter & Frön: Mandel, valnöt, solrosfrön, chiafrön
-- Oljor & Vinäger: Olivolja, rapsolja, balsamvinäger
+### Livsmedelskategorier (28 kategorier)
+- Bröd (92 livsmedel): Bröd, knäckebröd, skorpor m.m.
+- Bullar/Kakor/Tårtor (105 livsmedel): Bullar, kakor, tårtor, munkar m.m.
+- Dryck (120 livsmedel): Juice, läsk, mjölkdryck, smoothie m.m.
+- Fett & Olja (47 livsmedel): Smör, margarin, olivolja, rapsolja m.m.
+- Fisk & Skaldjur (152 livsmedel): Lax, torsk, räkor, musslor, sill m.m.
+- Flingor & Müsli (93 livsmedel): Flingor, müsli, granola, havregryn m.m.
+- Frukt & Bär (114 livsmedel): Äpple, banan, jordgubbar, blåbär m.m.
+- Färdiga Rätter (680 livsmedel): Frysta rätter, konserver, färdigmat m.m.
+- Glass (29 livsmedel): Glass, sorbet, frozen yoghurt m.m.
+- Godis (54 livsmedel): Choklad, godis, lakritss m.m.
+- Grönsaker & Baljväxter (231 livsmedel): Tomat, gurka, broccoli, linser m.m.
+- Inälvsmat (34 livsmedel): Lever, njure, hjärta m.m.
+- Korv & Chark (43 livsmedel): Falukorv, prinskorv, salami m.m.
+- Kyckling & Fågel (44 livsmedel): Kycklingfilé, kyckling, kalkon m.m.
+- Kött (174 livsmedel): Nötkött, fläskkött, lammkött, vilt m.m.
+- Mejeri (85 livsmedel): Mjölk, ost, yoghurt, grädde, kvarg m.m.
+- Mjöl & Gryn (25 livsmedel): Vetemjöl, rågmjöl, majsmjöl m.m.
+- Nötter & Frön (38 livsmedel): Mandel, valnöt, solrosfrön, chiafrön m.m.
+- Pasta/Ris/Gryn (70 livsmedel): Pasta, ris, couscous, bulgur m.m.
+- Potatis (34 livsmedel): Potatis, sötpotatis, potatismos m.m.
+- Pålägg (86 livsmedel): Skinka, ost, leverpastej m.m.
+- Smaksättare & Kryddor (69 livsmedel): Basilika, oregano, kanel, soja m.m.
+- Snacks (19 livsmedel): Chips, popcorn, nötmix m.m.
+- Sportnutrition (4 livsmedel): Proteinpulver, energibars m.m.
+- Sylt & Marmelad (22 livsmedel): Jordgubbssylt, marmelad, honung m.m.
+- Vegetariskt & Växtbaserat (72 livsmedel): Tofu, tempeh, växtfärs m.m.
+- Ägg & Kaviar (17 livsmedel): Ägg, kaviar, rom m.m.
+- Övrigt (22 livsmedel): Diverse livsmedel
 
 Sida: https://vihandlar.se/livsmedel
 
@@ -213,7 +235,7 @@ Sida: https://vihandlar.se/inkopslista
 ## Data
 - Statisk JSON (exporterad från Supabase)
 - 353+ E-ämnen med fullständig metadata
-- 68+ livsmedel med näringsvärden
+- 2 600+ livsmedel med detaljerade näringsvärden (62 näringsämnen per livsmedel)
 - 10 500+ produkter från Adtraction produktfeed (Delitea)
 - 144 produktkategorier
 
@@ -238,7 +260,8 @@ Sida: https://vihandlar.se/inkopslista
 - Vetenskapliga studier och peer-reviewed forskning
 
 ## Livsmedelsdata
-- Livsmedelsverkets näringsdatabas
+- Livsmedelsverkets livsmedelsdatabas 2025 (primär källa för alla 2 600+ livsmedel)
+- 62 näringsämnen per livsmedel (energi, vitaminer, mineraler, fettsyror m.m.)
 - Svenska jordbruksverket
 - Vetenskaplig litteratur
 
@@ -301,6 +324,23 @@ planeras.
 Ja, du kan lägga till varor på inköpslistan med rösten. Funktionen använder
 Web Speech API och fungerar på svenska i de flesta moderna webbläsare.
 
+## Var kommer livsmedelsdata ifrån?
+All livsmedelsdata kommer från Livsmedelsverkets livsmedelsdatabas 2025, Sveriges
+officiella källa för näringsvärden. Databasen innehåller 2 600+ livsmedel med
+62 näringsämnen per livsmedel, inklusive vitaminer, mineraler, fettsyror och
+makronäringsämnen.
+
+## Hur många livsmedel finns i guiden?
+Livsmedelsguiden innehåller över 2 600 livsmedel fördelade på 28 kategorier,
+från Bröd och Mejeri till Sportnutrition och Vegetariskt & Växtbaserat. Varje
+livsmedel har detaljerade näringsvärden, förvaringstips och vanliga frågor.
+
+## Vilka näringsämnen visas per livsmedel?
+Varje livsmedel har upp till 62 näringsämnen: energi (kcal/kJ), protein, fett,
+kolhydrater, fiber, socker, salt, vitaminer (A, D, E, K, C, B-vitaminer),
+mineraler (kalcium, järn, magnesium, zink, selen m.fl.), fettsyror (mättat,
+enkelomättat, fleromättat, omega-3, omega-6) och mer.
+
 # ============================================================
 # ALLA VIKTIGA SIDOR
 # ============================================================
@@ -329,8 +369,8 @@ Web Speech API och fungerar på svenska i de flesta moderna webbläsare.
 - 353+ detaljsidor: /e-amnen/[slug]
 
 ## Livsmedel undersidor
-- 10 kategorisidor: /livsmedel/kategori/[slug]
-- 68+ detaljsidor: /livsmedel/[slug]
+- 28 kategorisidor: /livsmedel/kategori/[slug]
+- 2 600+ detaljsidor: /livsmedel/[slug]
 
 ## Handla undersidor
 - 144 kategorisidor: /handla/kategori/[slug]
