@@ -3,7 +3,7 @@
         "id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
         "slug": "barnfamilj-vecka",
         "title": "Barnfamilj Veckohandling",
-        "description": "Barnv\u00e4nlig veckohandling med n\u00e4ring och gott hum\u00f6r",
+        "description": "Barnvänlig veckohandling med näring och gott humör",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.357701+00:00",
@@ -12,7 +12,7 @@
             {
                 "id": "1f4fc82c-c479-4acf-bda1-72c823708f01",
                 "list_id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
-                "name": "Mj\u00f6lk",
+                "name": "Mjölk",
                 "quantity": "3 l",
                 "category": "Mejeri",
                 "position": 0,
@@ -22,9 +22,9 @@
             {
                 "id": "92276186-246d-4be0-95db-8f437a6fedce",
                 "list_id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
-                "name": "K\u00f6ttf\u00e4rs",
+                "name": "Köttfärs",
                 "quantity": "1 kg",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 1,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.357701+00:00"
@@ -72,7 +72,7 @@
             {
                 "id": "44427109-2956-4c74-9dcd-7f5da74b8e21",
                 "list_id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
-                "name": "\u00c4pplen",
+                "name": "Äpplen",
                 "quantity": "8 st",
                 "category": "Frukt",
                 "position": 6,
@@ -84,7 +84,7 @@
                 "list_id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
                 "name": "Gurka",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 7,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.357701+00:00"
@@ -92,9 +92,9 @@
             {
                 "id": "002979ea-7eec-44c0-8223-37b1bec473c5",
                 "list_id": "2faa136e-2f88-43d7-b8e9-ce38963856b8",
-                "name": "\u041c\u043e\u0440\u043e\u0442",
+                "name": "Морот",
                 "quantity": "1 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 8,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.357701+00:00"
@@ -124,8 +124,8 @@
     {
         "id": "1219991c-d184-415f-8822-1973512ee513",
         "slug": "fest-10-personer",
-        "title": "Fest f\u00f6r 10 Personer",
-        "description": "Komplett lista f\u00f6r en lyckad festkv\u00e4ll",
+        "title": "Fest för 10 Personer",
+        "description": "Komplett lista för en lyckad festkväll",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.365531+00:00",
@@ -134,7 +134,7 @@
             {
                 "id": "55d03485-0d19-43e6-a23e-48c488b9e0f6",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
-                "name": "Hamburgerbr\u00f6d",
+                "name": "Hamburgerbröd",
                 "quantity": "12 st",
                 "category": "Bageri",
                 "position": 0,
@@ -146,7 +146,7 @@
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
                 "name": "Hamburgare",
                 "quantity": "1.5 kg",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 1,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.365531+00:00"
@@ -156,7 +156,7 @@
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
                 "name": "Sallad",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 2,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.365531+00:00"
@@ -166,7 +166,7 @@
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
                 "name": "Tomater",
                 "quantity": "1 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 3,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.365531+00:00"
@@ -174,9 +174,9 @@
             {
                 "id": "41d52456-4d48-4e6d-b999-9298d23a7e02",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
-                "name": "R\u00f6dl\u00f6k",
+                "name": "Rödlök",
                 "quantity": "3 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.365531+00:00"
@@ -194,9 +194,9 @@
             {
                 "id": "0624a9cd-265a-4e52-a907-bf9d34b3eafb",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
-                "name": "Dressingss\u00e5s",
+                "name": "Dressingssås",
                 "quantity": "2 flaskor",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.365531+00:00"
@@ -205,7 +205,7 @@
                 "id": "ba762205-332b-4afd-9901-386d9cfd876d",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
                 "name": "Chips",
-                "quantity": "4 p\u00e5sar",
+                "quantity": "4 påsar",
                 "category": "Snacks",
                 "position": 7,
                 "checked": false,
@@ -214,7 +214,7 @@
             {
                 "id": "328ea6d1-b626-4b44-8de1-4cde42d2378b",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
-                "name": "L\u00e4sk",
+                "name": "Läsk",
                 "quantity": "6 l",
                 "category": "Dryck",
                 "position": 8,
@@ -224,7 +224,7 @@
             {
                 "id": "55f30940-c4f0-4292-bb3e-81303a9dbe0a",
                 "list_id": "1219991c-d184-415f-8822-1973512ee513",
-                "name": "\u00d6l",
+                "name": "Öl",
                 "quantity": "12 burkar",
                 "category": "Dryck",
                 "position": 9,
@@ -257,7 +257,7 @@
         "id": "03aa39f8-6952-4b5d-a8ad-98d5fae4e65d",
         "slug": "fredagsmys",
         "title": "Fredagsmys",
-        "description": "Allt f\u00f6r en mysig fredagskv\u00e4ll hemma",
+        "description": "Allt för en mysig fredagskväll hemma",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.363067+00:00",
@@ -267,7 +267,7 @@
                 "id": "7b1a7d61-e0f1-41a7-a533-6647eefb9980",
                 "list_id": "03aa39f8-6952-4b5d-a8ad-98d5fae4e65d",
                 "name": "Chips",
-                "quantity": "2 p\u00e5sar",
+                "quantity": "2 påsar",
                 "category": "Snacks",
                 "position": 0,
                 "checked": false,
@@ -276,7 +276,7 @@
             {
                 "id": "530b3f4d-8df1-4244-8cda-a006c381b189",
                 "list_id": "03aa39f8-6952-4b5d-a8ad-98d5fae4e65d",
-                "name": "Dips\u00e5s",
+                "name": "Dipsås",
                 "quantity": "2 st",
                 "category": "Snacks",
                 "position": 1,
@@ -286,7 +286,7 @@
             {
                 "id": "2630a3ba-1489-4638-abb5-066a07754582",
                 "list_id": "03aa39f8-6952-4b5d-a8ad-98d5fae4e65d",
-                "name": "L\u00e4sk",
+                "name": "Läsk",
                 "quantity": "2 l",
                 "category": "Dryck",
                 "position": 2,
@@ -327,7 +327,7 @@
                 "id": "6dd6fa6e-8e22-4027-925b-1b018f6e877f",
                 "list_id": "03aa39f8-6952-4b5d-a8ad-98d5fae4e65d",
                 "name": "Popcorn",
-                "quantity": "2 p\u00e5sar",
+                "quantity": "2 påsar",
                 "category": "Snacks",
                 "position": 6,
                 "checked": false,
@@ -349,7 +349,7 @@
         "id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
         "slug": "frukost-vecka",
         "title": "Frukost-veckan",
-        "description": "Allt du beh\u00f6ver f\u00f6r en veckas varierad och n\u00e4ringsrik frukost",
+        "description": "Allt du behöver för en veckas varierad och näringsrik frukost",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.340276+00:00",
@@ -378,7 +378,7 @@
             {
                 "id": "14c34e61-e225-42de-b459-f60674ef11db",
                 "list_id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
-                "name": "Bl\u00e5b\u00e4r",
+                "name": "Blåbär",
                 "quantity": "250 g",
                 "category": "Frukt",
                 "position": 2,
@@ -400,7 +400,7 @@
                 "list_id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
                 "name": "Honung",
                 "quantity": "1 burk",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.340276+00:00"
@@ -408,7 +408,7 @@
             {
                 "id": "25e4f5e6-0c5e-4ccc-8936-42481191be57",
                 "list_id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
-                "name": "\u00c4gg",
+                "name": "Ägg",
                 "quantity": "12 st",
                 "category": "Mejeri",
                 "position": 5,
@@ -418,7 +418,7 @@
             {
                 "id": "1dafda79-1b9f-4911-b774-744016fd2983",
                 "list_id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
-                "name": "Fullkornsbr\u00f6d",
+                "name": "Fullkornsbröd",
                 "quantity": "1 limpa",
                 "category": "Bageri",
                 "position": 6,
@@ -428,7 +428,7 @@
             {
                 "id": "65aba933-7197-4a0d-a256-dd3e5bf36b84",
                 "list_id": "461c71df-8976-4bc1-9c9c-dc26f2f3ba11",
-                "name": "Sm\u00f6r",
+                "name": "Smör",
                 "quantity": "250 g",
                 "category": "Mejeri",
                 "position": 7,
@@ -470,8 +470,8 @@
     {
         "id": "d37c6c46-5819-4c13-9486-fc362353a043",
         "slug": "halsosam-start",
-        "title": "H\u00e4lsosam Start",
-        "description": "Smoothies, sallader och h\u00e4lsosamma mellanm\u00e5l",
+        "title": "Hälsosam Start",
+        "description": "Smoothies, sallader och hälsosamma mellanmål",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.37109+00:00",
@@ -482,7 +482,7 @@
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
                 "name": "Spenat",
                 "quantity": "300 g",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 0,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -500,7 +500,7 @@
             {
                 "id": "ca1a16d9-617c-4bb1-b1f8-909e6bd4e8b7",
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
-                "name": "Bl\u00e5b\u00e4r",
+                "name": "Blåbär",
                 "quantity": "300 g",
                 "category": "Frukt",
                 "position": 2,
@@ -512,7 +512,7 @@
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
                 "name": "Avokado",
                 "quantity": "3 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 3,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -520,7 +520,7 @@
             {
                 "id": "3fc694e4-eb24-427c-afdd-529d31e35114",
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
-                "name": "Mandelmj\u00f6lk",
+                "name": "Mandelmjölk",
                 "quantity": "1 l",
                 "category": "Mejeri",
                 "position": 4,
@@ -532,7 +532,7 @@
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
                 "name": "Chiafron",
                 "quantity": "200 g",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 5,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -540,9 +540,9 @@
             {
                 "id": "e8c3225d-8c3b-4d2f-bbf5-45c27826dabb",
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
-                "name": "N\u00f6tter",
+                "name": "Nötter",
                 "quantity": "300 g",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -562,7 +562,7 @@
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
                 "name": "Sallad",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 8,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -571,8 +571,8 @@
                 "id": "b1b666ee-3235-40ef-8750-e3f5ccf0eff9",
                 "list_id": "d37c6c46-5819-4c13-9486-fc362353a043",
                 "name": "Ruccola",
-                "quantity": "1 p\u00e5se",
-                "category": "Gr\u00f6nsaker",
+                "quantity": "1 påse",
+                "category": "Grönsaker",
                 "position": 9,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.37109+00:00"
@@ -593,7 +593,7 @@
         "id": "7859b2ae-f4ad-4886-9446-6432facd4474",
         "slug": "lchf-vecka",
         "title": "LCHF-veckan",
-        "description": "Komplett ink\u00f6pslista f\u00f6r en veckas l\u00e5gkolhydratskost",
+        "description": "Komplett inköpslista för en veckas lågkolhydratskost",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.352617+00:00",
@@ -604,7 +604,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Kyckling",
                 "quantity": "1 kg",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 0,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -622,7 +622,7 @@
             {
                 "id": "3d35d2d5-c97a-4150-97cf-60f8a162a2da",
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
-                "name": "\u00c4gg",
+                "name": "Ägg",
                 "quantity": "18 st",
                 "category": "Mejeri",
                 "position": 2,
@@ -634,7 +634,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Broccoli",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 3,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -642,9 +642,9 @@
             {
                 "id": "b7066b0d-2ee7-4e99-941c-dc18dd51f016",
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
-                "name": "Blomk\u00e5l",
+                "name": "Blomkål",
                 "quantity": "1 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -654,7 +654,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Avokado",
                 "quantity": "4 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 5,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -664,7 +664,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Spenat",
                 "quantity": "200 g",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -684,7 +684,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Olivolja",
                 "quantity": "0.5 l",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 8,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -694,7 +694,7 @@
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
                 "name": "Mandlar",
                 "quantity": "200 g",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 9,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.352617+00:00"
@@ -702,7 +702,7 @@
             {
                 "id": "ebf371d8-b70a-422b-b591-5244bc561a9a",
                 "list_id": "7859b2ae-f4ad-4886-9446-6432facd4474",
-                "name": "Gr\u00e4dde",
+                "name": "Grädde",
                 "quantity": "3 dl",
                 "category": "Mejeri",
                 "position": 10,
@@ -714,8 +714,8 @@
     {
         "id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
         "slug": "matlada-vecka",
-        "title": "Matl\u00e5deveckan",
-        "description": "Smart meal prep f\u00f6r hela arbetsveckan",
+        "title": "Matlådeveckan",
+        "description": "Smart meal prep för hela arbetsveckan",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.367789+00:00",
@@ -726,7 +726,7 @@
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
                 "name": "Kyckling",
                 "quantity": "1.5 kg",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 0,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -746,7 +746,7 @@
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
                 "name": "Broccoli",
                 "quantity": "3 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 2,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -754,9 +754,9 @@
             {
                 "id": "5cf5a38f-d9f9-4b19-9cfd-c6ae12aacfba",
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
-                "name": "\u041c\u043e\u0440\u043e\u0442",
+                "name": "Морот",
                 "quantity": "1 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 3,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -766,7 +766,7 @@
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
                 "name": "Paprika",
                 "quantity": "4 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -774,7 +774,7 @@
             {
                 "id": "5dadf4cf-c896-41e2-9e3a-7f38dbf892ec",
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
-                "name": "Kik\u00e4rtor",
+                "name": "Kikärtor",
                 "quantity": "2 burkar",
                 "category": "Konserver",
                 "position": 5,
@@ -794,7 +794,7 @@
             {
                 "id": "fcba871d-fec3-407d-ae40-23c643bea1f2",
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
-                "name": "Sojas\u00e5s",
+                "name": "Sojasås",
                 "quantity": "1 flaska",
                 "category": "Kryddor",
                 "position": 7,
@@ -806,7 +806,7 @@
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
                 "name": "Olivolja",
                 "quantity": "0.5 l",
-                "category": "\u00d6vrigt",
+                "category": "Övrigt",
                 "position": 8,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -814,9 +814,9 @@
             {
                 "id": "88201d59-1409-473c-a3f9-355a223714c1",
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
-                "name": "Vitl\u00f6k",
+                "name": "Vitlök",
                 "quantity": "1 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 9,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -824,9 +824,9 @@
             {
                 "id": "a3ba6b6e-5b19-4e1a-96d0-44572f74860a",
                 "list_id": "fdbdddf3-9fa8-40b2-8739-9aada0ef8252",
-                "name": "Ingef\u00e4ra",
+                "name": "Ingefära",
                 "quantity": "1 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 10,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.367789+00:00"
@@ -837,7 +837,7 @@
         "id": "d210a214-90da-4926-beb1-2a9a73aa0217",
         "slug": "student-budget",
         "title": "Studentbudget",
-        "description": "Prisv\u00e4rd veckohandling perfekt f\u00f6r studenter",
+        "description": "Prisvärd veckohandling perfekt för studenter",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.360259+00:00",
@@ -866,9 +866,9 @@
             {
                 "id": "010cbeba-bac8-4cbb-a06b-aa60846bd91b",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "K\u00f6ttf\u00e4rs",
+                "name": "Köttfärs",
                 "quantity": "500 g",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 2,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.360259+00:00"
@@ -876,7 +876,7 @@
             {
                 "id": "ddf6f772-1d05-47aa-9332-66fa08642030",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "\u00c4gg",
+                "name": "Ägg",
                 "quantity": "10 st",
                 "category": "Mejeri",
                 "position": 3,
@@ -886,9 +886,9 @@
             {
                 "id": "c9790515-32cc-42b5-ac31-7913638d4c14",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "L\u00f6svikt tomater",
+                "name": "Lösvikt tomater",
                 "quantity": "500 g",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.360259+00:00"
@@ -896,9 +896,9 @@
             {
                 "id": "d81a7fc7-4177-4431-9fc9-34cd446b2f1e",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "L\u00f6k",
+                "name": "Lök",
                 "quantity": "1 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 5,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.360259+00:00"
@@ -906,9 +906,9 @@
             {
                 "id": "44103500-8e0a-4975-ae16-9d128733a3c8",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "Vitl\u00f6k",
+                "name": "Vitlök",
                 "quantity": "1 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.360259+00:00"
@@ -926,7 +926,7 @@
             {
                 "id": "8b9b22c7-5afe-48f0-8cdb-0b73684c01a1",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "Mj\u00f6lk",
+                "name": "Mjölk",
                 "quantity": "2 l",
                 "category": "Mejeri",
                 "position": 8,
@@ -936,7 +936,7 @@
             {
                 "id": "73d8c7a3-2640-4929-9a26-5ed2292022ae",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "Kn\u00e4ckebr\u00f6d",
+                "name": "Knäckebröd",
                 "quantity": "1 paket",
                 "category": "Bageri",
                 "position": 9,
@@ -946,7 +946,7 @@
             {
                 "id": "1603a128-a12f-4609-a567-6b7ef68d62e7",
                 "list_id": "d210a214-90da-4926-beb1-2a9a73aa0217",
-                "name": "B\u00f6nor",
+                "name": "Bönor",
                 "quantity": "2 burkar",
                 "category": "Konserver",
                 "position": 10,
@@ -959,7 +959,7 @@
         "id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
         "slug": "vardagsmiddagar",
         "title": "Vardagsmiddagar",
-        "description": "Fem enkla och snabba middagsr\u00e4tter",
+        "description": "Fem enkla och snabba middagsrätter",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.373649+00:00",
@@ -968,9 +968,9 @@
             {
                 "id": "096366e3-cd92-4751-9189-330e578ec634",
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
-                "name": "K\u00f6ttf\u00e4rs",
+                "name": "Köttfärs",
                 "quantity": "1 kg",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 0,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -980,7 +980,7 @@
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
                 "name": "Kyckling",
                 "quantity": "800 g",
-                "category": "K\u00f6tt",
+                "category": "Kött",
                 "position": 1,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1018,7 +1018,7 @@
             {
                 "id": "95926e62-4608-4aad-a09f-2b3607cb2ca8",
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
-                "name": "Gr\u00e4dde",
+                "name": "Grädde",
                 "quantity": "3 dl",
                 "category": "Mejeri",
                 "position": 5,
@@ -1028,9 +1028,9 @@
             {
                 "id": "da11de6f-618b-4a53-bd65-8be01970402a",
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
-                "name": "L\u00f6k",
+                "name": "Lök",
                 "quantity": "5 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1038,9 +1038,9 @@
             {
                 "id": "4de0fa96-1f6b-4347-97b7-9cbebdf08a0d",
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
-                "name": "Vitl\u00f6k",
+                "name": "Vitlök",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 7,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1050,7 +1050,7 @@
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
                 "name": "Paprika",
                 "quantity": "3 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 8,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1058,9 +1058,9 @@
             {
                 "id": "cb4ab8b2-20fd-4b40-98c1-50ed3261c5a8",
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
-                "name": "\u041c\u043e\u0440\u043e\u0442",
+                "name": "Морот",
                 "quantity": "500 g",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 9,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1070,7 +1070,7 @@
                 "list_id": "f334c6bf-e968-4261-b2d4-ff9adf7245d6",
                 "name": "Potatis",
                 "quantity": "1.5 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 10,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.373649+00:00"
@@ -1081,7 +1081,7 @@
         "id": "557362cb-7324-4aee-9109-8cbb3c01309f",
         "slug": "vegetarisk-vecka",
         "title": "Vegetarisk Vecka",
-        "description": "Proteinrik vegetarisk kost f\u00f6r hela veckan",
+        "description": "Proteinrik vegetarisk kost för hela veckan",
         "lang": "sv-SE",
         "is_public": true,
         "created_at": "2026-02-05T09:13:15.354958+00:00",
@@ -1090,7 +1090,7 @@
             {
                 "id": "71ac4bb8-ac46-4b78-8f60-150ce2cdb098",
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
-                "name": "Kik\u00e4rtor",
+                "name": "Kikärtor",
                 "quantity": "2 burkar",
                 "category": "Konserver",
                 "position": 0,
@@ -1132,7 +1132,7 @@
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
                 "name": "Tomater",
                 "quantity": "1 kg",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 4,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.354958+00:00"
@@ -1142,7 +1142,7 @@
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
                 "name": "Paprika",
                 "quantity": "3 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 5,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.354958+00:00"
@@ -1152,7 +1152,7 @@
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
                 "name": "Zucchini",
                 "quantity": "2 st",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 6,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.354958+00:00"
@@ -1162,7 +1162,7 @@
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
                 "name": "Spenat",
                 "quantity": "300 g",
-                "category": "Gr\u00f6nsaker",
+                "category": "Grönsaker",
                 "position": 7,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.354958+00:00"
@@ -1180,7 +1180,7 @@
             {
                 "id": "8baf0160-81fa-40e2-9ef5-6fd9a386eeb3",
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
-                "name": "Kokosmj\u00f6lk",
+                "name": "Kokosmjölk",
                 "quantity": "2 burkar",
                 "category": "Konserver",
                 "position": 9,
@@ -1190,12 +1190,3502 @@
             {
                 "id": "f5eaf168-ae1b-4c41-bc7a-58f995691825",
                 "list_id": "557362cb-7324-4aee-9109-8cbb3c01309f",
-                "name": "Sojas\u00e5s",
+                "name": "Sojasås",
                 "quantity": "1 flaska",
                 "category": "Kryddor",
                 "position": 10,
                 "checked": false,
                 "updated_at": "2026-02-05T09:13:15.354958+00:00"
+            }
+        ]
+    },
+    {
+        "id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+        "slug": "grillkvall",
+        "title": "Grillkväll",
+        "description": "Allt du behöver för en perfekt grillkväll med familj eller vänner",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "91c479e3-5e2f-42fc-9bd9-149e12a53cfd",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Grillkorv",
+                "quantity": "1 kg",
+                "category": "Chark",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f1dd2a8f-d408-4812-a1cd-4d938f8f4817",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Kycklingfilé",
+                "quantity": "600 g",
+                "category": "Kött",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "712fa155-0837-4786-ba69-719c8fe1bb25",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Fläskkarré",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "349d2ee4-dccf-441b-b2f4-697d45bc76ed",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Majskolvar",
+                "quantity": "4 st",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7545f1c0-0d17-4e8a-bab8-edd93ee9c908",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Paprika röd",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "dc3b020c-1fa0-48a9-977b-ce89f830c437",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Zucchini",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d5fac5a2-a8e9-49bf-aa67-1119c64b07b8",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Halloumi",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6acfdf1e-7f79-4572-92e2-0c7851c156fd",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Potatissallad",
+                "quantity": "800 g",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "125b2483-0d3a-4c54-abbd-9a4bc6a08e6b",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Bröd hamburgare",
+                "quantity": "6 st",
+                "category": "Bröd",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c320bdf7-7f12-4124-977d-a20818d9c616",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Ketchup",
+                "quantity": "1 flaska",
+                "category": "Konserver",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f6d85a1c-1914-4252-b052-cd2e90d191b3",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Senap",
+                "quantity": "1 tub",
+                "category": "Konserver",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d3997487-e4e6-4bbf-ab7a-b519806b2082",
+                "list_id": "6b4e7525-98a5-4375-b4c6-78705791f3a2",
+                "name": "Öl/läsk",
+                "quantity": "6-pack",
+                "category": "Drycker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+        "slug": "tacofredag",
+        "title": "Tacofredag",
+        "description": "Klassisk svensk tacofredag med alla tillbehör",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "bc554c2f-53d3-42c4-a0df-a0f2841843c0",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Tacoskal/tortillas",
+                "quantity": "1 förp",
+                "category": "Torra varor",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e93b3970-7eb3-412c-863e-65e1dd1b0f9d",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Köttfärs",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5e38f48c-bce9-4e0f-8c38-64b021f84a8b",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Tacokrydda",
+                "quantity": "1 påse",
+                "category": "Kryddor",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "4734a8fe-aecd-4636-9170-884641590fd0",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Isbergssallad",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "dbf3dc2f-97c5-4688-a36a-595a0e20ecb7",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Tomat",
+                "quantity": "4 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "851ba80f-6652-4793-991e-4821bf80a859",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Gurka",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6fcd5587-748e-4ad4-ac93-6cc36f2d5a90",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Majs",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "eedcc372-eb67-4c73-923d-0425bc377567",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Rödlök",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "4da07dff-7bcd-44ac-acf5-e89757d25e02",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Riven ost",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cb019de2-0ac9-4b4e-8d56-af2e1223e819",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Gräddfil",
+                "quantity": "2 dl",
+                "category": "Mejeri",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3c67a164-4fb2-4e68-ad33-3ae67759928d",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Salsa",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1128f3fa-9593-4ddd-837d-3f5c3b7015fd",
+                "list_id": "a73b40fa-6e39-47d4-8d2c-edff45c59b94",
+                "name": "Avokado",
+                "quantity": "2 st",
+                "category": "Frukt",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+        "slug": "julmat",
+        "title": "Julmat",
+        "description": "Traditionell svensk julmat med alla klassiker",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "890d24ce-87d5-4de6-832d-ee39aa552e30",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Julskinka",
+                "quantity": "3 kg",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e9519d51-e639-4dd1-b60f-176358b6ab88",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Prinskorv",
+                "quantity": "500 g",
+                "category": "Chark",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "14b2a51f-1569-4519-9198-2d8362fca00f",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Köttbullar",
+                "quantity": "1 kg",
+                "category": "Kött",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "14063421-3aa7-4c1e-b4a9-e0cb6ffdc8f3",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Janssons frestelse potatis",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ac8f496d-716d-4cd3-9f71-5eb89770b959",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Ansjovis",
+                "quantity": "2 burkar",
+                "category": "Fisk",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "80750e4d-2d5c-4ef7-86a2-10e1669bed0b",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Grädde",
+                "quantity": "5 dl",
+                "category": "Mejeri",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d0964926-2d5e-4f8f-adc4-c59190d1214c",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Rödkål",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5642eef3-7254-421a-8f96-5beee4a21574",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Sill inlagd",
+                "quantity": "3 sorter",
+                "category": "Fisk",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1e3d1241-f90c-4684-91f8-72f58dcd6379",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Vörtbröd",
+                "quantity": "1 st",
+                "category": "Bröd",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e3192a2e-2212-4cbf-88a0-f1f4df234af7",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Senap",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a6e8f844-6790-44d8-b10a-921843d2c7de",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Ägg",
+                "quantity": "12 st",
+                "category": "Mejeri",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d19ec3e8-0679-4370-90ea-6367a72812bc",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Lax gravad",
+                "quantity": "300 g",
+                "category": "Fisk",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2bb0b0be-d706-4d27-960f-d4a2438b47f8",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Brysselkål",
+                "quantity": "500 g",
+                "category": "Grönsaker",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2b801ff8-e790-47f5-ac6e-763593202a6d",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Risgrynsgröt ris",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 13,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ca3ad7a5-3345-4469-be0e-20196a8bbca3",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Mjölk",
+                "quantity": "2 l",
+                "category": "Mejeri",
+                "position": 14,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "71a3f10b-18ff-4511-b75d-1b95bcb6cdc8",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Julmust",
+                "quantity": "2 flaskor",
+                "category": "Drycker",
+                "position": 15,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "08cd06c2-87e6-4017-b3fb-65d2571267bd",
+                "list_id": "4651495a-ece4-405e-b631-a45ce2b480a6",
+                "name": "Knäckebröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 16,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+        "slug": "midsommar",
+        "title": "Midsommar",
+        "description": "Midsommarfirande med sill, jordgubbar och allt som hör till",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "5123cd4b-68d4-4573-b0f7-a65d25bf27b8",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Sill matjes",
+                "quantity": "2 sorter",
+                "category": "Fisk",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "356ba8f7-5c6f-415f-a756-e610a8b0d018",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Färskpotatis",
+                "quantity": "2 kg",
+                "category": "Grönsaker",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c7139306-fd94-4e6b-9f69-8d48a1824d7b",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Gräddfil",
+                "quantity": "4 dl",
+                "category": "Mejeri",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d5d0c06c-705a-4271-aa70-dc7ce6431c71",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Gräslök",
+                "quantity": "1 kruka",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1e3b665f-576c-48d3-8887-c25a94071cfc",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Dill",
+                "quantity": "2 knippen",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5cb54c37-547c-4e96-bff4-1f2cb6c8453d",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Jordgubbar",
+                "quantity": "1 kg",
+                "category": "Frukt",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "028697e6-e7c1-4431-839f-aefd546b4228",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Grädde vispgrädde",
+                "quantity": "5 dl",
+                "category": "Mejeri",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7f8856ba-7637-4b82-8f28-bec1707428ea",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Knäckebröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "0d259acc-020d-4a34-8dc0-b15488b4e609",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Smör",
+                "quantity": "250 g",
+                "category": "Mejeri",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "84e27970-9576-45bc-b695-4254a6f01a28",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Öl/cider",
+                "quantity": "6-pack",
+                "category": "Drycker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6c6e427d-1e8a-4ce1-8dc8-c163559d10ca",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Lax rökt",
+                "quantity": "200 g",
+                "category": "Fisk",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a9bef972-199a-42e3-b7b0-6a1a59f766d9",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Ägg",
+                "quantity": "6 st",
+                "category": "Mejeri",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3f2053e2-1567-4003-909a-6f969081469d",
+                "list_id": "2e5261cf-077f-4b55-b565-99db02c0632f",
+                "name": "Senap söt",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+        "slug": "paskmat",
+        "title": "Påskmat",
+        "description": "Påskens godaste mat med ägg, lax och lamm",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "78b3e2c8-fcdd-47d3-a24e-a0a6665c7c28",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Ägg",
+                "quantity": "20 st",
+                "category": "Mejeri",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1b4a546d-a81a-4002-b717-8e08f0b47049",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Laxfilé",
+                "quantity": "600 g",
+                "category": "Fisk",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "78ce3e11-2420-433d-bf9d-a8c5709f4173",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Lammkotletter",
+                "quantity": "800 g",
+                "category": "Kött",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "41e95880-86fe-4b2e-b17f-09a12fd7cdb8",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Sill",
+                "quantity": "2 sorter",
+                "category": "Fisk",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f63ed6b5-0871-4566-8d41-e9fac6085612",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Potatis",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1f5346ae-0aef-4135-bd03-a679b34a7ff2",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Dill",
+                "quantity": "1 knippe",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "53007e68-f789-4466-a2e8-3185d2c25432",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Gräddfil",
+                "quantity": "2 dl",
+                "category": "Mejeri",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f7e8eba7-109c-49ac-b3bc-fcbf998780a7",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Kaviar",
+                "quantity": "1 tub",
+                "category": "Fisk",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7676ac21-6b67-46c8-97ef-7cf076a99927",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Påskgodis",
+                "quantity": "1 påse",
+                "category": "Snacks",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e0ac7c51-0ee2-41ca-9c25-2fc767ab68e5",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Rödlök",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8830757c-16da-4df3-9660-36877fa7ed69",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Citron",
+                "quantity": "2 st",
+                "category": "Frukt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1c2f1ceb-8b47-4f1c-bff3-b95f3dd6b923",
+                "list_id": "d62dfa1e-8de9-48ad-af10-fdb8b7fedd15",
+                "name": "Påskmust",
+                "quantity": "1 flaska",
+                "category": "Drycker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+        "slug": "kraftskiva",
+        "title": "Kräftskiva",
+        "description": "Allt för en lyckad kräftskiva i augusti",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "8b9dfba1-58f9-4a09-8c43-dd6a42debe1e",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Kräftor",
+                "quantity": "2 kg",
+                "category": "Fisk",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "036bc9d4-65e7-44de-9ff6-b99cb1e000aa",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Bröd surdeg",
+                "quantity": "1 st",
+                "category": "Bröd",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b6f62af1-466b-47fb-a90b-d38056ceee77",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Smör",
+                "quantity": "250 g",
+                "category": "Mejeri",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "eab6f77f-642f-4c57-926f-9bf018a672db",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Västerbottenost",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "319ce715-399b-4247-a51a-79d0cae4ded5",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Dill",
+                "quantity": "3 knippen",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "86acd42e-f68b-420c-82a8-dc5735b2557f",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Citron",
+                "quantity": "3 st",
+                "category": "Frukt",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "37d72a95-706a-46c5-ba04-c9e071909ab7",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Knäckebröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "14017827-a732-4406-93e7-a0c239297eb9",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Öl",
+                "quantity": "6-pack",
+                "category": "Drycker",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b342eb08-d5a1-4f1d-9a47-3ed428ca861f",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Grädde",
+                "quantity": "2 dl",
+                "category": "Mejeri",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a5796ccb-85b1-4618-baaa-f97435c5f45d",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Löjrom",
+                "quantity": "1 burk",
+                "category": "Fisk",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "60867342-83fd-438c-9335-65c545c23543",
+                "list_id": "d6569c7a-187d-4aa1-9093-836feba5da85",
+                "name": "Sallad",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+        "slug": "fika-handlingen",
+        "title": "Fika-handlingen",
+        "description": "Klassisk svensk fika med kaffe, bullar och kakor",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "09eb9955-7e29-4ae3-993c-268208a726c2",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Kaffe brygg",
+                "quantity": "500 g",
+                "category": "Drycker",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3c07024c-e241-4667-819c-b7a6144f15c2",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Mjölk",
+                "quantity": "1 l",
+                "category": "Mejeri",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6dd4976f-b62b-4008-89c3-3346468b8f6a",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Kanelbullar",
+                "quantity": "6 st",
+                "category": "Bröd",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "678b7aec-e143-4af6-83da-4e4cb081208f",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Chokladbollar",
+                "quantity": "6 st",
+                "category": "Snacks",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ba646575-0563-4a1e-a47d-c0e7ffab5c14",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Mazariner",
+                "quantity": "4 st",
+                "category": "Snacks",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b081b7a5-8e62-410b-aaa0-06dd269bd832",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Vetemjöl",
+                "quantity": "2 kg",
+                "category": "Bak",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "74581f96-f3ac-4788-acc2-fb846b14bf50",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Socker",
+                "quantity": "1 kg",
+                "category": "Bak",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "43ccc98c-a828-49aa-ba22-92bc460da29c",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Smör",
+                "quantity": "500 g",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9932220e-e619-4f53-a206-0f4e1e4580f4",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Kardemumma",
+                "quantity": "1 burk",
+                "category": "Kryddor",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "664556e7-5b9f-478c-b6fc-cca1060f8dd9",
+                "list_id": "d2b1586b-7264-4848-abc5-0784bfdd854d",
+                "name": "Kanel",
+                "quantity": "1 burk",
+                "category": "Kryddor",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+        "slug": "barnkalas",
+        "title": "Barnkalas",
+        "description": "Barnkalasfavoriter som alla barn älskar",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "706f4de0-5ff0-400e-8f53-f4b774c3f069",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Korv",
+                "quantity": "1 förp",
+                "category": "Chark",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "256bb176-861b-4d3c-ba30-9f6698e05d8d",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Korvbröd",
+                "quantity": "8 st",
+                "category": "Bröd",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e150e502-339a-4316-a061-e8caf2c9a80c",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Ketchup",
+                "quantity": "1 flaska",
+                "category": "Konserver",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c71cfdf8-a153-4f7a-82b9-e8faa66ef401",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Chips",
+                "quantity": "2 påsar",
+                "category": "Snacks",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8d727b48-4198-45db-9807-9f85c165983b",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Läsk",
+                "quantity": "6-pack",
+                "category": "Drycker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "664ecbb7-9d82-4317-93ca-95198defbf41",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Popcorn",
+                "quantity": "3 påsar",
+                "category": "Snacks",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bcec9e37-d1ef-4c6c-9e6b-2e4af04daa74",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Tårtbotten",
+                "quantity": "1 förp",
+                "category": "Bak",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9231c613-336f-4100-bb4c-ab74e297bd2b",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Vispgrädde",
+                "quantity": "5 dl",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "512b8dfd-9ccf-43a1-9f75-3ddb7302ea46",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Jordgubbar",
+                "quantity": "500 g",
+                "category": "Frukt",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "24ba3a28-d07c-4f86-9f22-8cb4642de7ac",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Godis",
+                "quantity": "500 g",
+                "category": "Snacks",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cbb10bea-2975-40e4-89a2-26c684e73a9f",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Ballonger",
+                "quantity": "1 förp",
+                "category": "Övrigt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "41aa2e35-bdf7-4f52-b347-962be8fcdbc9",
+                "list_id": "9adbd6cc-69ab-4fd1-b154-cf27ef833c88",
+                "name": "Saft",
+                "quantity": "1 flaska",
+                "category": "Drycker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+        "slug": "vegansk-vecka",
+        "title": "Vegansk Vecka",
+        "description": "En veckas vegansk mat med protein och näring i fokus",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "b0813ab1-f6ff-46e5-9621-886098b4097d",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Tofu",
+                "quantity": "2 förp",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c22e127b-3e06-4ea8-9f9c-eaa9df854f7d",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Bönor svarta",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d409a30e-49e5-475f-9259-ef288ec064de",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Kikärtor",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "eb4f5e6f-14db-4c7e-9d08-5ee1957d8ca9",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Linser röda",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f41ed928-6678-458e-babc-5e8f1a651a31",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Havregrädde",
+                "quantity": "2 förp",
+                "category": "Mejeri",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e0b21650-2e11-4d1b-a922-590c83b69cdd",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Havremjölk",
+                "quantity": "2 l",
+                "category": "Mejeri",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "13e1af11-f39d-43a5-9dde-b8ba233b3ec5",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Quinoa",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e7ebe85c-10ba-452e-ac58-3f08652ff0f1",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Broccoli",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d429a63a-d0a7-4918-a904-e8b892cde923",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Spenat",
+                "quantity": "200 g",
+                "category": "Grönsaker",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "45795687-721a-43c5-bfde-0d04afd4a0b6",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Sötpotatis",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "654998a5-6857-4c67-b09b-8f316c76f580",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Avokado",
+                "quantity": "3 st",
+                "category": "Frukt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1762b688-7b82-4d7d-9e0d-3916c4f4a37a",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Nötmix",
+                "quantity": "300 g",
+                "category": "Snacks",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a7de89ec-ca15-4e4f-b581-d93927a5fce9",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Kokosmjölk",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ccd7de2b-cb49-4281-a980-9423e6d99f62",
+                "list_id": "153b6029-337d-4412-9f94-a2aa747abbd8",
+                "name": "Fullkornspasta",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 13,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+        "slug": "glutenfri-vecka",
+        "title": "Glutenfri Vecka",
+        "description": "Glutenfria alternativ för hela veckans måltider",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "627dbeb3-dc3f-4e08-b431-58b14ba283d0",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Ris",
+                "quantity": "1 kg",
+                "category": "Torra varor",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3a59b1e4-1235-42cc-b390-2bac644bfb09",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Glutenfri pasta",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5948b15f-152d-46a4-a9de-d7d4e1ca3dfc",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Potatis",
+                "quantity": "2 kg",
+                "category": "Grönsaker",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "48a7e52b-eefe-492c-89f7-60aa4cee2acb",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Kycklingfilé",
+                "quantity": "800 g",
+                "category": "Kött",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "85b366c5-a5cf-457c-b708-23153263735a",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Laxfilé",
+                "quantity": "400 g",
+                "category": "Fisk",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b2ef0e35-709d-43f7-af99-cabf2a3ef232",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Ägg",
+                "quantity": "12 st",
+                "category": "Mejeri",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c0719748-82fb-43ae-bcd1-10b316f8753a",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Glutenfritt bröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1fd8cb39-ed8e-420a-b7fb-bc336cd07821",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Maizena",
+                "quantity": "1 förp",
+                "category": "Bak",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "38161375-617e-4f8c-9082-22de01008a52",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Grönsaksbuljong glutenfri",
+                "quantity": "1 förp",
+                "category": "Kryddor",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1ec86f22-66b5-48e6-98fc-a52ede06807b",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Mjölk",
+                "quantity": "2 l",
+                "category": "Mejeri",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2ea7f9b9-9f47-405d-8956-b8fec75f74e5",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Morötter",
+                "quantity": "500 g",
+                "category": "Grönsaker",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7eb7e936-3a39-4e5f-a55d-4682c206f35c",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Tomater",
+                "quantity": "6 st",
+                "category": "Grönsaker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2aca8567-3b57-4b8c-985c-adf044d9ca41",
+                "list_id": "54e8c050-6835-4414-ab6a-ba19bf01ecbb",
+                "name": "Naturell yoghurt",
+                "quantity": "500 g",
+                "category": "Mejeri",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+        "slug": "proteinrik-vecka",
+        "title": "Proteinrik Vecka",
+        "description": "Proteinrik veckohandling för träning och återhämtning",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "7b975007-33c1-4eb0-a1b6-1ddbc11d5fda",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Kycklingbröst",
+                "quantity": "1 kg",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "fce8e19a-581f-45a7-8606-ba7aac8dfdb4",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Ägg",
+                "quantity": "18 st",
+                "category": "Mejeri",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "91e74048-ba40-43f7-aa25-5c677bd5a724",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Kvarg",
+                "quantity": "4 förp",
+                "category": "Mejeri",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a3d9eb45-b705-4f41-be96-a88676cb0b4e",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Laxfilé",
+                "quantity": "600 g",
+                "category": "Fisk",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "27fed0d5-34a6-4bc7-ba9d-4ae5d57d0a4a",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Cottage cheese",
+                "quantity": "2 förp",
+                "category": "Mejeri",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8749aeac-794b-4f6e-95fe-e8bea98d35f1",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Köttfärs 10%",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "fec838d6-d67a-4b5a-a449-d42e4f63144a",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Bönor",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6d498004-fc74-4571-b9ff-76883a9566c1",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Ris",
+                "quantity": "1 kg",
+                "category": "Torra varor",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d3844194-3400-4855-8de7-fa1cac2bbbe3",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Havregryn",
+                "quantity": "1 kg",
+                "category": "Torra varor",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "672a33a5-2980-470a-a25d-884af2cbedbe",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Broccoli",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "340c241d-aaea-43f3-b9ab-d1d5d3160e98",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Banan",
+                "quantity": "6 st",
+                "category": "Frukt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "fded8a2a-1469-4225-bfd2-37f90694ac10",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Jordnötssmör",
+                "quantity": "1 burk",
+                "category": "Torra varor",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "25fa1d80-a9ee-4387-a364-f615820f133b",
+                "list_id": "28df75b6-8059-46f5-84ad-96c7c5bc8b73",
+                "name": "Proteinpulver",
+                "quantity": "1 förp",
+                "category": "Övrigt",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+        "slug": "asiatisk-matlagning",
+        "title": "Asiatisk Matlagning",
+        "description": "Ingredienser för wok, nudlar och asiatiska smaker",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "83e84724-ed2c-471f-ac8a-c78711856201",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Nudlar ägg",
+                "quantity": "4 förp",
+                "category": "Torra varor",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a90f95da-127e-41eb-abb5-45aebf6e7f9f",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Sojasås",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "142e55c1-18f9-435a-b8ec-da27bac45455",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Sesamolja",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1a6ab446-5e9d-450e-8004-46ca49f9c79f",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Ingefära",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "65720511-5ea7-4230-a435-55487d26645d",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Vitlök",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7de4d77e-0b82-43a3-8421-fcb204c1186e",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Chili röd",
+                "quantity": "3 st",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9e4e26eb-677f-4043-961d-80048d34a7c7",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Kokosmjölk",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5f50c72f-9ccf-455f-bcd4-f0b2004582f4",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Räkor",
+                "quantity": "400 g",
+                "category": "Fisk",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "858d7f0b-e036-4e5e-9768-197b64946f30",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Kycklingfilé",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d7808275-092d-4934-a059-2e34d79245cb",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Pak choi",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cd3465bc-7013-42d9-a6d9-dc756d35cee8",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Böngroddar",
+                "quantity": "200 g",
+                "category": "Grönsaker",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "45f5a9a5-ac36-4385-b7fe-79a76e94c338",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Jasminris",
+                "quantity": "1 kg",
+                "category": "Torra varor",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3b291c8a-c4aa-484e-8c17-ebf087c705c9",
+                "list_id": "80a70d6c-3aa8-42d4-a3e2-2ccac6371622",
+                "name": "Sriracha",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+        "slug": "italiensk-vecka",
+        "title": "Italiensk Vecka",
+        "description": "Pasta, pizza och italienska smaker hela veckan",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "a48bb8dd-6c09-46f9-a0db-cf498ed43031",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Pasta spaghetti",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "dcb21ebc-9bed-4fe1-b343-6d94ce0b0900",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Pasta penne",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2f21b16f-273f-40d5-9adf-2cc4f0899dfb",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Krossade tomater",
+                "quantity": "3 burkar",
+                "category": "Konserver",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d8fa76cd-badc-498e-9160-ee619fee4451",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Parmesan",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ebf814f1-7790-4918-92dc-60eae991445e",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Mozzarella",
+                "quantity": "2 förp",
+                "category": "Ost",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "75d52b1f-e829-4835-9b67-2e03815baaec",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Basilika",
+                "quantity": "1 kruka",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b6afdeff-be7c-4f32-a684-b2a08e88bf4b",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Vitlök",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "14d3611f-a48e-46ea-9b64-0cad7bb640f5",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Olivolja",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6d6470be-75b3-4c78-851f-327ca187659a",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Pizzadeg",
+                "quantity": "2 förp",
+                "category": "Bröd",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "07ad82ba-ee91-4030-9ef0-1120e61e099e",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Prosciutto",
+                "quantity": "100 g",
+                "category": "Chark",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "05ea55e6-64a1-4ecb-8e2c-6f7e2dcd3a17",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Ruccola",
+                "quantity": "1 förp",
+                "category": "Grönsaker",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5f8cb2cd-571a-4965-b475-b08fdd89c33e",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Pesto",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3e5dd4ad-fc5b-477c-bac4-cd9009aef444",
+                "list_id": "4b26080c-9127-469a-a83a-e51cc47964c4",
+                "name": "Köttfärs",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+        "slug": "husmanskost-veckan",
+        "title": "Husmanskost-veckan",
+        "description": "Traditionell svensk husmanskost – pytt, pannbiff och ärtsoppa",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "2eaf4abd-bcef-4ca9-b41a-c125b907b7dd",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Köttfärs",
+                "quantity": "1 kg",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9968e836-1cce-4ac7-b143-8be7f545fca5",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Potatis",
+                "quantity": "3 kg",
+                "category": "Grönsaker",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b41b5018-827e-4e5f-b309-ed1b7dd7b512",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Lök",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "77c2757d-7a8e-42b5-9896-fc37fd85898c",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Gula ärtor",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5ef0fd48-4fb6-42c4-b003-34a5e95e8b39",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Fläskkorv",
+                "quantity": "500 g",
+                "category": "Chark",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f6c86857-ac35-4522-a975-202927f9e75b",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Pannkakor mjöl",
+                "quantity": "1 kg",
+                "category": "Bak",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9c54f3df-3bed-4749-9f9d-e76fc73a4d0d",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Mjölk",
+                "quantity": "3 l",
+                "category": "Mejeri",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "96170cda-811a-44dc-8773-e8d86637df20",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Ägg",
+                "quantity": "12 st",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b3ddbd87-5c74-42a7-8489-dc7b09bd21ae",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Lingonsylt",
+                "quantity": "1 burk",
+                "category": "Konserver",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1b1cd1c8-f716-4886-b48e-64eb6e32c2fc",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Smör",
+                "quantity": "500 g",
+                "category": "Mejeri",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8b3ea653-00c6-4ad3-9186-a8d8102bebcf",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Grädde",
+                "quantity": "5 dl",
+                "category": "Mejeri",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a150d84c-e2d4-467f-b8c8-32d5441c47ca",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Morötter",
+                "quantity": "500 g",
+                "category": "Grönsaker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e6777df4-0e41-4e97-8ffb-33ba2509e073",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Falukorv",
+                "quantity": "800 g",
+                "category": "Chark",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "313e4843-eba7-4d23-9829-0c199d9aa90c",
+                "list_id": "2e8c885d-a010-4046-a6e3-aa31690b0e3a",
+                "name": "Ketchup",
+                "quantity": "1 flaska",
+                "category": "Konserver",
+                "position": 13,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+        "slug": "campingmat",
+        "title": "Campingmat",
+        "description": "Enkel och god mat för campingturen",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "4761d31e-95a0-4c1a-82b6-05b56b6a13a2",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Grillkorv",
+                "quantity": "1 förp",
+                "category": "Chark",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1c504a0a-fce6-4e50-9023-4878204ef85f",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Korvbröd",
+                "quantity": "8 st",
+                "category": "Bröd",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "62954ddf-b5d2-4c5c-bf4b-3e4f18d34e1f",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Knäckebröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f2352fbb-0112-4300-af55-a4b7daa42788",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Ost i skiva",
+                "quantity": "300 g",
+                "category": "Ost",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "84495af4-bb81-4d01-aa40-9b50f3ef3286",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Skinka",
+                "quantity": "200 g",
+                "category": "Chark",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6e8b4b12-d3c5-40af-880e-cdc8e6751ac4",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Äpplen",
+                "quantity": "6 st",
+                "category": "Frukt",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6b61ebea-0aa4-41fc-a90d-c6c5824c5fde",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Müsli",
+                "quantity": "1 förp",
+                "category": "Torra varor",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bcc0222e-75a3-42f9-9d71-e9f0d273a471",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Mjölk UHT",
+                "quantity": "1 l",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "35a31e70-3756-460c-83a2-03f40521f3fd",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Kaffe",
+                "quantity": "1 förp",
+                "category": "Drycker",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "0b9361dc-a6e9-4dfb-94b8-cec9c1ee2f56",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Konservburk bönor",
+                "quantity": "2 st",
+                "category": "Konserver",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "533eeaab-dcb8-4771-82ff-0034c6b79e96",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Mackor tunnbröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8616c0e6-ab2a-4e68-9a01-2cbd22448710",
+                "list_id": "0104e95a-6fae-4673-bb08-1ef992ea44ca",
+                "name": "Choklad",
+                "quantity": "2 st",
+                "category": "Snacks",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+        "slug": "picknick-parken",
+        "title": "Picknick i Parken",
+        "description": "Lättpackad picknick för soliga dagar",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "4d042730-ea9d-46ed-b9d3-068a13dcd027",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Baguette",
+                "quantity": "1 st",
+                "category": "Bröd",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e75ace6d-b01b-474b-90b8-1e6f28a085de",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Hummus",
+                "quantity": "1 förp",
+                "category": "Konserver",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d7444d5f-9a89-435b-add5-9498816f9dcc",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Druvor",
+                "quantity": "500 g",
+                "category": "Frukt",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "dc87ec03-35d9-4a7e-9147-8c749c4d1a04",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Ost brie",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1623456e-cb1e-42be-9fc1-5634f9009665",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Skinka",
+                "quantity": "150 g",
+                "category": "Chark",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "0d52e6a1-a707-4c90-a8c1-bbe507b154c5",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Sallad förpackad",
+                "quantity": "1 förp",
+                "category": "Grönsaker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "046caafb-30f1-4492-b425-80aae798037a",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Vindruvor/Jordgubbar",
+                "quantity": "500 g",
+                "category": "Frukt",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3b992c2a-6ba1-4b88-bbd2-8e46dd5f2c0f",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Juice",
+                "quantity": "1 l",
+                "category": "Drycker",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8c2a6415-ea67-4aa9-adcf-a5d0afe472ea",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Nötter",
+                "quantity": "200 g",
+                "category": "Snacks",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d16333c3-83e9-47ce-aebb-ed102e05382b",
+                "list_id": "17f91626-8ec3-4d66-9414-a1716a436ba4",
+                "name": "Kakor",
+                "quantity": "1 förp",
+                "category": "Snacks",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "68547696-400d-434e-a758-d22672a7688c",
+        "slug": "stughelg",
+        "title": "Stughelg",
+        "description": "Mysig helg i stugan med god mat och fika",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "20f9eb13-379a-465e-b7e6-8040d47312fb",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Köttfärs",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f3635564-7cd9-4a5d-8e60-da4cef00a2d9",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Pasta",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f8210971-62da-45cb-a3f5-6ab8328d3f0a",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Krossade tomater",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5503ce73-b4b5-47de-9696-965c9d169c0d",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Lök",
+                "quantity": "3 st",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "55e0d199-0f0d-40c2-8698-a842fd9687eb",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Vitlök",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c05c2fef-c65c-4fa5-ae2a-f7d075c46095",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Kaffe",
+                "quantity": "500 g",
+                "category": "Drycker",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cebc40fe-88da-4e2a-abfc-34c6197e3200",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Mjölk",
+                "quantity": "2 l",
+                "category": "Mejeri",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "75f6485f-2bec-42c9-b0bc-adc6f5cf0776",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Ägg",
+                "quantity": "6 st",
+                "category": "Mejeri",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b48366f9-752e-4819-9b95-95370760cf2b",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Bacon",
+                "quantity": "200 g",
+                "category": "Chark",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "4fd38c76-02d5-4510-93d2-055e891cd512",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Bröd",
+                "quantity": "1 limpa",
+                "category": "Bröd",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b80aa2c0-442e-4891-989b-29e7b39a9a26",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Smör",
+                "quantity": "250 g",
+                "category": "Mejeri",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "01bc2d32-b6db-432e-b68e-64febb261f25",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Ost",
+                "quantity": "300 g",
+                "category": "Ost",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "790ef5db-c55d-473a-b553-c49a7d90ab44",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Choklad",
+                "quantity": "2 st",
+                "category": "Snacks",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a0ff77a5-7fbb-43d3-a3c3-3f69a3b4e54c",
+                "list_id": "68547696-400d-434e-a758-d22672a7688c",
+                "name": "Chips",
+                "quantity": "1 påse",
+                "category": "Snacks",
+                "position": 13,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+        "slug": "nyarsfesten",
+        "title": "Nyårsfesten",
+        "description": "Lyxig nyårsmiddag med bubbel och skaldjur",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "8d3030af-8831-4dc1-bd6e-a4f56df73936",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Räkor",
+                "quantity": "1 kg",
+                "category": "Fisk",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "25c7ed9c-ba09-4970-9f98-48868c08d69c",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Lax rökt",
+                "quantity": "300 g",
+                "category": "Fisk",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "35296f0b-3320-40c4-b452-6b18b635f923",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Toast Skagen bröd",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "124013cc-b826-47ab-bcf8-a514c3534c06",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Créme fraiche",
+                "quantity": "2 dl",
+                "category": "Mejeri",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "107bb378-7518-4314-8a4d-bc2bc1bf47ab",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Dill",
+                "quantity": "1 knippe",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "86939b96-a604-469c-934e-02fb5f0e8304",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Citron",
+                "quantity": "2 st",
+                "category": "Frukt",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "dce7eb6f-c559-49a8-84b3-6eea5e6bbe82",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Oxfilé",
+                "quantity": "800 g",
+                "category": "Kött",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c8903f16-684c-413c-98c0-e1ebe6f1903c",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Potatisgratäng",
+                "quantity": "1 kg",
+                "category": "Fryst",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "09242c6c-b440-4c20-b150-ba40c14a2aff",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Sallad",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bbd6dff0-2ed4-452c-a3a9-d9a64e9f6a98",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Alkoholfritt bubbel",
+                "quantity": "2 flaskor",
+                "category": "Drycker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8d79bab6-62e2-4042-b0d6-b5f53dcbd370",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Dessert glass",
+                "quantity": "1 l",
+                "category": "Fryst",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f42d89ea-c152-45e9-8589-ac0c1799cbd7",
+                "list_id": "158ec09f-954a-4a34-b28b-27132d2e3394",
+                "name": "Bär frysta",
+                "quantity": "500 g",
+                "category": "Fryst",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+        "slug": "smoothie-veckan",
+        "title": "Smoothie-veckan",
+        "description": "Frysta och färska ingredienser för en veckas smoothies",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "240b24a5-de13-4c27-a3d3-f433b8699af8",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Banan",
+                "quantity": "10 st",
+                "category": "Frukt",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bc71268a-baca-4a29-9376-c1181a277b3b",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Blåbär frysta",
+                "quantity": "500 g",
+                "category": "Fryst",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "4b40d95b-61b2-4093-b04e-c4eca6752239",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Mango fryst",
+                "quantity": "500 g",
+                "category": "Fryst",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a5a6633e-ed15-4602-be81-b94752e4c5cc",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Spenat",
+                "quantity": "200 g",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "eea10620-c5d9-48c1-84d8-184c3cea19fa",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Havremjölk",
+                "quantity": "2 l",
+                "category": "Mejeri",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "966be2e1-9697-4250-a075-39d9cb52fea0",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Yoghurt naturell",
+                "quantity": "1 l",
+                "category": "Mejeri",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "aa209455-1056-483b-b388-60fe6d377397",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Chiafröer",
+                "quantity": "300 g",
+                "category": "Torra varor",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c0975718-eb24-4028-b7fb-a77d56c5c328",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Jordnötssmör",
+                "quantity": "1 burk",
+                "category": "Torra varor",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bb3268a9-b895-408a-93f4-cc34a249c7a5",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Honung",
+                "quantity": "1 burk",
+                "category": "Torra varor",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9b1b5710-7900-457d-af4f-df4c084efd9f",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Ingefära",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "97b88e9b-ee58-4db4-8ff0-f0a14584dc6a",
+                "list_id": "6d110399-6219-4bed-bcff-79b5ef8d685c",
+                "name": "Hallon frysta",
+                "quantity": "500 g",
+                "category": "Fryst",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+        "slug": "bakveckan",
+        "title": "Bakveckan",
+        "description": "Allt för en vecka full av hembakat bröd, bullar och kakor",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "15249d7a-ecc6-4731-8a53-4ae619aecd1d",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Vetemjöl",
+                "quantity": "3 kg",
+                "category": "Bak",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "890d9a49-8d44-40c8-a8f5-e0b4d4743da8",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Socker",
+                "quantity": "2 kg",
+                "category": "Bak",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3f8de4a5-9e51-4eb8-82e5-1c7886c1f03d",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Smör",
+                "quantity": "1 kg",
+                "category": "Mejeri",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e36454d0-1e67-4b9d-a768-9924e4a4599d",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Ägg",
+                "quantity": "18 st",
+                "category": "Mejeri",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f5fa749c-fdd9-42d1-9acc-d32eea2930b1",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Mjölk",
+                "quantity": "3 l",
+                "category": "Mejeri",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "fb4fe6ce-b40f-4be0-abd0-9c0fb4d04a83",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Jäst",
+                "quantity": "3 förp",
+                "category": "Bak",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "03116dc0-8452-46f1-be52-6503ec5b7eed",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Kardemumma",
+                "quantity": "1 burk",
+                "category": "Kryddor",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bbf599ca-52f8-4549-ad8b-c251164304b3",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Kanel",
+                "quantity": "1 burk",
+                "category": "Kryddor",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "31e86243-4213-4c01-8b97-f2fb5526edbd",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Kakao",
+                "quantity": "200 g",
+                "category": "Bak",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3d49e4aa-30d6-45d1-ba06-e5b6c84c58c0",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Vaniljsocker",
+                "quantity": "3 påsar",
+                "category": "Bak",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5a7453c9-335d-4adf-9300-be089f31200f",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Bakpulver",
+                "quantity": "1 förp",
+                "category": "Bak",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1a244fe6-c8d3-49ba-86c9-df3920e7fb9b",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Florsocker",
+                "quantity": "500 g",
+                "category": "Bak",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e91b06ab-c5d4-47cc-ac6e-3c3dd4885276",
+                "list_id": "1ea9200f-0120-49e8-ab85-67ec4b720ccd",
+                "name": "Choklad mörk",
+                "quantity": "200 g",
+                "category": "Bak",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "09af7795-e121-44c8-a805-ef01077b3788",
+        "slug": "soppveckan",
+        "title": "Soppveckan",
+        "description": "Värmande soppor för kyliga dagar – en ny soppa varje dag",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "05154323-fe2d-4d20-a497-dee184735090",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Morötter",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cf482cce-3c7f-4df2-86d9-6bb48f6edd59",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Potatis",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "51b48dc2-5a19-4690-98d5-3d43d33630d0",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Lök",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2ee928fd-4f21-4ee3-91e3-1f46781c7e49",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Selleri",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "71030523-ea83-4463-b496-66b95821ddb0",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Purjolök",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6735197d-f6d6-4c3e-9875-d2261d49a0d0",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Röda linser",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "27de7ede-2bd5-4a75-afa8-210c142b534d",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Krossade tomater",
+                "quantity": "3 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8acf46fd-ad58-41aa-9769-5264d3fdad1c",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Kokosmjölk",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7e0c4ef8-8f25-4798-9ac1-e990f9296d32",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Grädde",
+                "quantity": "5 dl",
+                "category": "Mejeri",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "048994b2-6bd8-42d1-87e7-7248329d8ef3",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Grönsaksbuljong",
+                "quantity": "1 förp",
+                "category": "Kryddor",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2eda5483-0626-44c6-bab6-a89416b24345",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Bröd surdeg",
+                "quantity": "1 st",
+                "category": "Bröd",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "adffd658-1724-487d-99f2-c7790c25eec2",
+                "list_id": "09af7795-e121-44c8-a805-ef01077b3788",
+                "name": "Vitlök",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+        "slug": "meal-prep-sondag",
+        "title": "Meal Prep Söndag",
+        "description": "Preppat för hela veckan på en söndag",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "681225e5-df31-4311-b761-d80ccfca5b50",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Kycklingbröst",
+                "quantity": "1.5 kg",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f215eaf0-6100-44e3-b719-26f23c368d7f",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Ris",
+                "quantity": "1 kg",
+                "category": "Torra varor",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "ade17be1-d429-4ac0-976c-5d1845d970af",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Broccoli",
+                "quantity": "3 st",
+                "category": "Grönsaker",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "88eb7c4b-716e-4e20-acc5-64cfc4841bdb",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Sötpotatis",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b0275734-82d9-4358-8974-d4d338fbdd15",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Köttfärs",
+                "quantity": "500 g",
+                "category": "Kött",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "26c0a576-688c-4b25-9e9b-09dfce38b15f",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Pasta",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1503591c-e9d7-4247-8172-38b5b0828233",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Krossade tomater",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "37914cd4-6263-4305-b73e-b43795fd7dc6",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Lök",
+                "quantity": "5 st",
+                "category": "Grönsaker",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e378d34f-bcc8-45a2-86a0-ce13af041ab0",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Paprika",
+                "quantity": "3 st",
+                "category": "Grönsaker",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "93e3acfc-6bb2-4425-95a2-fe7f72020ac8",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Ägg",
+                "quantity": "12 st",
+                "category": "Mejeri",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "494786be-ee78-4520-8b03-e2637a62aed4",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Matlådor",
+                "quantity": "10 st",
+                "category": "Övrigt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "cb2a1b20-fab9-4817-85e1-5bea47166634",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Olivolja",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "46225a3d-00ba-40fc-b00a-f3a9124610b2",
+                "list_id": "a1627eb5-cff8-4d59-b345-1650104fbbc5",
+                "name": "Sojasås",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+        "slug": "romantisk-middag",
+        "title": "Romantisk Middag",
+        "description": "Lyxig middag för två med förrätt, varmrätt och dessert",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "c5120b51-7a8b-475b-b748-ec3363c37b73",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Oxfilé",
+                "quantity": "400 g",
+                "category": "Kött",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c2a07657-80c1-4b12-8f27-30cd6403fe6a",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Potatis",
+                "quantity": "500 g",
+                "category": "Grönsaker",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e68c0a80-0347-4754-83f6-f1c58ea4d4e8",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Sparris",
+                "quantity": "1 knippe",
+                "category": "Grönsaker",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "f666d00e-ee88-45ab-be0b-2b00f03e8439",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Smör",
+                "quantity": "250 g",
+                "category": "Mejeri",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3bd19c6e-cfc5-4b8f-9590-fcd89d113ea9",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Vitlök",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9fca0da6-6006-407f-8471-540c026a35b0",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Rödvin sås",
+                "quantity": "1 förp",
+                "category": "Konserver",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "2eadf101-90cc-4d14-89b4-24e7531ffe37",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Räkor",
+                "quantity": "200 g",
+                "category": "Fisk",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a0f78ac1-2522-4c7b-b74b-47d07b4b6ec7",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Toast",
+                "quantity": "1 förp",
+                "category": "Bröd",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "465aaf94-1d71-4e50-ae16-a9dbcba4cf67",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Choklad mörk",
+                "quantity": "200 g",
+                "category": "Snacks",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "79516af4-6805-4aed-8672-c40edd76f6cf",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Hallon",
+                "quantity": "250 g",
+                "category": "Frukt",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6e54b362-c1b0-434c-a33f-59c09c615501",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Grädde",
+                "quantity": "2 dl",
+                "category": "Mejeri",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d1bfc1ce-8bda-4865-a256-293c9ceaa71c",
+                "list_id": "3e7176d5-a62a-4ce1-8348-5d540c5de6b8",
+                "name": "Sallad",
+                "quantity": "1 st",
+                "category": "Grönsaker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+        "slug": "storhandling-basvaror",
+        "title": "Storhandling Basvaror",
+        "description": "Månadens storhandling med alla basvaror du behöver hemma",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "0940e7ba-7c4f-48e5-90bb-2380ca5a94cc",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Mjölk",
+                "quantity": "6 l",
+                "category": "Mejeri",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e9abdc2e-dccd-4394-a3a3-c969dd176e77",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Smör",
+                "quantity": "500 g",
+                "category": "Mejeri",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "350b367c-1ce3-4f32-8ce6-423e880a92b8",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Ägg",
+                "quantity": "24 st",
+                "category": "Mejeri",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "0bb90a03-afed-4b65-9904-77899e07edc2",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Bröd",
+                "quantity": "2 limpor",
+                "category": "Bröd",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "be57aca6-01c7-4a1a-94e1-69f846a69e80",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Ris",
+                "quantity": "2 kg",
+                "category": "Torra varor",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6222bf8a-ac34-4575-843d-cb1bcf0ce5c9",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Pasta",
+                "quantity": "2 kg",
+                "category": "Torra varor",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c1ac6f28-d069-4f6b-96fe-5ee77d2edabe",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Krossade tomater",
+                "quantity": "6 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1f93b130-11c3-4493-a929-083dae4a09ab",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Vetemjöl",
+                "quantity": "2 kg",
+                "category": "Bak",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "6de5278e-ec6f-49ca-bbac-dc88e3deda5a",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Socker",
+                "quantity": "1 kg",
+                "category": "Bak",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "bf5451b6-0d46-43ee-81d1-e30cdc1cd747",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Kaffe",
+                "quantity": "1 kg",
+                "category": "Drycker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "72899529-3b00-4cd5-b789-e4293967f686",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Olivolja",
+                "quantity": "1 l",
+                "category": "Kryddor",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9cb562d1-bd74-45ed-b377-2aa64ce95940",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Salt",
+                "quantity": "1 kg",
+                "category": "Kryddor",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "4c9260f7-cf89-416a-89e0-c9de9234cc71",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Peppar",
+                "quantity": "1 kvarn",
+                "category": "Kryddor",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "3392e3e9-39c0-4396-9994-226646b7f15c",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Potatis",
+                "quantity": "5 kg",
+                "category": "Grönsaker",
+                "position": 13,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "1f64ef70-db25-4ad3-8b0e-b9c42d85f60b",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Lök",
+                "quantity": "2 kg",
+                "category": "Grönsaker",
+                "position": 14,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "19db5852-ce16-4987-9331-bfea28b2a67c",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Hushållspapper",
+                "quantity": "6-pack",
+                "category": "Hygien",
+                "position": 15,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "47caeefc-e70d-45a2-8722-35ddc4758ae0",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Diskmedel",
+                "quantity": "1 flaska",
+                "category": "Städ",
+                "position": 16,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "5639e223-73d4-4729-a70e-6217dab8ff7b",
+                "list_id": "25688939-00b5-4db7-a937-d1d4083d5e5f",
+                "name": "Tvättmedel",
+                "quantity": "1 förp",
+                "category": "Städ",
+                "position": 17,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            }
+        ]
+    },
+    {
+        "id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+        "slug": "medelhavskost",
+        "title": "Medelhavskost",
+        "description": "Hälsosam medelhavsinspirerad veckohandling med fisk, grönsaker och olivolja",
+        "lang": "sv-SE",
+        "is_public": true,
+        "created_at": "2026-04-03T10:00:00.000000+00:00",
+        "updated_at": "2026-04-03T10:00:00.000000+00:00",
+        "items": [
+            {
+                "id": "aaa33ba6-1383-47af-9b5b-3d58a1e9bc57",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Olivolja extra virgin",
+                "quantity": "1 flaska",
+                "category": "Kryddor",
+                "position": 0,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "68a0c270-b667-4648-b783-d8f3b9132e05",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Laxfilé",
+                "quantity": "600 g",
+                "category": "Fisk",
+                "position": 1,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "9c036936-9ae0-4205-8eaa-514d9ed4241f",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Räkor",
+                "quantity": "400 g",
+                "category": "Fisk",
+                "position": 2,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "8b8b4a8d-b0a0-42e6-b61a-092f2d4c1113",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Tomat",
+                "quantity": "1 kg",
+                "category": "Grönsaker",
+                "position": 3,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "a102f50a-3d35-4e49-9875-c66d02945e91",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Gurka",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 4,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b4aeee5e-a247-46eb-bab6-3e4244a76106",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Fetaost",
+                "quantity": "200 g",
+                "category": "Ost",
+                "position": 5,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e90d1fda-3cd7-4ae7-9bd5-20f99e80cb98",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Kikärtor",
+                "quantity": "2 burkar",
+                "category": "Konserver",
+                "position": 6,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "fd296b2e-f8c3-4ceb-a3d5-a4bfa13ed8de",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Bulgur",
+                "quantity": "500 g",
+                "category": "Torra varor",
+                "position": 7,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "d0643c99-e0f8-4d32-99ed-4d931ae4c5a9",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Aubergine",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 8,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "e66b488b-0da3-4c92-b924-122fd3fa4313",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Paprika",
+                "quantity": "3 st",
+                "category": "Grönsaker",
+                "position": 9,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "b8c8b4e1-8dd6-446f-bc07-4e823089de8c",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Citron",
+                "quantity": "3 st",
+                "category": "Frukt",
+                "position": 10,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "7ea43c99-98c9-4edb-91fa-eb2f4cbc7ffc",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Vitlök",
+                "quantity": "2 st",
+                "category": "Grönsaker",
+                "position": 11,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
+            },
+            {
+                "id": "c12ca76e-bfca-48e1-9cb8-539729d323c3",
+                "list_id": "642f5e9e-319a-4bda-a483-881d994d8cb1",
+                "name": "Hummus",
+                "quantity": "1 förp",
+                "category": "Konserver",
+                "position": 12,
+                "checked": false,
+                "updated_at": "2026-04-03T10:00:00.000000+00:00"
             }
         ]
     }

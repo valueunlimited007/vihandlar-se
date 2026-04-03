@@ -75,6 +75,14 @@ export default function SkannerPage() {
     };
   }, [stopCamera]);
 
+  // Attach stream to video element after camera view mounts
+  useEffect(() => {
+    if (view === "camera" && streamRef.current && videoRef.current) {
+      videoRef.current.srcObject = streamRef.current;
+      videoRef.current.play().catch(() => {});
+    }
+  }, [view]);
+
   const startCamera = async () => {
     try {
       setCameraError(null);
@@ -93,9 +101,6 @@ export default function SkannerPage() {
       });
 
       streamRef.current = mediaStream;
-      if (videoRef.current) {
-        videoRef.current.srcObject = mediaStream;
-      }
       setView("camera");
     } catch (err) {
       const e = err as DOMException;
