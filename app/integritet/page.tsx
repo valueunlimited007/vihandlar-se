@@ -55,6 +55,18 @@ export default function IntegritetPage() {
             </div>
           </div>
         </div>
+
+        <div className="flex items-center gap-3 mb-8 p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800 rounded-xl">
+          <Shield className="w-8 h-8 text-emerald-600 dark:text-emerald-400 shrink-0" />
+          <div>
+            <p className="font-semibold text-sm text-emerald-800 dark:text-emerald-300">
+              Betyg A+ på SecurityHeaders.com
+            </p>
+            <p className="text-xs text-emerald-700 dark:text-emerald-400">
+              vihandlar.se uppnår högsta betyg (A+) för säkerhetsheaders inklusive HSTS, CSP, X-Frame-Options och Permissions-Policy.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Data Collection */}

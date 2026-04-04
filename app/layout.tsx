@@ -88,6 +88,17 @@ export default function RootLayout({
           href="https://vihandlar.se/llms.txt"
           type="text/plain"
         />
+        <link
+          rel="alternate"
+          type="text/plain"
+          href="https://vihandlar.se/llms.txt"
+          title="LLM Information"
+        />
+        <link
+          rel="sitemap"
+          type="application/xml"
+          href="https://vihandlar.se/sitemap.xml"
+        />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Analytics />

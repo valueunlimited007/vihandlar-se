@@ -79,6 +79,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/partnerskap" className="text-muted-foreground hover:text-primary transition-colors">
+                  Partnerskap
+                </Link>
+              </li>
+              <li>
                 <a href="mailto:hej@vihandlar.se" className="text-muted-foreground hover:text-primary transition-colors">
                   Kontakt
                 </a>
@@ -95,6 +100,11 @@ export function Footer() {
               <li>
                 <Link href="/integritet" className="text-muted-foreground hover:text-primary transition-colors">
                   Integritetspolicy
+                </Link>
+              </li>
+              <li>
+                <Link href="/villkor" className="text-muted-foreground hover:text-primary transition-colors">
+                  Allmänna villkor
                 </Link>
               </li>
               <li>
@@ -241,15 +251,21 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-muted-foreground/60">
-            &copy; {year} ViHandlar &middot; En del av Value Unlimited
+          <p className="text-xs text-muted-foreground/60 flex items-center gap-2 flex-wrap">
+            <span>&copy; {year} ViHandlar &middot; En del av{" "}
+            <a href="https://valueunlimited.io" target="_blank" rel="noopener" className="hover:text-muted-foreground/80 transition-colors" title="Value Unlimited - Digital Innovation">
+              Value Unlimited
+            </a></span>
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 text-[10px] font-medium">
+              Säkerhet A+ · GDPR
+            </span>
           </p>
           <div className="flex items-center gap-3 text-xs text-muted-foreground/40">
             <a href="/llms-full.txt" className="hover:text-muted-foreground/60 transition-colors" title="AI-information för språkmodeller">
               AI-info
             </a>
             <span>&middot;</span>
-            <a href="https://besokskollen.se" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground/60 transition-colors">
+            <a href="https://savri.io" target="_blank" rel="noopener" className="hover:text-muted-foreground/60 transition-colors" title="Savri - Privacy-friendly web analytics">
               Analytics av Savri
             </a>
           </div>

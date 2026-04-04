@@ -13,6 +13,7 @@ import {
   BarChart3,
   Leaf,
   ShoppingBag,
+  Shield,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -305,6 +306,17 @@ export default async function FoodDetailPage({ params }: PageProps) {
               Frysbar
             </Badge>
           )}
+        </div>
+      </div>
+
+      {/* Health disclaimer */}
+      <div className="mb-6 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
+        <div className="flex items-start gap-2">
+          <Info className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+          <p className="text-xs text-amber-700 dark:text-amber-400">
+            Informationen på denna sida är hämtad från Livsmedelsverkets databas och är avsedd som allmän information.
+            Den ersätter inte professionell medicinsk eller nutritionell rådgivning.
+          </p>
         </div>
       </div>
 
@@ -868,6 +880,27 @@ export default async function FoodDetailPage({ params }: PageProps) {
               Livsmedelsverkets livsmedelsdatabas 2025
             </a>
           </p>
+        </div>
+      )}
+
+      {/* Trust box */}
+      {food.source && (
+        <div className="mt-6 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800">
+          <div className="flex items-start gap-3">
+            <Shield className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+            <div>
+              <h4 className="font-semibold text-sm text-emerald-800 dark:text-emerald-300 mb-1">
+                Verifierad data
+              </h4>
+              <p className="text-xs text-emerald-700 dark:text-emerald-400">
+                Näringsvärden på denna sida kommer från{" "}
+                <a href="https://soknaringsinnehall.livsmedelsverket.se/" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                  Livsmedelsverkets livsmedelsdatabas 2025
+                </a>
+                . Data är EFSA-kompatibel och följer EU-förordning 1169/2011 om livsmedelsinformation.
+              </p>
+            </div>
+          </div>
         </div>
       )}
     </div>

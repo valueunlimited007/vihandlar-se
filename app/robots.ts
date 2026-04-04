@@ -143,6 +143,33 @@ export default function robots(): MetadataRoute.Robots {
         disallow: aiCrawlerDisallow,
       },
 
+      // --- Additional AI crawlers ---
+      {
+        userAgent: "anthropic-ai",
+        allow: "/",
+        disallow: aiCrawlerDisallow,
+      },
+      {
+        userAgent: "Google-InspectionTool",
+        allow: "/",
+        disallow: aiCrawlerDisallow,
+      },
+      {
+        userAgent: "YouBot",
+        allow: "/",
+        disallow: aiCrawlerDisallow,
+      },
+      {
+        userAgent: "BraveBot",
+        allow: "/",
+        disallow: aiCrawlerDisallow,
+      },
+      {
+        userAgent: "PhindBot",
+        allow: "/",
+        disallow: aiCrawlerDisallow,
+      },
+
       // --- Blocked SEO scrapers ---
       {
         userAgent: "SemrushBot",
@@ -166,6 +193,18 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "PetalBot",
+        disallow: ["/"],
+      },
+      {
+        userAgent: "Screaming Frog SEO Spider",
+        disallow: ["/"],
+      },
+      {
+        userAgent: "rogerbot",
+        disallow: ["/"],
+      },
+      {
+        userAgent: "UbersuggestBot",
         disallow: ["/"],
       },
     ],
