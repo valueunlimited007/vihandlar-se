@@ -262,6 +262,18 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
         <RiskGauge score={additive.risk_score} size="lg" showLabel />
       </div>
 
+      {/* Risk disclaimer */}
+      <div className="mb-6 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
+        <div className="flex items-start gap-2">
+          <Info className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+          <p className="text-xs text-amber-700 dark:text-amber-400">
+            Riskbedömningen är baserad på tillgänglig forskning och är inte en officiell EFSA-bedömning.
+            För officiell information, se{" "}
+            <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener noreferrer" className="underline font-medium">efsa.europa.eu</a>.
+          </p>
+        </div>
+      </div>
+
       {/* Content Grid */}
       <div className="grid lg:grid-cols-3 gap-8">
         {/* Left Column (2/3) */}

@@ -35,6 +35,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/sajtkarta`, lastModified: now, changeFrequency: "weekly", priority: 0.5 },
     { url: `${BASE_URL}/kallor`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${BASE_URL}/integritet`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/villkor`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/partnerskap`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/e-amnen/guide`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/e-amnen/alla`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${BASE_URL}/llms.txt`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
