@@ -136,12 +136,12 @@ ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
 - nutrientes/page.tsx (näringsämnen hub)
 - nutrientes/[slug]/page.tsx (näringsämne detalj)
 
-### 4D: app/lista-de-compras/ (6 page.tsx + 5 layout.tsx)
+### 4D: app/lista-de-compras/ (6 page.tsx + 4 layout.tsx)
 - layout.tsx (SoftwareApplication JSON-LD)
 - page.tsx (hub — relativ tidsformatering!)
 - [id]/layout.tsx + page.tsx
 - compartir/[token]/layout.tsx + page.tsx
-- plantillas/layout.tsx + page.tsx
+- plantillas/page.tsx (OBS: ingen layout.tsx i denna mapp)
 - plantillas/[slug]/layout.tsx + page.tsx
 
 ### 4E: app/escaner/ (1 page.tsx + 1 layout.tsx)
@@ -213,11 +213,25 @@ ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
 - app/api/lists/[token]/presence/route.ts — felmeddelanden
 
 ### 4L: Config-filer
-- middleware.ts — uppdatera ALLA route patterns till spanska
-- next.config.ts — domän, headers
+- middleware.ts — uppdatera ALLA route patterns till spanska, INKLUSIVE food redirect-logiken
+  (/alimente/ → /alimentos/) som finns i toppen av filen (inte bara schema-types)
+- next.config.ts — domän, headers, image domains
 - package.json — "name": "listadecompras-es"
 - CLAUDE.md — ny för spanska projektet
 - .env.example — kommentarer
+- tailwind.config.ts — verifiera inga rumänska referenser
+
+### 4M: Data-filer som LÄTT GLÖMS
+- data/routes.json — innehåller RUMÄNSKA route-paths, MÅSTE översättas till spanska
+- data/food-redirects.json — innehåller svenska→rumänska slug-mappningar, MÅSTE ERSÄTTAS
+  HELT (inte appendas) med rumänska→spanska mappningar
+- data/schema.json — verifiera, troligen OK som den är
+- types/index.ts — barrel re-export fil, verifiera att imports stämmer efter namnbyten
+
+### 4N: Bildfiler i public/ som MÅSTE bytas
+- public/listacumparaturi-icon.png — byt namn till listadecompras-icon.png eller ta bort
+- public/listacumparaturi-logo-romania.png — byt till spansk version eller ta bort
+- Sök HELA kodbasen efter referenser till dessa filnamn och uppdatera
 
 ---
 
