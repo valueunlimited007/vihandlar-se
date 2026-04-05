@@ -182,11 +182,11 @@ ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
 - lib/kv.ts — verifiera domänreferenser
 - lib/data/foods.ts — sort locale es-ES, ALPHABET utan ÅÄÖ
 - lib/data/e-additives.ts — lookupEAdditives assessment strings
-- lib/data/nutrients.ts — ALLA 42 näringsämnen: namn, beskrivningar, categoryName
+- lib/data/nutrients.ts — ALLA 47 näringsämnen: namn, beskrivningar, categoryName
 
 ### 4J: types/ (3 filer)
 - types/e-additive.ts:
-  E_CATEGORIES: Colorantes, Conservantes, Antioxidantes, Emulsionantes,
+  E_CATEGORIES: Colorantes, Conservantes, Antioxidantes, Espesantes,
   Reguladores de acidez, Potenciadores de sabor, Edulcorantes
   RISK_LEVELS: Riesgo bajo (green), Riesgo medio (yellow), Riesgo alto (red)
 
@@ -197,6 +197,7 @@ ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
   Kategorier: Lácteos, Carne, Pescado, Frutas, Verduras, Panadería,
   Congelados, Despensa, Conservas, Bebidas, Higiene, Limpieza, Otros
   Enheter: ud, kg, g, l, dl, ml, paq, bolsa, lata, botella
+  ITEM_NAME_REGEX: lägg till ñÑáéíóúÁÉÍÓÚ i regex-mönstret
   Quick-add: Leche, Pan, Mantequilla, Huevos, Queso, Plátanos, Manzanas,
   Patatas, Cebolla, Zanahorias, Tomates, Pepino, Pechuga de pollo,
   Carne picada, Pasta, Arroz, Yogur, Café
@@ -429,7 +430,20 @@ Sök igenom HELA kodbasen — varje sökning ska ge 0 träffar (utom hreflang):
 - [ ] Share-URL i ShoppingList.tsx = /lista-de-compras/compartir/
 - [ ] Sitemap inkluderar /terminos och /asociaciones
 - [ ] Besökskollen site-id = b81ab8d1-5379-41f7-89c8-0eb9eff06ed2
-- [ ] Alla 42 nutrient-sluggar matchar
+- [ ] Alla 47 nutrient-sluggar matchar
+- [ ] ITEM_NAME_REGEX i types/shopping-list.ts inkluderar ñÑáéíóúÁÉÍÓÚ
+- [ ] Grep EXKLUDERAR node_modules/ och .git/
+
+---
+
+## STEG 13: VERCEL KV SETUP (efter deploy)
+
+1. Skapa Vercel-projekt för listadecompras.es
+2. Lägg till Vercel KV (Upstash Redis) i Vercel Dashboard → Storage
+3. Kopiera KV_REST_API_URL och KV_REST_API_TOKEN till miljövariabler
+4. Testa: Skapa en delad lista och verifiera att den persisterar
+5. Lägg till domän listadecompras.es i Vercel → Settings → Domains
+6. Konfigurera www.listadecompras.es → 301 redirect till listadecompras.es
 
 ---
 
