@@ -1,559 +1,449 @@
-# Migration Prompt: Spain (listadecompras.es)
+# Migration Prompt: Spain (listadecompras.es) — v2.0
 
-> **What is this file?**
-> This is a complete, copy-paste-ready prompt for a Claude Code session that will create the Spanish version of the shopping list app (listadecompras.es).
-> The source repo is the Romanian version (listacumparaturi-ro), NOT vihandlar-se.
-> Copy everything below the horizontal rule and paste it into a fresh Claude Code session opened in the cloned repo.
-
----
-
-# Create listadecompras.es — Spanish Shopping List App
-
-You are migrating the Romanian shopping list app (listacumparaturi.ro) to a Spanish version (listadecompras.es). The source repo is `valueunlimited007/listacumparaturi-ro`. You must follow every step below precisely.
-
-## 1. Critical Lessons from the Romanian Migration (DO NOT REPEAT)
-
-The Romanian migration from vihandlar.se had 8 issues. You MUST avoid all of them:
-
-### Issue 1: Swedish remnants in UI
-Every single user-facing string must be in Spanish. Search the ENTIRE codebase for Romanian text and replace with Spanish. Common hiding spots:
-- `aria-label` attributes
-- `placeholder` text in inputs
-- `alt` text on images
-- `title` attributes
-- Error messages and toast notifications
-- Loading states ("Se incarca..." must become "Cargando...")
-- 404 page text
-- Footer text and copyright notices
-
-### Issue 2: Hardcoded domain references
-Search for ALL occurrences of `listacumparaturi.ro` and `listacumparaturi-ro` and replace with `listadecompras.es` and `listadecompras-es` respectively. Also search for `vihandlar.se` — none should remain except in hreflang tags.
-
-### Issue 3: Metadata not fully translated
-Every `generateMetadata()` and `<head>` element must be in Spanish:
-- `<title>` tags
-- `<meta name="description">` 
-- `<meta name="keywords">`
-- OpenGraph titles and descriptions
-- Twitter card content
-- JSON-LD structured data (schema.org)
-- Canonical URLs must point to listadecompras.es
-
-### Issue 4: Route slugs left in source language
-All URL route segments must be in Spanish:
-- `/lista-de-compras` (shopping list)
-- `/lista` (shared list)
-- `/aditivos` (e-additives)
-- `/alimentos` (foods)
-- `/productos` (products)
-- `/sobre-nosotros` (about)
-- `/privacidad` (privacy)
-- `/funciones` (features)
-- `/mapa-del-sitio` (sitemap)
-- `/fuentes` (sources)
-- `/listas` (list templates)
-- `/categorias` (categories)
-
-### Issue 5: Analytics/tracking IDs not updated
-Use the NEW Besokskollen site-id: `b81ab8d1-5379-41f7-89c8-0eb9eff06ed2`. Remove any Romanian tracking IDs.
-
-### Issue 6: Sitemap and robots.txt pointing to wrong domain
-- `robots.txt` must reference `https://listadecompras.es/sitemap.xml`
-- Sitemap must use `https://listadecompras.es/` as base URL for all entries
-- `manifest.json` / `site.webmanifest` must use listadecompras.es
-
-### Issue 7: Forgetting to update CLAUDE.md
-The new repo MUST have its own CLAUDE.md reflecting the Spanish site (see Step 11).
-
-### Issue 8: Legal/privacy page referencing wrong jurisdiction
-Spain has its own data protection authority: AEPD (Agencia Espanola de Proteccion de Datos). Do NOT reference Romanian ANSPDCP or Swedish IMY.
+> **Vad är denna fil?**
+> Komplett, copy-paste-redo prompt för en Claude Code-session som skapar den spanska versionen av matplattformen.
+> Källrepot är den RUMÄNSKA versionen (listacumparaturi-ro), INTE vihandlar-se.
+> Kopiera allt under den horisontella linjen och klistra in i en ny Claude Code-session.
 
 ---
 
-## 2. Step 1 — Clone and Set Up
+Jag har ett rumänskt Next.js 15-projekt på https://github.com/valueunlimited007/listacumparaturi-ro
+som jag vill konvertera till en SPANSK version för domänen listadecompras.es.
 
-```bash
-# Clone the Romanian repo as the starting point
-git clone https://github.com/valueunlimited007/listacumparaturi-ro.git listadecompras-es
-cd listadecompras-es
+Klona från listacumparaturi-ro — den har redan Adtraction/affiliate borttaget och alla nya
+funktioner (disclaimers, villkor, partnerskap, 50 mallar, utökad llms-full.txt).
 
-# Remove old git history and start fresh
-rm -rf .git
-git init
-git remote add origin https://github.com/valueunlimited007/listadecompras-es.git
+## KRITISKA LÄRDOMAR — UNDVIK DESSA MISSTAG
 
-# Install dependencies
-npm install
+### 1. DATA-FILER MÅSTE ÖVERSÄTTAS FULLSTÄNDIGT
+foods.json (2625 poster) och e-additives.json (353 poster) har namn, beskrivningar,
+FAQ, substitutes, usage_tips etc. på rumänska. ALLT måste översättas till spanska.
+Använd Python-skript med token-baserad ordöversättning. ALDRIG regex på korta ord.
+
+### 2. SLUGGAR MÅSTE GENERERAS FRÅN SPANSKA NAMN
+Alla sluggar måste genereras via slugify(spanskt_namn). Spara gamla→nya i food-redirects.json.
+
+### 3. API-FILER MÅSTE ÖVERSÄTTAS
+Whisper language måste vara "es". Demo-items på spanska. Felmeddelanden på spanska.
+
+### 4. TYPES HAR SPRÅKSPECIFIKA STRÄNGAR
+shopping-list.ts har kategorier, enheter, quick-add items. food.ts har ALPHABET.
+e-additive.ts har E_CATEGORIES som MÅSTE matcha JSON-data exakt efter översättning.
+
+### 5. localStorage-NYCKLAR MÅSTE BYTAS
+Alla "listacumparaturi_" prefix → "listadecompras_"
+
+### 6. SHARE-URL MÅSTE MATCHA ROUTE
+ShoppingList.tsx genererar URL:er som MÅSTE matcha routermappens namn exakt.
+
+### 7. DIAKRITISKA TECKEN FRÅN START
+Spanska tecken (á, é, í, ó, ú, ñ, ü) MÅSTE vara korrekta överallt.
+
+---
+
+## STEG 1: KLONA OCH SÄTT UPP
+
+Hämta ALL kod från valueunlimited007/listacumparaturi-ro (main branch).
+Pusha till detta repo (listadecompras-es).
+Kör npm install.
+
+---
+
+## STEG 2: GLOBAL SÖK & ERSÄTT (i denna ordning)
+
+| Sök | Ersätt med |
+|-----|-----------|
+| listacumparaturi.ro | listadecompras.es |
+| listacumparaturi-ro | listadecompras-es |
+| contact@listacumparaturi.ro | contact@listadecompras.es |
+| ro-RO | es-ES |
+| ro_RO | es_ES |
+| lang="ro" | lang="es" |
+| Lista de Cumpărături | Lista de Compras |
+| ListaCumpărături | ListaDeCompras |
+| listacumparaturi_lists | listadecompras_lists |
+| listacumparaturi_user_id | listadecompras_user_id |
+| listacumparaturi_scan_history | listadecompras_scan_history |
+| listacumparaturi-sound-enabled | listadecompras-sound-enabled |
+| listacumparaturi_session_id | listadecompras_session_id |
+
+Behåll vihandlar.se och listacumparaturi.ro ENBART i hreflang-taggar.
+
+---
+
+## STEG 3: ROUTING — BYT ALLA MAPPNAMN
+
+| Rumänsk route (källa) | Spansk route (mål) |
+|---|---|
+| app/aditivi-alimentari/ | app/aditivos-alimentarios/ |
+| app/aditivi-alimentari/[slug]/ | app/aditivos-alimentarios/[slug]/ |
+| app/aditivi-alimentari/categorie/[slug]/ | app/aditivos-alimentarios/categoria/[slug]/ |
+| app/aditivi-alimentari/serie/[series]/ | app/aditivos-alimentarios/serie/[series]/ |
+| app/aditivi-alimentari/ghid/ | app/aditivos-alimentarios/guia/ |
+| app/aditivi-alimentari/toate/ | app/aditivos-alimentarios/todos/ |
+| app/aditivi-alimentari/istoric/ | app/aditivos-alimentarios/historial/ |
+| app/alimente/ | app/alimentos/ |
+| app/alimente/[slug]/ | app/alimentos/[slug]/ |
+| app/alimente/categorie/[slug]/ | app/alimentos/categoria/[slug]/ |
+| app/alimente/nutrienti/ | app/alimentos/nutrientes/ |
+| app/alimente/nutrienti/[slug]/ | app/alimentos/nutrientes/[slug]/ |
+| app/lista-de-cumparaturi/ | app/lista-de-compras/ |
+| app/lista-de-cumparaturi/[id]/ | app/lista-de-compras/[id]/ |
+| app/lista-de-cumparaturi/partajare/[token]/ | app/lista-de-compras/compartir/[token]/ |
+| app/lista-de-cumparaturi/sabloane/ | app/lista-de-compras/plantillas/ |
+| app/lista-de-cumparaturi/sabloane/[slug]/ | app/lista-de-compras/plantillas/[slug]/ |
+| app/scanner/ | app/escaner/ |
+| app/despre/ | app/sobre-nosotros/ |
+| app/confidentialitate/ | app/privacidad/ |
+| app/functii/ | app/funciones/ |
+| app/surse/ | app/fuentes/ |
+| app/harta-site/ | app/mapa-sitio/ |
+| app/termeni/ | app/terminos/ |
+| app/parteneriate/ | app/asociaciones/ |
+
+Uppdatera ALLA interna Link href och router.push() i ALLA filer.
+ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
+
+---
+
+## STEG 4: KOMPLETT FILLISTA — ÖVERSÄTT VARJE FIL
+
+### 4A: app/ root-filer
+- app/layout.tsx — metadata, title template, description, keywords, OG, hreflang, lang="es"
+- app/page.tsx — HELA startsidan (hero, features, stats, CTA)
+- app/error.tsx — felmeddelanden, knappar
+- app/loading.tsx — "Cargando..."
+- app/not-found.tsx — 404-text, navigeringslänkar
+- app/opengraph-image.tsx — "Tu lista de compras inteligente"
+- app/apple-icon.tsx — bokstav "L"
+- app/robots.ts — domän, sitemap URL, kommentarer
+- app/sitemap.ts — BASE_URL, alla routes inkl /terminos och /asociaciones
+- app/globals.css — ta bort eventuella svenska/rumänska kommentarer
+
+### 4B: app/aditivos-alimentarios/ (7 page.tsx + 1 layout.tsx)
+- page.tsx (hub)
+- [slug]/page.tsx (detalj — disclaimer, FAQ, breadcrumbs)
+- categorie/[slug]/page.tsx → categoria/[slug]/page.tsx
+- serie/[series]/page.tsx
+- guia/page.tsx (guide)
+- todos/page.tsx (alla)
+- historial/page.tsx + layout.tsx (historik)
+
+### 4C: app/alimentos/ (5 page.tsx)
+- page.tsx (hub med A-Z navigation)
+- [slug]/page.tsx (detalj — disclaimer, FAQ, näringsvärden, relaterade produkter borttagna)
+- categoria/[slug]/page.tsx
+- nutrientes/page.tsx (näringsämnen hub)
+- nutrientes/[slug]/page.tsx (näringsämne detalj)
+
+### 4D: app/lista-de-compras/ (6 page.tsx + 5 layout.tsx)
+- layout.tsx (SoftwareApplication JSON-LD)
+- page.tsx (hub — relativ tidsformatering!)
+- [id]/layout.tsx + page.tsx
+- compartir/[token]/layout.tsx + page.tsx
+- plantillas/layout.tsx + page.tsx
+- plantillas/[slug]/layout.tsx + page.tsx
+
+### 4E: app/escaner/ (1 page.tsx + 1 layout.tsx)
+- layout.tsx (WebApplication JSON-LD + metadata)
+- page.tsx (MASSIV mängd UI-text: kamerabehörigheter, drag-drop, steg-instruktioner, demo)
+
+### 4F: Övriga sidor (7 st)
+- app/sobre-nosotros/page.tsx
+- app/privacidad/page.tsx (AEPD, RGPD, LOPDGDD, LSSI-CE)
+- app/funciones/page.tsx
+- app/fuentes/page.tsx
+- app/mapa-sitio/page.tsx
+- app/terminos/page.tsx
+- app/asociaciones/page.tsx
+
+### 4G: components/ (9 filer)
+- Header.tsx — menytexter, mobilmeny
+- Footer.tsx — alla sektioner, copyright, SEO-länkar, A+ badge, Value Unlimited, Savri
+- ShoppingList.tsx — knappar, status, delning, QR, Web Share API title/text
+- FoodSearch.tsx — sökfält, filter, "Mostrar más"
+- EAdditiveSearch.tsx — sökfält, filter, placeholder
+- EAdditiveCard.tsx — risknivåer, badges
+- RiskGauge.tsx — "Riesgo bajo/medio/alto"
+- Toast.tsx — meddelanden
+- Analytics.tsx — data-site-id="b81ab8d1-5379-41f7-89c8-0eb9eff06ed2"
+
+### 4H: hooks/ (4 filer)
+- useShoppingList.ts — felmeddelanden, toast, localStorage-nycklar
+- usePresence.ts — "¡Alguien se unió!", enhetsnamn
+- useVoiceInput.ts — felmeddelanden
+- useAudioFeedback.ts — localStorage-nyckel
+
+### 4I: lib/ (8 filer)
+- lib/seo.ts — SITE_CONFIG: name, tagline, description, url, locale, language
+- lib/schema.ts — SearchAction URL → /aditivos-alimentarios?q=
+- lib/utils.ts — formatRelativeTime: "ahora mismo", "hace X min/horas/días"
+- lib/device-detection.ts — "Tableta", "Desconocido"
+- lib/kv.ts — verifiera domänreferenser
+- lib/data/foods.ts — sort locale es-ES, ALPHABET utan ÅÄÖ
+- lib/data/e-additives.ts — lookupEAdditives assessment strings
+- lib/data/nutrients.ts — ALLA 42 näringsämnen: namn, beskrivningar, categoryName
+
+### 4J: types/ (3 filer)
+- types/e-additive.ts:
+  E_CATEGORIES: Colorantes, Conservantes, Antioxidantes, Emulsionantes,
+  Reguladores de acidez, Potenciadores de sabor, Edulcorantes
+  RISK_LEVELS: Riesgo bajo (green), Riesgo medio (yellow), Riesgo alto (red)
+
+- types/food.ts:
+  ALPHABET: A-Z + Ñ (ta bort Å, Ä, Ö)
+
+- types/shopping-list.ts:
+  Kategorier: Lácteos, Carne, Pescado, Frutas, Verduras, Panadería,
+  Congelados, Despensa, Conservas, Bebidas, Higiene, Limpieza, Otros
+  Enheter: ud, kg, g, l, dl, ml, paq, bolsa, lata, botella
+  Quick-add: Leche, Pan, Mantequilla, Huevos, Queso, Plátanos, Manzanas,
+  Patatas, Cebolla, Zanahorias, Tomates, Pepino, Pechuga de pollo,
+  Carne picada, Pasta, Arroz, Yogur, Café
+
+### 4K: API routes (8 filer)
+- app/api/voice/route.ts — language="es", demo: ["leche", "pan", "huevos", "tomates", "pollo"]
+- app/api/scan/route.ts — demo-ingredienser på spanska, felmeddelanden
+- app/api/lists/route.ts — "Nombre de lista requerido", felmeddelanden
+- app/api/lists/[token]/route.ts — felmeddelanden
+- app/api/lists/[token]/items/route.ts — felmeddelanden
+- app/api/lists/[token]/items/[itemId]/route.ts — felmeddelanden
+- app/api/lists/[token]/stream/route.ts — SSE kommentarer
+- app/api/lists/[token]/presence/route.ts — felmeddelanden
+
+### 4L: Config-filer
+- middleware.ts — uppdatera ALLA route patterns till spanska
+- next.config.ts — domän, headers
+- package.json — "name": "listadecompras-es"
+- CLAUDE.md — ny för spanska projektet
+- .env.example — kommentarer
+
+---
+
+## STEG 5: ÖVERSÄTT DATA MED PYTHON-SKRIPT
+
+### 5A: foods.json (2625 poster)
+Skapa Python-skript som översätter:
+- name (alla 2625 namn)
+- subcategory, category
+- short_description, long_description
+- meta_title, meta_description
+- storage_method, shelf_life_opened, shelf_life_unopened, freezing_tips
+- usage_tips (array), faq (array of {question, answer})
+- substitutes, allergens, season
+Generera nya sluggar. Spara gamla→nya i food-redirects.json.
+
+### 5B: e-additives.json (353 poster)
+Översätt: name, common_name, category, origin, short_description, long_description,
+meta_title, meta_description, children_note, health_effects (documented, suspected,
+benefits, risk_groups), avoidance_tips, natural_alternatives, common_products
+E_CATEGORIES i types/e-additive.ts MÅSTE matcha category-värden i JSON EXAKT.
+
+### 5C: food-categories.json + food-categories-new.json
+Översätt alla kategorinamn och sluggar.
+
+### 5D: public-lists.json — 50 SPANSKA mallar
+Kulturellt relevanta för Spanien:
+Familj: Compra semanal, familiar, una persona, quincenal, express, presupuesto
+Högtider: Navidad, Nochebuena, Nochevieja, Roscón de Reyes, Semana Santa, barbacoa
+Dieter: Mediterránea, sin gluten, vegetariana, vegana, baja en calorías, deportistas
+Matlagning: Paella, tortilla, gazpacho, croquetas, tapas, cocido, fabada, lentejas, pisto, arroz
+Regionalt: Cocina vasca, catalana, gallega, canaria, andaluza
+Varje mall: id, name, slug, description, category, items (12-25 ingredienser)
+
+---
+
+## STEG 6: STATISKA FILER
+
+- public/llms.txt — HELT NY på spanska (~150 rader)
+- public/llms-full.txt — HELT NY (~4000+ rader, lista ALLA livsmedel + E-additiver med URL:er)
+- public/humans.txt — spansk info
+- app/robots.ts — listadecompras.es domän, alla AI-botar
+- app/sitemap.ts — spanska routes, inkl /terminos och /asociaciones
+- app/opengraph-image.tsx — "Tu lista de compras inteligente - todo en un solo lugar"
+- app/apple-icon.tsx — bokstav "L"
+
+---
+
+## STEG 7: HREFLANG (3 VERSIONER)
+
+```tsx
+alternates: {
+  canonical: "https://listadecompras.es",
+  languages: {
+    "sv-SE": "https://vihandlar.se",
+    "ro-RO": "https://listacumparaturi.ro",
+    "es-ES": "https://listadecompras.es",
+  },
+},
 ```
 
-**IMPORTANT:** The source is `listacumparaturi-ro`, NOT `vihandlar-se`. The Romanian version already has affiliate/Adtraction code removed. Do NOT add any affiliate or Adtraction functionality.
+Footer internationell sektion:
+- 🇸🇪 Suecia (vihandlar.se) — länk
+- 🇷🇴 Rumanía (listacumparaturi.ro) — länk
+- 🇪🇸 España (En vivo) — aktuell
+- 🌍 Global (.com) – 2026
+
+Korrekt route-mappning för hreflang:
+
+| vihandlar.se | listacumparaturi.ro | listadecompras.es |
+|---|---|---|
+| / | / | / |
+| /e-amnen | /aditivi-alimentari | /aditivos-alimentarios |
+| /livsmedel | /alimente | /alimentos |
+| /livsmedel/naringsamne | /alimente/nutrienti | /alimentos/nutrientes |
+| /inkopslista | /lista-de-cumparaturi | /lista-de-compras |
+| /skanner | /scanner | /escaner |
+| /om | /despre | /sobre-nosotros |
+| /integritet | /confidentialitate | /privacidad |
+| /funktioner | /functii | /funciones |
+| /kallor | /surse | /fuentes |
+| /sajtkarta | /harta-site | /mapa-sitio |
+| /villkor | /termeni | /terminos |
+| /partnerskap | /parteneriate | /asociaciones |
 
 ---
 
-## 3. Step 2 — Domain and Language Swap
+## STEG 8: JURIDIK (SPANIEN)
 
-### 2A. Global find-and-replace (in this order):
+### Integritetspolicy (app/privacidad/page.tsx):
+- AEPD: Agencia Española de Protección de Datos, C/ Jorge Juan 6, 28001 Madrid, www.aepd.es
+- RGPD: Reglamento General de Protección de Datos
+- LOPDGDD: Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales
+- LSSI-CE: Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico
+- Operador: Value Unlimited, Arenavägen 29, 121 77 Johanneshov, Estocolmo, Suecia
+- AEPD klagomålsrätt med full kontaktinfo
+- Besökskollen/Savri privacy-info
 
-| Find | Replace With |
-|------|-------------|
-| `listacumparaturi.ro` | `listadecompras.es` |
-| `listacumparaturi-ro` | `listadecompras-es` |
-| `contact@listacumparaturi.ro` | `contact@listadecompras.es` |
-| `Lista Cumparaturi` | `Lista de Compras` |
-| `ro-RO` | `es-ES` |
-| `lang="ro"` | `lang="es"` |
-| `romanian` | `spanish` |
-| `Romania` | `Espana` |
+### Villkor (app/terminos/page.tsx):
+11 sektioner: definiciones, servicio, uso, contenido, listas, escáner/voz,
+propiedad intelectual, limitación de responsabilidad, modificaciones,
+ley aplicable, contacto
 
-### 2B. Update `next.config.js` / `next.config.ts`:
-- Set `i18n` locale to `es` if applicable
-- Verify all domain references
+### Disclaimers:
+- Hälso-disclaimer på alla livsmedelssidor (amber box)
+- E-additiv riskdisclaimer med EFSA-länk (amber box)
+- Trust-box med Livsmedelsverket + EFSA + EU-förordning 1169/2011
 
-### 2C. Update `package.json`:
-- `"name": "listadecompras-es"`
-- `"description"`: in Spanish
-- `"homepage": "https://listadecompras.es"`
-
----
-
-## 4. Step 3 — Route Structure (Spanish URLs)
-
-Rename all route directories to Spanish equivalents:
-
-| Romanian Route | Spanish Route | Description |
-|---------------|--------------|-------------|
-| `/lista-cumparaturi` | `/lista-de-compras` | Main shopping list |
-| `/lista/[shareToken]` | `/lista/[shareToken]` | Shared list (keep token) |
-| `/aditivi` | `/aditivos` | E-additives hub |
-| `/aditivi/[slug]` | `/aditivos/[slug]` | E-additive detail |
-| `/aditivi/scanner` | `/aditivos/escaner` | E-number scanner |
-| `/aditivi/ghid` | `/aditivos/guia` | E-additive guide |
-| `/aditivi/toate` | `/aditivos/todos` | All additives |
-| `/aditivi/categorie/[cat]` | `/aditivos/categoria/[cat]` | Category filter |
-| `/aditivi/numar/[letter]` | `/aditivos/numero/[letter]` | Number filter |
-| `/alimente` | `/alimentos` | Foods hub |
-| `/alimente/[letter]` | `/alimentos/[letter]` | Foods by letter |
-| `/alimente/[letter]/[slug]` | `/alimentos/[letter]/[slug]` | Food detail |
-| `/alimente/categorie/[slug]` | `/alimentos/categoria/[slug]` | Food category |
-| `/cumparaturi` | `/compras` | Shopping hub |
-| `/cumparaturi/produse` | `/compras/productos` | Products |
-| `/cumparaturi/categorii` | `/compras/categorias` | Categories |
-| `/despre` | `/sobre-nosotros` | About |
-| `/confidentialitate` | `/privacidad` | Privacy |
-| `/surse` | `/fuentes` | Sources |
-| `/functii` | `/funciones` | Features |
-| `/harta-site` | `/mapa-del-sitio` | Sitemap page |
-| `/liste` | `/listas` | List templates |
-| `/liste/[slug]` | `/listas/[slug]` | List template detail |
-
-**IMPORTANT:** Also update all internal `<Link href="...">` and `router.push()` calls to use the new Spanish routes. Search for every Romanian route string in the codebase.
+### Footer juridik:
+- AEPD-länk
+- A+ Security badge "Seguridad A+ · RGPD"
+- Value Unlimited dofollow (valueunlimited.io)
+- Savri dofollow (savri.io)
 
 ---
 
-## 5. Step 4 — Full UI Translation (Romanian to Spanish)
+## STEG 9: PARTNERSIDA (app/asociaciones/page.tsx)
 
-Translate ALL user-facing text from Romanian to Spanish. This is the most critical step.
-
-### 5A. Common UI strings:
-
-| Romanian | Spanish |
-|----------|---------|
-| Adauga | Anadir |
-| Sterge | Eliminar |
-| Cauta | Buscar |
-| Salveaza | Guardar |
-| Anuleaza | Cancelar |
-| Incarca... | Cargando... |
-| Impartaseste | Compartir |
-| Copiaza | Copiar |
-| Descarca | Descargar |
-| Inapoi | Volver |
-| Arata mai mult | Ver mas |
-| Arata mai putin | Ver menos |
-| Niciun rezultat | Sin resultados |
-| Lista de cumparaturi | Lista de compras |
-| Adauga produs | Anadir producto |
-| Scaneaza codul E | Escanear numero E |
-| Aditivi alimentari | Aditivos alimentarios |
-| Alimente | Alimentos |
-| Produse | Productos |
-| Categorii | Categorias |
-| Despre noi | Sobre nosotros |
-| Confidentialitate | Privacidad |
-| Harta site | Mapa del sitio |
-| Toate drepturile rezervate | Todos los derechos reservados |
-
-### 5B. Page-specific translations:
-- Landing page: hero text, feature descriptions, CTA buttons
-- Shopping list: all labels, empty states, tooltips
-- E-additive pages: risk levels, category names, descriptions
-- Food pages: nutritional labels, category names
-- Error pages: 404, 500 messages
-- Cookie consent banner (if any)
-
-### 5C. Component-level sweep:
-Go through EVERY component file and translate:
-```bash
-# Find all component files
-find . -name "*.tsx" -o -name "*.ts" | head -200
-```
-For each file, check for Romanian strings in:
-- JSX text content
-- String literals
-- Template literals
-- Constants and enums with display text
-
-### 5D. Date and number formatting:
-- Use Spanish date format: `dd/mm/yyyy` or `d de enero de 2026`
-- Use Spanish number format: `1.000,50` (period for thousands, comma for decimals)
-- Day names: lunes, martes, miercoles, jueves, viernes, sabado, domingo
-- Month names: enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
+- CTA till info@valueunlimited.io
+- Länk till valueunlimited.io/partner-with-us
+- Partnertyper: redes de afiliados, proveedores de feeds, supermercados, productores
+- Spanska nätverk: Awin, TradeDoubler, CJ Affiliate
 
 ---
 
-## 6. Step 5 — Data Files
-
-### 5A. E-additives data (`data/e-additives.json` or similar):
-- E-number codes are universal (E100, E200, etc.) — keep as-is
-- Translate `name`, `description`, `category`, `risk_level` labels to Spanish
-- Translate `function` descriptions
-- Keep `e_number` field unchanged
-
-### 5B. Foods data (`data/foods.json` or similar):
-- Translate food names to Spanish
-- Translate category names
-- Translate nutritional info labels
-- Keep numerical values (calories, etc.) unchanged
-
-### 5C. Category data:
-- Translate all category names and descriptions
-
-### 5D. Shopping list templates (see Step 9 for the 50 templates)
-
-### 5E. Static content files:
-- About page content
-- Privacy policy content
-- Sources/references
-- Feature descriptions
-
-### 5F. Easily forgotten files — CHECK ALL OF THESE:
-
-| File | What to update |
-|------|---------------|
-| `public/robots.txt` | Domain to `listadecompras.es` |
-| `public/sitemap.xml` (if static) | All URLs to listadecompras.es |
-| `public/manifest.json` or `site.webmanifest` | name, short_name, start_url, scope |
-| `public/browserconfig.xml` (if exists) | Tile references |
-| `app/sitemap.ts` (if dynamic) | Base URL |
-| `app/robots.ts` (if dynamic) | Sitemap URL |
-| `app/layout.tsx` | `<html lang="es">`, metadata, fonts |
-| `app/not-found.tsx` | Spanish 404 text |
-| `app/error.tsx` | Spanish error text |
-| `app/loading.tsx` | Spanish loading text |
-| `components/Footer.tsx` or similar | Copyright, links, contact |
-| `components/Header.tsx` or `Navbar.tsx` | Navigation labels |
-| `components/CookieBanner.tsx` (if exists) | Consent text in Spanish |
-| `.env.example` | Domain references |
-| `.env.local` / `.env` | `NEXT_PUBLIC_SITE_URL=https://listadecompras.es` |
-| `vercel.json` (if exists) | Redirects, rewrites, headers |
-| Any `constants.ts` or `config.ts` | Site name, URL, contact info |
-| `lib/utils.ts` or similar | Any hardcoded strings |
-| OpenGraph images (`public/og-image.png`) | Text overlay if it contains Romanian |
-
----
-
-## 7. Step 6 — Static Files and Branding
-
-### 6A. Favicon and app icons:
-- Keep the same orange (#FF8000) branding
-- Update any text in icons if they contain language-specific text
-- Verify `public/favicon.ico`, `public/icon.png`, `public/apple-touch-icon.png`
-
-### 6B. OpenGraph image:
-- If the OG image contains Romanian text, create a new one with Spanish text
-- File: `public/og-image.png` (or wherever it lives)
-- Must say "Lista de Compras" not "Lista Cumparaturi"
-
-### 6C. Font:
-- Keep **Inter** from Google Fonts — it fully supports Spanish characters: a, e, i, o, u, n, u (with accents/tilde)
-- Verify the font import in `app/layout.tsx` or `_document.tsx`
-
-### 6D. Colors:
-- Primary: Orange `#FF8000` / `hsl(37 100% 50%)` — keep unchanged
-- Accent: Green for success states — keep unchanged
-- Dark mode: keep CSS variable system unchanged
-
----
-
-## 8. Step 7 — Hreflang Tags (Three-Way)
-
-Add hreflang tags to the `<head>` of every page. There are now THREE versions:
-
-```html
-<link rel="alternate" hreflang="sv-SE" href="https://vihandlar.se{path}" />
-<link rel="alternate" hreflang="ro-RO" href="https://listacumparaturi.ro{path}" />
-<link rel="alternate" hreflang="es-ES" href="https://listadecompras.es{path}" />
-<link rel="alternate" hreflang="x-default" href="https://vihandlar.se{path}" />
-```
-
-### Implementation details:
-- `{path}` must be the EQUIVALENT path in each language, not a literal copy
-- Swedish paths use Swedish slugs (`/e-amnen`, `/livsmedel`, etc.)
-- Romanian paths use Romanian slugs (`/aditivi`, `/alimente`, etc.)
-- Spanish paths use Spanish slugs (`/aditivos`, `/alimentos`, etc.)
-- `x-default` points to the Swedish version (original)
-- Add these in `app/layout.tsx` or via `generateMetadata()` in each page
-
-### Route mapping for hreflang:
-
-| Swedish (vihandlar.se) | Romanian (listacumparaturi.ro) | Spanish (listadecompras.es) |
-|----------------------|-------------------------------|---------------------------|
-| `/` | `/` | `/` |
-| `/e-amnen` | `/aditivi` | `/aditivos` |
-| `/livsmedel` | `/alimente` | `/alimentos` |
-| `/inkopslistor` | `/lista-cumparaturi` | `/lista-de-compras` |
-| `/listor` | `/liste` | `/listas` |
-| `/om` | `/despre` | `/sobre-nosotros` |
-| `/integritet` | `/confidentialitate` | `/privacidad` |
-| `/funktioner` | `/functii` | `/funciones` |
-| `/sajtkarta` | `/harta-site` | `/mapa-del-sitio` |
-| `/kallor` | `/surse` | `/fuentes` |
-
----
-
-## 9. Step 8 — Legal Compliance (Spain / EU)
-
-### 8A. Privacy Policy (`/privacidad`):
-Write a FULL Spanish privacy policy that references:
-- **AEPD** (Agencia Espanola de Proteccion de Datos) — the Spanish data protection authority
-- **GDPR** / **RGPD** (Reglamento General de Proteccion de Datos) — use the Spanish abbreviation
-- **LOPDGDD** (Ley Organica de Proteccion de Datos y Garantia de los Derechos Digitales) — Spain's national data protection law
-- **LSSI-CE** (Ley de Servicios de la Sociedad de la Informacion y de Comercio Electronico) — Spain's e-commerce law
-
-### 8B. Organization details (use in privacy policy and footer):
-```
-Value Unlimited
-Arenavagen 29
-121 77 Johanneshov
-Stockholm, Sweden
-contact@listadecompras.es
-```
-
-### 8C. Cookie consent:
-- Must comply with LSSI-CE
-- Spanish text for consent banner
-- Link to `/privacidad`
-
-### 8D. Aviso Legal (Legal Notice):
-Spain requires an "Aviso Legal" page. Consider adding `/aviso-legal` with:
-- Company identification (Value Unlimited)
-- Contact information
-- Purpose of the website
-
----
-
-## 10. Step 9 — Shopping List Templates (50 Spanish Templates)
-
-Create 50 culturally relevant Spanish shopping list templates. These should reflect actual Spanish cuisine and shopping habits. Store in the templates data file (JSON or similar).
-
-### Required templates (50 total):
-
-**Everyday meals (10):**
-1. Paella valenciana
-2. Tortilla espanola
-3. Gazpacho andaluz
-4. Cocido madrileno
-5. Fabada asturiana
-6. Ensalada mixta
-7. Croquetas caseras
-8. Lentejas con chorizo
-9. Pisto manchego
-10. Arroz con pollo
-
-**Tapas and appetizers (8):**
-11. Tapas variadas
-12. Patatas bravas
-13. Jamon y queso
-14. Gambas al ajillo
-15. Pimientos de padron
-16. Boquerones en vinagre
-17. Tabla de embutidos
-18. Aceitunas y encurtidos
-
-**Celebrations and holidays (8):**
-19. Cena de Navidad
-20. Comida de Nochebuena
-21. Menu de Nochevieja
-22. Roscon de Reyes
-23. Semana Santa
-24. Menu de Pascua
-25. Fiesta de cumpleanos
-26. Barbacoa de verano
-
-**Weekly planning (6):**
-27. Compra semanal basica
-28. Compra semanal familiar
-29. Compra para una persona
-30. Compra quincenal
-31. Meal prep semanal
-32. Menu infantil semanal
-
-**Dietary and health (6):**
-33. Dieta mediterranea
-34. Compra sin gluten
-35. Compra vegetariana
-36. Compra vegana
-37. Compra baja en calorias
-38. Compra para deportistas
-
-**Baking and desserts (4):**
-39. Churros con chocolate
-40. Flan casero
-41. Tarta de Santiago
-42. Reposteria basica
-
-**Regional cuisines (4):**
-43. Cocina vasca
-44. Cocina catalana
-45. Cocina gallega
-46. Cocina canaria
-
-**Entertaining (4):**
-47. Cena romantica
-48. Picnic en el parque
-49. Brunch dominical
-50. Fiesta infantil
-
-Each template must include:
-- `slug` (URL-friendly, e.g., `paella-valenciana`)
-- `name` (display name in Spanish)
-- `description` (1-2 sentences in Spanish)
-- `items` (array of 8-15 actual ingredient items in Spanish)
-- `category` (one of the categories above)
-- `icon` (emoji)
-
----
-
-## 11. Step 10 — Partnership Page
-
-If the Romanian version has a partnership/collaboration page, translate it to Spanish:
-- Route: `/colaboracion` or `/partners`
-- Explain what the site offers
-- Contact: `contact@listadecompras.es`
-- No affiliate/Adtraction functionality — this is informational only
-
----
-
-## 12. Step 11 — CLAUDE.md for the New Repo
-
-Create a new `CLAUDE.md` at the repo root with content specific to listadecompras.es:
+## STEG 10: CLAUDE.md
 
 ```markdown
-# listadecompras.es — Spanish Shopping List App
+# listadecompras.es — Lista de Compras Inteligente
 
 ## Stack
 - Next.js 15 App Router + React 19 + TypeScript
 - Tailwind CSS + shadcn/ui
-- JSON data (static)
-- Vercel KV (Redis) for shopping lists and sharing
-- SSE/polling for realtime sync
+- JSON data (estático)
+- Vercel KV (Redis) para listas de compras
+- SSE/polling para sincronización en tiempo real
 
-## Commands
-\`\`\`bash
-npm run dev          # Start dev server
-npm run build        # Production build
-npm run lint         # ESLint
-npm run type-check   # TypeScript
-\`\`\`
+## Comandos
+npm run dev / build / lint / type-check
 
-## Critical Rules
-- Spanish in UI, English in code
-- Server Components by default
-- 'use client' only for useState/useEffect/browser APIs
-- No affiliate links — no Adtraction
-- All images via next/image
-- No Supabase — all data is JSON or Vercel KV
+## Reglas críticas
+- Español en UI, inglés en código
+- Server Components por defecto
+- 'use client' solo para useState/useEffect/browser APIs
+- Sin enlaces de afiliados — sin Adtraction
+- Todas las imágenes via next/image
+- Sin Supabase — datos JSON o Vercel KV
 
-## Design
-- Primary color: Orange #FF8000 / hsl(37 100% 50%)
-- Accent: Green (success states)
+## Diseño
+- Color primario: Naranja #FF8000
 - Font: Inter (Google Fonts)
-- Dark mode via CSS variables
+- Dark mode via variables CSS
 
-## Domain
-- Production: https://listadecompras.es
-- Contact: contact@listadecompras.es
-- Organization: Value Unlimited
+## Dominio
+- Producción: https://listadecompras.es
+- Contacto: contact@listadecompras.es
+- Organización: Value Unlimited
 
-## Hreflang siblings
+## Hreflang
 - sv-SE: https://vihandlar.se
 - ro-RO: https://listacumparaturi.ro
-- es-ES: https://listadecompras.es (this site)
+- es-ES: https://listadecompras.es
 ```
 
 ---
 
-## 13. Step 12 — Verification Checklist
+## STEG 11: MIDDLEWARE.TS
 
-Before considering the migration complete, verify ALL of the following:
+Uppdatera ALLA route patterns:
 
-### Build and runtime:
-- [ ] `npm run build` completes without errors
-- [ ] `npm run lint` passes
-- [ ] `npm run type-check` passes
-- [ ] `npm run dev` starts and all pages load
-
-### Language verification:
-- [ ] Search entire codebase for Romanian strings — NONE should remain in UI
-- [ ] Search for `listacumparaturi` — only in hreflang tags
-- [ ] Search for `vihandlar` — only in hreflang tags
-- [ ] All page titles are in Spanish
-- [ ] All meta descriptions are in Spanish
-- [ ] All button/label text is in Spanish
-- [ ] All error messages are in Spanish
-- [ ] Footer is fully in Spanish
-- [ ] 404 page is in Spanish
-
-### Technical verification:
-- [ ] `<html lang="es">` is set
-- [ ] Canonical URLs point to listadecompras.es
-- [ ] Sitemap URLs use listadecompras.es
-- [ ] robots.txt references correct sitemap
-- [ ] manifest.json has correct name and URLs
-- [ ] Besokskollen ID is `b81ab8d1-5379-41f7-89c8-0eb9eff06ed2`
-- [ ] No Romanian or Swedish tracking IDs remain
-- [ ] Hreflang tags present on all pages (3 versions + x-default)
-- [ ] All internal links use Spanish routes
-- [ ] No broken links to Romanian routes
-
-### Legal verification:
-- [ ] Privacy policy references AEPD, RGPD, LOPDGDD, LSSI-CE
-- [ ] Organization details are correct (Value Unlimited, Arenavagen 29, etc.)
-- [ ] Contact email is contact@listadecompras.es
-- [ ] Cookie consent is in Spanish
-
-### Content verification:
-- [ ] 50 shopping list templates present and in Spanish
-- [ ] E-additive data translated
-- [ ] Food data translated
-- [ ] All category names in Spanish
+```typescript
+if (pathname === "/") {
+  schemaTypes = "Organization, WebSite, CollectionPage";
+} else if (pathname === "/escaner") {
+  schemaTypes = "Organization, WebApplication, SoftwareApplication";
+} else if (pathname === "/lista-de-compras") {
+  schemaTypes = "Organization, WebApplication, SoftwareApplication";
+} else if (pathname.startsWith("/alimentos/nutrientes/") && pathname !== "/alimentos/nutrientes") {
+  schemaTypes = "Organization, CollectionPage, ItemList, BreadcrumbList";
+} else if (pathname === "/alimentos/nutrientes") {
+  schemaTypes = "Organization, CollectionPage, BreadcrumbList";
+} else if (pathname.match(/^\/aditivos-alimentarios\/[^/]+$/) && ...) {
+  schemaTypes = "Organization, Article, FAQPage, BreadcrumbList";
+}
+// etc — uppdatera ALLA routes
+```
 
 ---
 
-## 14. Important Rules
+## STEG 12: SLUTVERIFIERING
 
-1. **NO affiliate links.** The Spanish version has NO Adtraction integration, just like the Romanian version. Do not add any affiliate redirect routes or tracking.
+Sök igenom HELA kodbasen — varje sökning ska ge 0 träffar (utom hreflang):
 
-2. **Source repo is `listacumparaturi-ro`.** Do NOT clone from `vihandlar-se`. The Romanian version already has the correct structure with affiliate code removed.
+- [ ] "listacumparaturi" — 0 (utom hreflang)
+- [ ] "vihandlar" — 0 (utom hreflang)
+- [ ] "ro-RO" — 0 (utom hreflang)
+- [ ] "ro_RO" — 0 (utom hreflang)
+- [ ] Rumänska tecken ă, â, î, ș, ț i .tsx/.ts — 0 (utom hreflang/varumärken)
+- [ ] "Acasă" — 0
+- [ ] "Toate" — 0
+- [ ] "Ghid" — 0
+- [ ] "Partajare" — 0
+- [ ] "Cumpărături" — 0 (utom hreflang)
+- [ ] "Se încarcă" — 0
+- [ ] lang="ro" — 0
+- [ ] npm run build — inga fel
+- [ ] npm run lint — inga fel
+- [ ] Alla imports fungerar (inga brutna references)
+- [ ] E_CATEGORIES.name matchar e-additives.json category-värden EXAKT
+- [ ] Share-URL i ShoppingList.tsx = /lista-de-compras/compartir/
+- [ ] Sitemap inkluderar /terminos och /asociaciones
+- [ ] Besökskollen site-id = b81ab8d1-5379-41f7-89c8-0eb9eff06ed2
+- [ ] Alla 42 nutrient-sluggar matchar
 
-3. **Spanish, not Latin American Spanish.** Use Castilian Spanish (es-ES). For example: "ordenador" not "computadora", "movil" not "celular". Use vosotros form where appropriate.
+---
 
-4. **Font stays Inter.** It supports all Spanish special characters (a, e, i, o, u with accents, n with tilde, u with diaeresis). Do NOT change the font.
+## VIKTIGA REGLER
 
-5. **Color stays Orange #FF8000.** Do NOT change the primary color or design system.
-
-6. **Every string matters.** If you find even ONE Romanian string in the production UI, the migration is incomplete. Be thorough.
-
-7. **Test the build.** The migration is NOT done until `npm run build` succeeds cleanly.
-
-8. **Commit frequently.** Make atomic commits as you complete each step, so progress is not lost.
+1. INGEN Adtraction/affiliate — källrepot har det redan borttaget
+2. Källa: listacumparaturi-ro (INTE vihandlar-se)
+3. Kastiljansk spanska (es-ES) — "ordenador" inte "computadora", "móvil" inte "celular"
+4. Font: Inter (stödjer á, é, í, ó, ú, ñ, ü)
+5. Primärfärg: Orange #FF8000
+6. Organisation: Value Unlimited, Arenavägen 29, 121 77 Johanneshov, Stockholm, Sweden
+7. Kontakt: contact@listadecompras.es
+8. Besökskollen: data-site-id="b81ab8d1-5379-41f7-89c8-0eb9eff06ed2"
+9. Commit ofta med atomära commits
+10. npm run build MÅSTE passera
+11. Korrekta spanska diakritiska tecken (á, é, í, ó, ú, ñ, ü) ÖVERALLT
+12. INGEN rumänsk eller svensk text i UI
