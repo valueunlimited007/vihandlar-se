@@ -1,4 +1,4 @@
-# Migration Prompt: Spain (listadecompras.es) — v2.0
+# Migration Prompt: Spain (listadecompras.es) — v2.3
 
 > **Vad är denna fil?**
 > Komplett, copy-paste-redo prompt för en Claude Code-session som skapar den spanska versionen av matplattformen.
@@ -352,7 +352,10 @@ ley aplicable, contacto
 ### Disclaimers:
 - Hälso-disclaimer på alla livsmedelssidor (amber box)
 - E-additiv riskdisclaimer med EFSA-länk (amber box)
-- Trust-box med Livsmedelsverket + EFSA + EU-förordning 1169/2011
+- Trust-box: referera till EFSA (europeisk myndighet) + EU-förordning 1169/2011 i den
+  spanska versionen. INTE "Livsmedelsverket" (svensk myndighet) — skriv istället
+  "Datos del contenido nutricional de la base de datos de la Agencia Sueca de Alimentación,
+  compatible con EFSA y el Reglamento (UE) 1169/2011"
 
 ### Footer juridik:
 - AEPD-länk
