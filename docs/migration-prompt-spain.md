@@ -131,7 +131,9 @@ ShoppingList.tsx share-URL MÅSTE vara: /lista-de-compras/compartir/{token}
 
 ### 4C: app/alimentos/ (5 page.tsx)
 - page.tsx (hub med A-Z navigation)
-- [slug]/page.tsx (detalj — disclaimer, FAQ, näringsvärden, relaterade produkter borttagna)
+- [slug]/page.tsx (detalj — disclaimer, FAQ, näringsvärden. OBS: "Relaterade produkter"-
+  sektionen med ProductCard finns INTE i rumänska versionen — den togs bort vid ro-migreringen.
+  Om den finns kvar, ta bort hela Card-blocket som importerar ProductCard/getRelatedProductsForFood)
 - categoria/[slug]/page.tsx
 - nutrientes/page.tsx (näringsämnen hub)
 - nutrientes/[slug]/page.tsx (näringsämne detalj)
@@ -246,7 +248,12 @@ Skapa Python-skript som översätter:
 - storage_method, shelf_life_opened, shelf_life_unopened, freezing_tips
 - usage_tips (array), faq (array of {question, answer})
 - substitutes, allergens, season
-Generera nya sluggar. Spara gamla→nya i food-redirects.json.
+Generera nya sluggar. Spara gamla→nya i food-redirects.json med formatet:
+```json
+{"aliment-romanesc-slug": "alimento-espanol-slug", ...}
+```
+Filen ERSÄTTER den befintliga food-redirects.json HELT (som har sv→ro mappningar).
+Redirects implementeras i middleware.ts (redan uppsatt — byt bara /alimente/ till /alimentos/).
 
 ### 5B: e-additives.json (353 poster)
 Översätt: name, common_name, category, origin, short_description, long_description,
@@ -270,8 +277,15 @@ Varje mall: id, name, slug, description, category, items (12-25 ingredienser)
 
 ## STEG 6: STATISKA FILER
 
-- public/llms.txt — HELT NY på spanska (~150 rader)
-- public/llms-full.txt — HELT NY (~4000+ rader, lista ALLA livsmedel + E-additiver med URL:er)
+- public/llms.txt — HELT NY på spanska (~150 rader). Följ samma struktur som rumänska/svenska:
+  AI-policy, plattformsbeskrivning, alla funktioner, alla sidor med URL:er, nyckelord, FAQ.
+- public/llms-full.txt — HELT NY (~4000+ rader). Skapa med Python-skript som läser
+  foods.json och e-additives.json och genererar:
+  - Komplett livsmedelslista A-Z: "Nombre: X kcal — https://listadecompras.es/alimentos/slug"
+  - Komplett E-additivlista: "EXXX Nombre: Riesgo X/10 — https://listadecompras.es/aditivos-alimentarios/slug"
+  - Alla 47 näringsämnen med URL:er
+  - 50+ FAQ på spanska
+  - Teknisk stack, datakällor, juridik
 - public/humans.txt — spansk info
 - app/robots.ts — listadecompras.es domän, alla AI-botar
 - app/sitemap.ts — spanska routes, inkl /terminos och /asociaciones
@@ -429,7 +443,8 @@ Sök igenom HELA kodbasen — varje sökning ska ge 0 träffar (utom hreflang):
 - [ ] "vihandlar" — 0 (utom hreflang)
 - [ ] "ro-RO" — 0 (utom hreflang)
 - [ ] "ro_RO" — 0 (utom hreflang)
-- [ ] Rumänska tecken ă, â, î, ș, ț i .tsx/.ts — 0 (utom hreflang/varumärken)
+- [ ] Rumänska tecken ă, â, î, ș, ț i .tsx/.ts — 0 (undantag: hreflang-taggar och
+  varumärken som "Cumpărături" i hreflang, ALDRIG i UI-text)
 - [ ] "Acasă" — 0
 - [ ] "Toate" — 0
 - [ ] "Ghid" — 0
