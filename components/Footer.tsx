@@ -123,7 +123,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <span className="text-muted-foreground">
-                  vihandlar.se
+                  🇸🇪 vihandlar.se
                 </span>
               </li>
               <li>
@@ -131,11 +131,11 @@ export function Footer() {
                   href="https://listacumparaturi.ro"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="dofollow noopener"
                   hrefLang="ro"
-                  title="Lista de Cumpărături online"
+                  title="Listă de Cumpărături online – Lista de compras inteligentă în România"
                 >
-                  listacumparaturi.ro
+                  🇷🇴 listacumparaturi.ro
                 </a>
               </li>
               <li>
@@ -143,11 +143,11 @@ export function Footer() {
                   href="https://listadecompras.es"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="dofollow noopener"
                   hrefLang="es"
-                  title="Lista de Compras online"
+                  title="Lista de Compras online – Tu lista de compras inteligente en España"
                 >
-                  listadecompras.es
+                  🇪🇸 listadecompras.es
                 </a>
               </li>
             </ul>
