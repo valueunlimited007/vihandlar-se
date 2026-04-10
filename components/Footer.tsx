@@ -122,6 +122,11 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
+                <span className="text-muted-foreground">
+                  vihandlar.se
+                </span>
+              </li>
+              <li>
                 <a
                   href="https://listacumparaturi.ro"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -130,17 +135,20 @@ export function Footer() {
                   hrefLang="ro"
                   title="Lista de Cumpărături online"
                 >
-                  Rumänien
+                  listacumparaturi.ro
                 </a>
               </li>
               <li>
-                <span className="text-muted-foreground">Sverige (Live)</span>
-              </li>
-              <li>
-                <span className="text-muted-foreground/60">Spanien – 2026</span>
-              </li>
-              <li>
-                <span className="text-muted-foreground/60">Globalt (.com) – 2026</span>
+                <a
+                  href="https://listadecompras.es"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hrefLang="es"
+                  title="Lista de Compras online"
+                >
+                  listadecompras.es
+                </a>
               </li>
             </ul>
           </div>
