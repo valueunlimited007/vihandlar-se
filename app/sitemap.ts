@@ -1,135 +1,140 @@
 import type { MetadataRoute } from "next";
 import { getAllEAdditives } from "@/lib/data/e-additives";
 import { getAllFoods, getAllFoodCategories } from "@/lib/data/foods";
-import { getAllProducts } from "@/lib/data/products";
-import { getAllProductCategories } from "@/lib/data/products";
+import { getAllProducts, getAllProductCategories } from "@/lib/data/products";
 import { getAllNutrients } from "@/lib/data/nutrients";
 import { E_CATEGORIES } from "@/types/e-additive";
 
 const BASE_URL = "https://vihandlar.se";
+const PRODUCTS_PER_SITEMAP = 5000;
 
-function toISODate(dateStr: string | undefined | null, fallback: string): string {
-  if (!dateStr) return fallback;
+function toDateStr(dateStr: string | undefined | null): string | undefined {
+  if (!dateStr) return undefined;
   try {
-    const d = new Date(dateStr.replace(" ", "T"));
-    if (isNaN(d.getTime())) return fallback;
-    return d.toISOString();
+    let s = dateStr.replace(" ", "T");
+    s = s.replace(/([+-]\d{2})$/, "$1:00");
+    const d = new Date(s);
+    if (isNaN(d.getTime())) return undefined;
+    return d.toISOString().split("T")[0];
   } catch {
-    return fallback;
+    return undefined;
   }
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
+export async function generateSitemaps() {
+  const totalProducts = getAllProducts().length;
+  const productChunks = Math.ceil(totalProducts / PRODUCTS_PER_SITEMAP);
+  return Array.from({ length: 3 + productChunks }, (_, i) => ({ id: i }));
+}
 
-  // Static pages
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL, lastModified: now, changeFrequency: "daily", priority: 1.0 },
-    { url: `${BASE_URL}/e-amnen`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/livsmedel`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/handla`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE_URL}/inkopslista`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE_URL}/skanner`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/om`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${BASE_URL}/funktioner`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${BASE_URL}/sajtkarta`, lastModified: now, changeFrequency: "weekly", priority: 0.5 },
-    { url: `${BASE_URL}/kallor`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
-    { url: `${BASE_URL}/integritet`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${BASE_URL}/villkor`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${BASE_URL}/partnerskap`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/e-amnen/guide`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/e-amnen/alla`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    { url: `${BASE_URL}/llms.txt`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
-    { url: `${BASE_URL}/llms-full.txt`, lastModified: now, changeFrequency: "weekly", priority: 0.3 },
+export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
+  const numId = Number(id);
+  switch (numId) {
+    case 0:
+      return buildStaticEntries();
+    case 1:
+      return buildEAdditiveEntries();
+    case 2:
+      return buildFoodEntries();
+    default:
+      return buildProductEntries(numId - 3);
+  }
+}
+
+function buildStaticEntries(): MetadataRoute.Sitemap {
+  const entries: MetadataRoute.Sitemap = [
+    { url: BASE_URL, changeFrequency: "daily", priority: 1.0 },
+    { url: `${BASE_URL}/e-amnen`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/livsmedel`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/handla`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE_URL}/inkopslista`, changeFrequency: "daily", priority: 0.9 },
+    { url: `${BASE_URL}/skanner`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/om`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/funktioner`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/sajtkarta`, changeFrequency: "weekly", priority: 0.5 },
+    { url: `${BASE_URL}/kallor`, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${BASE_URL}/integritet`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/villkor`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/partnerskap`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/e-amnen/guide`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/e-amnen/alla`, changeFrequency: "weekly", priority: 0.6 },
+    { url: `${BASE_URL}/llms.txt`, changeFrequency: "weekly", priority: 0.3 },
+    { url: `${BASE_URL}/llms-full.txt`, changeFrequency: "weekly", priority: 0.3 },
   ];
 
-  // E-ämnes kategori-sidor (7)
-  const eCategoryPages: MetadataRoute.Sitemap = E_CATEGORIES.map((cat) => ({
-    url: `${BASE_URL}/e-amnen/kategori/${cat.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  // E-ämnes nummer/serie-sidor (7)
-  const eSeriesPages: MetadataRoute.Sitemap = [1, 2, 3, 4, 5, 6, 9].map((series) => ({
-    url: `${BASE_URL}/e-amnen/nummer/${series}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
-
-  // Livsmedelskategorisidor (28)
-  const foodCategories = getAllFoodCategories();
-  const foodCategoryPages: MetadataRoute.Sitemap = foodCategories.map((c) => ({
-    url: `${BASE_URL}/livsmedel/kategori/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
-
-  // Produktkategorisidor (144)
-  const productCategories = getAllProductCategories();
-  const productCategoryPages: MetadataRoute.Sitemap = productCategories.map((c) => ({
-    url: `${BASE_URL}/handla/kategori/${c.slug}`,
-    lastModified: now,
-    changeFrequency: "daily" as const,
-    priority: 0.6,
-  }));
-
-  // E-ämnen detaljsidor (353) — FIX: convert dates to ISO format
-  const eAdditives = getAllEAdditives();
-  const eAdditivePages: MetadataRoute.Sitemap = eAdditives.map((e) => ({
-    url: `${BASE_URL}/e-amnen/${e.slug}`,
-    lastModified: toISODate(e.updated_at, now),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // Livsmedelssidor (2625) — FIX: convert dates to ISO format
-  const foods = getAllFoods();
-  const foodPages: MetadataRoute.Sitemap = foods.map((f) => ({
-    url: `${BASE_URL}/livsmedel/${f.slug}`,
-    lastModified: toISODate(f.updated_at, now),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // Näringsämnesidor
-  const nutrients = getAllNutrients();
-  const nutrientPages: MetadataRoute.Sitemap = [
-    {
-      url: `${BASE_URL}/livsmedel/naringsamne`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-    ...nutrients.map((n) => ({
-      url: `${BASE_URL}/livsmedel/naringsamne/${n.slug}`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
+  for (const cat of E_CATEGORIES) {
+    entries.push({
+      url: `${BASE_URL}/e-amnen/kategori/${cat.slug}`,
+      changeFrequency: "weekly",
       priority: 0.7,
-    })),
-  ];
+    });
+  }
 
-  // ALL produktsidor (10 500+) — previously only 1000!
+  for (const series of [1, 2, 3, 4, 5, 6, 9]) {
+    entries.push({
+      url: `${BASE_URL}/e-amnen/nummer/${series}`,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    });
+  }
+
+  for (const c of getAllFoodCategories()) {
+    entries.push({
+      url: `${BASE_URL}/livsmedel/kategori/${c.slug}`,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    });
+  }
+
+  for (const c of getAllProductCategories()) {
+    entries.push({
+      url: `${BASE_URL}/handla/kategori/${c.slug}`,
+      changeFrequency: "daily",
+      priority: 0.6,
+    });
+  }
+
+  entries.push({
+    url: `${BASE_URL}/livsmedel/naringsamne`,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  });
+  for (const n of getAllNutrients()) {
+    entries.push({
+      url: `${BASE_URL}/livsmedel/naringsamne/${n.slug}`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    });
+  }
+
+  return entries;
+}
+
+function buildEAdditiveEntries(): MetadataRoute.Sitemap {
+  return getAllEAdditives().map((e) => ({
+    url: `${BASE_URL}/e-amnen/${e.slug}`,
+    lastModified: toDateStr(e.updated_at),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+}
+
+function buildFoodEntries(): MetadataRoute.Sitemap {
+  return getAllFoods().map((f) => ({
+    url: `${BASE_URL}/livsmedel/${f.slug}`,
+    lastModified: toDateStr(f.updated_at),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+}
+
+function buildProductEntries(chunk: number): MetadataRoute.Sitemap {
   const products = getAllProducts();
-  const productPages: MetadataRoute.Sitemap = products.map((p) => ({
+  const start = chunk * PRODUCTS_PER_SITEMAP;
+  const end = Math.min(start + PRODUCTS_PER_SITEMAP, products.length);
+  return products.slice(start, end).map((p) => ({
     url: `${BASE_URL}/handla/produkt/${p.slug}`,
-    lastModified: now,
     changeFrequency: "daily" as const,
     priority: 0.5,
   }));
-
-  return [
-    ...staticPages,
-    ...eCategoryPages,
-    ...eSeriesPages,
-    ...foodCategoryPages,
-    ...productCategoryPages,
-    ...eAdditivePages,
-    ...foodPages,
-    ...nutrientPages,
-    ...productPages,
-  ];
 }
