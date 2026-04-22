@@ -18,20 +18,9 @@ const nextConfig: NextConfig = {
         hostname: "media.delitea.se",
       },
       {
+        // Coffee Friend använder Kavos Draugas CDN (moderbolag) för produktbilder
         protocol: "https",
-        hostname: "www.coffeefriend.se",
-      },
-      {
-        protocol: "https",
-        hostname: "media.coffeefriend.se",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.coffeefriend.se",
-      },
-      {
-        protocol: "https",
-        hostname: "images.coffeefriend.se",
+        hostname: "img.kavosdraugas.lt",
       },
     ],
   },

@@ -90,6 +90,33 @@ function parseBool(raw: string | undefined): boolean {
   return v === "" || v === "1" || v === "true" || v === "yes" || v === "ja";
 }
 
+/**
+ * Returns true when any material (user-visible / SEO-relevant) field differs
+ * between the previous record and the freshly parsed one. Used to decide
+ * whether to bump `last_updated` — otherwise every bi-monthly import would
+ * churn every row in products.json just from the timestamp.
+ */
+function hasMaterialChange(
+  prev: Product,
+  next: Omit<Product, "id" | "created_at" | "last_updated">,
+): boolean {
+  return (
+    prev.name !== next.name ||
+    prev.slug !== next.slug ||
+    prev.description !== next.description ||
+    prev.price !== next.price ||
+    prev.original_price !== next.original_price ||
+    prev.currency !== next.currency ||
+    prev.brand !== next.brand ||
+    prev.category !== next.category ||
+    prev.image_url !== next.image_url ||
+    prev.product_url !== next.product_url ||
+    prev.ean !== next.ean ||
+    prev.in_stock !== next.in_stock ||
+    prev.shipping_cost !== next.shipping_cost
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -137,8 +164,36 @@ async function main() {
     `[IMPORT] Feed size: ${csv.length} bytes, ${lines.length} lines (incl. header)`,
   );
 
+  // Load existing catalog up front so we can preserve stable identifiers
+  // (id, created_at, slug) for products that are simply being refreshed.
+  const existing: Product[] = JSON.parse(readFileSync(PRODUCTS_FILE, "utf-8"));
+  const suffix = `-${store.slug}`;
+  const retained = existing.filter(
+    (p) => p.store_id !== store.id && !p.slug.endsWith(suffix),
+  );
+  const previousStoreProducts = existing.filter(
+    (p) => p.store_id === store.id || p.slug.endsWith(suffix),
+  );
+
+  // Index previous products by their stable key (SKU per store). Because the
+  // initial Delitea import used a different store_id than what's in
+  // stores.json, we also fall back to matching on product_id alone when the
+  // slug suffix proves the product came from this store.
+  const previousByKey = new Map<string, Product>();
+  const previousByProductId = new Map<string, Product>();
+  for (const p of previousStoreProducts) {
+    previousByKey.set(`${p.store_id}|${p.product_id}`, p);
+    previousByProductId.set(p.product_id, p);
+  }
+
+  // Reserve slugs from other stores so we never collide across partners.
+  const takenSlugs = new Set<string>(retained.map((p) => p.slug));
+
   const parsed: Product[] = [];
-  const seenSlugs = new Set<string>();
+  const seenSlugsThisFeed = new Set<string>();
+  let preserved = 0;
+  let fresh = 0;
+  let refreshed = 0;
   let skippedEmpty = 0;
   let skippedMissingFields = 0;
   let skippedInvalidPrice = 0;
@@ -180,15 +235,24 @@ async function main() {
       continue;
     }
 
-    let slug = `${normalizeSlug(name, 80)}-${store.slug}`;
-    // Keep slugs unique within this feed (append a short SKU suffix on collisions).
-    if (seenSlugs.has(slug)) {
-      slug = `${slug}-${normalizeSlug(sku, 12)}`;
-    }
-    seenSlugs.add(slug);
+    const prior =
+      previousByKey.get(`${store.id}|${sku}`) ?? previousByProductId.get(sku);
 
-    parsed.push({
-      id: randomUUID(),
+    // Pick a slug. Reuse the prior slug for URL stability across imports;
+    // otherwise derive one from the product name and disambiguate collisions.
+    let slug: string;
+    if (prior?.slug) {
+      slug = prior.slug;
+    } else {
+      let candidate = `${normalizeSlug(name, 80)}-${store.slug}`;
+      if (seenSlugsThisFeed.has(candidate) || takenSlugs.has(candidate)) {
+        candidate = `${candidate}-${normalizeSlug(sku, 12)}`;
+      }
+      slug = candidate;
+    }
+    seenSlugsThisFeed.add(slug);
+
+    const next: Omit<Product, "id" | "created_at" | "last_updated"> = {
       store_id: store.id,
       product_id: sku,
       name,
@@ -204,22 +268,37 @@ async function main() {
       ean,
       in_stock: inStock,
       shipping_cost: shipping != null && shipping > 0 ? shipping : null,
-      last_updated: new Date().toISOString(),
-      created_at: new Date().toISOString(),
-    });
+    };
+
+    if (prior) {
+      preserved++;
+      const changed = hasMaterialChange(prior, next);
+      if (changed) refreshed++;
+      parsed.push({
+        ...next,
+        id: prior.id,
+        created_at: prior.created_at,
+        last_updated: changed
+          ? new Date().toISOString()
+          : (prior.last_updated ?? new Date().toISOString()),
+      });
+    } else {
+      fresh++;
+      const now = new Date().toISOString();
+      parsed.push({
+        ...next,
+        id: randomUUID(),
+        created_at: now,
+        last_updated: now,
+      });
+    }
   }
 
   console.log(
-    `[IMPORT] Parsed ${parsed.length} products. Skipped — empty:${skippedEmpty} short:${skippedShortRow} missing:${skippedMissingFields} invalidPrice:${skippedInvalidPrice}`,
+    `[IMPORT] Parsed ${parsed.length} products — ${preserved} preserved (${refreshed} with material change), ${fresh} new. Skipped — empty:${skippedEmpty} short:${skippedShortRow} missing:${skippedMissingFields} invalidPrice:${skippedInvalidPrice}`,
   );
 
-  // Merge with existing products.json
-  const existing: Product[] = JSON.parse(readFileSync(PRODUCTS_FILE, "utf-8"));
-  const suffix = `-${store.slug}`;
-  const retained = existing.filter(
-    (p) => p.store_id !== store.id && !p.slug.endsWith(suffix),
-  );
-  const previousStoreCount = existing.length - retained.length;
+  const previousStoreCount = previousStoreProducts.length;
   console.log(
     `[IMPORT] Previously had ${previousStoreCount} ${store.slug} products; parsed ${parsed.length} fresh.`,
   );
