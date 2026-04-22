@@ -252,9 +252,7 @@ async function main() {
     }
     seenSlugsThisFeed.add(slug);
 
-    const next: Omit<Product, "id" | "created_at" | "last_updated"> = {
-      store_id: store.id,
-      product_id: sku,
+    const material = {
       name,
       slug,
       description,
@@ -270,28 +268,40 @@ async function main() {
       shipping_cost: shipping != null && shipping > 0 ? shipping : null,
     };
 
-    if (prior) {
+    const isNew = !prior;
+    const changed = prior ? hasMaterialChange(prior, { store_id: store.id, product_id: sku, ...material }) : false;
+    const now = new Date().toISOString();
+
+    if (isNew) fresh++;
+    else {
       preserved++;
-      const changed = hasMaterialChange(prior, next);
       if (changed) refreshed++;
-      parsed.push({
-        ...next,
-        id: prior.id,
-        created_at: prior.created_at,
-        last_updated: changed
-          ? new Date().toISOString()
-          : (prior.last_updated ?? new Date().toISOString()),
-      });
-    } else {
-      fresh++;
-      const now = new Date().toISOString();
-      parsed.push({
-        ...next,
-        id: randomUUID(),
-        created_at: now,
-        last_updated: now,
-      });
     }
+
+    // Emit fields in a stable order matching the current shape of
+    // data/products.json so the bi-monthly cron produces zero diff when
+    // nothing materially changed. Don't reshuffle this — a one-time
+    // cleanup commit was paid to land on this exact order.
+    parsed.push({
+      store_id: store.id,
+      product_id: sku,
+      name: material.name,
+      slug: material.slug,
+      description: material.description,
+      price: material.price,
+      original_price: material.original_price,
+      currency: material.currency,
+      brand: material.brand,
+      category: material.category,
+      image_url: material.image_url,
+      product_url: material.product_url,
+      ean: material.ean,
+      in_stock: material.in_stock,
+      shipping_cost: material.shipping_cost,
+      id: prior?.id ?? randomUUID(),
+      created_at: prior?.created_at ?? now,
+      last_updated: isNew || changed ? now : (prior?.last_updated ?? now),
+    } as Product);
   }
 
   console.log(
