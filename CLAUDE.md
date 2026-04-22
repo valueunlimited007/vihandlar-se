@@ -10,10 +10,12 @@
 
 ## Kommandon
 ```bash
-npm run dev          # Starta dev-server
-npm run build        # Bygg för produktion
-npm run lint         # ESLint
-npm run type-check   # TypeScript
+npm run dev                 # Starta dev-server
+npm run build               # Bygg för produktion
+npm run lint                # ESLint
+npm run type-check          # TypeScript
+npm run import-feed <slug>  # Importera Adtraction-flöde (delitea | coffee-friend)
+npm run generate-categories # Regenerera product-categories.json från products.json
 ```
 
 ## Kritiska regler
@@ -24,13 +26,24 @@ npm run type-check   # TypeScript
 - Alla bilder via next/image
 - Ingen Supabase — all data är JSON eller Vercel KV
 
+## Partners / butiker (Adtraction)
+- **Delitea** (`delitea`) — delikatesser, drycker, kök/hushåll. ~10 500 produkter.
+- **Coffee Friend** (`coffee-friend`) — espressomaskiner, kaffekvarnar, kaffebönor
+  och tillbehör. ~2 300 produkter. Dedikerad spårningssubdomän
+  `at.coffeefriend.se`.
+
+Butikskonfig i `data/stores.json`. Nya partners läggs till där + i redirect-
+routens allowlist (`app/api/redirect/[store]/route.ts`) + som image-domän i
+`next.config.ts`. Komponenter identifierar butik per produkt via
+`getStoreForProduct(product)` i `lib/data/stores.ts`.
+
 ## Rendering-strategi
 | Innehåll | Strategi | Detaljer |
 |----------|----------|---------|
 | E-ämnen (267) | SSG | generateStaticParams vid build |
 | Livsmedel (2625) | ISR | revalidate: 3600 |
-| Produkter (10521) | ISR | revalidate: 3600 |
-| Kategorier (144) | ISR | revalidate: 3600 |
+| Produkter (~12 800) | ISR | revalidate: 3600 |
+| Kategorier (~180) | ISR | revalidate: 3600 |
 | Startsida | ISR | revalidate: 1800 |
 | Inköpslista | CSR | 'use client' + Vercel KV |
 | E-nummerskanner | CSR | 'use client' + API Route |

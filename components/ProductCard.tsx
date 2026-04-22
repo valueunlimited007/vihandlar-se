@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Product } from "@/types/store";
+import { getStoreForProduct } from "@/lib/data/stores";
 
 interface ProductCardProps {
   product: Product;
@@ -11,8 +12,10 @@ interface ProductCardProps {
 
 export function ProductCard({
   product,
-  storeName = "Delitea",
+  storeName,
 }: ProductCardProps) {
+  const resolvedStoreName =
+    storeName ?? getStoreForProduct(product)?.name ?? "vihandlar.se";
   const hasDiscount =
     product.original_price != null && product.original_price > product.price;
   const discountPercent = hasDiscount
@@ -35,7 +38,7 @@ export function ProductCard({
         {product.image_url ? (
           <Image
             src={product.image_url}
-            alt={`${product.name}${product.brand ? ` från ${product.brand}` : ""} – köp hos Delitea`}
+            alt={`${product.name}${product.brand ? ` från ${product.brand}` : ""} – köp hos ${resolvedStoreName}`}
             fill
             className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -61,7 +64,7 @@ export function ProductCard({
           variant="secondary"
           className="absolute top-2 right-2 text-[10px] group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
         >
-          {storeName}
+          {resolvedStoreName}
         </Badge>
       </div>
 

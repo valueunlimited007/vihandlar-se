@@ -380,7 +380,7 @@ export default function OmPage() {
             },
             {
               q: "Varifrån kommer produktpriserna?",
-              a: "Vi hämtar priser från svenska nätbutiker som Delitea och andra partners. Priserna uppdateras regelbundet för att ge dig aktuell information när du söker produkter.",
+              a: "Vi hämtar priser från svenska nätbutiker som Delitea, Coffee Friend och andra partners. Priserna uppdateras regelbundet för att ge dig aktuell information när du söker produkter.",
             },
             {
               q: "Hur exakt är näringsdata för livsmedel?",

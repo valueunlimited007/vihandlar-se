@@ -850,7 +850,7 @@ export default async function FoodDetailPage({ params }: PageProps) {
               Handla {food.name} online
             </CardTitle>
             <p className="text-sm text-muted-foreground">
-              Relaterade produkter från Delitea
+              Relaterade produkter från våra partnerbutiker
             </p>
           </CardHeader>
           <CardContent>

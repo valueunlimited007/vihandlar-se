@@ -1,6 +1,6 @@
 // lib/data/stores.ts
 import storesData from '@/data/stores.json';
-import type { Store, AffiliateConfig } from '@/types/store';
+import type { Store, AffiliateConfig, Product } from '@/types/store';
 
 const stores: Store[] = storesData as Store[];
 
@@ -23,6 +23,26 @@ export function getStoreBySlug(slug: string): Store | undefined {
  */
 export function getStoreById(id: string): Store | undefined {
   return stores.find(s => s.id === id && s.is_active);
+}
+
+/**
+ * Hämta butik för en produkt. Matchar i ordning:
+ * 1. product.store_id mot store.id
+ * 2. product.slug suffix mot store.slug (ex "...-coffee-friend")
+ * 3. Fallback till första aktiva butiken
+ */
+export function getStoreForProduct(product: Pick<Product, 'store_id' | 'slug'>): Store | undefined {
+  if (product.store_id) {
+    const byId = stores.find(s => s.id === product.store_id && s.is_active);
+    if (byId) return byId;
+  }
+  if (product.slug) {
+    const bySlug = stores.find(
+      s => s.is_active && product.slug.endsWith(`-${s.slug}`),
+    );
+    if (bySlug) return bySlug;
+  }
+  return stores.find(s => s.is_active);
 }
 
 /**

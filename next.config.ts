@@ -17,6 +17,22 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "media.delitea.se",
       },
+      {
+        protocol: "https",
+        hostname: "www.coffeefriend.se",
+      },
+      {
+        protocol: "https",
+        hostname: "media.coffeefriend.se",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.coffeefriend.se",
+      },
+      {
+        protocol: "https",
+        hostname: "images.coffeefriend.se",
+      },
     ],
   },
 
