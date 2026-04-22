@@ -30,11 +30,14 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Handla online - Jämför priser på 10 000+ produkter",
   description:
-    "Handla mat online från Delitea. Jämför priser på över 10 000 produkter. Snabb leverans direkt hem till dig.",
+    "Handla mat, kaffe och delikatesser online från Delitea och Coffee Friend. Jämför priser på över 10 000 produkter med snabb leverans direkt hem.",
   keywords: [
     "handla mat online",
     "jämför matpriser",
     "Delitea",
+    "Coffee Friend",
+    "espressomaskiner",
+    "kaffebönor",
     "matbutik online",
     "livsmedel online",
   ],
@@ -44,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Handla online - Jämför priser | vihandlar.se",
     description:
-      "Handla mat online från Delitea. Jämför priser på över 10 000 produkter.",
+      "Handla mat, kaffe och delikatesser från Delitea och Coffee Friend. Jämför priser på över 10 000 produkter.",
     type: "website",
     url: "https://vihandlar.se/handla",
   },
@@ -57,11 +60,17 @@ export default function ShoppingPage() {
   const featuredProducts = getFeaturedProducts(40);
   const discountedProducts = getDiscountedProducts(8);
   const stores = getAllStores();
-  const storeName = stores[0]?.name ?? "Delitea";
+  const storeNames = stores.map((s) => s.name);
+  const storeList =
+    storeNames.length === 0
+      ? "våra partnerbutiker"
+      : storeNames.length === 1
+        ? storeNames[0]
+        : `${storeNames.slice(0, -1).join(", ")} och ${storeNames.at(-1)}`;
 
   const collectionPageSchema = buildCollectionPageSchema({
     name: "Handla mat online – Jämför priser på matvaror",
-    description: `Utforska ${productCount.toLocaleString("sv-SE")} produkter från ${storeName}. Jämför priser och handla smidigt online.`,
+    description: `Utforska ${productCount.toLocaleString("sv-SE")} produkter från ${storeList}. Jämför priser och handla smidigt online.`,
     url: "https://vihandlar.se/handla",
     numberOfItems: productCount,
   });
@@ -97,7 +106,7 @@ export default function ShoppingPage() {
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Utforska {productCount.toLocaleString("sv-SE")} produkter från{" "}
-          {storeName}. Jämför priser, hitta erbjudanden och handla smidigt
+          {storeList}. Jämför priser, hitta erbjudanden och handla smidigt
           online.
         </p>
       </div>
@@ -159,11 +168,7 @@ export default function ShoppingPage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {discountedProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                storeName={storeName}
-              />
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </section>

@@ -14,7 +14,7 @@ Detta dokument beskriver hur du exporterar data och vilken strategi som gäller.
 | `food_categories` | ~10 | Statisk | `data/food-categories.json` |
 | `products` | ~7000 | Statisk | `data/products.json` |
 | `product_categories` | ~144 | Statisk | `data/product-categories.json` |
-| `stores` | ~1 | Statisk | `data/stores.json` |
+| `stores` | 2 (Delitea, Coffee Friend) | Statisk | `data/stores.json` |
 | `public_lists` | ~10 | Statisk | `data/public-lists.json` |
 | `public_items` | ~110 | Statisk | (inkluderas i public-lists) |
 | `lists` | Dynamisk | User data | localStorage |
@@ -176,6 +176,35 @@ SUPABASE_ANON_KEY=
 - [ ] Verifiera allt fungerar utan Supabase
 - [ ] Ta bort Supabase-miljövariabler
 - [ ] Avsluta Supabase-projekt (spara pengar)
+
+---
+
+## Importera produkter från Adtraction-flöden
+
+Produkt- och kategoridata underhålls som statisk JSON. Varje aktiv partner i
+`data/stores.json` har ett `feed_url` (Adtraction CSV) och `trackingBase`
+(Adtraction-spårning). För att uppdatera produkterna för en partner:
+
+```bash
+# Hämtar och parsar CSV-flödet, uppdaterar data/products.json för butiken
+npm run import-feed coffee-friend
+npm run import-feed delitea
+
+# Regenerera data/product-categories.json från alla produkter
+npm run generate-categories
+```
+
+Importskripten:
+- Läser `data/stores.json` för att hitta butikens `feed_url` och `trackingBase`.
+- Tar bort existerande produkter för butiken (matchning via `store_id` eller
+  slug-suffix `-<slug>`) och lägger till de färska.
+- Lämnar produkter från andra butiker orörda — perfekt när bara en partner
+  uppdaterar sitt sortiment.
+
+Adtraction CSV-format (tab-delimiterat, single-quote text-delimiter):
+`SKU, Name, Description, Category, Price, Shipping, Currency, Instock,
+ProductUrl, ImageUrl, TrackingUrl, Brand, OriginalPrice, Ean,
+ManufacturerArticleNumber, Extras`.
 
 ---
 

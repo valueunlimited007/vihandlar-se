@@ -10,7 +10,6 @@ import {
   getProductsByCategory,
   getAllProductCategories,
 } from "@/lib/data/products";
-import { getAllStores } from "@/lib/data/stores";
 
 export const revalidate = 3600;
 
@@ -66,8 +65,6 @@ export default async function CategoryPage({
   }
 
   const page = Math.max(1, parseInt(pageParam ?? "1", 10) || 1);
-  const stores = getAllStores();
-  const storeName = stores[0]?.name ?? "Delitea";
 
   let allProducts = getProductsByCategory(slug);
 
@@ -212,11 +209,7 @@ export default async function CategoryPage({
       {products.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-8">
           {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              storeName={storeName}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (

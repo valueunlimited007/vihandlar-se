@@ -37,7 +37,7 @@ const stats = [
   { label: "Indexerade sidor", value: "13 700+" },
   { label: "Livsmedel", value: "2 625" },
   { label: "E-ämnen", value: "353" },
-  { label: "Produkter", value: "10 500+" },
+  { label: "Produkter", value: "12 800+" },
 ];
 
 const partners = [

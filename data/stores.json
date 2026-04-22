@@ -3,7 +3,7 @@
         "id": "717fdaa7-1767-4931-baf5-42d9e09830e0",
         "slug": "delitea",
         "name": "Delitea",
-        "description": "Internationella delikatesser och specialiteter fr\u00e5n hela v\u00e4rlden. \u00d6ver 10,000 produkter med snabb leverans.",
+        "description": "Internationella delikatesser och specialiteter från hela världen. Över 10,000 produkter med snabb leverans.",
         "logo_url": null,
         "website_url": "https://www.delitea.se",
         "affiliate_network": "adtraction",
@@ -19,5 +19,26 @@
         "is_active": true,
         "created_at": "2026-02-05T09:12:02.40366+00:00",
         "updated_at": "2026-02-05T09:12:02.948852+00:00"
+    },
+    {
+        "id": "b2c4f1e8-3a5d-4e9f-8c7a-1d2b3c4e5f67",
+        "slug": "coffee-friend",
+        "name": "Coffee Friend",
+        "description": "Allt för kaffeentusiasten – espressomaskiner, kaffekvarnar, kaffebönor och tillbehör från ledande varumärken. Snabb leverans i hela Sverige.",
+        "logo_url": null,
+        "website_url": "https://www.coffeefriend.se",
+        "affiliate_network": "adtraction",
+        "affiliate_config": {
+            "channelId": "2013245131",
+            "programId": "1893895331",
+            "cookieDays": 45,
+            "programAdId": "1893895334",
+            "trackingBase": "https://at.coffeefriend.se/t/t?a=1893895334&as=2013245131&t=2&tk=1"
+        },
+        "feed_url": "https://adtraction.com/productfeed.htm?type=feed&format=CSV&encoding=UTF8&epi=0&zip=0&cdelim=tab&tdelim=singlequote&sd=0&sn=0&flat=0&apid=1893895331&asid=2013245131&gsh=0&pfid=2269&gt=0",
+        "feed_type": "csv",
+        "is_active": true,
+        "created_at": "2026-04-22T00:00:00.000000+00:00",
+        "updated_at": "2026-04-22T00:00:00.000000+00:00"
     }
 ]

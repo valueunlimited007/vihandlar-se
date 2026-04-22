@@ -203,8 +203,8 @@ export default function LandingPage() {
               </div>
               <CardTitle className="text-2xl">Handla Varor</CardTitle>
               <CardDescription className="text-base">
-                Hitta bästa pris på matvaror från Delitea med fler butiker på
-                väg.
+                Hitta bästa pris på matvaror från Delitea och kaffe från
+                Coffee Friend – med fler butiker på väg.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -212,7 +212,7 @@ export default function LandingPage() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <span className="text-sm">
-                    Realtidspriser från Delitea (fler på väg)
+                    Realtidspriser från Delitea och Coffee Friend (fler på väg)
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -319,7 +319,7 @@ export default function LandingPage() {
               </div>
               <h3 className="text-xl font-semibold">Spara Pengar</h3>
               <p className="text-muted-foreground">
-                Realtidspriser från Delitea och hitta bästa erbjudanden
+                Realtidspriser från Delitea och Coffee Friend – hitta bästa erbjudanden
               </p>
             </div>
 

@@ -19,7 +19,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getProductBySlug, getRelatedProducts } from "@/lib/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import {
-  getAllStores,
+  getStoreForProduct,
   getRedirectUrl,
   getAffiliateLinkProps,
   getAffiliateDisclaimer,
@@ -41,8 +41,8 @@ export async function generateMetadata({
     return { title: "Produkt hittades inte" };
   }
 
-  const stores = getAllStores();
-  const storeName = stores[0]?.name ?? "Delitea";
+  const store = getStoreForProduct(product);
+  const storeName = store?.name ?? "vihandlar.se";
 
   const title = `${product.name} - Köp hos ${storeName} | vihandlar.se`;
   const description = product.description
@@ -75,9 +75,8 @@ export default async function ProductDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const stores = getAllStores();
-  const store = stores[0];
-  const storeName = store?.name ?? "Delitea";
+  const store = getStoreForProduct(product);
+  const storeName = store?.name ?? "vihandlar.se";
 
   const relatedProducts = product.category
     ? getRelatedProducts(product.category, slug)
@@ -456,7 +455,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
           <CardContent>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {relatedProducts.map((p) => (
-                <ProductCard key={p.id} product={p} storeName={storeName} />
+                <ProductCard key={p.id} product={p} />
               ))}
             </div>
           </CardContent>

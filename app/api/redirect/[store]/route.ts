@@ -2,15 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import { getStoreBySlug, buildAdtractionUrl } from "@/lib/data/stores";
 
 // Known Adtraction tracking domains
+// Includes the shared Adtraction endpoints plus dedicated per-advertiser subdomains.
 const TRACKING_DOMAINS = [
   "go.adt242.com",
   "track.adtraction.com",
+  "at.coffeefriend.se",
 ];
 
 // Known store domains (raw product URLs)
 const STORE_DOMAINS = [
   "www.delitea.se",
   "delitea.se",
+  "www.coffeefriend.se",
+  "coffeefriend.se",
 ];
 
 export async function GET(
