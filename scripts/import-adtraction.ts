@@ -101,6 +101,12 @@ async function main() {
     process.exit(1);
   }
 
+  // Safeguard: refuse to replace an existing catalog with far fewer products,
+  // which usually means the feed was truncated or partially broken. Set
+  // IMPORT_MIN_RATIO=0 to disable (e.g. initial imports).
+  const minRatio = Number(process.env.IMPORT_MIN_RATIO ?? "0.5");
+  const minAbsolute = Number(process.env.IMPORT_MIN_ABSOLUTE ?? "50");
+
   const stores: Store[] = JSON.parse(readFileSync(STORES_FILE, "utf-8"));
   const store = stores.find((s) => s.slug === storeSlug && s.is_active);
   if (!store) {
@@ -213,10 +219,26 @@ async function main() {
   const retained = existing.filter(
     (p) => p.store_id !== store.id && !p.slug.endsWith(suffix),
   );
-  const removed = existing.length - retained.length;
+  const previousStoreCount = existing.length - retained.length;
   console.log(
-    `[IMPORT] Removed ${removed} existing ${store.slug} products; retained ${retained.length} from other stores.`,
+    `[IMPORT] Previously had ${previousStoreCount} ${store.slug} products; parsed ${parsed.length} fresh.`,
   );
+
+  if (parsed.length < minAbsolute) {
+    console.error(
+      `[IMPORT] Aborting: parsed only ${parsed.length} products (minimum ${minAbsolute}). Feed may be broken.`,
+    );
+    process.exit(1);
+  }
+  if (
+    previousStoreCount > 0 &&
+    parsed.length < previousStoreCount * minRatio
+  ) {
+    console.error(
+      `[IMPORT] Aborting: parsed ${parsed.length} products is less than ${Math.round(minRatio * 100)}% of previous ${previousStoreCount}. Feed may be truncated. Set IMPORT_MIN_RATIO=0 to override.`,
+    );
+    process.exit(1);
+  }
 
   const merged = [...retained, ...parsed].sort((a, b) =>
     a.name.localeCompare(b.name, "sv"),

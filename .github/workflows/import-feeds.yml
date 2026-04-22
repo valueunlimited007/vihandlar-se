@@ -1,0 +1,127 @@
+name: Import Adtraction product feeds
+
+on:
+  # 1st and 15th of each month at 03:00 UTC (05:00 Swedish summer / 04:00 winter).
+  schedule:
+    - cron: "0 3 1,15 * *"
+  # Manual trigger for ad-hoc imports or initial population.
+  workflow_dispatch:
+    inputs:
+      stores:
+        description: "Space-separated store slugs to import (default: all active)"
+        required: false
+        default: "delitea coffee-friend"
+      min_ratio:
+        description: "Abort if parsed count is less than this ratio of previous (0 to disable)"
+        required: false
+        default: "0.5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-feeds
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Import product feeds
+        id: import
+        env:
+          IMPORT_MIN_RATIO: ${{ github.event.inputs.min_ratio || '0.5' }}
+          STORES: ${{ github.event.inputs.stores || 'delitea coffee-friend' }}
+        run: |
+          set -uo pipefail
+          failed=()
+          for slug in $STORES; do
+            echo "::group::Importing $slug"
+            if npm run import-feed -- "$slug"; then
+              echo "::endgroup::"
+            else
+              echo "::endgroup::"
+              echo "::warning title=Import failed::$slug feed import failed, continuing with remaining stores"
+              failed+=("$slug")
+            fi
+          done
+          if [ ${#failed[@]} -gt 0 ]; then
+            echo "failed=${failed[*]}" >> "$GITHUB_OUTPUT"
+          fi
+          # Only fail the job if ALL stores failed — successful ones should still be committed.
+          total=$(echo "$STORES" | wc -w)
+          if [ ${#failed[@]} -eq "$total" ]; then
+            echo "::error::All feed imports failed"
+            exit 1
+          fi
+
+      - name: Regenerate product categories
+        run: npm run generate-categories
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- data/products.json data/product-categories.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes in products.json or product-categories.json."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "summary<<EOF"
+              git diff --stat -- data/products.json data/product-categories.json
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          DIFF_SUMMARY: ${{ steps.diff.outputs.summary }}
+          FAILED_STORES: ${{ steps.import.outputs.failed }}
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/products.json data/product-categories.json
+          {
+            echo "chore(data): refresh Adtraction product feeds"
+            echo
+            echo "$DIFF_SUMMARY"
+            echo
+            if [ -n "$FAILED_STORES" ]; then
+              echo "Stores that failed (not updated): $FAILED_STORES"
+              echo
+            fi
+            echo "Triggered by: $TRIGGER"
+          } | git commit -F -
+          git push
+
+      - name: Summary
+        run: |
+          {
+            echo "## Adtraction feed import"
+            echo ""
+            if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+              echo "Committed updated data:"
+              echo ""
+              echo '```'
+              echo "${{ steps.diff.outputs.summary }}"
+              echo '```'
+            else
+              echo "No changes — product feeds matched existing data."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
