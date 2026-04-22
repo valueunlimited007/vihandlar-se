@@ -113,24 +113,41 @@ function main() {
     usedSlugs.add(slug);
     usedNames.set(`${name}|${slug}`, (usedNames.get(`${name}|${slug}`) ?? 0) + 1);
 
+    const description =
+      prior?.description ?? `Produkter inom ${name.toLowerCase()}.`;
+    const seo_title =
+      prior && prior.product_count === count
+        ? prior.seo_title
+        : `Handla ${name} Online - ${count}+ produkter | Vihandlar.se`;
+    const seo_description =
+      prior && prior.product_count === count
+        ? prior.seo_description
+        : `Jämför priser på ${count}+ ${name.toLowerCase()}-produkter från flera butiker. Snabb leverans direkt hem.`;
+
+    // Only bump updated_at when something material actually changed —
+    // otherwise every run produces a diff just from the timestamp.
+    const unchanged =
+      prior &&
+      prior.name === name &&
+      prior.slug === slug &&
+      prior.description === description &&
+      prior.seo_title === seo_title &&
+      prior.seo_description === seo_description &&
+      prior.product_count === count &&
+      prior.category_path === path;
+
     out.push({
       id: prior?.id ?? randomUUID(),
       name,
       slug,
       parent_id: null,
       category_path: path,
-      description: prior?.description ?? `Produkter inom ${name.toLowerCase()}.`,
-      seo_title:
-        prior && prior.product_count === count
-          ? prior.seo_title
-          : `Handla ${name} Online - ${count}+ produkter | Vihandlar.se`,
-      seo_description:
-        prior && prior.product_count === count
-          ? prior.seo_description
-          : `Jämför priser på ${count}+ ${name.toLowerCase()}-produkter från flera butiker. Snabb leverans direkt hem.`,
+      description,
+      seo_title,
+      seo_description,
       product_count: count,
       created_at: prior?.created_at ?? now,
-      updated_at: now,
+      updated_at: unchanged ? (prior.updated_at ?? now) : now,
     });
   }
 
