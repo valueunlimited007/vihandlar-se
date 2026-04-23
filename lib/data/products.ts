@@ -281,6 +281,29 @@ export function getDiscountedProducts(limit: number = 12): Product[] {
     .slice(0, limit);
 }
 
+/**
+ * Deterministisk rotation av en produktlista givet en seed-sträng.
+ *
+ * Används för att sprida affiliate-produkter över E-ämnes-sidor så att
+ * t.ex. 179 sidor som faller på "Erbjudanden"-fallback inte visar exakt
+ * samma 4 produkter — då skulle Google se det som duplicate content.
+ * Samma seed ger alltid samma slice, så ISR-cache fungerar.
+ */
+export function rotateProducts<T>(
+  list: T[],
+  seed: string,
+  take: number,
+): T[] {
+  if (list.length <= take) return list.slice(0, take);
+  let hash = 2166136261; // FNV-1a offset
+  for (let i = 0; i < seed.length; i++) {
+    hash ^= seed.charCodeAt(i);
+    hash = (hash * 16777619) >>> 0;
+  }
+  const offset = hash % list.length;
+  return [...list.slice(offset), ...list.slice(0, offset)].slice(0, take);
+}
+
 const STOPWORDS = new Set([
   "och",
   "eller",
