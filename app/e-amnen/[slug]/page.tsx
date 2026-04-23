@@ -11,6 +11,8 @@ import {
   Shield,
   Calculator,
   Leaf,
+  Tag,
+  Sparkles,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,7 +22,14 @@ import {
   getAllEAdditives,
   getEAdditiveBySlug,
 } from "@/lib/data/e-additives";
-import { getRelatedProductsForEAdditive } from "@/lib/data/products";
+import {
+  getRelatedProductsForEAdditive,
+  getDiscountedProducts,
+  getFeaturedProducts,
+  isFoodProduct,
+  rotateProducts,
+} from "@/lib/data/products";
+import type { Product } from "@/types/store";
 import { getRiskLevel, type CommonProduct } from "@/types/e-additive";
 
 interface PageProps {
@@ -82,7 +91,37 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
 
   const riskLevel = getRiskLevel(additive.risk_score);
   const isHighRisk = additive.risk_score >= 7;
-  const relatedProducts = getRelatedProductsForEAdditive(additive, 4);
+
+  // Tre-tiers produktwidget: rubriken anpassas efter vad vi faktiskt visar.
+  // 1. Livsmedel som matchar E-ämnet → "Livsmedel som kan innehålla E[N]"
+  // 2. Rabatterade produkter → "Erbjudanden från våra partnerbutiker"
+  // 3. Populära fallback → "Rekommenderade produkter just nu"
+  // Rubriken matchar ALLTID innehållet — en kaffemaskin står aldrig under
+  // "Livsmedel"-rubriken.
+  const foodMatches = getRelatedProductsForEAdditive(additive, 20)
+    .filter(isFoodProduct)
+    .slice(0, 4);
+
+  let widgetVariant: "food" | "deals" | "recommended";
+  let widgetProducts: Product[];
+  if (foodMatches.length >= 2) {
+    widgetVariant = "food";
+    widgetProducts = foodMatches;
+  } else {
+    // Rotera över en större pool (seeded på e_number) så att sidor som
+    // faller på samma fallback inte visar samma produkter — annars skulle
+    // Google se 179 identiska widgets som duplicate content.
+    const dealsPool = getDiscountedProducts(500);
+    if (dealsPool.length >= 2) {
+      widgetVariant = "deals";
+      widgetProducts = rotateProducts(dealsPool, additive.e_number, 4);
+    } else {
+      const featuredPool = getFeaturedProducts(200);
+      widgetVariant = "recommended";
+      widgetProducts = rotateProducts(featuredPool, additive.e_number, 4);
+    }
+  }
+  const showRelatedProducts = widgetProducts.length >= 2;
   const adiMax = additive.adi_value ? Math.round(additive.adi_value * 70) : null;
 
   const articleSchema = {
@@ -447,29 +486,64 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
             </Card>
           )}
 
-          {/* Related products — livsmedel som typiskt kan innehålla ämnet */}
-          {relatedProducts.length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <ShoppingBag className="w-5 h-5 text-primary" />
-                  Livsmedel som kan innehålla {additive.e_number}
-                </CardTitle>
-                <p className="text-sm text-muted-foreground">
-                  Produkter från våra partnerbutiker där {additive.name.toLowerCase()} kan förekomma som tillsats. Läs alltid ingrediensförteckningen på förpackningen.
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  {relatedProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
-                </div>
-                <p className="text-xs text-muted-foreground mt-4">
-                  * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
-                </p>
-              </CardContent>
-            </Card>
+          {/* Affiliate-widget: rubrik anpassas efter innehåll.
+              <aside role=complementary> signalerar till skärmläsare och
+              LLM-crawlers att detta är sidokomponent, inte kärninnehåll
+              för E-ämnet. Rubriken är en riktig h3 (inte CardTitle-div)
+              så heading-hierarkin förblir korrekt för SEO + accessibility. */}
+          {showRelatedProducts && (
+            <aside
+              role="complementary"
+              aria-label="Relaterade produkter från våra partnerbutiker"
+            >
+              <Card>
+                <CardHeader>
+                  {widgetVariant === "food" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <ShoppingBag className="w-5 h-5 text-primary" />
+                        Livsmedel som kan innehålla {additive.e_number}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Produkter från våra partnerbutiker där {additive.name.toLowerCase()} kan förekomma som tillsats. Läs alltid ingrediensförteckningen på förpackningen.
+                      </p>
+                    </>
+                  )}
+                  {widgetVariant === "deals" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <Tag className="w-5 h-5 text-red-500" />
+                        Erbjudanden från våra partnerbutiker
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Aktuella rabatterade produkter just nu hos Delitea och Coffee Friend.
+                      </p>
+                    </>
+                  )}
+                  {widgetVariant === "recommended" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <Sparkles className="w-5 h-5 text-primary" />
+                        Rekommenderade produkter just nu
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Utvalda produkter från våra partnerbutiker.
+                      </p>
+                    </>
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {widgetProducts.map((product) => (
+                      <ProductCard key={product.id} product={product} />
+                    ))}
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-4">
+                    * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
+                  </p>
+                </CardContent>
+              </Card>
+            </aside>
           )}
         </div>
 
