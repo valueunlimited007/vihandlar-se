@@ -15,10 +15,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RiskGauge } from "@/components/RiskGauge";
+import { ProductCard } from "@/components/ProductCard";
 import {
   getAllEAdditives,
   getEAdditiveBySlug,
 } from "@/lib/data/e-additives";
+import { getRelatedProductsForEAdditive } from "@/lib/data/products";
 import { getRiskLevel, type CommonProduct } from "@/types/e-additive";
 
 interface PageProps {
@@ -80,6 +82,7 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
 
   const riskLevel = getRiskLevel(additive.risk_score);
   const isHighRisk = additive.risk_score >= 7;
+  const relatedProducts = getRelatedProductsForEAdditive(additive, 4);
   const adiMax = additive.adi_value ? Math.round(additive.adi_value * 70) : null;
 
   const articleSchema = {
@@ -440,6 +443,31 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
                     )
                   )
                 )}
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Related products — livsmedel som typiskt kan innehålla ämnet */}
+          {relatedProducts.length > 0 && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <ShoppingBag className="w-5 h-5 text-primary" />
+                  Livsmedel som kan innehålla {additive.e_number}
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">
+                  Produkter från våra partnerbutiker där {additive.name.toLowerCase()} kan förekomma som tillsats. Läs alltid ingrediensförteckningen på förpackningen.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {relatedProducts.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground mt-4">
+                  * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
+                </p>
               </CardContent>
             </Card>
           )}
