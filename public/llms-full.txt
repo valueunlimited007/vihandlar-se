@@ -56,8 +56,9 @@ kombinerar en AI-driven E-nummerskanner som fotograferar och analyserar
 ingredienslistor, en komplett databas med 353+ livsmedelstillsatser (E-ämnen)
 med riskbedömning, en livsmedelsguide med 2 600+ livsmedel och detaljerade näringsvärden (62 näringsämnen per livsmedel),
 delade inköpslistor med realtidssynkronisering, röstinmatning för
-handsfree-användning, och produktjämförelse med över 10 500 produkter från
-svenska matbutiker.
+handsfree-användning, och produktjämförelse med över 12 800 produkter från
+partnerbutikerna Delitea (delikatesser, livsmedel) och Coffee Friend
+(espressomaskiner, kaffebönor).
 
 Allt är helt gratis att använda utan krav på registrering. Data baseras på
 vetenskapliga källor som EFSA (Europeiska myndigheten för livsmedelssäkerhet),
@@ -236,12 +237,12 @@ Varje näringsämne har en egen sida med:
 
 Sida: https://vihandlar.se/livsmedel/naringsamne
 
-## Produkter & Shopping (10 500+ produkter)
+## Produkter & Shopping (12 800+ produkter från 2 partnerbutiker)
 Produktjämförelse med:
-- Över 10 500 produkter från Delitea matbutik online
+- Över 12 800 produkter från Delitea (~10 500 livsmedel) och Coffee Friend (~2 300 kaffeprodukter)
 - Realtidspriser och rabatter
-- Produktbilder från Delitea CDN
-- 144 produktkategorier
+- Produktbilder från Delitea CDN och img.kavosdraugas.lt (Coffee Friends CDN)
+- ~180 produktkategorier
 - Sök, filtrera och sortera
 - EAN/streckkoder
 - Fri frakt-indikator
@@ -3960,10 +3961,14 @@ Besökskollen (besokskollen.se) från Savri är en cookiefri, GDPR-kompatibel we
 Grundfunktionerna kräver internetuppkoppling, men inköpslistor som är laddade fungerar delvis offline. Skanningshistorik sparas lokalt i webbläsaren.
 
 ## Hur fungerar kategorierna för produkter?
-Produkter är organiserade i 144 kategorier från Delitea, inklusive mat, dryck, kök och hushåll. Varje kategori har en egen sida på vihandlar.se/handla/kategori/[slug].
+Produkter är organiserade i ~180 kategorier från våra partnerbutiker Delitea och Coffee Friend — inklusive livsmedel (bakning, dryck, konserver, dessert, kryddor m.m.) och kaffesortiment (espressomaskiner, kaffekvarnar, kaffebönor, baristatillbehör). Varje kategori har en egen sida på vihandlar.se/handla/kategori/[slug].
 
 ## Vad är schema.org-markup?
 Schema.org är ett strukturerat dataformat som hjälper sökmotorer och AI-assistenter att förstå innehållet på en sida. vihandlar.se använder Article, FAQPage, Product, NutritionInformation och BreadcrumbList schema.
 
-## Planeras fler butiker utöver Delitea?
-Ja, fler butiker och matkedjor planeras. Följ vihandlar.se för uppdateringar. Kontakta oss på hej@vihandlar.se om du driver en matbutik och vill samarbeta.
+## Vilka butiker samarbetar vihandlar.se med?
+Vi samarbetar för närvarande med två partnerbutiker via Adtraction affiliatenätverket:
+- **Delitea** (www.delitea.se) — internationella delikatesser, drycker, bakning, godis, konserver, kryddor. ~10 500 produkter.
+- **Coffee Friend** (www.coffeefriend.se) — espressomaskiner, kaffekvarnar, kaffebönor, baristatillbehör. ~2 300 produkter. Dedikerad spårningssubdomän at.coffeefriend.se.
+
+Fler butiker och matkedjor planeras. Kontakta oss på hej@vihandlar.se om du driver en butik och vill samarbeta.

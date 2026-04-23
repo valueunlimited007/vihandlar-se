@@ -486,55 +486,64 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
             </Card>
           )}
 
-          {/* Affiliate-widget: rubrik anpassas efter innehåll */}
+          {/* Affiliate-widget: rubrik anpassas efter innehåll.
+              <aside role=complementary> signalerar till skärmläsare och
+              LLM-crawlers att detta är sidokomponent, inte kärninnehåll
+              för E-ämnet. Rubriken är en riktig h3 (inte CardTitle-div)
+              så heading-hierarkin förblir korrekt för SEO + accessibility. */}
           {showRelatedProducts && (
-            <Card>
-              <CardHeader>
-                {widgetVariant === "food" && (
-                  <>
-                    <CardTitle className="flex items-center gap-2">
-                      <ShoppingBag className="w-5 h-5 text-primary" />
-                      Livsmedel som kan innehålla {additive.e_number}
-                    </CardTitle>
-                    <p className="text-sm text-muted-foreground">
-                      Produkter från våra partnerbutiker där {additive.name.toLowerCase()} kan förekomma som tillsats. Läs alltid ingrediensförteckningen på förpackningen.
-                    </p>
-                  </>
-                )}
-                {widgetVariant === "deals" && (
-                  <>
-                    <CardTitle className="flex items-center gap-2">
-                      <Tag className="w-5 h-5 text-red-500" />
-                      Erbjudanden från våra partnerbutiker
-                    </CardTitle>
-                    <p className="text-sm text-muted-foreground">
-                      Aktuella rabatterade produkter just nu hos Delitea och Coffee Friend.
-                    </p>
-                  </>
-                )}
-                {widgetVariant === "recommended" && (
-                  <>
-                    <CardTitle className="flex items-center gap-2">
-                      <Sparkles className="w-5 h-5 text-primary" />
-                      Rekommenderade produkter just nu
-                    </CardTitle>
-                    <p className="text-sm text-muted-foreground">
-                      Utvalda produkter från våra partnerbutiker.
-                    </p>
-                  </>
-                )}
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  {widgetProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
-                </div>
-                <p className="text-xs text-muted-foreground mt-4">
-                  * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
-                </p>
-              </CardContent>
-            </Card>
+            <aside
+              role="complementary"
+              aria-label="Relaterade produkter från våra partnerbutiker"
+            >
+              <Card>
+                <CardHeader>
+                  {widgetVariant === "food" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <ShoppingBag className="w-5 h-5 text-primary" />
+                        Livsmedel som kan innehålla {additive.e_number}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Produkter från våra partnerbutiker där {additive.name.toLowerCase()} kan förekomma som tillsats. Läs alltid ingrediensförteckningen på förpackningen.
+                      </p>
+                    </>
+                  )}
+                  {widgetVariant === "deals" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <Tag className="w-5 h-5 text-red-500" />
+                        Erbjudanden från våra partnerbutiker
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Aktuella rabatterade produkter just nu hos Delitea och Coffee Friend.
+                      </p>
+                    </>
+                  )}
+                  {widgetVariant === "recommended" && (
+                    <>
+                      <h3 className="font-semibold leading-none tracking-tight flex items-center gap-2">
+                        <Sparkles className="w-5 h-5 text-primary" />
+                        Rekommenderade produkter just nu
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Utvalda produkter från våra partnerbutiker.
+                      </p>
+                    </>
+                  )}
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {widgetProducts.map((product) => (
+                      <ProductCard key={product.id} product={product} />
+                    ))}
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-4">
+                    * Affiliatelänkar. Vi kan få provision vid köp utan extra kostnad för dig.
+                  </p>
+                </CardContent>
+              </Card>
+            </aside>
           )}
         </div>
 

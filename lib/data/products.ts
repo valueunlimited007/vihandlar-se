@@ -291,13 +291,17 @@ export function getDiscountedProducts(limit: number = 12): Product[] {
  */
 export function rotateProducts<T>(
   list: T[],
-  seed: string,
+  seed: string | null | undefined,
   take: number,
 ): T[] {
   if (list.length <= take) return list.slice(0, take);
+  // Fallback till tom sträng vid null/undefined så funktionen aldrig kraschar.
+  // Alla anropare (t.ex. E-ämnes-sidan) passerar e_number men schemat tillåter
+  // null i princip — hellre deterministisk default än runtime error.
+  const s = seed ?? "";
   let hash = 2166136261; // FNV-1a offset
-  for (let i = 0; i < seed.length; i++) {
-    hash ^= seed.charCodeAt(i);
+  for (let i = 0; i < s.length; i++) {
+    hash ^= s.charCodeAt(i);
     hash = (hash * 16777619) >>> 0;
   }
   const offset = hash % list.length;
