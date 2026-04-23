@@ -309,6 +309,46 @@ function tokenize(text: string): string[] {
 }
 
 /**
+ * Extrahera fria sökningstermer från det polymorfa common_products-fältet.
+ * Adtractions/Loveables export-data kan vara antingen:
+ *   - string[]                                    (t.ex. E504)
+ *   - Array<{ category?, products?: string[] }>   (typed shape)
+ *   - { note?, categories?: string[] }            (t.ex. E464, E425, E334)
+ *   - null / undefined
+ * Returnerar en platt lista av strängar att tokenisera vidare.
+ */
+function extractCommonProductTerms(raw: unknown): string[] {
+  if (!raw) return [];
+  const out: string[] = [];
+
+  if (Array.isArray(raw)) {
+    for (const entry of raw) {
+      if (typeof entry === "string") out.push(entry);
+      else if (entry && typeof entry === "object") {
+        const e = entry as { category?: unknown; products?: unknown };
+        if (typeof e.category === "string") out.push(e.category);
+        if (Array.isArray(e.products)) {
+          for (const p of e.products) if (typeof p === "string") out.push(p);
+        }
+      }
+    }
+    return out;
+  }
+
+  if (typeof raw === "object") {
+    const obj = raw as { categories?: unknown; products?: unknown };
+    if (Array.isArray(obj.categories)) {
+      for (const c of obj.categories) if (typeof c === "string") out.push(c);
+    }
+    if (Array.isArray(obj.products)) {
+      for (const p of obj.products) if (typeof p === "string") out.push(p);
+    }
+  }
+
+  return out;
+}
+
+/**
  * Hämta produkter som typiskt kan innehålla detta E-ämne.
  *
  * Matchar på common_products-termer (t.ex. "Bakpulver", "Mjölkprodukter")
@@ -331,20 +371,8 @@ export function getRelatedProductsForEAdditive(
   if (additive.common_name) {
     for (const t of tokenize(additive.common_name)) terms.add(t);
   }
-  // common_products is typed as CommonProduct[] but real data is string[]
-  // — handle both so we don't crash on schema drift.
-  const rawCommon = (additive.common_products ?? []) as Array<
-    string | { category?: string; products?: string[] }
-  >;
-  for (const entry of rawCommon) {
-    if (typeof entry === "string") {
-      for (const t of tokenize(entry)) terms.add(t);
-    } else if (entry && typeof entry === "object") {
-      if (entry.category) for (const t of tokenize(entry.category)) terms.add(t);
-      for (const p of entry.products ?? []) {
-        for (const t of tokenize(p)) terms.add(t);
-      }
-    }
+  for (const raw of extractCommonProductTerms(additive.common_products)) {
+    for (const t of tokenize(raw)) terms.add(t);
   }
 
   if (terms.size === 0) return [];
