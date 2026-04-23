@@ -20,7 +20,10 @@ import {
   getAllEAdditives,
   getEAdditiveBySlug,
 } from "@/lib/data/e-additives";
-import { getRelatedProductsForEAdditive } from "@/lib/data/products";
+import {
+  getRelatedProductsForEAdditive,
+  isFoodProduct,
+} from "@/lib/data/products";
 import { getRiskLevel, type CommonProduct } from "@/types/e-additive";
 
 interface PageProps {
@@ -82,7 +85,13 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
 
   const riskLevel = getRiskLevel(additive.risk_score);
   const isHighRisk = additive.risk_score >= 7;
-  const relatedProducts = getRelatedProductsForEAdditive(additive, 4);
+  // Hämta fler kandidater och filtrera till livsmedel, så rubriken "Livsmedel
+  // som kan innehålla..." aldrig visas med en espressomaskin under sig. Kräv
+  // minst 2 träffar — 1 ensam produkt ser slumpartad ut.
+  const relatedProducts = getRelatedProductsForEAdditive(additive, 20)
+    .filter(isFoodProduct)
+    .slice(0, 4);
+  const showRelatedProducts = relatedProducts.length >= 2;
   const adiMax = additive.adi_value ? Math.round(additive.adi_value * 70) : null;
 
   const articleSchema = {
@@ -448,7 +457,7 @@ export default async function EAdditiveDetailPage({ params }: PageProps) {
           )}
 
           {/* Related products — livsmedel som typiskt kan innehålla ämnet */}
-          {relatedProducts.length > 0 && (
+          {showRelatedProducts && (
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">

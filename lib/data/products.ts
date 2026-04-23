@@ -308,6 +308,114 @@ function tokenize(text: string): string[] {
     .filter((t) => t.length > 3 && !STOPWORDS.has(t));
 }
 
+// Delitea-kategorier börjar med ett rot-prefix (Supabase-exportformat).
+// De här är uppenbart matrelaterade rotar — allt här är ätbart.
+// Källa: jq-analys av data/products.json kategori-roots.
+const FOOD_ROOT_PREFIXES = [
+  "bakning-",
+  "bonor-",
+  "dessert-konfektyr-snacks",
+  "dryck -",
+  "dryck-",
+  "flingor-och-musli",
+  "foretag-storpack",
+  "hart-brod-och-fika",
+  "hogtider-tillfallen",
+  "kaffe-te",
+  "konserver-chark",
+  "kram-soppor-och-mixer",
+  "kryddor",
+  "notter-fron-torkad-frukt",
+  "olja-vin-vinager",
+  "pasta-pastasas",
+  "presentboxar",
+  "ris-gryn-matkorn",
+  "smaksattare",
+  "socker-sirap-och-honung",
+  "sylt-marmelad",
+  "varldens-mat",
+];
+
+// Substring-patterns som avslöjar utrustning, serviser, reservdelar och
+// rengöringsprodukter. Kontrolleras EFTER food-allowlist så att
+// "dessert-konfektyr-snacks - glass-tillbehor" inte felaktigt nekas på
+// "tillbehor"-suffixet.
+const NON_FOOD_PATTERNS = [
+  "maskin",
+  "kvarn",
+  "bryggare",
+  "kokare",
+  "rostare",
+  "fritös",
+  "blender",
+  "mixer",
+  "filter",
+  "tillbehör",
+  "reservdel",
+  "slang",
+  "packning",
+  "o-ring",
+  "rengöring",
+  "avkalk",
+  "skedar",
+  "bestick",
+  "kannor",
+  "koppar",
+  "mugg",
+  "brödrost",
+  "airfryer",
+  "vattenkokare",
+  "kok-hushall",
+  "elgrillar",
+  "hydro flask",
+  "sodastream",
+];
+
+// Coffee Friend har kategorier utan hierarkisk prefix (t.ex. "Kaffebönor",
+// "Choklad"). De flesta är non-food — fångas av patterns ovan — men några
+// enstaka livsmedels-nyckelord behöver explicit allowlist.
+const COFFEE_FRIEND_FOOD_KEYWORDS = [
+  "kaffebönor",
+  "choklad",
+  "kakao",
+  "godis",
+  "smaksätt",
+];
+
+/**
+ * Avgör om en produkt är ett ätbart livsmedel (kan innehålla E-ämnen) eller
+ * utrustning/tillbehör (espressomaskin, kopp, servett, rengöringsmedel).
+ *
+ * Används för att filtrera affiliate-widgeten på E-ämnes-sidor så vi inte
+ * visar kaffemaskiner under rubriken "Livsmedel som kan innehålla E141".
+ * Default är FALSE — okända kategorier räknas som non-food så inget smiter
+ * igenom tyst.
+ */
+export function isFoodProduct(
+  product: Pick<Product, "category">,
+): boolean {
+  const cat = (product.category ?? "").toLowerCase();
+  if (!cat) return false;
+
+  // 1. Delitea food root — garantera TRUE innan vi kollar substring-deny,
+  //    annars skulle "dessert...glass-tillbehor" nekas på "tillbehor".
+  for (const prefix of FOOD_ROOT_PREFIXES) {
+    if (cat.startsWith(prefix)) return true;
+  }
+
+  // 2. Explicit non-food (utrustning/serviser/delar/rengöring).
+  for (const pattern of NON_FOOD_PATTERNS) {
+    if (cat.includes(pattern)) return false;
+  }
+
+  // 3. Coffee Friend enstaka food-kategorier.
+  for (const keyword of COFFEE_FRIEND_FOOD_KEYWORDS) {
+    if (cat.includes(keyword)) return true;
+  }
+
+  return false;
+}
+
 /**
  * Extrahera fria sökningstermer från det polymorfa common_products-fältet.
  * Adtractions/Loveables export-data kan vara antingen:
