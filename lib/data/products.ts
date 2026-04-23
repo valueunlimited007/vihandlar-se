@@ -2,6 +2,7 @@
 import productsData from "@/data/products.json";
 import productCategoriesData from "@/data/product-categories.json";
 import type { Product, ProductCategory } from "@/types/store";
+import type { EAdditive } from "@/types/e-additive";
 
 const products: Product[] = productsData as Product[];
 const productCategories: ProductCategory[] =
@@ -278,4 +279,96 @@ export function getDiscountedProducts(limit: number = 12): Product[] {
       return discB - discA;
     })
     .slice(0, limit);
+}
+
+const STOPWORDS = new Set([
+  "och",
+  "eller",
+  "med",
+  "utan",
+  "som",
+  "till",
+  "för",
+  "produkter",
+  "livsmedel",
+  "övriga",
+  "andra",
+  "olika",
+  "typer",
+  "sorter",
+  "varianter",
+  "kosttillskott",
+]);
+
+function tokenize(text: string): string[] {
+  return text
+    .toLowerCase()
+    .split(/[\s,/.\-–—&()]+/)
+    .map((t) => t.trim())
+    .filter((t) => t.length > 3 && !STOPWORDS.has(t));
+}
+
+/**
+ * Hämta produkter som typiskt kan innehålla detta E-ämne.
+ *
+ * Matchar på common_products-termer (t.ex. "Bakpulver", "Mjölkprodukter")
+ * plus E-ämnets namn/common_name mot produktens namn/kategori. Returnerar
+ * bara produkter med score > 0, så listan blir tom om inget matchar —
+ * anropande sida ska dölja widgeten när returen är tom.
+ *
+ * OBS: Detta visar produkter som *i verkligheten ofta innehåller* ämnet,
+ * inte produkter som säljer ämnet självt. UI:t måste vara tydligt om det.
+ */
+export function getRelatedProductsForEAdditive(
+  additive: Pick<
+    EAdditive,
+    "name" | "common_name" | "common_products" | "category"
+  >,
+  limit: number = 4,
+): Product[] {
+  const terms = new Set<string>();
+  for (const t of tokenize(additive.name)) terms.add(t);
+  if (additive.common_name) {
+    for (const t of tokenize(additive.common_name)) terms.add(t);
+  }
+  // common_products is typed as CommonProduct[] but real data is string[]
+  // — handle both so we don't crash on schema drift.
+  const rawCommon = (additive.common_products ?? []) as Array<
+    string | { category?: string; products?: string[] }
+  >;
+  for (const entry of rawCommon) {
+    if (typeof entry === "string") {
+      for (const t of tokenize(entry)) terms.add(t);
+    } else if (entry && typeof entry === "object") {
+      if (entry.category) for (const t of tokenize(entry.category)) terms.add(t);
+      for (const p of entry.products ?? []) {
+        for (const t of tokenize(p)) terms.add(t);
+      }
+    }
+  }
+
+  if (terms.size === 0) return [];
+
+  const scored: { product: Product; score: number }[] = [];
+
+  for (const product of products) {
+    if (product.in_stock === false) continue;
+    const pName = product.name.toLowerCase();
+    const pCategory = (product.category ?? "").toLowerCase();
+    let score = 0;
+
+    for (const term of terms) {
+      if (pName.includes(term)) score += 3;
+      if (pCategory.includes(term)) score += 2;
+    }
+
+    if (score > 0) {
+      scored.push({ product, score });
+    }
+  }
+
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((s) => s.product);
 }
